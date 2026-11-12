@@ -1,0 +1,1922 @@
+{
+ "东方奇幻": {
+  "lighting": "雾中光",
+  "color": "东方古韵",
+  "atmosphere": "神秘奇幻",
+  "scene": "仙山云海"
+ },
+ "赛博朋克": {
+  "lighting": "霓虹彩光",
+  "color": "赛博霓虹",
+  "atmosphere": "未来科技",
+  "scene": "赛博都市"
+ },
+ "写实摄影": {
+  "lighting": "自然日光",
+  "color": "自然森系",
+  "atmosphere": "静谧禅意",
+  "scene": "街角咖啡馆"
+ },
+ "概念艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": "废墟末世"
+ },
+ "水墨国风": {
+  "lighting": "雾中光",
+  "color": "黑白高对比",
+  "atmosphere": "静谧禅意",
+  "scene": "自然山水"
+ },
+ "二次元": {
+  "lighting": "自然日光",
+  "color": "日系清新",
+  "atmosphere": null,
+  "scene": "樱花庭院"
+ },
+ "油画质感": {
+  "lighting": "戏剧对比",
+  "color": "暖金琥珀",
+  "atmosphere": null,
+  "scene": "暗黑森林"
+ },
+ "3D渲染": {
+  "lighting": "电影级侧光",
+  "color": "电影青橙",
+  "atmosphere": "史诗壮阔",
+  "scene": "太空站"
+ },
+ "哥特暗黑": {
+  "lighting": "暗调低调",
+  "color": "暗黑哥特",
+  "atmosphere": null,
+  "scene": "暗黑森林"
+ },
+ "蒸汽朋克": {
+  "lighting": "烛火光",
+  "color": "暖金琥珀",
+  "atmosphere": "神秘奇幻",
+  "scene": "蒸汽都市"
+ },
+ "水彩淡彩": {
+  "lighting": "柔光漫射",
+  "color": "粉彩梦幻",
+  "atmosphere": "浪漫温馨",
+  "scene": "樱花庭院"
+ },
+ "极简留白": {
+  "lighting": "柔光漫射",
+  "color": "黑白高对比",
+  "atmosphere": null,
+  "scene": "自然山水"
+ },
+ "像素艺术": {
+  "lighting": "自然日光",
+  "color": "赛博霓虹",
+  "atmosphere": "活力四射",
+  "scene": "像素世界"
+ },
+ "波普艺术": {
+  "lighting": "自然日光",
+  "color": "赛博霓虹",
+  "atmosphere": "活力四射",
+  "scene": "波普画廊"
+ },
+ "扁平矢量": {
+  "lighting": "自然日光",
+  "color": "日系清新",
+  "atmosphere": "活力四射",
+  "scene": "波普画廊"
+ },
+ "印象派": {
+  "lighting": "暖金黄昏",
+  "color": "粉彩梦幻",
+  "atmosphere": "浪漫温馨",
+  "scene": "自然山水"
+ },
+ "浮世绘": {
+  "lighting": "冷蓝月光",
+  "color": "东方古韵",
+  "atmosphere": "静谧禅意",
+  "scene": "自然山水"
+ },
+ "低多边形": {
+  "lighting": "暖金黄昏",
+  "color": "粉彩梦幻",
+  "atmosphere": "活力四射",
+  "scene": "像素世界"
+ },
+ "超现实主义": {
+  "lighting": "戏剧对比",
+  "color": "莫兰迪色系",
+  "atmosphere": "荒诞离奇",
+  "scene": "废墟末世"
+ },
+ "故障艺术": {
+  "lighting": "霓虹彩光",
+  "color": "赛博霓虹",
+  "atmosphere": "暗黑压抑",
+  "scene": "赛博都市"
+ },
+ "复古胶片": {
+  "lighting": "暖金黄昏",
+  "color": "褪色复古",
+  "atmosphere": "怀旧复古",
+  "scene": "街角咖啡馆"
+ },
+ "剪纸艺术": {
+  "lighting": "柔光漫射",
+  "color": "莫兰迪色系",
+  "atmosphere": "静谧禅意",
+  "scene": "自然山水"
+ },
+ "新艺术运动": {
+  "lighting": "柔光漫射",
+  "color": "东方古韵",
+  "atmosphere": "浪漫温馨",
+  "scene": "古风宫殿"
+ },
+ "装饰艺术": {
+  "lighting": "电影级侧光",
+  "color": "赛博霓虹",
+  "atmosphere": "史诗壮阔",
+  "scene": "赛博都市"
+ },
+ "巴洛克": {
+  "lighting": "戏剧对比",
+  "color": "暗黑哥特",
+  "atmosphere": "史诗壮阔",
+  "scene": "哥特城堡"
+ },
+ "极繁主义": {
+  "lighting": "霓虹彩光",
+  "color": "赛博霓虹",
+  "atmosphere": "活力四射",
+  "scene": "波普画廊"
+ },
+ "赛博禅意": {
+  "lighting": "霓虹彩光",
+  "color": "赛博禅意",
+  "atmosphere": "未来科技",
+  "scene": "赛博都市"
+ },
+ "幻想生物": {
+  "lighting": "电影级侧光",
+  "color": "自然森系",
+  "atmosphere": "神秘奇幻",
+  "scene": "暗黑森林"
+ },
+ "霓虹夜景": {
+  "lighting": "霓虹彩光",
+  "color": "赛博霓虹",
+  "atmosphere": "暗黑压抑",
+  "scene": "赛博都市"
+ },
+ "波普拼贴": {
+  "lighting": "自然日光",
+  "color": "赛博霓虹",
+  "atmosphere": "活力四射",
+  "scene": "波普画廊"
+ },
+ "魔法奇幻": {
+  "lighting": "电影级侧光",
+  "color": null,
+  "atmosphere": "神秘奇幻",
+  "scene": "魔法阵"
+ },
+ "火焰地狱": {
+  "lighting": "火光",
+  "color": "暗黑哥特",
+  "atmosphere": null,
+  "scene": "火焰地狱"
+ },
+ "冰霜世界": {
+  "lighting": "冷蓝月光",
+  "color": "冷蓝银灰",
+  "atmosphere": null,
+  "scene": "冰原极光"
+ },
+ "雷电之力": {
+  "lighting": "硬光",
+  "color": "赛博霓虹",
+  "atmosphere": "活力四射",
+  "scene": "天空之城"
+ },
+ "暗影深渊": {
+  "lighting": "暗调低调",
+  "color": "暗黑哥特",
+  "atmosphere": null,
+  "scene": "暗影领域"
+ },
+ "自然之力": {
+  "lighting": "自然日光",
+  "color": null,
+  "atmosphere": "清新自然",
+  "scene": "自然山水"
+ },
+ "神圣光辉": {
+  "lighting": "圣光",
+  "color": null,
+  "atmosphere": "神圣庄严",
+  "scene": "圣殿"
+ },
+ "废土求生": {
+  "lighting": "暗调低调",
+  "color": "沙漠暖调",
+  "atmosphere": "颓废末世",
+  "scene": "废墟末世"
+ },
+ "异星科幻": {
+  "lighting": "霓虹彩光",
+  "color": "赛博霓虹",
+  "atmosphere": "未来科技",
+  "scene": "星空"
+ },
+ "克苏鲁": {
+  "lighting": "暗调低调",
+  "color": "暗黑哥特",
+  "atmosphere": "暗黑压抑",
+  "scene": "暗影领域"
+ },
+ "文艺复兴": {
+  "lighting": "柔光漫射",
+  "color": "暖金琥珀",
+  "atmosphere": "肃穆庄严",
+  "scene": "圣殿"
+ },
+ "洛可可": {
+  "lighting": "柔光漫射",
+  "color": "粉彩梦幻",
+  "atmosphere": "浪漫温馨",
+  "scene": "古风宫殿"
+ },
+ "新古典主义": {
+  "lighting": "电影级侧光",
+  "color": "暖金琥珀",
+  "atmosphere": "肃穆庄严",
+  "scene": "圣殿"
+ },
+ "浪漫主义": {
+  "lighting": "黄金时刻",
+  "color": "暖金琥珀",
+  "atmosphere": "浪漫温馨",
+  "scene": "自然山水"
+ },
+ "现实主义": {
+  "lighting": "自然日光",
+  "color": "自然森系",
+  "atmosphere": "静谧禅意",
+  "scene": "街角咖啡馆"
+ },
+ "表现主义": {
+  "lighting": "暗调低调",
+  "color": "暗黑哥特",
+  "atmosphere": "狂热躁动",
+  "scene": "暗黑森林"
+ },
+ "立体主义": {
+  "lighting": "硬光",
+  "color": "莫兰迪色系",
+  "atmosphere": "荒诞离奇",
+  "scene": "波普画廊"
+ },
+ "未来主义": {
+  "lighting": "霓虹彩光",
+  "color": "赛博霓虹",
+  "atmosphere": "未来科技",
+  "scene": "赛博都市"
+ },
+ "达达主义": {
+  "lighting": "逆光剪影",
+  "color": "赛博霓虹",
+  "atmosphere": "荒诞离奇",
+  "scene": "波普画廊"
+ },
+ "抽象表现主义": {
+  "lighting": "自然日光",
+  "color": "彩虹色",
+  "atmosphere": "狂热躁动",
+  "scene": "波普画廊"
+ },
+ "野兽派": {
+  "lighting": "自然日光",
+  "color": "彩虹色",
+  "atmosphere": null,
+  "scene": "热带雨林"
+ },
+ "点彩派": {
+  "lighting": "自然日光",
+  "color": "粉彩梦幻",
+  "atmosphere": "浪漫温馨",
+  "scene": "自然山水"
+ },
+ "拉斐尔前派": {
+  "lighting": "柔光漫射",
+  "color": "东方古韵",
+  "atmosphere": "神秘奇幻",
+  "scene": "暗黑森林"
+ },
+ "象征主义": {
+  "lighting": "雾中光",
+  "color": "暗黑哥特",
+  "atmosphere": "神秘奇幻",
+  "scene": "暗影领域"
+ },
+ "拜占庭": {
+  "lighting": "黄金时刻",
+  "color": "暖金琥珀",
+  "atmosphere": "肃穆庄严",
+  "scene": "圣殿"
+ },
+ "埃及": {
+  "lighting": "黄金时刻",
+  "color": "沙漠暖调",
+  "atmosphere": "肃穆庄严",
+  "scene": "沙漠古城"
+ },
+ "希腊古典": {
+  "lighting": "自然日光",
+  "color": "暖金琥珀",
+  "atmosphere": "肃穆庄严",
+  "scene": "圣殿"
+ },
+ "北欧神话": {
+  "lighting": "冷蓝月光",
+  "color": "冰蓝极光",
+  "atmosphere": "史诗壮阔",
+  "scene": "雪山之巅"
+ },
+ "凯尔特": {
+  "lighting": "雾中光",
+  "color": "森林深绿",
+  "atmosphere": "神秘奇幻",
+  "scene": "暗黑森林"
+ },
+ "波斯细密画": {
+  "lighting": "暖金黄昏",
+  "color": "东方古韵",
+  "atmosphere": "神秘奇幻",
+  "scene": "沙漠古城"
+ },
+ "印度莫卧儿": {
+  "lighting": "黄金时刻",
+  "color": "暖金琥珀",
+  "atmosphere": "奢华雍容",
+  "scene": "古风宫殿"
+ },
+ "阿拉伯": {
+  "lighting": "黄金时刻",
+  "color": "沙漠暖调",
+  "atmosphere": "神秘奇幻",
+  "scene": "沙漠古城"
+ },
+ "蒸汽波": {
+  "lighting": "霓虹彩光",
+  "color": "赛博霓虹",
+  "atmosphere": "颓废末世",
+  "scene": "蒸汽都市"
+ },
+ "赛博西部": {
+  "lighting": "暖金黄昏",
+  "color": "沙漠暖调",
+  "atmosphere": "未来科技",
+  "scene": "赛博都市"
+ },
+ "柴油朋克": {
+  "lighting": "暗调低调",
+  "color": "复古70年代",
+  "atmosphere": "颓废末世",
+  "scene": "蒸汽都市"
+ },
+ "生物朋克": {
+  "lighting": "雾中光",
+  "color": "森林深绿",
+  "atmosphere": "暗黑压抑",
+  "scene": "暗黑森林"
+ },
+ "太阳朋克": {
+  "lighting": "自然日光",
+  "color": "自然森系",
+  "atmosphere": "温暖治愈",
+  "scene": "自然山水"
+ },
+ "太空歌剧": {
+  "lighting": "霓虹彩光",
+  "color": "赛博霓虹",
+  "atmosphere": null,
+  "scene": "太空站"
+ },
+ "田园牧歌": {
+  "lighting": "黄金时刻",
+  "color": null,
+  "atmosphere": "田园诗意",
+  "scene": "自然山水"
+ },
+ "都市写实": {
+  "lighting": "自然日光",
+  "color": null,
+  "atmosphere": "都市喧嚣",
+  "scene": "赛博都市"
+ },
+ "铅笔画": {
+  "lighting": "自然日光",
+  "color": "黑白高对比",
+  "atmosphere": "静谧禅意",
+  "scene": "街角咖啡馆"
+ },
+ "炭笔画": {
+  "lighting": "暗调低调",
+  "color": "黑白高对比",
+  "atmosphere": "悲壮苍凉",
+  "scene": "暗黑森林"
+ },
+ "版画": {
+  "lighting": "自然日光",
+  "color": "黑白高对比",
+  "atmosphere": "肃穆庄严",
+  "scene": "自然山水"
+ },
+ "海报艺术": {
+  "lighting": "霓虹彩光",
+  "color": "赛博霓虹",
+  "atmosphere": null,
+  "scene": "波普画廊"
+ },
+ "涂鸦艺术": {
+  "lighting": "霓虹彩光",
+  "color": "赛博霓虹",
+  "atmosphere": "活力四射",
+  "scene": "赛博都市"
+ },
+ "街头艺术": {
+  "lighting": "自然日光",
+  "color": "褪色复古",
+  "atmosphere": "都市喧嚣",
+  "scene": "赛博都市"
+ },
+ "波西米亚": {
+  "lighting": "暖金黄昏",
+  "color": "褪色复古",
+  "atmosphere": "浪漫温馨",
+  "scene": "街角咖啡馆"
+ },
+ "复古未来主义": {
+  "lighting": "霓虹彩光",
+  "color": "褪色复古",
+  "atmosphere": "未来科技",
+  "scene": "太空站"
+ },
+ "极简几何": {
+  "lighting": "柔光漫射",
+  "color": "莫兰迪色系",
+  "atmosphere": "静谧禅意",
+  "scene": "波普画廊"
+ },
+ "手绘插画": {
+  "lighting": "柔光漫射",
+  "color": "日系清新",
+  "atmosphere": "童趣天真",
+  "scene": "自然山水"
+ },
+ "赛博水墨": {
+  "lighting": "霓虹彩光",
+  "color": "赛博禅意",
+  "atmosphere": "未来科技",
+  "scene": "赛博都市"
+ },
+ "敦煌飞天": {
+  "lighting": "黄金时刻",
+  "color": "东方古韵",
+  "atmosphere": "肃穆庄严",
+  "scene": "古风宫殿"
+ },
+ "洛可可宫廷": {
+  "lighting": "柔光漫射",
+  "color": "粉彩梦幻",
+  "atmosphere": "奢华雍容",
+  "scene": "皇家宫殿"
+ },
+ "浮世绘武士": {
+  "lighting": "自然日光",
+  "color": "东方古韵",
+  "atmosphere": "史诗壮阔",
+  "scene": "古风宫殿"
+ },
+ "剪纸拼贴": {
+  "lighting": "柔光漫射",
+  "color": "莫兰迪色系",
+  "atmosphere": "童趣天真",
+  "scene": "自然山水"
+ },
+ "水彩晕染": {
+  "lighting": "柔光漫射",
+  "color": "粉彩梦幻",
+  "atmosphere": "浪漫温馨",
+  "scene": "樱花庭院"
+ },
+ "蜡笔涂鸦": {
+  "lighting": "自然日光",
+  "color": "彩虹色",
+  "atmosphere": "童趣天真",
+  "scene": "街角咖啡馆"
+ },
+ "素描速写": {
+  "lighting": "自然日光",
+  "color": "黑白高对比",
+  "atmosphere": "静谧禅意",
+  "scene": "街角咖啡馆"
+ },
+ "版画拓印": {
+  "lighting": "自然日光",
+  "color": "黑白高对比",
+  "atmosphere": "肃穆庄严",
+  "scene": "自然山水"
+ },
+ "玻璃彩绘": {
+  "lighting": "黄金时刻",
+  "color": "孔雀蓝",
+  "atmosphere": null,
+  "scene": "圣殿"
+ },
+ "马赛克镶嵌": {
+  "lighting": "黄金时刻",
+  "color": "东方古韵",
+  "atmosphere": "肃穆庄严",
+  "scene": "像素世界"
+ },
+ "像素复古": {
+  "lighting": "霓虹彩光",
+  "color": "褪色复古",
+  "atmosphere": "怀旧复古",
+  "scene": "像素世界"
+ },
+ "超现实梦境": {
+  "lighting": "戏剧对比",
+  "color": "霓虹粉紫",
+  "atmosphere": "荒诞离奇",
+  "scene": "超现实空间"
+ },
+ "波普漫画": {
+  "lighting": "自然日光",
+  "color": "赛博霓虹",
+  "atmosphere": "活力四射",
+  "scene": "波普画廊"
+ },
+ "国画工笔": {
+  "lighting": "柔光漫射",
+  "color": "东方古韵",
+  "atmosphere": "静谧禅意",
+  "scene": "古风宫殿"
+ },
+ "白描": {
+  "lighting": "自然日光",
+  "color": "黑白高对比",
+  "atmosphere": "静谧禅意",
+  "scene": "自然山水"
+ },
+ "青花瓷": {
+  "lighting": "柔光漫射",
+  "color": "黛蓝",
+  "atmosphere": "静谧禅意",
+  "scene": "古风宫殿"
+ },
+ "唐三彩": {
+  "lighting": "暖金黄昏",
+  "color": "赭石",
+  "atmosphere": "肃穆庄严",
+  "scene": "沙漠古城"
+ },
+ "漆器": {
+  "lighting": "烛火光",
+  "color": "暗黑哥特",
+  "atmosphere": "奢华雍容",
+  "scene": "古风宫殿"
+ },
+ "景泰蓝": {
+  "lighting": "黄金时刻",
+  "color": "孔雀蓝",
+  "atmosphere": "奢华雍容",
+  "scene": "古风宫殿"
+ },
+ "苗族银饰": {
+  "lighting": "舞台光",
+  "color": "金属质感",
+  "atmosphere": "神秘奇幻",
+  "scene": "市集广场"
+ },
+ "藏族唐卡": {
+  "lighting": "黄金时刻",
+  "color": "东方古韵",
+  "atmosphere": "肃穆庄严",
+  "scene": "圣殿"
+ },
+ "和服纹样": {
+  "lighting": "柔光漫射",
+  "color": "东方古韵",
+  "atmosphere": "静谧禅意",
+  "scene": "樱花庭院"
+ },
+ "伊斯兰几何": {
+  "lighting": "黄金时刻",
+  "color": "东方古韵",
+  "atmosphere": "肃穆庄严",
+  "scene": "沙漠古城"
+ },
+ "非洲部落": {
+  "lighting": "暖金黄昏",
+  "color": "赭石",
+  "atmosphere": "神秘奇幻",
+  "scene": "沙漠古城"
+ },
+ "玛雅文明": {
+  "lighting": "黄金时刻",
+  "color": "赭石",
+  "atmosphere": "神秘奇幻",
+  "scene": "古代遗迹"
+ },
+ "印加黄金": {
+  "lighting": "黄金时刻",
+  "color": "金属质感",
+  "atmosphere": null,
+  "scene": "古代遗迹"
+ },
+ "埃及壁画": {
+  "lighting": "黄金时刻",
+  "color": "暖金琥珀",
+  "atmosphere": "肃穆庄严",
+  "scene": "沙漠古城"
+ },
+ "希腊陶瓶": {
+  "lighting": "自然日光",
+  "color": "暖金琥珀",
+  "atmosphere": "肃穆庄严",
+  "scene": "圣殿"
+ },
+ "罗马马赛克": {
+  "lighting": "黄金时刻",
+  "color": "东方古韵",
+  "atmosphere": "肃穆庄严",
+  "scene": "像素世界"
+ },
+ "哥特彩窗": {
+  "lighting": "黄金时刻",
+  "color": "暗黑哥特",
+  "atmosphere": "肃穆庄严",
+  "scene": "哥特城堡"
+ },
+ "巴洛克穹顶": {
+  "lighting": "戏剧对比",
+  "color": "暖金琥珀",
+  "atmosphere": "史诗壮阔",
+  "scene": "圣殿"
+ },
+ "洛可可贝壳": {
+  "lighting": "柔光漫射",
+  "color": "粉彩梦幻",
+  "atmosphere": "浪漫温馨",
+  "scene": "皇家宫殿"
+ },
+ "维多利亚蕾丝": {
+  "lighting": "柔光漫射",
+  "color": "粉彩梦幻",
+  "atmosphere": "浪漫温馨",
+  "scene": "蒸汽都市"
+ },
+ "孟菲斯": {
+  "lighting": "自然日光",
+  "color": "赛博霓虹",
+  "atmosphere": "活力四射",
+  "scene": "波普画廊"
+ },
+ "欧普艺术": {
+  "lighting": "自然日光",
+  "color": "黑白高对比",
+  "atmosphere": "活力四射",
+  "scene": "波普画廊"
+ },
+ "色域绘画": {
+  "lighting": "柔光漫射",
+  "color": "莫兰迪色系",
+  "atmosphere": "静谧禅意",
+  "scene": "美术馆"
+ },
+ "硬边绘画": {
+  "lighting": "硬光",
+  "color": "莫兰迪色系",
+  "atmosphere": "静谧禅意",
+  "scene": "美术馆"
+ },
+ "照相写实": {
+  "lighting": "自然日光",
+  "color": "自然森系",
+  "atmosphere": "静谧禅意",
+  "scene": "街角咖啡馆"
+ },
+ "古典写实": {
+  "lighting": "伦勃朗光",
+  "color": "暖金琥珀",
+  "atmosphere": "肃穆庄严",
+  "scene": "圣殿"
+ },
+ "后印象派": {
+  "lighting": "暖金黄昏",
+  "color": "暖金琥珀",
+  "atmosphere": "浪漫温馨",
+  "scene": "自然山水"
+ },
+ "构成主义": {
+  "lighting": "硬光",
+  "color": "莫兰迪色系",
+  "atmosphere": "活力四射",
+  "scene": "波普画廊"
+ },
+ "至上主义": {
+  "lighting": "柔光漫射",
+  "color": "莫兰迪色系",
+  "atmosphere": "静谧禅意",
+  "scene": "美术馆"
+ },
+ "风格派": {
+  "lighting": "自然日光",
+  "color": "莫兰迪色系",
+  "atmosphere": "静谧禅意",
+  "scene": "美术馆"
+ },
+ "贫穷艺术": {
+  "lighting": "自然日光",
+  "color": "莫兰迪色系",
+  "atmosphere": "静谧禅意",
+  "scene": "废弃工厂"
+ },
+ "观念艺术": {
+  "lighting": "柔光漫射",
+  "color": "黑白高对比",
+  "atmosphere": "静谧禅意",
+  "scene": "美术馆"
+ },
+ "大地艺术": {
+  "lighting": "黄金时刻",
+  "color": "自然森系",
+  "atmosphere": "史诗壮阔",
+  "scene": "自然山水"
+ },
+ "装置艺术": {
+  "lighting": "舞台光",
+  "color": "莫兰迪色系",
+  "atmosphere": "神秘奇幻",
+  "scene": "美术馆"
+ },
+ "行为艺术": {
+  "lighting": "舞台光",
+  "color": "黑白高对比",
+  "atmosphere": "荒诞离奇",
+  "scene": "市集广场"
+ },
+ "新表现主义": {
+  "lighting": "戏剧对比",
+  "color": "彩虹色",
+  "atmosphere": "狂热躁动",
+  "scene": "波普画廊"
+ },
+ "厚涂油画": {
+  "lighting": "戏剧对比",
+  "color": "暖金琥珀",
+  "atmosphere": "史诗壮阔",
+  "scene": "古风宫殿"
+ },
+ "湿壁画": {
+  "lighting": "柔光漫射",
+  "color": "暖金琥珀",
+  "atmosphere": "肃穆庄严",
+  "scene": "圣殿"
+ },
+ "蛋彩画": {
+  "lighting": "柔光漫射",
+  "color": "暖金琥珀",
+  "atmosphere": "肃穆庄严",
+  "scene": "圣殿"
+ },
+ "蚀刻版画": {
+  "lighting": "自然日光",
+  "color": "黑白高对比",
+  "atmosphere": "肃穆庄严",
+  "scene": "图书馆"
+ },
+ "石版画": {
+  "lighting": "柔光漫射",
+  "color": "莫兰迪色系",
+  "atmosphere": "静谧禅意",
+  "scene": "图书馆"
+ },
+ "丝网印刷": {
+  "lighting": "自然日光",
+  "color": "赛博霓虹",
+  "atmosphere": "活力四射",
+  "scene": "波普画廊"
+ },
+ "蜡染": {
+  "lighting": "自然日光",
+  "color": "黛蓝",
+  "atmosphere": "静谧禅意",
+  "scene": "市集广场"
+ },
+ "扎染": {
+  "lighting": "自然日光",
+  "color": "黛蓝",
+  "atmosphere": "温暖治愈",
+  "scene": "市集广场"
+ },
+ "刺绣": {
+  "lighting": "柔光漫射",
+  "color": "东方古韵",
+  "atmosphere": "浪漫温馨",
+  "scene": "古风宫殿"
+ },
+ "编织艺术": {
+  "lighting": "柔光漫射",
+  "color": "莫兰迪色系",
+  "atmosphere": "温暖治愈",
+  "scene": "市集广场"
+ },
+ "陶艺": {
+  "lighting": "暖金黄昏",
+  "color": "赭石",
+  "atmosphere": "温暖治愈",
+  "scene": "市集广场"
+ },
+ "珐琅": {
+  "lighting": "黄金时刻",
+  "color": "孔雀蓝",
+  "atmosphere": "奢华雍容",
+  "scene": "古风宫殿"
+ },
+ "木雕": {
+  "lighting": "暖金黄昏",
+  "color": "自然森系",
+  "atmosphere": "肃穆庄严",
+  "scene": "古风宫殿"
+ },
+ "石雕": {
+  "lighting": "黄金时刻",
+  "color": "古铜",
+  "atmosphere": "肃穆庄严",
+  "scene": "古代遗迹"
+ },
+ "金属工艺": {
+  "lighting": "舞台光",
+  "color": "金属质感",
+  "atmosphere": null,
+  "scene": "古代遗迹"
+ },
+ "折纸": {
+  "lighting": "柔光漫射",
+  "color": "粉彩梦幻",
+  "atmosphere": "童趣天真",
+  "scene": "极简空间"
+ },
+ "纸雕": {
+  "lighting": "柔光漫射",
+  "color": "莫兰迪色系",
+  "atmosphere": "静谧禅意",
+  "scene": "美术馆"
+ },
+ "拼布": {
+  "lighting": "柔光漫射",
+  "color": "褪色复古",
+  "atmosphere": "温暖治愈",
+  "scene": "室内"
+ },
+ "珠绣": {
+  "lighting": "舞台光",
+  "color": "东方古韵",
+  "atmosphere": "奢华雍容",
+  "scene": "古风宫殿"
+ },
+ "羽毛画": {
+  "lighting": "柔光漫射",
+  "color": "自然森系",
+  "atmosphere": "浪漫温馨",
+  "scene": "自然山水"
+ },
+ "沙画": {
+  "lighting": "舞台光",
+  "color": "沙漠暖调",
+  "atmosphere": "神秘奇幻",
+  "scene": "沙漠古城"
+ },
+ "冰雕": {
+  "lighting": "冷蓝月光",
+  "color": "冷蓝银灰",
+  "atmosphere": "孤独寂寥",
+  "scene": "冰原极光"
+ },
+ "糖画": {
+  "lighting": "暖金黄昏",
+  "color": "暖金琥珀",
+  "atmosphere": "童趣天真",
+  "scene": "市集广场"
+ },
+ "泥塑": {
+  "lighting": "暖金黄昏",
+  "color": "赭石",
+  "atmosphere": "温暖治愈",
+  "scene": "市集广场"
+ },
+ "皮影": {
+  "lighting": "烛火光",
+  "color": "暖金琥珀",
+  "atmosphere": "神秘奇幻",
+  "scene": "古风宫殿"
+ },
+ "年画": {
+  "lighting": "自然日光",
+  "color": "朱砂红",
+  "atmosphere": "活力四射",
+  "scene": "市集广场"
+ },
+ "壁画": {
+  "lighting": "自然日光",
+  "color": "莫兰迪色系",
+  "atmosphere": "肃穆庄严",
+  "scene": "古风宫殿"
+ },
+ "岩画": {
+  "lighting": "黄金时刻",
+  "color": "赭石",
+  "atmosphere": "神秘奇幻",
+  "scene": "古代遗迹"
+ },
+ "水拓画": {
+  "lighting": "柔光漫射",
+  "color": "孔雀蓝",
+  "atmosphere": "浪漫温馨",
+  "scene": "市集广场"
+ },
+ "波斯地毯": {
+  "lighting": null,
+  "color": null,
+  "atmosphere": null,
+  "scene": "皇家宫殿"
+ },
+ "岭南画派": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "吴门画派": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "浙派山水": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": null,
+  "scene": "自然山水"
+ },
+ "金陵画派": {
+  "lighting": "电影级侧光",
+  "color": "金属质感",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "扬州画派": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "海上画派": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "长安画派": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "京津画派": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "娄东画派": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "虞山画派": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "黄山画派": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "新安画派": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "米家山水": {
+  "lighting": "电影级侧光",
+  "color": null,
+  "atmosphere": "温馨居家",
+  "scene": "自然山水"
+ },
+ "青绿山水": {
+  "lighting": "电影级侧光",
+  "color": "青绿",
+  "atmosphere": null,
+  "scene": "自然山水"
+ },
+ "金碧山水": {
+  "lighting": "电影级侧光",
+  "color": "金属质感",
+  "atmosphere": null,
+  "scene": "自然山水"
+ },
+ "浅绛山水": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": null,
+  "scene": "自然山水"
+ },
+ "没骨画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "工笔重彩": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "写意花鸟": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "温暖治愈",
+  "scene": "自然山水"
+ },
+ "泼墨山水": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": null,
+  "scene": "自然山水"
+ },
+ "焦墨山水": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": null,
+  "scene": "自然山水"
+ },
+ "界画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "指墨画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "漆画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "烙画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "坦培拉": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "粉彩画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "水粉画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "丙烯画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "蜡笔画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "色粉笔": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "钢笔淡彩": {
+  "lighting": "电影级侧光",
+  "color": "冷蓝银灰",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "圆珠笔画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "针管笔画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "马克笔画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "彩铅画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "木炭素描": {
+  "lighting": "电影级侧光",
+  "color": "自然森系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "银针笔": {
+  "lighting": "电影级侧光",
+  "color": "金属质感",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "蛋彩壁画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "油画棒": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "水彩速写": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "素描淡彩": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "极简主义": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "新波普": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": "波普画廊"
+ },
+ "新达达": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "波普超现实": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "荒诞离奇",
+  "scene": "波普画廊"
+ },
+ "极简抽象": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "几何抽象": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "抒情抽象": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "行动绘画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "光效应艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "动态艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "环境艺术": {
+  "lighting": "环境光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "偶发艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "新现实主义": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "超写实主义": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "新具象": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "具象表现": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "极简构成": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "抽象拼贴": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "珐琅彩": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "掐丝工艺": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "螺钿镶嵌": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "金银错": {
+  "lighting": "电影级侧光",
+  "color": "金属质感",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "鎏金工艺": {
+  "lighting": "电影级侧光",
+  "color": "金属质感",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "錾刻工艺": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "花丝镶嵌": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "点翠工艺": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "烧蓝工艺": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "漆线雕": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "木纹金": {
+  "lighting": "电影级侧光",
+  "color": "金属质感",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "琉璃工艺": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": "古风宫殿"
+ },
+ "玉雕": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "竹雕": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": "竹林"
+ },
+ "核雕": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "微雕": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "根雕": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "紫砂": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "青瓷": {
+  "lighting": "电影级侧光",
+  "color": "青瓷",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "白瓷": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "黑陶": {
+  "lighting": "暗调低调",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "彩陶": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "汝窑": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "官窑": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "哥窑": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "钧窑": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "定窑": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "建盏": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "越窑": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "龙泉青瓷": {
+  "lighting": "电影级侧光",
+  "color": "青瓷",
+  "atmosphere": "史诗壮阔",
+  "scene": "龙巢"
+ },
+ "AI幻觉艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "体素艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "全息投影": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "生成艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "算法艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "数据可视化艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "分形艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "新媒体艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "交互艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "沉浸式艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "数字雕塑": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "程序化艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "神经风格迁移": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "像素雕塑": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": "像素世界"
+ },
+ "光绘艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "投影映射": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "增强现实艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "虚拟现实艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "数字拼贴": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "赛博格艺术": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "未来科技",
+  "scene": "赛博都市"
+ },
+ "赛博敦煌": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "未来科技",
+  "scene": "赛博都市"
+ },
+ "国潮插画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "新中式": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "东方蒸汽朋克": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": "蒸汽都市"
+ },
+ "和风赛博": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "未来科技",
+  "scene": "樱花庭院"
+ },
+ "非洲未来主义": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "未来科技",
+  "scene": null
+ },
+ "拉美魔幻": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "神秘奇幻",
+  "scene": null
+ },
+ "拉贾斯坦细密画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "泰式金箔": {
+  "lighting": "电影级侧光",
+  "color": "金属质感",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "蒙元风格": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "西域风格": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "丝路风格": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "赛博唐风": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "未来科技",
+  "scene": "赛博都市"
+ },
+ "蒸汽和风": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": "樱花庭院"
+ },
+ "新古典国风": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "俄罗斯圣像画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": "圣殿"
+ },
+ "墨西哥壁画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "日本水墨": {
+  "lighting": "自然日光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "韩国青瓷": {
+  "lighting": "电影级侧光",
+  "color": "青瓷",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "越南漆画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "泰国壁画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "缅甸漆器": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "柬埔寨吴哥": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "土耳其瓷砖": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "摩洛哥瓷砖": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "西班牙摩尔": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "葡萄牙蓝瓷": {
+  "lighting": "电影级侧光",
+  "color": null,
+  "atmosphere": null,
+  "scene": null
+ },
+ "荷兰代尔夫特": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "英国水彩": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "俄罗斯套娃": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "印度细密画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "波斯蓝陶": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "阿拉伯书法": {
+  "lighting": null,
+  "color": null,
+  "atmosphere": null,
+  "scene": "图书馆"
+ },
+ "埃塞俄比亚圣像": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": "圣殿"
+ },
+ "毛利纹身": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "波利尼西亚纹样": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "因纽特雕刻": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "澳洲原住民点画": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "蒸汽波霓虹": {
+  "lighting": "霓虹光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": "蒸汽都市"
+ },
+ "故障波普": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": "波普画廊"
+ },
+ "复古像素": {
+  "lighting": "电影级侧光",
+  "color": "褪色复古",
+  "atmosphere": "怀旧复古",
+  "scene": "像素世界"
+ },
+ "低保真": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "酸性设计": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "后现代主义": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "新几何主义": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": null
+ },
+ "极简未来": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "未来科技",
+  "scene": null
+ },
+ "赛博巴洛克": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "未来科技",
+  "scene": "赛博都市"
+ },
+ "蒸汽洛可可": {
+  "lighting": "电影级侧光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": "蒸汽都市"
+ },
+ "暗黑童话": {
+  "lighting": "暗调低调",
+  "color": null,
+  "atmosphere": "童趣天真",
+  "scene": "暗黑森林"
+ },
+ "霓虹波普": {
+  "lighting": "霓虹光",
+  "color": "莫兰迪色系",
+  "atmosphere": "史诗壮阔",
+  "scene": "波普画廊"
+ }
+}

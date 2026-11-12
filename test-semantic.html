@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>语义检索 · 独立测试（不接入主程序）</title>
+<style>
+  :root{
+    --bg:#06060e; --surface:#0e0e1a; --border:#242438; --text:#e8e8f0;
+    --sub:#9a9ab0; --accent:#00d4ff; --warm:#ff6b35; --ok:#38d39f; --err:#ff5470;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;padding:28px;background:var(--bg);color:var(--text);
+    font-family:'Outfit',system-ui,-apple-system,'Microsoft YaHei',sans-serif;line-height:1.6}
+  h1{font-size:20px;margin:0 0 4px;font-weight:700}
+  .sub{color:var(--sub);font-size:13px;margin-bottom:22px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:16px}
+  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  input[type=text]{flex:1;min-width:220px;padding:11px 14px;border-radius:8px;
+    border:1px solid var(--border);background:#0a0a14;color:var(--text);font-size:14px;outline:none}
+  input[type=text]:focus{border-color:var(--accent)}
+  button{padding:11px 18px;border-radius:8px;border:none;cursor:pointer;font-size:14px;font-weight:600;
+    background:var(--accent);color:#04121a}
+  button:disabled{opacity:.4;cursor:not-allowed}
+  button.ghost{background:transparent;border:1px solid var(--border);color:var(--sub)}
+  .bar{height:6px;background:#141422;border-radius:99px;overflow:hidden;margin-top:12px}
+  .bar > i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--warm));transition:width .2s}
+  .msg{font-size:12.5px;color:var(--sub);margin-top:8px;min-height:18px}
+  .msg.err{color:var(--err)}
+  .msg.ok{color:var(--ok)}
+  .preset{font-size:12.5px;color:var(--sub);margin-top:10px}
+  .preset a{color:var(--accent);text-decoration:none;cursor:pointer;margin-right:12px;
+    border-bottom:1px dashed rgba(0,212,255,.35)}
+  .hit{border-top:1px solid var(--border);padding:12px 0}
+  .hit:first-child{border-top:none}
+  .hit .h{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .tag{font-size:11px;padding:2px 8px;border-radius:99px;background:rgba(0,212,255,.1);
+    color:var(--accent);border:1px solid rgba(0,212,255,.25)}
+  .name{font-weight:700;font-size:14.5px}
+  .score{font-size:12px;color:var(--sub);margin-left:auto}
+  .desc{font-size:12.5px;color:var(--sub);margin-top:4px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .meta{font-size:12px;color:#6a6a80;margin-top:6px}
+  code{background:#141422;padding:1px 6px;border-radius:4px;font-size:12px}
+</style>
+</head>
+<body>
+
+<h1>语义检索 · 独立测试页</h1>
+<div class="sub">
+  这一页不接入主程序。先验证向量检索能不能用、准不准，再接 <code>app.js</code>。
+</div>
+
+<div class="card">
+  <div class="row">
+    <button id="btnInit">① 初始化模型</button>
+    <button id="btnClear" class="ghost">清除缓存</button>
+    <span class="msg" id="stat">未初始化</span>
+  </div>
+  <div class="bar"><i id="bar"></i></div>
+  <div class="msg" id="prog"></div>
+</div>
+
+<div class="card">
+  <div class="row">
+    <input type="text" id="q" placeholder="输入一句口语，例如：阴森的老房子 / 打斗场面 / 清晨的湖边">
+    <select id="kind" style="padding:11px 12px;border-radius:8px;border:1px solid var(--border);background:#0a0a14;color:var(--text);font-size:13.5px">
+      <option value="">全部类别</option>
+      <option value="scene">只搜场景 scene</option>
+      <option value="atmosphere">只搜氛围 atmosphere</option>
+      <option value="style">只搜风格 style</option>
+      <option value="light">只搜光线 light</option>
+      <option value="composition">只搜构图 composition</option>
+      <option value="color">只搜色彩 color</option>
+      <option value="role">只搜角色 role</option>
+    </select>
+    <button id="btnSearch" disabled>② 检索</button>
+    <button id="btnByDim" class="ghost" disabled>分维度各取 top1</button>
+  </div>
+  <div class="preset">
+    试这几个：
+    <a data-q="阴森的老房子，晚上，有雾">阴森的老房子</a>
+    <a data-q="两个人在打架，动作很快">打斗场面</a>
+    <a data-q="清晨的湖边，很安静">清晨的湖边</a>
+    <a data-q="一个穿盔甲的战士站在废墟里">盔甲战士/废墟</a>
+    <a data-q="赛博朋克风的街道，下雨">赛博朋克/雨夜</a>
+    <a data-q="小孩子的绘本风格">绘本风格</a>
+  </div>
+</div>
+
+<div class="card" id="resultsWrap" style="display:none">
+  <div class="msg" id="timing"></div>
+  <div id="results"></div>
+</div>
+
+<script src="semantic-search.js"></script>
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var bar = $('bar'), prog = $('prog'), stat = $('stat');
+  var btnInit = $('btnInit'), btnSearch = $('btnSearch'), btnClear = $('btnClear');
+  var btnByDim = $('btnByDim'), kindSel = $('kind');
+
+  function setBar(p){ bar.style.width = Math.max(0, Math.min(100, p)) + '%'; }
+  function setMsg(el, text, cls){ el.textContent = text; el.className = 'msg' + (cls ? ' ' + cls : ''); }
+
+  btnInit.addEventListener('click', async function(){
+    btnInit.disabled = true;
+    setMsg(prog, '开始初始化…');
+    setMsg(stat, '加载中');
+    var t0 = performance.now();
+    var ok = await SemanticSearch.init({
+      onProgress: function(p){
+        setBar(p.percent || 0);
+        var label = ({
+          model:'模型', entries:'词条', encode:'编码', done:'完成', error:'错误'
+        })[p.stage] || p.stage;
+        setMsg(prog, '[' + label + '] ' + (p.message || '') +
+              (p.total ? '  ' + p.current + '/' + p.total + ' (' + p.percent + '%)' : ''));
+      }
+    });
+    var sec = ((performance.now() - t0) / 1000).toFixed(1);
+    if (ok) {
+      var s = SemanticSearch.stats;
+      var d = s.diag || {};
+      setBar(100);
+      setMsg(stat, '就绪：' + s.entries + ' 条 / ' + s.dim + ' 维（' + sec + 's）· 模式 ' + d.mode, 'ok');
+      setMsg(prog, '向量已预计算，查询走本地 /api/embed（约 4ms）。不再在浏览器里编码词条。', 'ok');
+      btnSearch.disabled = false;
+      btnByDim.disabled = false;
+    } else {
+      setMsg(stat, '初始化失败', 'err');
+      var err = SemanticSearch.error;
+      var box = '<div class="msg err" style="white-space:pre-wrap">' +
+        '错误：' + (err && err.message ? err.message : '未知') +
+        (err && err.stack ? '\n\n' + String(err.stack).split('\n').slice(0, 6).join('\n') : '') +
+        '</div>';
+      $('prog').innerHTML = box;
+      btnInit.disabled = false;
+    }
+  });
+
+  btnClear.addEventListener('click', function(){
+    SemanticSearch.clearCache();
+    setMsg(prog, '缓存已清除，下次会重新编码。');
+  });
+
+  async function doSearch(){
+    var q = $('q').value.trim();
+    if (!q) return;
+    var kind = kindSel.value || null;
+    btnSearch.disabled = true;
+    var t0 = performance.now();
+    var hits = await SemanticSearch.search(q, 8, { kind: kind });
+    var ms = Math.round(performance.now() - t0);
+    btnSearch.disabled = false;
+
+    $('resultsWrap').style.display = 'block';
+    $('timing').textContent = '查询「' + q + '」' + (kind ? '（限定 ' + kind + '）' : '（全部类别）') +
+      ' → 命中 ' + hits.length + ' 条，耗时 ' + ms + ' ms';
+    $('timing').className = 'msg ok';
+
+    var html = hits.map(function(h){
+      var desc = (h.zh || h.en || '').replace(/</g,'&lt;');
+      return '<div class="hit">' +
+        '<div class="h"><span class="tag">' + h.kind + '</span>' +
+        '<span class="name">' + h.name + '</span>' +
+        '<span class="score">相似度 ' + h.score + '</span></div>' +
+        '<div class="desc">' + desc + '</div>' +
+        (h.neg ? '<div class="meta">负向：' + h.neg.replace(/</g,'&lt;').slice(0,110) + '…</div>' : '') +
+        '</div>';
+    }).join('');
+    $('results').innerHTML = html || '<div class="msg">没有命中</div>';
+  }
+
+  async function doByDim(){
+    var q = $('q').value.trim();
+    if (!q) return;
+    btnByDim.disabled = true;
+    var t0 = performance.now();
+    var byDim = await SemanticSearch.searchByDimension(q, 1);
+    var ms = Math.round(performance.now() - t0);
+    btnByDim.disabled = false;
+    var order = ['role','scene','style','light','composition','color','atmosphere','quality'];
+    var cn = {role:'角色',scene:'场景',style:'风格',light:'光线',composition:'构图',color:'色彩',atmosphere:'氛围',quality:'画质'};
+    var rows = order.map(function(k){
+      var h = (byDim[k] || [])[0];
+      if (!h) return '';
+      return '<div class="hit"><div class="h">' +
+        '<span class="tag">' + cn[k] + '</span>' +
+        '<span class="name">' + h.name + '</span>' +
+        '<span class="score">' + h.score + '</span></div></div>';
+    }).join('');
+    $('resultsWrap').style.display = 'block';
+    $('timing').textContent = '「' + q + '」→ 每个维度各取 top1（这才是 V5 的接入方式），耗时 ' + ms + ' ms';
+    $('timing').className = 'msg ok';
+    $('results').innerHTML = rows;
+  }
+
+  btnSearch.addEventListener('click', doSearch);
+  btnByDim.addEventListener('click', doByDim);
+  $('q').addEventListener('keydown', function(e){ if (e.key === 'Enter') doSearch(); });
+  document.querySelectorAll('.preset a').forEach(function(a){
+    a.addEventListener('click', function(){
+      $('q').value = a.dataset.q;
+      if (SemanticSearch.isReady) doSearch();
+    });
+  });
+})();
+</script>
+</body>
+</html>

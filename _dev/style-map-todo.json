@@ -1,0 +1,2159 @@
+{
+ "styles": [
+  "东方奇幻",
+  "赛博朋克",
+  "写实摄影",
+  "概念艺术",
+  "水墨国风",
+  "二次元",
+  "油画质感",
+  "3D渲染",
+  "哥特暗黑",
+  "蒸汽朋克",
+  "水彩淡彩",
+  "极简留白",
+  "像素艺术",
+  "波普艺术",
+  "扁平矢量",
+  "印象派",
+  "浮世绘",
+  "低多边形",
+  "超现实主义",
+  "故障艺术",
+  "复古胶片",
+  "剪纸艺术",
+  "新艺术运动",
+  "装饰艺术",
+  "巴洛克",
+  "极繁主义",
+  "赛博禅意",
+  "幻想生物",
+  "霓虹夜景",
+  "波普拼贴",
+  "魔法奇幻",
+  "火焰地狱",
+  "冰霜世界",
+  "雷电之力",
+  "暗影深渊",
+  "自然之力",
+  "神圣光辉",
+  "废土求生",
+  "异星科幻",
+  "克苏鲁",
+  "文艺复兴",
+  "洛可可",
+  "新古典主义",
+  "浪漫主义",
+  "现实主义",
+  "表现主义",
+  "立体主义",
+  "未来主义",
+  "达达主义",
+  "抽象表现主义",
+  "野兽派",
+  "点彩派",
+  "拉斐尔前派",
+  "象征主义",
+  "拜占庭",
+  "埃及",
+  "希腊古典",
+  "北欧神话",
+  "凯尔特",
+  "波斯细密画",
+  "印度莫卧儿",
+  "阿拉伯",
+  "蒸汽波",
+  "赛博西部",
+  "柴油朋克",
+  "生物朋克",
+  "太阳朋克",
+  "太空歌剧",
+  "田园牧歌",
+  "都市写实",
+  "铅笔画",
+  "炭笔画",
+  "版画",
+  "海报艺术",
+  "涂鸦艺术",
+  "街头艺术",
+  "波西米亚",
+  "复古未来主义",
+  "极简几何",
+  "手绘插画",
+  "赛博水墨",
+  "敦煌飞天",
+  "洛可可宫廷",
+  "浮世绘武士",
+  "剪纸拼贴",
+  "水彩晕染",
+  "蜡笔涂鸦",
+  "素描速写",
+  "版画拓印",
+  "玻璃彩绘",
+  "马赛克镶嵌",
+  "像素复古",
+  "超现实梦境",
+  "波普漫画",
+  "国画工笔",
+  "白描",
+  "青花瓷",
+  "唐三彩",
+  "漆器",
+  "景泰蓝",
+  "苗族银饰",
+  "藏族唐卡",
+  "和服纹样",
+  "伊斯兰几何",
+  "非洲部落",
+  "玛雅文明",
+  "印加黄金",
+  "埃及壁画",
+  "希腊陶瓶",
+  "罗马马赛克",
+  "哥特彩窗",
+  "巴洛克穹顶",
+  "洛可可贝壳",
+  "维多利亚蕾丝",
+  "孟菲斯",
+  "欧普艺术",
+  "色域绘画",
+  "硬边绘画",
+  "照相写实",
+  "古典写实",
+  "后印象派",
+  "构成主义",
+  "至上主义",
+  "风格派",
+  "贫穷艺术",
+  "观念艺术",
+  "大地艺术",
+  "装置艺术",
+  "行为艺术",
+  "新表现主义",
+  "厚涂油画",
+  "湿壁画",
+  "蛋彩画",
+  "蚀刻版画",
+  "石版画",
+  "丝网印刷",
+  "蜡染",
+  "扎染",
+  "刺绣",
+  "编织艺术",
+  "陶艺",
+  "珐琅",
+  "木雕",
+  "石雕",
+  "金属工艺",
+  "折纸",
+  "纸雕",
+  "拼布",
+  "珠绣",
+  "羽毛画",
+  "沙画",
+  "冰雕",
+  "糖画",
+  "泥塑",
+  "皮影",
+  "年画",
+  "壁画",
+  "岩画",
+  "水拓画",
+  "波斯地毯",
+  "岭南画派",
+  "吴门画派",
+  "浙派山水",
+  "金陵画派",
+  "扬州画派",
+  "海上画派",
+  "长安画派",
+  "京津画派",
+  "娄东画派",
+  "虞山画派",
+  "黄山画派",
+  "新安画派",
+  "米家山水",
+  "青绿山水",
+  "金碧山水",
+  "浅绛山水",
+  "没骨画",
+  "工笔重彩",
+  "写意花鸟",
+  "泼墨山水",
+  "焦墨山水",
+  "界画",
+  "指墨画",
+  "漆画",
+  "烙画",
+  "坦培拉",
+  "粉彩画",
+  "水粉画",
+  "丙烯画",
+  "蜡笔画",
+  "色粉笔",
+  "钢笔淡彩",
+  "圆珠笔画",
+  "针管笔画",
+  "马克笔画",
+  "彩铅画",
+  "木炭素描",
+  "银针笔",
+  "蛋彩壁画",
+  "油画棒",
+  "水彩速写",
+  "素描淡彩",
+  "极简主义",
+  "新波普",
+  "新达达",
+  "波普超现实",
+  "极简抽象",
+  "几何抽象",
+  "抒情抽象",
+  "行动绘画",
+  "光效应艺术",
+  "动态艺术",
+  "环境艺术",
+  "偶发艺术",
+  "新现实主义",
+  "超写实主义",
+  "新具象",
+  "具象表现",
+  "极简构成",
+  "抽象拼贴",
+  "珐琅彩",
+  "掐丝工艺",
+  "螺钿镶嵌",
+  "金银错",
+  "鎏金工艺",
+  "錾刻工艺",
+  "花丝镶嵌",
+  "点翠工艺",
+  "烧蓝工艺",
+  "漆线雕",
+  "木纹金",
+  "琉璃工艺",
+  "玉雕",
+  "竹雕",
+  "核雕",
+  "微雕",
+  "根雕",
+  "紫砂",
+  "青瓷",
+  "白瓷",
+  "黑陶",
+  "彩陶",
+  "汝窑",
+  "官窑",
+  "哥窑",
+  "钧窑",
+  "定窑",
+  "建盏",
+  "越窑",
+  "龙泉青瓷",
+  "AI幻觉艺术",
+  "体素艺术",
+  "全息投影",
+  "生成艺术",
+  "算法艺术",
+  "数据可视化艺术",
+  "分形艺术",
+  "新媒体艺术",
+  "交互艺术",
+  "沉浸式艺术",
+  "数字雕塑",
+  "程序化艺术",
+  "神经风格迁移",
+  "像素雕塑",
+  "光绘艺术",
+  "投影映射",
+  "增强现实艺术",
+  "虚拟现实艺术",
+  "数字拼贴",
+  "赛博格艺术",
+  "赛博敦煌",
+  "国潮插画",
+  "新中式",
+  "东方蒸汽朋克",
+  "和风赛博",
+  "非洲未来主义",
+  "拉美魔幻",
+  "拉贾斯坦细密画",
+  "泰式金箔",
+  "蒙元风格",
+  "西域风格",
+  "丝路风格",
+  "赛博唐风",
+  "蒸汽和风",
+  "新古典国风",
+  "俄罗斯圣像画",
+  "墨西哥壁画",
+  "日本水墨",
+  "韩国青瓷",
+  "越南漆画",
+  "泰国壁画",
+  "缅甸漆器",
+  "柬埔寨吴哥",
+  "土耳其瓷砖",
+  "摩洛哥瓷砖",
+  "西班牙摩尔",
+  "葡萄牙蓝瓷",
+  "荷兰代尔夫特",
+  "英国水彩",
+  "俄罗斯套娃",
+  "印度细密画",
+  "波斯蓝陶",
+  "阿拉伯书法",
+  "埃塞俄比亚圣像",
+  "毛利纹身",
+  "波利尼西亚纹样",
+  "因纽特雕刻",
+  "澳洲原住民点画",
+  "蒸汽波霓虹",
+  "故障波普",
+  "复古像素",
+  "低保真",
+  "酸性设计",
+  "后现代主义",
+  "新几何主义",
+  "极简未来",
+  "赛博巴洛克",
+  "蒸汽洛可可",
+  "暗黑童话",
+  "霓虹波普"
+ ],
+ "lighting": [
+  "电影级侧光",
+  "冷蓝月光",
+  "暖金黄昏",
+  "霓虹彩光",
+  "雾中光",
+  "戏剧对比",
+  "逆光剪影",
+  "自然日光",
+  "柔光漫射",
+  "烛火光",
+  "暗调低调",
+  "黄金时刻",
+  "蓝调时刻",
+  "顶光",
+  "底光",
+  "伦勃朗光",
+  "蝴蝶光",
+  "环形光",
+  "窗光",
+  "硬光",
+  "柔光箱",
+  "聚光灯",
+  "背光剪影",
+  "轮廓光",
+  "环境光",
+  "月光",
+  "烛光",
+  "霓虹光",
+  "闪电光",
+  "极光",
+  "荧光",
+  "晨光",
+  "暮光",
+  "正午烈日",
+  "阴天散射光",
+  "水下光",
+  "火光",
+  "舞台光",
+  "路灯",
+  "生物发光",
+  "篝火光",
+  "炉火光",
+  "星光",
+  "阳光",
+  "黎明光",
+  "破晓光",
+  "午后光",
+  "黄昏光",
+  "夜晚光",
+  "全息光",
+  "激光",
+  "投影光",
+  "泛光",
+  "侧光",
+  "眼神光",
+  "发丝光",
+  "补光",
+  "主光",
+  "漫射光",
+  "反射光",
+  "折射光",
+  "透射光",
+  "散射光",
+  "体积光",
+  "丁达尔效应",
+  "光柱",
+  "光斑",
+  "光晕",
+  "光雾",
+  "光尘",
+  "光污染",
+  "磷光",
+  "星云光",
+  "熔岩光",
+  "荧光棒",
+  "夜光",
+  "柔光",
+  "暖光",
+  "冷光",
+  "电光",
+  "极光漫射",
+  "水下光斑",
+  "投影仪光",
+  "闪电瞬间",
+  "霓虹招牌光",
+  "月光漫射",
+  "烛光摇曳",
+  "荧光灯管",
+  "车灯光",
+  "灯塔光",
+  "信号弹光",
+  "烟花光",
+  "萤火虫光",
+  "深海光",
+  "熔炉光",
+  "电焊光",
+  "等离子光",
+  "紫外线光",
+  "红外夜视",
+  "星光漫射",
+  "晨雾光",
+  "夕阳逆光",
+  "月光剪影",
+  "霓虹反射",
+  "玻璃反射光",
+  "水面波光",
+  "雪地反光",
+  "沙漠热浪光",
+  "极昼光",
+  "极夜光",
+  "洞穴光",
+  "地底光",
+  "火山光",
+  "岩浆光",
+  "陨石光",
+  "彗星光",
+  "银河光",
+  "星尘光",
+  "量子光",
+  "全息投影光",
+  "激光束",
+  "光剑光",
+  "能量光",
+  "魔法光",
+  "圣光",
+  "神迹光",
+  "天使光",
+  "幽灵光",
+  "鬼火",
+  "磷火",
+  "荧光海",
+  "极光带",
+  "太阳耀斑",
+  "日冕光",
+  "日食光",
+  "月食光",
+  "彩虹光",
+  "棱镜光",
+  "水晶光",
+  "宝石光",
+  "珍珠光",
+  "丝绸光",
+  "金属光",
+  "镜面光",
+  "水面倒影光",
+  "冰晶光",
+  "霜光",
+  "露珠光",
+  "雨滴光",
+  "雪花光",
+  "闪电链光",
+  "雷暴光",
+  "龙卷风光",
+  "沙尘暴光",
+  "海市蜃楼光",
+  "极光反射",
+  "霓虹雨夜",
+  "路灯暖光",
+  "广告牌光",
+  "橱窗光"
+ ],
+ "color": [
+  "莫兰迪色系",
+  "赛博霓虹",
+  "暖金琥珀",
+  "冷蓝银灰",
+  "自然森系",
+  "黑白高对比",
+  "东方古韵",
+  "粉彩梦幻",
+  "暗黑哥特",
+  "电影青橙",
+  "日系清新",
+  "赛博禅意",
+  "复古70年代",
+  "冰蓝极光",
+  "沙漠暖调",
+  "海岛清爽",
+  "霓虹粉紫",
+  "森林深绿",
+  "金属质感",
+  "炽热红",
+  "彩虹色",
+  "褪色复古",
+  "樱花粉",
+  "薄荷绿",
+  "薰衣草紫",
+  "柠檬黄",
+  "珊瑚橙",
+  "雾霾蓝",
+  "奶油白",
+  "焦糖棕",
+  "橄榄绿",
+  "酒红",
+  "藏青",
+  "墨绿",
+  "朱砂红",
+  "黛蓝",
+  "杏色",
+  "藕荷",
+  "黛绿",
+  "月白",
+  "藕粉",
+  "青碧",
+  "黛紫",
+  "赭石",
+  "靛蓝",
+  "藤黄",
+  "石青",
+  "胭脂",
+  "琥珀",
+  "玛瑙红",
+  "翡翠绿",
+  "祖母绿",
+  "孔雀蓝",
+  "玫瑰金",
+  "香槟金",
+  "古铜",
+  "青铜",
+  "银灰",
+  "碳黑",
+  "象牙白",
+  "珍珠白",
+  "曜石黑",
+  "奶油黄",
+  "抹茶绿",
+  "巧克力棕",
+  "咖啡色",
+  "勃艮第",
+  "石榴红",
+  "桃红",
+  "粉红",
+  "品红",
+  "洋红",
+  "紫红",
+  "紫罗兰",
+  "丁香紫",
+  "葡萄紫",
+  "茄子紫",
+  "宝蓝",
+  "天蓝",
+  "湖蓝",
+  "海蓝",
+  "靛青",
+  "青绿",
+  "翠绿",
+  "草绿",
+  "军绿",
+  "墨黑",
+  "纯黑",
+  "玄黑",
+  "乌黑",
+  "铁灰",
+  "石墨",
+  "炭黑",
+  "卡其",
+  "驼色",
+  "米色",
+  "燕麦色",
+  "亚麻色",
+  "烟灰",
+  "雾灰",
+  "浅灰",
+  "深灰",
+  "中灰",
+  "暖灰",
+  "冷灰",
+  "蓝灰",
+  "绿灰",
+  "紫灰",
+  "粉灰",
+  "米灰",
+  "豆沙",
+  "豆绿",
+  "藕紫",
+  "藕青",
+  "藕绿",
+  "藕黄",
+  "藕红",
+  "藕棕",
+  "藕蓝",
+  "藕白",
+  "藕灰",
+  "藕金",
+  "樱桃红",
+  "玫瑰红",
+  "绯红",
+  "猩红",
+  "铁锈红",
+  "砖红",
+  "辣椒红",
+  "番茄红",
+  "草莓红",
+  "西瓜红",
+  "枣红",
+  "绛红",
+  "殷红",
+  "赤红",
+  "珊瑚红",
+  "玫粉",
+  "蜜桃橙",
+  "南瓜橙",
+  "柿子橙",
+  "橘红",
+  "蜜橙",
+  "焦橙",
+  "金橙",
+  "落日橙",
+  "姜黄",
+  "芥末黄",
+  "鹅黄",
+  "明黄",
+  "金黄",
+  "麦黄",
+  "稻黄",
+  "沙黄",
+  "杏黄",
+  "橙黄",
+  "柠檬绿",
+  "苹果绿",
+  "嫩绿",
+  "浅绿",
+  "葱绿",
+  "竹绿",
+  "松绿",
+  "杉绿",
+  "苔绿",
+  "茶绿",
+  "湖水绿",
+  "孔雀绿",
+  "青瓷",
+  "天青",
+  "黛青",
+  "橄榄青",
+  "薄荷青",
+  "翡翠青",
+  "深蓝",
+  "蔚蓝",
+  "湛蓝",
+  "钴蓝",
+  "普鲁士蓝",
+  "天青蓝",
+  "松石蓝",
+  "藏青蓝",
+  "宝蓝紫",
+  "靛蓝紫",
+  "湖蓝绿",
+  "孔雀蓝绿",
+  "青碧蓝",
+  "靛青蓝",
+  "墨蓝",
+  "银蓝",
+  "深紫",
+  "浅紫",
+  "紫藤",
+  "木槿紫",
+  "兰花紫",
+  "梅紫",
+  "玫瑰紫",
+  "蓝紫",
+  "青紫",
+  "银紫",
+  "金紫",
+  "铜紫",
+  "铁紫",
+  "石紫",
+  "岩紫",
+  "沙紫",
+  "雾紫",
+  "烟紫",
+  "墨紫",
+  "墨红",
+  "墨青",
+  "墨灰",
+  "银绿",
+  "银红",
+  "金绿",
+  "金蓝",
+  "金红",
+  "铜绿",
+  "铜蓝",
+  "铁蓝",
+  "岩蓝",
+  "石蓝",
+  "沙蓝",
+  "雾蓝",
+  "烟蓝",
+  "粉蓝",
+  "粉绿",
+  "奶油粉",
+  "奶油绿",
+  "奶油蓝",
+  "奶油紫",
+  "奶油橙",
+  "奶油红",
+  "焦糖红",
+  "焦糖橙",
+  "焦糖黄",
+  "焦糖绿",
+  "焦糖蓝",
+  "焦糖紫",
+  "抹茶黄",
+  "抹茶蓝",
+  "抹茶紫"
+ ],
+ "atmosphere": [
+  "史诗壮阔",
+  "静谧禅意",
+  "静谧安详",
+  "紧张悬疑",
+  "浪漫温馨",
+  "悲壮苍凉",
+  "孤独寂寥",
+  "神秘奇幻",
+  "颓废末世",
+  "活力四射",
+  "暗黑压抑",
+  "梦幻飘渺",
+  "狂热躁动",
+  "温暖治愈",
+  "肃穆庄严",
+  "荒诞离奇",
+  "童趣天真",
+  "奢华雍容",
+  "野性原始",
+  "宁静致远",
+  "欢快喜庆",
+  "阴森恐怖",
+  "神圣庄严",
+  "怀旧复古",
+  "未来科技",
+  "田园诗意",
+  "都市喧嚣",
+  "荒凉寂寥",
+  "温馨居家",
+  "惊险刺激",
+  "庄重典雅",
+  "诡异神秘",
+  "热血激昂",
+  "哀伤忧郁",
+  "清新自然",
+  "神秘莫测",
+  "史诗悲歌",
+  "晨曦微光",
+  "暮色苍茫",
+  "星河璀璨",
+  "极光幻境",
+  "空灵幽远",
+  "超然脱俗",
+  "甜蜜幸福",
+  "幸福美满",
+  "喜悦欢腾",
+  "兴奋激动",
+  "焦虑不安",
+  "恐惧战栗",
+  "惊悚骇人",
+  "阴森诡谲",
+  "玄奥深邃",
+  "童话梦幻",
+  "天真烂漫",
+  "青春朝气",
+  "朝气蓬勃",
+  "生机盎然",
+  "豪迈奔放",
+  "自由洒脱",
+  "叛逆不羁",
+  "奋斗拼搏",
+  "乐观积极",
+  "希望憧憬",
+  "王者霸气",
+  "帝王威仪",
+  "贵族气质",
+  "富丽堂皇",
+  "宏伟磅礴",
+  "浩瀚无垠",
+  "苍茫辽远",
+  "永恒不朽",
+  "混沌初开",
+  "虚无空寂",
+  "肃杀",
+  "慵懒",
+  "怀旧",
+  "惊悚",
+  "空灵",
+  "炽烈",
+  "静谧",
+  "苍凉",
+  "荒芜",
+  "萧瑟",
+  "凄清",
+  "幽静",
+  "清冷",
+  "温润",
+  "恬淡",
+  "闲适",
+  "安逸",
+  "惬意",
+  "悠然",
+  "淡泊",
+  "超脱",
+  "空寂",
+  "孤寂",
+  "落寞",
+  "惆怅",
+  "怅惘",
+  "迷惘",
+  "彷徨",
+  "忐忑",
+  "惶恐",
+  "惊惶",
+  "慌乱",
+  "焦灼",
+  "急切",
+  "迫切",
+  "激昂",
+  "澎湃",
+  "豪情",
+  "壮志",
+  "昂扬",
+  "振奋",
+  "鼓舞",
+  "欢腾",
+  "雀跃",
+  "欣喜",
+  "愉悦",
+  "舒畅",
+  "畅快",
+  "酣畅",
+  "尽兴",
+  "宁和",
+  "安详",
+  "祥和",
+  "太平",
+  "安然",
+  "淡雅",
+  "雅致",
+  "清雅",
+  "素雅",
+  "古朴",
+  "古拙",
+  "苍劲",
+  "遒劲",
+  "磅礴",
+  "恢弘",
+  "壮阔",
+  "雄浑",
+  "苍茫",
+  "辽阔",
+  "广袤",
+  "空阔",
+  "幽深"
+ ],
+ "todo": [
+  {
+   "style": "岭南画派",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "吴门画派",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "浙派山水",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "金陵画派",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "扬州画派",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "海上画派",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "长安画派",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "京津画派",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "娄东画派",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "虞山画派",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "黄山画派",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "新安画派",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "米家山水",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "青绿山水",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "金碧山水",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "浅绛山水",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "没骨画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "工笔重彩",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "写意花鸟",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "泼墨山水",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "焦墨山水",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "界画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "指墨画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "漆画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "烙画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "坦培拉",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "粉彩画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "水粉画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "丙烯画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "蜡笔画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "色粉笔",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "钢笔淡彩",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "圆珠笔画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "针管笔画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "马克笔画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "彩铅画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "木炭素描",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "银针笔",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "蛋彩壁画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "油画棒",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "水彩速写",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "素描淡彩",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "极简主义",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "新波普",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "新达达",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "波普超现实",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "极简抽象",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "几何抽象",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "抒情抽象",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "行动绘画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "光效应艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "动态艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "环境艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "偶发艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "新现实主义",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "超写实主义",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "新具象",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "具象表现",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "极简构成",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "抽象拼贴",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "珐琅彩",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "掐丝工艺",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "螺钿镶嵌",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "金银错",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "鎏金工艺",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "錾刻工艺",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "花丝镶嵌",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "点翠工艺",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "烧蓝工艺",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "漆线雕",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "木纹金",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "琉璃工艺",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "玉雕",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "竹雕",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "核雕",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "微雕",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "根雕",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "紫砂",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "青瓷",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "白瓷",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "黑陶",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "彩陶",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "汝窑",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "官窑",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "哥窑",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "钧窑",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "定窑",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "建盏",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "越窑",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "龙泉青瓷",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "AI幻觉艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "体素艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "全息投影",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "生成艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "算法艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "数据可视化艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "分形艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "新媒体艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "交互艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "沉浸式艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "数字雕塑",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "程序化艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "神经风格迁移",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "像素雕塑",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "光绘艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "投影映射",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "增强现实艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "虚拟现实艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "数字拼贴",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "赛博格艺术",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "赛博敦煌",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "国潮插画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "新中式",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "东方蒸汽朋克",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "和风赛博",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "非洲未来主义",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "拉美魔幻",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "拉贾斯坦细密画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "泰式金箔",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "蒙元风格",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "西域风格",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "丝路风格",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "赛博唐风",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "蒸汽和风",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "新古典国风",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "俄罗斯圣像画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "墨西哥壁画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "日本水墨",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "韩国青瓷",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "越南漆画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "泰国壁画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "缅甸漆器",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "柬埔寨吴哥",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "土耳其瓷砖",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "摩洛哥瓷砖",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "西班牙摩尔",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "葡萄牙蓝瓷",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "荷兰代尔夫特",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "英国水彩",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "俄罗斯套娃",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "印度细密画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "波斯蓝陶",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "阿拉伯书法",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "埃塞俄比亚圣像",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "毛利纹身",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "波利尼西亚纹样",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "因纽特雕刻",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "澳洲原住民点画",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "蒸汽波霓虹",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "故障波普",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "复古像素",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "低保真",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "酸性设计",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "后现代主义",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "新几何主义",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "极简未来",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "赛博巴洛克",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "蒸汽洛可可",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "暗黑童话",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  },
+  {
+   "style": "霓虹波普",
+   "need": {
+    "lighting": true,
+    "color": true,
+    "atmosphere": true
+   }
+  }
+ ]
+}

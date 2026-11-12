@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B 方案联调 · 检索 + LLM 决策（独立测试）</title>
+<style>
+  :root{--bg:#06060e;--surface:#0e0e1a;--border:#242438;--text:#e8e8f0;--sub:#9a9ab0;
+    --accent:#00d4ff;--warm:#ff6b35;--ok:#38d39f;--err:#ff5470;--dim:#6a6a80}
+  *{box-sizing:border-box}
+  body{margin:0;padding:26px;background:var(--bg);color:var(--text);
+    font-family:'Outfit',system-ui,-apple-system,'Microsoft YaHei',sans-serif;line-height:1.6}
+  h1{font-size:19px;margin:0 0 4px}
+  .sub{color:var(--sub);font-size:13px;margin-bottom:20px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:14px}
+  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  input[type=text]{flex:1;min-width:240px;padding:11px 14px;border-radius:8px;border:1px solid var(--border);
+    background:#0a0a14;color:var(--text);font-size:14px;outline:none}
+  input:focus{border-color:var(--accent)}
+  button{padding:11px 18px;border-radius:8px;border:none;cursor:pointer;font-size:14px;font-weight:600;
+    background:var(--accent);color:#04121a}
+  button:disabled{opacity:.4;cursor:not-allowed}
+  button.ghost{background:transparent;border:1px solid var(--border);color:var(--sub)}
+  .msg{font-size:12.5px;color:var(--sub);margin-top:8px;min-height:18px;white-space:pre-wrap}
+  .msg.ok{color:var(--ok)} .msg.err{color:var(--err)}
+  .bar{height:6px;background:#141422;border-radius:99px;overflow:hidden;margin-top:10px}
+  .bar>i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--warm));transition:width .2s}
+  h3{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--dim);margin:18px 0 8px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
+  .cand{border:1px solid var(--border);border-radius:8px;padding:8px 10px;font-size:12.5px}
+  .cand b{color:var(--accent);font-weight:600}
+  .cand .sc{color:var(--dim);font-size:11.5px;float:right}
+  .pick{background:rgba(56,211,159,.07);border-color:rgba(56,211,159,.35)}
+  .pick b{color:var(--ok)}
+  .null{color:var(--dim);font-style:italic}
+  ul{margin:6px 0 0;padding-left:18px}
+  li{font-size:12.5px;color:var(--sub);margin-bottom:3px}
+  pre{background:#0a0a14;border:1px solid var(--border);border-radius:8px;padding:12px;
+    font-size:12px;overflow:auto;max-height:280px;white-space:pre-wrap;color:var(--sub)}
+  .pill{font-size:11px;padding:2px 8px;border-radius:99px;background:rgba(0,212,255,.1);
+    color:var(--accent);border:1px solid rgba(0,212,255,.25);margin-left:8px}
+</style>
+</head>
+<body>
+
+<h1>B 方案联调 · 检索 + LLM 决策</h1>
+<div class="sub">⓪ 路由（判定意图 + 只查提到的维度）→ ① 检索 → ② LLM 决策 → ③ 校验，失败则带着错误重生成。仍是独立测试页，不接主程序。</div>
+
+<div class="card">
+  <div class="row">
+    <button id="btnInit">① 初始化检索</button>
+    <button id="btnClear" class="ghost">清除向量缓存</button>
+    <span class="msg" id="stat">未初始化</span>
+  </div>
+  <div class="bar"><i id="bar"></i></div>
+  <div class="msg" id="prog"></div>
+</div>
+
+<div class="card">
+  <div class="row">
+    <input type="text" id="q" value="阴森的老房子，晚上，有雾">
+    <button id="btnRun" disabled>跑全流程</button>
+    <button id="btnAbort" class="ghost" disabled>中止</button>
+  </div>
+  <div class="row" style="margin-top:8px;font-size:12.5px;color:var(--sub)">
+    快速试：
+    <a href="#" data-q="阴森的老房子，晚上，有雾" style="color:var(--accent)">老房子/夜/雾</a>
+    <a href="#" data-q="两个剑客在雨里决斗" style="color:var(--accent)">雨夜决斗</a>
+    <a href="#" data-q="清晨的湖边，很安静，没有人" style="color:var(--accent)">清晨湖边（无人物）</a>
+    <a href="#" data-q="赛博朋克街道，下雨，霓虹" style="color:var(--accent)">赛博/雨/霓虹</a>
+  </div>
+  <div class="row" style="margin-top:12px;font-size:13px;color:var(--sub);gap:20px">
+    <label style="cursor:pointer"><input type="checkbox" id="optRoute"> ⓪ 启用路由（只查提到的维度）</label>
+    <label style="cursor:pointer"><input type="checkbox" id="optReflect" checked> ③ 启用反思（失败重试 1 次）</label>
+  </div>
+</div>
+
+<div id="out"></div>
+
+<script src="config.local.js"></script>
+<script src="semantic-search.js"></script>
+<script src="llm-arbiter.js"></script>
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id)};
+  var bar=$('bar'), prog=$('prog'), stat=$('stat'), out=$('out');
+  var btnInit=$('btnInit'), btnRun=$('btnRun'), btnClear=$('btnClear'), btnAbort=$('btnAbort');
+
+  function setBar(p){ bar.style.width=Math.max(0,Math.min(100,p))+'%'; }
+  function msg(el,t,c){ el.textContent=t; el.className='msg'+(c?' '+c:''); }
+  function esc(s){ return String(s==null?'':s).replace(/[<>&]/g,function(c){return {'<':'&lt;','>':'&gt;','&':'&amp;'}[c]}); }
+
+  if (window.LLM_CONFIG) LLMArbiter.configure(window.LLM_CONFIG);
+
+  // 反问选项点击：把选中的候选拼到输入框尾部，然后重跑
+  out.addEventListener('click', function(e){
+    var t = e.target;
+    while (t && t !== out && !(t.getAttribute && t.getAttribute('data-opt'))) t = t.parentNode;
+    if (!t || t === out) return;
+    var opt = t.getAttribute('data-opt');
+    if (!opt) return;
+    var base = $('q').value.trim().replace(/[，,。]\s*$/, '');
+    $('q').value = base ? (base + '，' + opt) : opt;
+    if (!btnRun.disabled) btnRun.click();
+  });
+
+  btnInit.addEventListener('click', async function(){
+    btnInit.disabled=true; msg(prog,'初始化中…'); msg(stat,'加载中');
+    var ok=await SemanticSearch.init({ onProgress:function(p){
+      setBar(p.percent||0);
+      msg(prog, '['+p.stage+'] '+(p.message||'')+(p.total?('  '+p.current+'/'+p.total):''));
+    }});
+    var s=SemanticSearch.stats;
+    if(ok){
+      setBar(100);
+      var d2=s.diag||{};
+      msg(stat,'就绪：'+s.entries+' 条 / '+s.dim+' 维　模式 '+d2.mode, 'ok');
+      msg(prog,'检索层就绪（'+d2.mode+'）。向量已预计算，查询走本地 /api/embed（约 4ms）。\n'+
+        'LLM：'+LLMArbiter.config.model+' ＠ '+LLMArbiter.config.endpoint,'ok');
+      btnRun.disabled=false;
+    }else{
+      msg(stat,'初始化失败','err');
+      msg(prog,'错误：'+(SemanticSearch.error&&SemanticSearch.error.message),'err');
+      btnInit.disabled=false;
+    }
+  });
+
+  btnClear.addEventListener('click', function(){ SemanticSearch.clearCache(); msg(prog,'向量缓存已清除。'); });
+
+  var TIMEOUT = { route: 14000, encode: 20000, llm: 50000, total: 95000 };
+  var runToken = 0;   // 每次跑递增；旧跑的结果一律丢弃
+
+  function withTimeout(p, ms, label){
+    return new Promise(function(resolve, reject){
+      var done=false;
+      var t=setTimeout(function(){
+        if(done) return; done=true;
+        reject(new Error(label+'超时（'+ms+'ms），已强制中断'));
+      }, ms);
+      Promise.resolve(p).then(function(v){
+        if(done) return; done=true; clearTimeout(t); resolve(v);
+      }, function(e){
+        if(done) return; done=true; clearTimeout(t); reject(e);
+      });
+    });
+  }
+
+  function abortRun(reason){
+    runToken++;                       // 作废当前跑
+    clearInterval(window.__ticker);
+    clearTimeout(window.__watchdog);
+    btnRun.disabled = false;
+    btnAbort.disabled = true;
+    msg(prog, reason, 'err');
+  }
+
+  btnAbort.addEventListener('click', function(){ abortRun('已手动中止。'); });
+
+  btnRun.addEventListener('click', async function(){
+    var q=$('q').value.trim(); if(!q) return;
+    var my = ++runToken;
+    btnRun.disabled=true; btnAbort.disabled=false; out.innerHTML='';
+
+    var t0=performance.now(), step='准备中';
+    window.__ticker=setInterval(function(){
+      if(my!==runToken) return;
+      msg(prog, step+'　已用时 '+((performance.now()-t0)/1000).toFixed(1)+' s');
+    }, 300);
+    function setStep(t){ step=t; msg(prog, t+'　已用时 0.0 s'); }
+
+    // 总看门狗：无论如何不会超过 TIMEOUT.total
+    window.__watchdog=setTimeout(function(){
+      if(my!==runToken) return;
+      abortRun('全流程超时（'+(TIMEOUT.total/1000)+'s），已强制中断。可点「中止」后重试。');
+    }, TIMEOUT.total);
+
+    try{
+      // ---------- ⓪ 路由 ----------
+      var routeRes=null, dims=LLMArbiter.dimensionOrder;
+      if($('optRoute').checked){
+        setStep('⓪ 路由判断…（上限 '+TIMEOUT.route/1000+'s）');
+        routeRes=await withTimeout(LLMArbiter.route(q), TIMEOUT.route, '路由阶段');
+        if(my!==runToken) return;
+        if(!routeRes.ok){
+          msg(prog, '路由失败（'+routeRes.error+'），回落全维度检索…');
+        }else{
+          dims=routeRes.dims;
+        }
+      }
+      if(my!==runToken) return;
+
+      // 闲聊分支：不检索、不决策
+      if(routeRes && routeRes.ok && !routeRes.needRetrieval){
+        clearInterval(window.__ticker);
+        clearTimeout(window.__watchdog);
+        btnAbort.disabled=true;
+        renderRouteOnly(q, routeRes);
+        msg(prog, '判定为「'+routeRes.intent+'」：不检索、不决策。总耗时 '+
+          ((performance.now()-t0)/1000).toFixed(1)+' s', 'ok');
+        return;
+      }
+
+      // ---------- ① 检索（只查路由给出的维度） ----------
+      setStep('① 编码查询（'+dims.length+' 个维度）…上限 '+TIMEOUT.encode/1000+'s');
+      var tA=performance.now();
+      var byDim=await withTimeout(
+        SemanticSearch.searchMulti(q, 5, dims),
+        TIMEOUT.encode, '编码阶段');
+      var msA=Math.round(performance.now()-tA);
+      if(my!==runToken) return;
+
+      // ---------- ②③ 决策（可选反思） ----------
+      var useReflect=$('optReflect').checked;
+      setStep((useReflect?'②③ 决策 + 反思':'② 决策')+'…上限 '+TIMEOUT.llm/1000+'s');
+      var tB=performance.now();
+      var res=await withTimeout(
+        useReflect ? LLMArbiter.decideWithReflection(q, byDim, {maxRetries:1})
+                   : LLMArbiter.decide(q, byDim),
+        TIMEOUT.llm, 'LLM 阶段');
+      var msB=Math.round(performance.now()-tB);
+      if(my!==runToken) return;
+
+      // unclear 时让模型生成针对性追问：只在这一种情况下多花一次调用
+      var llmClarify=null;
+      if(res.ok && res.decision && res.decision.intent==='unclear' && LLMArbiter.suggestClarify){
+        setStep('生成针对性追问…');
+        try{ llmClarify=await withTimeout(LLMArbiter.suggestClarify(q), 15000, '追问阶段'); }
+        catch(err){ llmClarify=null; }
+        if(my!==runToken) return;
+      }
+
+      clearInterval(window.__ticker);
+      clearTimeout(window.__watchdog);
+      btnAbort.disabled=true;
+      render(q, byDim, msA, res, msB, routeRes, llmClarify);
+      msg(prog,
+        res.ok ? ('完成，总耗时 '+((performance.now()-t0)/1000).toFixed(1)+' s'+
+          (res.retries?('　重试 '+res.retries+' 次'):'')+
+          (res.degraded?'　（降级：重试用尽仍有问题）':''))
+        : ('LLM 失败：'+res.error),
+        res.ok ? (res.degraded?'err':'ok') : 'err');
+    }catch(e){
+      if(my!==runToken) return;
+      clearInterval(window.__ticker);
+      clearTimeout(window.__watchdog);
+      btnAbort.disabled=true;
+      msg(prog, '中断：'+((e&&e.message)||e), 'err');
+      console.error(e);
+    }finally{
+      if(my===runToken) btnRun.disabled=false;
+    }
+  });
+
+  function routeCard(routeRes){
+    if(!routeRes) return '';
+    if(!routeRes.ok){
+      return '<div class="card"><div class="msg err">⓪ 路由失败：'+esc(routeRes.error)+'　已回落全维度检索</div></div>';
+    }
+    var intentCn={compose:'创作',chat:'闲聊',confirm:'确认 / 微调'}[routeRes.intent]||routeRes.intent;
+    var html='<div class="card"><h3>⓪ 路由（'+routeRes.ms+' ms）</h3>';
+    html+='<div style="font-size:13px;margin-bottom:6px">意图：<b style="color:var(--accent)">'+esc(intentCn)+'</b>'+
+      '<span class="pill">needRetrieval = '+routeRes.needRetrieval+'</span>'+
+      '<span class="pill">维度 '+routeRes.dims.length+' / 8</span></div>';
+    html+='<div style="font-size:13px">'+
+      (routeRes.dims.length
+        ? routeRes.dims.map(function(k){ return '<span class="pill">'+esc(LLMArbiter.dimensionCN[k]||k)+' '+esc(k)+'</span>'; }).join(' ')
+        : '<span class="null">（不检索）</span>')+'</div>';
+    if(routeRes.dimsDropped>0){
+      html+='<div class="msg">模型多给了 '+routeRes.dimsDropped+' 个不合法维度，已过滤。</div>';
+    }
+    if(routeRes.reason) html+='<div class="msg">理由：'+esc(routeRes.reason)+'</div>';
+    html+='</div>';
+    return html;
+  }
+
+  function attemptCard(res){
+    if(!res.attempts||!res.attempts.length) return '';
+    var html='<div class="card"><h3>③ 反思轨迹（共 '+res.attempts.length+' 次）</h3>';
+    res.attempts.forEach(function(a){
+      var clean=a.ok&&!(a.problems&&a.problems.length)&&!(a.conflicts&&a.conflicts.length);
+      var tag=!a.ok?'调用失败':(clean?'通过':'有问题');
+      html+='<div class="cand'+(clean?' pick':'')+'" style="margin-bottom:8px">'+
+        '<b>第 '+a.attempt+' 次</b>　'+a.ms+' ms　<span class="sc">'+esc(tag)+'</span>'+
+        (a.picked&&a.picked.length?'<br><span style="font-size:12px;color:var(--sub)">选中：'+esc(a.picked.join(' / '))+'</span>':'')+
+        (a.error?'<br><span style="font-size:12px;color:var(--err)">'+esc(a.error)+'</span>':'')+
+        (a.problems&&a.problems.length?'<br><span style="font-size:12px;color:var(--warm)">校验：'+esc(a.problems.join('；'))+'</span>':'')+
+        (a.conflicts&&a.conflicts.length?'<br><span style="font-size:12px;color:var(--err)">矛盾：'+
+            esc(a.conflicts.map(function(c){ return '['+c.rule+'] '+c.detail; }).join('；'))+'</span>':'')+
+        (a.hint?'<br><span style="font-size:12px;color:var(--accent)">纠错提示已随本次请求发送</span>':'')+
+        (a.willRetry?'<br><span style="font-size:12px;color:var(--accent)">→ 将带纠错提示重试</span>':'')+
+        '</div>';
+    });
+    html+='</div>';
+    return html;
+  }
+
+  function renderRouteOnly(q, routeRes){
+    out.innerHTML='<div class="card"><div class="msg ok">「'+esc(q)+'」　判定为无需检索，已跳过词库与决策。</div></div>'
+      + routeCard(routeRes);
+  }
+
+  function render(q, byDim, msA, res, msB, routeRes, llmClarify){
+    var d = res.ok ? res.decision : {};
+    var html='';
+    html+=routeCard(routeRes);
+    html+='<div class="card"><div class="msg ok">「'+esc(q)+'」　检索 '+msA+' ms ＋ 决策 '+
+      (res.ok? msB+' ms':'—')+'　'+
+      (res.usage? ('tokens：in '+res.usage.prompt_tokens+' / out '+res.usage.completion_tokens):'')+
+      (res.retries? ('　<span style="color:var(--warm)">重试 '+res.retries+' 次</span>'):'')+
+      (res.degraded? ' 　<span style="color:var(--err)">降级返回</span>':'')+
+      (res.ok && res.decision && res.decision.intent
+        ? ' 　<span class="pill">intent=' + esc(res.decision.intent) + '</span>'
+        : '')+
+      '</div></div>';
+
+    // 反问环节（B）：只在 unclear 或「主体物/角色/场景」全空时才追问，
+    // 选项直接来自已检索到的候选 —— 点一下就等于补齐，不用重新检索。
+    if(res.ok && LLMArbiter.buildClarify){
+      var cl = llmClarify || (LLMArbiter.buildClarify ? LLMArbiter.buildClarify(res.decision, byDim) : null);
+      if(cl){
+        html+='<div class="card" style="border-color:rgba(255,107,53,.45);background:rgba(255,107,53,.06)">'+
+          '<h3 style="color:var(--warm)">需要补充（'+esc(cl.reason)+
+            (cl.ms ? ' · 追问生成 '+cl.ms+' ms' : '')+'）</h3>'+
+          '<div style="font-size:13.5px;line-height:1.75;margin-bottom:10px">'+esc(cl.question)+'</div>'+
+          '<div style="display:flex;flex-wrap:wrap;gap:8px">'+
+          cl.options.map(function(o){
+            return '<button type="button" data-opt="'+esc(o.name)+'"'+
+              ' style="padding:8px 13px;font-size:13px;border-radius:8px;cursor:pointer;'+
+              'background:#141422;color:var(--accent);border:1px solid var(--border)">'+
+              esc(o.name)+' <span style="opacity:.55;font-size:11.5px">'+esc(o.dimCN)+'</span></button>';
+          }).join('')+
+          '</div>'+
+          '<div class="msg" style="margin-top:8px">点一个会把它拼进输入框并重跑；也可以直接改输入框。</div>'+
+          '</div>';
+      }
+    }
+
+    html+=attemptCard(res);
+
+    // 候选 + 选中
+    html+='<div class="card"><h3>每维度候选（绿=LLM 选中）</h3><div class="grid">';
+    LLMArbiter.dimensionOrder.forEach(function(k){
+      var list=byDim[k]||[];
+      if(!list.length) return;
+      var cn=LLMArbiter.dimensionCN[k];
+      var chosen=d[k];
+      list.forEach(function(h){
+        var isPick = chosen && h.name===chosen;
+        html+='<div class="cand'+(isPick?' pick':'')+'">'+
+          '<b>'+cn+'</b>'+(isPick?' ✓':'')+
+          '<span class="sc">'+h.score+'</span><br>'+
+          esc(h.name)+'</div>';
+      });
+    });
+    html+='</div></div>';
+
+    // 决策结论（C：标注近似项）
+    var weak = (LLMArbiter.weakDims ? LLMArbiter.weakDims(d) : []);
+    html+='<div class="card"><h3>最终决策'+
+      (weak.length ? '　<span style="color:var(--warm);text-transform:none;letter-spacing:0">其中 '+
+        weak.length + ' 个是近似（分数 &lt; ' + LLMArbiter.config.weakThreshold + '）</span>' : '')+
+      '</h3>';
+    LLMArbiter.dimensionOrder.forEach(function(k){
+      var v=d[k];
+      var cn=LLMArbiter.dimensionCN[k];
+      var queried = !!(byDim[k]&&byDim[k].length);
+      var m = d._meta && d._meta[k];
+      var isW = (LLMArbiter.isWeak ? LLMArbiter.isWeak(d,k) : false);
+      var bodyTxt;
+      if(v){
+        bodyTxt='<b style="color:'+(isW?'var(--warm)':'var(--ok)')+'">'+esc(v)+'</b>';
+        if(m && m.score!=null){
+          bodyTxt+='<span class="sc" style="float:none;margin-left:8px">'+m.score+
+            (m.rank?' · 候选第'+m.rank+'名':'')+'</span>';
+        }
+        if(isW){
+          bodyTxt+='<span class="pill" style="margin-left:8px;background:rgba(255,107,53,.12);'+
+            'color:var(--warm);border-color:rgba(255,107,53,.35)">近似 · 这词是猜的</span>';
+        }
+        if(m && m.match==='fuzzy'){
+          bodyTxt+='<span class="pill" style="margin-left:6px">模糊修正</span>';
+        }
+      }
+      else if(!queried) bodyTxt='<span class="null">（本次未检索 · 路由不包含）</span>';
+      else bodyTxt='<span class="null">（留空 · 用户未提及）</span>';
+      html+='<div style="font-size:13px;margin-bottom:5px">'+cn+'：'+bodyTxt+'</div>';
+    });
+    if(d.reason) html+='<div class="msg" style="margin-top:10px">理由：'+esc(d.reason)+'</div>';
+    if(d.conflicts&&d.conflicts.length){
+      html+='<div style="margin-top:10px"><b style="color:var(--warm);font-size:13px">模型主动排除的候选</b><ul>';
+      d.conflicts.forEach(function(c){ html+='<li>'+esc(c)+'</li>'; });
+      html+='</ul></div>';
+    }
+    if(d._problems&&d._problems.length){
+      html+='<div class="msg err" style="margin-top:8px">校验提示：'+esc(d._problems.join('；'))+'</div>';
+    }
+    html+='</div>';
+
+    if(res.raw){
+      html+='<div class="card"><h3>模型原始输出（最后一次）</h3><pre>'+esc(res.raw)+'</pre></div>';
+    }
+    out.innerHTML=html;
+  }
+
+  document.querySelectorAll('a[data-q]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault(); $('q').value=a.dataset.q;
+      if(!btnRun.disabled) btnRun.click();
+    });
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+[
+  {
+    "text": "一位白衣剑客",
+    "mode": "character",
+    "s": "一位中性漂泊的剑客，剑术的大师，锐利专注的面容，目光如剑，神情从容，胡茬，细疤，果决，拔剑，挥剑出招，收剑入鞘，雨中伫立，与敌决斗，身着素净行装，腰间长剑，斗笠，布缠手，旧靴，行囊，身处仙山云海。东方奇幻风格，雾中光映照，东方古韵色调，神秘奇幻氛围。",
+    "dims": [
+      "style=东方奇幻",
+      "lighting=雾中光",
+      "color=东方古韵",
+      "atmosphere=神秘奇幻",
+      "platform=通用",
+      "character=剑客",
+      "gender=中性",
+      "scene=仙山云海",
+      "material=金属"
+    ]
+  },
+  {
+    "text": "竹林深处的剑客",
+    "mode": "character",
+    "s": "一位中性漂泊的剑客，剑术的大师，锐利专注的面容，目光如剑，神情从容，胡茬，细疤，果决，拔剑，挥剑出招，收剑入鞘，雨中伫立，与敌决斗，身着素净行装，腰间长剑，斗笠，布缠手，旧靴，行囊，身处竹林。东方奇幻风格，雾中光映照，东方古韵色调。",
+    "dims": [
+      "style=东方奇幻",
+      "lighting=雾中光",
+      "color=东方古韵",
+      "platform=通用",
+      "character=剑客",
+      "gender=中性",
+      "scene=竹林",
+      "material=竹"
+    ]
+  },
+  {
+    "text": "一位老人坐在长椅上",
+    "mode": "character",
+    "s": "一位中性饱经风霜的老人，慈祥沉稳，皱纹深刻的面容，眼神浑浊却温和，花白胡须，皮肤松弛，拄着拐杖缓步，坐在门槛上，双手交叠，抬头远望，身着深色粗布棉袄，旧布鞋，腰系布带，一根木手杖。电影侧光映照，中景构图，莫兰迪色色调，史诗壮阔氛围，4K高清画质。",
+    "dims": [
+      "lighting=电影级侧光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=莫兰迪色系",
+      "atmosphere=史诗壮阔",
+      "platform=通用",
+      "character=老人",
+      "gender=中性"
+    ]
+  },
+  {
+    "text": "一把生锈的长剑",
+    "mode": "prop",
+    "s": "一把生锈的长剑，产品特写 — 金属材质，粗糙沧桑质感，电影侧光照明，中景视角，莫兰迪色色调，暗调背景，史诗壮阔氛围，4K高清",
+    "dims": [
+      "lighting=电影级侧光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=莫兰迪色系",
+      "atmosphere=史诗壮阔",
+      "platform=通用",
+      "material=金属",
+      "texture=粗糙沧桑",
+      "display=产品特写",
+      "background=暗调背景"
+    ]
+  },
+  {
+    "text": "一盏纸灯笼",
+    "mode": "prop",
+    "s": "一盏纸灯笼，剪纸艺术风格，产品特写 — 纸材质，半透明质感，霓虹彩光照明，中景视角，莫兰迪色色调，暗调背景，静谧禅意氛围，4K高清",
+    "dims": [
+      "style=剪纸艺术",
+      "lighting=霓虹彩光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=莫兰迪色系",
+      "atmosphere=静谧禅意",
+      "platform=通用",
+      "material=纸",
+      "texture=半透明",
+      "display=产品特写",
+      "background=暗调背景"
+    ]
+  },
+  {
+    "text": "一片竹林",
+    "mode": "scene",
+    "s": "一片竹林，竹林。水墨国风风格，雾中光映照，中景构图，黑白高对比色调，静谧禅意氛围，4K高清画质。",
+    "dims": [
+      "style=水墨国风",
+      "lighting=雾中光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=黑白高对比",
+      "atmosphere=静谧禅意",
+      "platform=通用",
+      "scene=竹林"
+    ]
+  },
+  {
+    "text": "雨夜的霓虹街道",
+    "mode": "scene",
+    "s": "雨夜的霓虹街道，霓虹街道。霓虹夜景风格，霓虹光映照，中景构图，赛博霓虹色调，暗黑压抑氛围，4K高清画质。",
+    "dims": [
+      "style=霓虹夜景",
+      "lighting=霓虹光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=赛博霓虹",
+      "atmosphere=暗黑压抑",
+      "platform=通用",
+      "scene=霓虹街道"
+    ]
+  }
+]

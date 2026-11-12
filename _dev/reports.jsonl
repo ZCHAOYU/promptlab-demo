@@ -1,0 +1,3 @@
+{"id": "r1794369739308-1", "ts": 1794369739308, "visitor": "tester01", "text": "测试举报：某条输出有问题", "reason": "内容不当", "prompt": "", "status": "pending", "auto": {"level": "ok", "reasons": []}}
+{"id": "r1794369739323-1", "ts": 1794369739323, "visitor": "tester01", "text": "spam 2", "reason": "", "prompt": "", "status": "pending", "auto": {"level": "ok", "reasons": []}}
+{"id": "r1794369739330-1", "ts": 1794369739330, "visitor": "tester01", "text": "spam 3", "reason": "", "prompt": "", "status": "pending", "auto": {"level": "ok", "reasons": []}}

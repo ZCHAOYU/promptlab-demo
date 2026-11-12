@@ -1,0 +1,858 @@
+{
+  "createdAt": "2026-11-08T13:11:48.723Z",
+  "model": "deepseek-flash",
+  "results": [
+    {
+      "id": "r1",
+      "query": "我想要一个有山有水的地方",
+      "encMs": 25,
+      "decMs": 1908,
+      "totalMs": 1933,
+      "ok": true,
+      "attempts": 1,
+      "retries": 0,
+      "degraded": false,
+      "error": null,
+      "decision": {
+        "subject": null,
+        "role": null,
+        "scene": "自然山水",
+        "style": null,
+        "light": null,
+        "composition": null,
+        "color": null,
+        "atmosphere": null,
+        "quality": null
+      },
+      "reason": "用户只要山水的自然场景，其余维度未提及，留空。",
+      "conflicts": [],
+      "top1": {
+        "subject": {
+          "name": "吊桥",
+          "score": 0.405
+        },
+        "role": {
+          "name": "山神",
+          "score": 0.478
+        },
+        "scene": {
+          "name": "自然山水",
+          "score": 0.562
+        },
+        "style": {
+          "name": "浙派山水",
+          "score": 0.532
+        },
+        "light": {
+          "name": "火山光",
+          "score": 0.448
+        },
+        "composition": {
+          "name": "极远景",
+          "score": 0.457
+        },
+        "color": {
+          "name": "海岛清爽",
+          "score": 0.448
+        },
+        "atmosphere": {
+          "name": "田园诗意",
+          "score": 0.448
+        },
+        "quality": {
+          "name": "柔焦",
+          "score": 0.339
+        }
+      },
+      "intent": "compose",
+      "askClarify": false,
+      "progConflicts": [],
+      "tokens": {
+        "in": 2043,
+        "out": 166
+      },
+      "attemptDetail": [
+        {
+          "attempt": 1,
+          "ms": 1906,
+          "ok": true,
+          "error": null,
+          "problems": [],
+          "conflicts": [],
+          "picked": [
+            "scene=自然山水"
+          ],
+          "hadHint": false,
+          "willRetry": false
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "query": "一个人在画画",
+      "encMs": 9,
+      "decMs": 2410,
+      "totalMs": 2419,
+      "ok": true,
+      "attempts": 1,
+      "retries": 0,
+      "degraded": false,
+      "error": null,
+      "decision": {
+        "subject": null,
+        "role": "画家",
+        "scene": null,
+        "style": null,
+        "light": null,
+        "composition": null,
+        "color": null,
+        "atmosphere": null,
+        "quality": null
+      },
+      "reason": "「一个人画画」对应的角色只有「画家」，其余维度未提及。",
+      "conflicts": [],
+      "top1": {
+        "subject": {
+          "name": "卷轴",
+          "score": 0.401
+        },
+        "role": {
+          "name": "插画师",
+          "score": 0.545
+        },
+        "scene": {
+          "name": "美术馆",
+          "score": 0.449
+        },
+        "style": {
+          "name": "没骨画",
+          "score": 0.549
+        },
+        "light": {
+          "name": "光斑",
+          "score": 0.377
+        },
+        "composition": {
+          "name": "人像构图",
+          "score": 0.495
+        },
+        "color": {
+          "name": "墨蓝",
+          "score": 0.402
+        },
+        "atmosphere": {
+          "name": "振奋",
+          "score": 0.377
+        },
+        "quality": {
+          "name": "体积光",
+          "score": 0.33
+        }
+      },
+      "intent": "compose",
+      "askClarify": false,
+      "progConflicts": [],
+      "tokens": {
+        "in": 1899,
+        "out": 255
+      },
+      "attemptDetail": [
+        {
+          "attempt": 1,
+          "ms": 2410,
+          "ok": true,
+          "error": null,
+          "problems": [
+            "role 由模糊匹配修正为「画家」"
+          ],
+          "conflicts": [],
+          "picked": [
+            "role=画家"
+          ],
+          "hadHint": false,
+          "willRetry": false
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "query": "我想要个水墨风格的那个东西",
+      "encMs": 8,
+      "decMs": 1247,
+      "totalMs": 1255,
+      "ok": true,
+      "attempts": 1,
+      "retries": 0,
+      "degraded": false,
+      "error": null,
+      "decision": {
+        "subject": null,
+        "role": null,
+        "scene": null,
+        "style": "水墨国风",
+        "light": null,
+        "composition": null,
+        "color": null,
+        "atmosphere": null,
+        "quality": null
+      },
+      "reason": "仅明确水墨风格，主体对象未指明",
+      "conflicts": [],
+      "top1": {
+        "subject": {
+          "name": "折扇",
+          "score": 0.493
+        },
+        "role": {
+          "name": "水墨人物",
+          "score": 0.557
+        },
+        "scene": {
+          "name": "书之世界",
+          "score": 0.447
+        },
+        "style": {
+          "name": "水墨国风",
+          "score": 0.603
+        },
+        "light": {
+          "name": "水晶光",
+          "score": 0.443
+        },
+        "composition": {
+          "name": "漂浮构图",
+          "score": 0.444
+        },
+        "color": {
+          "name": "墨红",
+          "score": 0.554
+        },
+        "atmosphere": {
+          "name": "淡雅",
+          "score": 0.445
+        },
+        "quality": {
+          "name": "体积光",
+          "score": 0.399
+        }
+      },
+      "intent": "compose",
+      "askClarify": false,
+      "progConflicts": [],
+      "tokens": {
+        "in": 2008,
+        "out": 145
+      },
+      "attemptDetail": [
+        {
+          "attempt": 1,
+          "ms": 1246,
+          "ok": true,
+          "error": null,
+          "problems": [],
+          "conflicts": [],
+          "picked": [
+            "style=水墨国风"
+          ],
+          "hadHint": false,
+          "willRetry": false
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "query": "一个很漂亮的场景",
+      "encMs": 7,
+      "decMs": 979,
+      "totalMs": 986,
+      "ok": true,
+      "attempts": 1,
+      "retries": 0,
+      "degraded": false,
+      "error": null,
+      "decision": {
+        "subject": null,
+        "role": null,
+        "scene": null,
+        "style": null,
+        "light": null,
+        "composition": null,
+        "color": null,
+        "atmosphere": null,
+        "quality": null
+      },
+      "reason": "仅有评价词「很漂亮」，没有画面线索可检索",
+      "conflicts": [],
+      "top1": {
+        "subject": {
+          "name": "面具",
+          "score": 0.447
+        },
+        "role": {
+          "name": "明星",
+          "score": 0.483
+        },
+        "scene": {
+          "name": "盐沼镜面",
+          "score": 0.521
+        },
+        "style": {
+          "name": "印象派",
+          "score": 0.514
+        },
+        "light": {
+          "name": "环境光",
+          "score": 0.564
+        },
+        "composition": {
+          "name": "大全景",
+          "score": 0.548
+        },
+        "color": {
+          "name": "鹅黄",
+          "score": 0.465
+        },
+        "atmosphere": {
+          "name": "幽静",
+          "score": 0.49
+        },
+        "quality": {
+          "name": "体积光",
+          "score": 0.454
+        }
+      },
+      "intent": "unclear",
+      "askClarify": true,
+      "progConflicts": [],
+      "tokens": {
+        "in": 2041,
+        "out": 120
+      },
+      "attemptDetail": [
+        {
+          "attempt": 1,
+          "ms": 979,
+          "ok": true,
+          "error": null,
+          "problems": [],
+          "conflicts": [],
+          "picked": [],
+          "hadHint": false,
+          "willRetry": false
+        }
+      ]
+    },
+    {
+      "id": "r5",
+      "query": "一把形状非常奇怪的剑",
+      "encMs": 8,
+      "decMs": 1509,
+      "totalMs": 1517,
+      "ok": true,
+      "attempts": 1,
+      "retries": 0,
+      "degraded": false,
+      "error": null,
+      "decision": {
+        "subject": "长剑",
+        "role": null,
+        "scene": null,
+        "style": null,
+        "light": null,
+        "composition": null,
+        "color": null,
+        "atmosphere": null,
+        "quality": null
+      },
+      "reason": "只提到剑这一主体，其他维度均未涉及",
+      "conflicts": [],
+      "top1": {
+        "subject": {
+          "name": "长剑",
+          "score": 0.573
+        },
+        "role": {
+          "name": "剑圣",
+          "score": 0.557
+        },
+        "scene": {
+          "name": "幽暗洞穴",
+          "score": 0.459
+        },
+        "style": {
+          "name": "幻想生物",
+          "score": 0.433
+        },
+        "light": {
+          "name": "光剑光",
+          "score": 0.537
+        },
+        "composition": {
+          "name": "之字形构图",
+          "score": 0.448
+        },
+        "color": {
+          "name": "藏青",
+          "score": 0.427
+        },
+        "atmosphere": {
+          "name": "诡异神秘",
+          "score": 0.485
+        },
+        "quality": {
+          "name": "柔焦",
+          "score": 0.365
+        }
+      },
+      "intent": "compose",
+      "askClarify": false,
+      "progConflicts": [],
+      "tokens": {
+        "in": 1952,
+        "out": 160
+      },
+      "attemptDetail": [
+        {
+          "attempt": 1,
+          "ms": 1509,
+          "ok": true,
+          "error": null,
+          "problems": [],
+          "conflicts": [],
+          "picked": [
+            "subject=长剑"
+          ],
+          "hadHint": false,
+          "willRetry": false
+        }
+      ]
+    },
+    {
+      "id": "r6",
+      "query": "一个男人在充满枫树的街道旁边的超市里面当收营员",
+      "encMs": 13,
+      "decMs": 5047,
+      "totalMs": 5060,
+      "ok": true,
+      "attempts": 1,
+      "retries": 0,
+      "degraded": false,
+      "error": null,
+      "decision": {
+        "subject": null,
+        "role": "商人",
+        "scene": "超市",
+        "style": null,
+        "light": null,
+        "composition": null,
+        "color": null,
+        "atmosphere": null,
+        "quality": null
+      },
+      "reason": "场景明确为超市；收银员角色候选无对应，近似取商人。",
+      "conflicts": [],
+      "top1": {
+        "subject": {
+          "name": "秋千",
+          "score": 0.33
+        },
+        "role": {
+          "name": "创业者",
+          "score": 0.431
+        },
+        "scene": {
+          "name": "早市",
+          "score": 0.48
+        },
+        "style": {
+          "name": "赛博朋克",
+          "score": 0.392
+        },
+        "light": {
+          "name": "广告牌光",
+          "score": 0.374
+        },
+        "composition": {
+          "name": "超广角",
+          "score": 0.352
+        },
+        "color": {
+          "name": "炽热红",
+          "score": 0.393
+        },
+        "atmosphere": {
+          "name": "兴奋激动",
+          "score": 0.356
+        },
+        "quality": {
+          "name": "体积光",
+          "score": 0.314
+        }
+      },
+      "intent": "compose",
+      "askClarify": false,
+      "progConflicts": [],
+      "tokens": {
+        "in": 1903,
+        "out": 568
+      },
+      "attemptDetail": [
+        {
+          "attempt": 1,
+          "ms": 5046,
+          "ok": true,
+          "error": null,
+          "problems": [],
+          "conflicts": [],
+          "picked": [
+            "role=商人",
+            "scene=超市"
+          ],
+          "hadHint": false,
+          "willRetry": false
+        }
+      ]
+    },
+    {
+      "id": "r7",
+      "query": "野径无人，风自过林，",
+      "encMs": 8,
+      "decMs": 4912,
+      "totalMs": 4920,
+      "ok": true,
+      "attempts": 1,
+      "retries": 0,
+      "degraded": false,
+      "error": null,
+      "decision": {
+        "subject": null,
+        "role": null,
+        "scene": "森林深处",
+        "style": null,
+        "light": null,
+        "composition": null,
+        "color": null,
+        "atmosphere": "空灵幽远",
+        "quality": null
+      },
+      "reason": "诗句描绘空寂野径与过林之风，场景取近似森林深处，氛围为一种空灵幽远。",
+      "conflicts": [],
+      "top1": {
+        "subject": {
+          "name": "藤蔓",
+          "score": 0.362
+        },
+        "role": {
+          "name": "浪人",
+          "score": 0.448
+        },
+        "scene": {
+          "name": "竹林小径",
+          "score": 0.518
+        },
+        "style": {
+          "name": "田园牧歌",
+          "score": 0.417
+        },
+        "light": {
+          "name": "龙卷风光",
+          "score": 0.413
+        },
+        "composition": {
+          "name": "极远景",
+          "score": 0.387
+        },
+        "color": {
+          "name": "自然森系",
+          "score": 0.465
+        },
+        "atmosphere": {
+          "name": "野性原始",
+          "score": 0.488
+        },
+        "quality": {
+          "name": "柔焦",
+          "score": 0.339
+        }
+      },
+      "intent": "compose",
+      "askClarify": false,
+      "progConflicts": [],
+      "tokens": {
+        "in": 1896,
+        "out": 626
+      },
+      "attemptDetail": [
+        {
+          "attempt": 1,
+          "ms": 4911,
+          "ok": true,
+          "error": null,
+          "problems": [],
+          "conflicts": [],
+          "picked": [
+            "scene=森林深处",
+            "atmosphere=空灵幽远"
+          ],
+          "hadHint": false,
+          "willRetry": false
+        }
+      ]
+    },
+    {
+      "id": "r8",
+      "query": "冷风秋瑟瑟",
+      "encMs": 9,
+      "decMs": 2690,
+      "totalMs": 2699,
+      "ok": true,
+      "attempts": 1,
+      "retries": 0,
+      "degraded": false,
+      "error": null,
+      "decision": {
+        "subject": "落叶",
+        "role": null,
+        "scene": null,
+        "style": null,
+        "light": null,
+        "composition": null,
+        "color": null,
+        "atmosphere": "萧瑟",
+        "quality": null
+      },
+      "reason": "冷风秋意，取落叶与萧瑟氛围，其余未提及",
+      "conflicts": [],
+      "top1": {
+        "subject": {
+          "name": "落叶",
+          "score": 0.43
+        },
+        "role": {
+          "name": "赏金猎人",
+          "score": 0.443
+        },
+        "scene": {
+          "name": "热带雨林",
+          "score": 0.453
+        },
+        "style": {
+          "name": "冰霜世界",
+          "score": 0.432
+        },
+        "light": {
+          "name": "破晓光",
+          "score": 0.471
+        },
+        "composition": {
+          "name": "逆光剪影",
+          "score": 0.38
+        },
+        "color": {
+          "name": "暖金琥珀",
+          "score": 0.465
+        },
+        "atmosphere": {
+          "name": "萧瑟",
+          "score": 0.591
+        },
+        "quality": {
+          "name": "柔焦",
+          "score": 0.367
+        }
+      },
+      "intent": "compose",
+      "askClarify": false,
+      "progConflicts": [],
+      "tokens": {
+        "in": 1873,
+        "out": 392
+      },
+      "attemptDetail": [
+        {
+          "attempt": 1,
+          "ms": 2690,
+          "ok": true,
+          "error": null,
+          "problems": [
+            "subject 由模糊匹配修正为「落叶」",
+            "atmosphere 由模糊匹配修正为「萧瑟」"
+          ],
+          "conflicts": [],
+          "picked": [
+            "subject=落叶",
+            "atmosphere=萧瑟"
+          ],
+          "hadHint": false,
+          "willRetry": false
+        }
+      ]
+    },
+    {
+      "id": "r9",
+      "query": "你在爪子",
+      "encMs": 7,
+      "decMs": 1388,
+      "totalMs": 1395,
+      "ok": true,
+      "attempts": 1,
+      "retries": 0,
+      "degraded": false,
+      "error": null,
+      "decision": {
+        "subject": null,
+        "role": null,
+        "scene": null,
+        "style": null,
+        "light": null,
+        "composition": null,
+        "color": null,
+        "atmosphere": null,
+        "quality": null
+      },
+      "reason": "非出图需求，属于闲聊用语",
+      "conflicts": [],
+      "top1": {
+        "subject": {
+          "name": "猫",
+          "score": 0.438
+        },
+        "role": {
+          "name": "蜥蜴人",
+          "score": 0.437
+        },
+        "scene": {
+          "name": "炼金实验室",
+          "score": 0.365
+        },
+        "style": {
+          "name": "洛可可贝壳",
+          "score": 0.359
+        },
+        "light": {
+          "name": "光斑",
+          "score": 0.385
+        },
+        "composition": {
+          "name": "抓拍构图",
+          "score": 0.387
+        },
+        "color": {
+          "name": "茄子紫",
+          "score": 0.362
+        },
+        "atmosphere": {
+          "name": "恐惧战栗",
+          "score": 0.385
+        },
+        "quality": {
+          "name": "柔焦",
+          "score": 0.312
+        }
+      },
+      "intent": "chat",
+      "askClarify": false,
+      "progConflicts": [],
+      "tokens": {
+        "in": 1913,
+        "out": 112
+      },
+      "attemptDetail": [
+        {
+          "attempt": 1,
+          "ms": 1388,
+          "ok": true,
+          "error": null,
+          "problems": [],
+          "conflicts": [],
+          "picked": [],
+          "hadHint": false,
+          "willRetry": false
+        }
+      ]
+    },
+    {
+      "id": "r10",
+      "query": "你好",
+      "encMs": 6,
+      "decMs": 1244,
+      "totalMs": 1250,
+      "ok": true,
+      "attempts": 1,
+      "retries": 0,
+      "degraded": false,
+      "error": null,
+      "decision": {
+        "subject": null,
+        "role": null,
+        "scene": null,
+        "style": null,
+        "light": null,
+        "composition": null,
+        "color": null,
+        "atmosphere": null,
+        "quality": null
+      },
+      "reason": "非出图需求，仅为问候闲聊",
+      "conflicts": [],
+      "top1": {
+        "subject": {
+          "name": "骏马",
+          "score": 0.414
+        },
+        "role": {
+          "name": "心理医生",
+          "score": 0.438
+        },
+        "scene": {
+          "name": "向日葵田",
+          "score": 0.444
+        },
+        "style": {
+          "name": "巴洛克",
+          "score": 0.437
+        },
+        "light": {
+          "name": "柔光",
+          "score": 0.459
+        },
+        "composition": {
+          "name": "平行透视",
+          "score": 0.454
+        },
+        "color": {
+          "name": "丁香紫",
+          "score": 0.464
+        },
+        "atmosphere": {
+          "name": "希望憧憬",
+          "score": 0.475
+        },
+        "quality": {
+          "name": "颗粒感",
+          "score": 0.435
+        }
+      },
+      "intent": "chat",
+      "askClarify": false,
+      "progConflicts": [],
+      "tokens": {
+        "in": 1866,
+        "out": 93
+      },
+      "attemptDetail": [
+        {
+          "attempt": 1,
+          "ms": 1243,
+          "ok": true,
+          "error": null,
+          "problems": [],
+          "conflicts": [],
+          "picked": [],
+          "hadHint": false,
+          "willRetry": false
+        }
+      ]
+    }
+  ]
+}

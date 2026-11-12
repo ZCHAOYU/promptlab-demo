@@ -1,0 +1,7777 @@
+{
+  "dirty": [
+    {
+      "src": "CONTEXT",
+      "dim": "scene",
+      "target": "古城街巷",
+      "keys": [
+        "古城街巷",
+        "青石板",
+        "红灯笼",
+        "古镇",
+        "巷弄",
+        "老街",
+        "中式古城",
+        "石板路",
+        "古城",
+        "古街",
+        "街巷",
+        "旧城",
+        "古巷"
+      ]
+    },
+    {
+      "src": "CONTEXT",
+      "dim": "scene",
+      "target": "雨天",
+      "keys": [
+        "雨天",
+        "下雨",
+        "下雨天",
+        "雨幕",
+        "滂沱",
+        "细雨",
+        "小雨",
+        "大雨",
+        "雨丝",
+        "rain",
+        "raining",
+        "rainy",
+        "drizzle",
+        "rainstorm"
+      ]
+    },
+    {
+      "src": "CONCEPT",
+      "dim": "scene",
+      "target": "雨天",
+      "keys": [
+        "雨天"
+      ]
+    },
+    {
+      "src": "CONCEPT",
+      "dim": "scene",
+      "target": "雨天",
+      "keys": [
+        "下雨"
+      ]
+    },
+    {
+      "src": "CONCEPT",
+      "dim": "scene",
+      "target": "雨天",
+      "keys": [
+        "雷雨"
+      ]
+    },
+    {
+      "src": "CONCEPT",
+      "dim": "scene",
+      "target": "晴天",
+      "keys": [
+        "晴天"
+      ]
+    },
+    {
+      "src": "CONCEPT",
+      "dim": "scene",
+      "target": "雨天",
+      "keys": [
+        "水滴"
+      ]
+    },
+    {
+      "src": "ITEM",
+      "dim": "texture",
+      "target": "光滑水润",
+      "keys": [
+        "红苹果"
+      ]
+    },
+    {
+      "src": "ITEM",
+      "dim": "texture",
+      "target": "光滑水润",
+      "keys": [
+        "青苹果"
+      ]
+    },
+    {
+      "src": "ITEM",
+      "dim": "texture",
+      "target": "光滑水润",
+      "keys": [
+        "苹果"
+      ]
+    },
+    {
+      "src": "ITEM",
+      "dim": "background",
+      "target": "雨天",
+      "keys": [
+        "雨伞"
+      ]
+    },
+    {
+      "src": "ITEM",
+      "dim": "texture",
+      "target": "光滑水润",
+      "keys": [
+        "葡萄"
+      ]
+    },
+    {
+      "src": "ITEM",
+      "dim": "texture",
+      "target": "光滑水润",
+      "keys": [
+        "樱桃"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "character|亡灵",
+      "targets": [
+        "暗黑骑士",
+        "骷髅亡灵",
+        "幽灵鬼魂",
+        "僵尸"
+      ]
+    },
+    {
+      "id": "style|马赛克",
+      "targets": [
+        "像素艺术",
+        "故障艺术",
+        "拜占庭"
+      ]
+    },
+    {
+      "id": "lighting|正午",
+      "targets": [
+        "自然日光",
+        "顶光",
+        "正午烈日"
+      ]
+    },
+    {
+      "id": "lighting|烈日",
+      "targets": [
+        "自然日光",
+        "顶光",
+        "正午烈日"
+      ]
+    },
+    {
+      "id": "lighting|追光",
+      "targets": [
+        "电影级侧光",
+        "聚光灯",
+        "舞台光"
+      ]
+    },
+    {
+      "id": "lighting|聚光",
+      "targets": [
+        "电影级侧光",
+        "聚光灯",
+        "舞台光"
+      ]
+    },
+    {
+      "id": "composition|对称",
+      "targets": [
+        "居中对称",
+        "倒影",
+        "对称构图"
+      ]
+    },
+    {
+      "id": "composition|镜像",
+      "targets": [
+        "居中对称",
+        "倒影",
+        "镜像构图"
+      ]
+    },
+    {
+      "id": "composition|拱门",
+      "targets": [
+        "框式构图",
+        "隧道视角",
+        "框架构图"
+      ]
+    },
+    {
+      "id": "color|朱红",
+      "targets": [
+        "东方古韵",
+        "炽热红",
+        "朱砂红"
+      ]
+    },
+    {
+      "id": "color|翠绿",
+      "targets": [
+        "东方古韵",
+        "森林深绿",
+        "翡翠绿"
+      ]
+    },
+    {
+      "id": "color|深绿",
+      "targets": [
+        "森林深绿",
+        "墨绿",
+        "黛绿"
+      ]
+    },
+    {
+      "id": "color|墨绿",
+      "targets": [
+        "森林深绿",
+        "墨绿",
+        "黛绿"
+      ]
+    },
+    {
+      "id": "atmosphere|温馨",
+      "targets": [
+        "浪漫温馨",
+        "温暖治愈",
+        "温馨居家"
+      ]
+    },
+    {
+      "id": "atmosphere|神秘",
+      "targets": [
+        "神秘奇幻",
+        "诡异神秘",
+        "神秘莫测"
+      ]
+    },
+    {
+      "id": "character|机械",
+      "targets": [
+        "蒸汽朋克角色",
+        "机器人",
+        "机械师"
+      ]
+    },
+    {
+      "id": "scene|遗迹",
+      "targets": [
+        "沙漠古城",
+        "古代遗迹",
+        "浮空遗迹"
+      ]
+    },
+    {
+      "id": "scene|浮空",
+      "targets": [
+        "天空之城",
+        "浮空岛",
+        "浮空遗迹"
+      ]
+    },
+    {
+      "id": "style|机械",
+      "targets": [
+        "赛博朋克",
+        "未来主义"
+      ]
+    },
+    {
+      "id": "style|晕染",
+      "targets": [
+        "水墨国风",
+        "水彩淡彩"
+      ]
+    },
+    {
+      "id": "style|留白",
+      "targets": [
+        "水墨国风",
+        "极简几何"
+      ]
+    },
+    {
+      "id": "style|巴洛克",
+      "targets": [
+        "油画质感",
+        "巴洛克"
+      ]
+    },
+    {
+      "id": "style|洛可可",
+      "targets": [
+        "油画质感",
+        "洛可可"
+      ]
+    },
+    {
+      "id": "style|暗黑",
+      "targets": [
+        "哥特暗黑",
+        "暗影深渊"
+      ]
+    },
+    {
+      "id": "style|黑暗",
+      "targets": [
+        "哥特暗黑",
+        "暗影深渊"
+      ]
+    },
+    {
+      "id": "style|渲染",
+      "targets": [
+        "水彩淡彩",
+        "3D渲染"
+      ]
+    },
+    {
+      "id": "style|黄铜",
+      "targets": [
+        "蒸汽朋克",
+        "柴油朋克"
+      ]
+    },
+    {
+      "id": "style|点彩",
+      "targets": [
+        "印象派",
+        "点彩派"
+      ]
+    },
+    {
+      "id": "style|插画",
+      "targets": [
+        "扁平矢量",
+        "手绘插画"
+      ]
+    },
+    {
+      "id": "style|几何",
+      "targets": [
+        "低多边形",
+        "装饰艺术"
+      ]
+    },
+    {
+      "id": "style|荒诞",
+      "targets": [
+        "超现实主义",
+        "达达主义"
+      ]
+    },
+    {
+      "id": "style|故障",
+      "targets": [
+        "故障艺术",
+        "蒸汽波"
+      ]
+    },
+    {
+      "id": "style|奢华",
+      "targets": [
+        "装饰艺术",
+        "巴洛克"
+      ]
+    },
+    {
+      "id": "style|凡尔赛",
+      "targets": [
+        "巴洛克",
+        "洛可可"
+      ]
+    },
+    {
+      "id": "style|奇幻",
+      "targets": [
+        "幻想生物",
+        "魔法奇幻"
+      ]
+    },
+    {
+      "id": "style|夜景",
+      "targets": [
+        "霓虹夜景",
+        "赛博朋克"
+      ]
+    },
+    {
+      "id": "style|拼贴",
+      "targets": [
+        "波普拼贴",
+        "达达主义"
+      ]
+    },
+    {
+      "id": "style|元素",
+      "targets": [
+        "魔法奇幻",
+        "自然之力"
+      ]
+    },
+    {
+      "id": "style|风暴",
+      "targets": [
+        "自然之力",
+        "浪漫主义"
+      ]
+    },
+    {
+      "id": "style|外星文明",
+      "targets": [
+        "异星科幻",
+        "太空歌剧"
+      ]
+    },
+    {
+      "id": "style|复古未来",
+      "targets": [
+        "柴油朋克",
+        "复古未来主义"
+      ]
+    },
+    {
+      "id": "lighting|月光",
+      "targets": [
+        "冷蓝月光",
+        "月光"
+      ]
+    },
+    {
+      "id": "lighting|月色",
+      "targets": [
+        "冷蓝月光",
+        "月光"
+      ]
+    },
+    {
+      "id": "lighting|月夜",
+      "targets": [
+        "冷蓝月光",
+        "月光"
+      ]
+    },
+    {
+      "id": "lighting|黄昏",
+      "targets": [
+        "暖金黄昏",
+        "暮光"
+      ]
+    },
+    {
+      "id": "lighting|傍晚",
+      "targets": [
+        "暖金黄昏",
+        "暮光"
+      ]
+    },
+    {
+      "id": "lighting|黄金时刻",
+      "targets": [
+        "暖金黄昏",
+        "黄金时刻"
+      ]
+    },
+    {
+      "id": "lighting|暮色",
+      "targets": [
+        "暖金黄昏",
+        "暮光"
+      ]
+    },
+    {
+      "id": "lighting|余晖",
+      "targets": [
+        "暖金黄昏",
+        "暮光"
+      ]
+    },
+    {
+      "id": "lighting|剪影",
+      "targets": [
+        "逆光剪影",
+        "背光剪影"
+      ]
+    },
+    {
+      "id": "lighting|轮廓光",
+      "targets": [
+        "逆光剪影",
+        "轮廓光"
+      ]
+    },
+    {
+      "id": "lighting|霓虹",
+      "targets": [
+        "霓虹彩光",
+        "霓虹光"
+      ]
+    },
+    {
+      "id": "lighting|灯牌",
+      "targets": [
+        "霓虹彩光",
+        "霓虹光"
+      ]
+    },
+    {
+      "id": "lighting|火焰",
+      "targets": [
+        "烛火光",
+        "火光"
+      ]
+    },
+    {
+      "id": "lighting|火光",
+      "targets": [
+        "烛火光",
+        "火光"
+      ]
+    },
+    {
+      "id": "lighting|蜡烛",
+      "targets": [
+        "烛火光",
+        "烛光"
+      ]
+    },
+    {
+      "id": "lighting|篝火",
+      "targets": [
+        "烛火光",
+        "火光"
+      ]
+    },
+    {
+      "id": "lighting|窗光",
+      "targets": [
+        "柔光漫射",
+        "窗光"
+      ]
+    },
+    {
+      "id": "lighting|舞台光",
+      "targets": [
+        "电影级侧光",
+        "舞台光"
+      ]
+    },
+    {
+      "id": "lighting|轮廓",
+      "targets": [
+        "电影级侧光",
+        "轮廓光"
+      ]
+    },
+    {
+      "id": "lighting|暮光",
+      "targets": [
+        "黄金时刻",
+        "暮光"
+      ]
+    },
+    {
+      "id": "lighting|破晓",
+      "targets": [
+        "蓝调时刻",
+        "晨光"
+      ]
+    },
+    {
+      "id": "lighting|舞台灯",
+      "targets": [
+        "聚光灯",
+        "舞台光"
+      ]
+    },
+    {
+      "id": "composition|全景",
+      "targets": [
+        "超广角",
+        "全景"
+      ]
+    },
+    {
+      "id": "composition|远景",
+      "targets": [
+        "超广角",
+        "远景"
+      ]
+    },
+    {
+      "id": "composition|鸟瞰",
+      "targets": [
+        "超广角",
+        "俯拍"
+      ]
+    },
+    {
+      "id": "composition|俯视",
+      "targets": [
+        "超广角",
+        "俯拍"
+      ]
+    },
+    {
+      "id": "composition|全景图",
+      "targets": [
+        "超广角",
+        "全景"
+      ]
+    },
+    {
+      "id": "composition|大全景",
+      "targets": [
+        "超广角",
+        "远景"
+      ]
+    },
+    {
+      "id": "composition|特写",
+      "targets": [
+        "特写镜头",
+        "特写"
+      ]
+    },
+    {
+      "id": "composition|微距",
+      "targets": [
+        "特写镜头",
+        "微距"
+      ]
+    },
+    {
+      "id": "composition|放大",
+      "targets": [
+        "特写镜头",
+        "微距"
+      ]
+    },
+    {
+      "id": "composition|纹理",
+      "targets": [
+        "特写镜头",
+        "微距"
+      ]
+    },
+    {
+      "id": "composition|低角度",
+      "targets": [
+        "仰拍",
+        "低角度"
+      ]
+    },
+    {
+      "id": "composition|居中",
+      "targets": [
+        "居中对称",
+        "中心构图"
+      ]
+    },
+    {
+      "id": "composition|左右对称",
+      "targets": [
+        "居中对称",
+        "对称构图"
+      ]
+    },
+    {
+      "id": "composition|倾斜",
+      "targets": [
+        "荷兰角",
+        "倾斜移轴"
+      ]
+    },
+    {
+      "id": "composition|前景",
+      "targets": [
+        "纵深层次",
+        "前景虚化"
+      ]
+    },
+    {
+      "id": "composition|纵深",
+      "targets": [
+        "纵深层次",
+        "隧道视角"
+      ]
+    },
+    {
+      "id": "composition|透视",
+      "targets": [
+        "隧道视角",
+        "透视构图"
+      ]
+    },
+    {
+      "id": "composition|镜面",
+      "targets": [
+        "倒影",
+        "镜像构图"
+      ]
+    },
+    {
+      "id": "composition|对角线",
+      "targets": [
+        "对角线",
+        "对角线构图"
+      ]
+    },
+    {
+      "id": "composition|斜线",
+      "targets": [
+        "对角线",
+        "对角线构图"
+      ]
+    },
+    {
+      "id": "composition|对角",
+      "targets": [
+        "对角线",
+        "对角线构图"
+      ]
+    },
+    {
+      "id": "composition|X形",
+      "targets": [
+        "对角线",
+        "对角线构图"
+      ]
+    },
+    {
+      "id": "composition|对角线构图",
+      "targets": [
+        "对角线",
+        "对角线构图"
+      ]
+    },
+    {
+      "id": "composition|黄金比",
+      "targets": [
+        "黄金分割",
+        "黄金螺旋"
+      ]
+    },
+    {
+      "id": "composition|斐波那契",
+      "targets": [
+        "黄金分割",
+        "黄金螺旋"
+      ]
+    },
+    {
+      "id": "composition|螺旋",
+      "targets": [
+        "黄金分割",
+        "黄金螺旋"
+      ]
+    },
+    {
+      "id": "composition|phi",
+      "targets": [
+        "黄金分割",
+        "黄金螺旋"
+      ]
+    },
+    {
+      "id": "composition|0.618",
+      "targets": [
+        "黄金分割",
+        "黄金螺旋"
+      ]
+    },
+    {
+      "id": "composition|镜像对称",
+      "targets": [
+        "对称构图",
+        "镜像构图"
+      ]
+    },
+    {
+      "id": "composition|俯视角",
+      "targets": [
+        "俯拍",
+        "高角度"
+      ]
+    },
+    {
+      "id": "composition|环绕",
+      "targets": [
+        "环绕构图",
+        "圆形构图"
+      ]
+    },
+    {
+      "id": "color|荧光",
+      "targets": [
+        "赛博霓虹",
+        "霓虹粉紫"
+      ]
+    },
+    {
+      "id": "color|琥珀",
+      "targets": [
+        "暖金琥珀",
+        "琥珀"
+      ]
+    },
+    {
+      "id": "color|银灰",
+      "targets": [
+        "冷蓝银灰",
+        "银灰"
+      ]
+    },
+    {
+      "id": "color|金属",
+      "targets": [
+        "冷蓝银灰",
+        "金属质感"
+      ]
+    },
+    {
+      "id": "color|明黄",
+      "targets": [
+        "东方古韵",
+        "柠檬黄"
+      ]
+    },
+    {
+      "id": "color|深红",
+      "targets": [
+        "暗黑哥特",
+        "酒红"
+      ]
+    },
+    {
+      "id": "color|土黄",
+      "targets": [
+        "复古70年代",
+        "沙漠暖调"
+      ]
+    },
+    {
+      "id": "color|橄榄",
+      "targets": [
+        "复古70年代",
+        "橄榄绿"
+      ]
+    },
+    {
+      "id": "color|紫罗兰",
+      "targets": [
+        "霓虹粉紫",
+        "薰衣草紫"
+      ]
+    },
+    {
+      "id": "color|深蓝",
+      "targets": [
+        "藏青",
+        "黛蓝"
+      ]
+    },
+    {
+      "id": "atmosphere|史诗",
+      "targets": [
+        "史诗壮阔",
+        "史诗悲歌"
+      ]
+    },
+    {
+      "id": "atmosphere|宁静",
+      "targets": [
+        "静谧禅意",
+        "宁静致远"
+      ]
+    },
+    {
+      "id": "atmosphere|惊悚",
+      "targets": [
+        "紧张悬疑",
+        "阴森恐怖"
+      ]
+    },
+    {
+      "id": "atmosphere|恐怖",
+      "targets": [
+        "紧张悬疑",
+        "阴森恐怖"
+      ]
+    },
+    {
+      "id": "atmosphere|悲壮",
+      "targets": [
+        "悲壮苍凉",
+        "史诗悲歌"
+      ]
+    },
+    {
+      "id": "atmosphere|苍凉",
+      "targets": [
+        "悲壮苍凉",
+        "荒凉寂寥"
+      ]
+    },
+    {
+      "id": "atmosphere|壮烈",
+      "targets": [
+        "悲壮苍凉",
+        "史诗悲歌"
+      ]
+    },
+    {
+      "id": "atmosphere|荒凉",
+      "targets": [
+        "悲壮苍凉",
+        "荒凉寂寥"
+      ]
+    },
+    {
+      "id": "atmosphere|哀伤",
+      "targets": [
+        "悲壮苍凉",
+        "哀伤忧郁"
+      ]
+    },
+    {
+      "id": "atmosphere|空旷",
+      "targets": [
+        "孤独寂寥",
+        "荒凉寂寥"
+      ]
+    },
+    {
+      "id": "atmosphere|寂寥",
+      "targets": [
+        "孤独寂寥",
+        "荒凉寂寥"
+      ]
+    },
+    {
+      "id": "atmosphere|梦幻",
+      "targets": [
+        "神秘奇幻",
+        "梦幻飘渺"
+      ]
+    },
+    {
+      "id": "atmosphere|废墟",
+      "targets": [
+        "颓废末世",
+        "荒凉寂寥"
+      ]
+    },
+    {
+      "id": "atmosphere|破败",
+      "targets": [
+        "颓废末世",
+        "荒凉寂寥"
+      ]
+    },
+    {
+      "id": "atmosphere|荒芜",
+      "targets": [
+        "颓废末世",
+        "荒凉寂寥"
+      ]
+    },
+    {
+      "id": "atmosphere|热闹",
+      "targets": [
+        "活力四射",
+        "欢快喜庆"
+      ]
+    },
+    {
+      "id": "atmosphere|激情",
+      "targets": [
+        "活力四射",
+        "热血激昂"
+      ]
+    },
+    {
+      "id": "atmosphere|热血",
+      "targets": [
+        "活力四射",
+        "热血激昂"
+      ]
+    },
+    {
+      "id": "atmosphere|温暖",
+      "targets": [
+        "温暖治愈",
+        "温馨居家"
+      ]
+    },
+    {
+      "id": "atmosphere|舒适",
+      "targets": [
+        "温暖治愈",
+        "温馨居家"
+      ]
+    },
+    {
+      "id": "atmosphere|庄严",
+      "targets": [
+        "肃穆庄严",
+        "神圣庄严"
+      ]
+    },
+    {
+      "id": "atmosphere|神圣",
+      "targets": [
+        "肃穆庄严",
+        "神圣庄严"
+      ]
+    },
+    {
+      "id": "atmosphere|庄重",
+      "targets": [
+        "肃穆庄严",
+        "庄重典雅"
+      ]
+    },
+    {
+      "id": "atmosphere|崇高",
+      "targets": [
+        "肃穆庄严",
+        "神圣庄严"
+      ]
+    },
+    {
+      "id": "atmosphere|离奇",
+      "targets": [
+        "荒诞离奇",
+        "诡异神秘"
+      ]
+    },
+    {
+      "id": "atmosphere|诡异",
+      "targets": [
+        "荒诞离奇",
+        "诡异神秘"
+      ]
+    },
+    {
+      "id": "atmosphere|自然",
+      "targets": [
+        "野性原始",
+        "清新自然"
+      ]
+    },
+    {
+      "id": "atmosphere|神秘莫测",
+      "targets": [
+        "诡异神秘",
+        "神秘莫测"
+      ]
+    },
+    {
+      "id": "character|剑客",
+      "targets": [
+        "古风侠客",
+        "剑客"
+      ]
+    },
+    {
+      "id": "character|剑士",
+      "targets": [
+        "古风侠客",
+        "剑士"
+      ]
+    },
+    {
+      "id": "character|暗黑",
+      "targets": [
+        "暗黑骑士",
+        "哥特角色"
+      ]
+    },
+    {
+      "id": "character|骑士",
+      "targets": [
+        "暗黑骑士",
+        "骑士"
+      ]
+    },
+    {
+      "id": "character|暗影",
+      "targets": [
+        "暗黑骑士",
+        "刺客"
+      ]
+    },
+    {
+      "id": "character|发明家",
+      "targets": [
+        "蒸汽朋克角色",
+        "机械师"
+      ]
+    },
+    {
+      "id": "character|吸血鬼",
+      "targets": [
+        "哥特角色",
+        "吸血鬼"
+      ]
+    },
+    {
+      "id": "character|血族",
+      "targets": [
+        "哥特角色",
+        "吸血鬼"
+      ]
+    },
+    {
+      "id": "character|暗杀",
+      "targets": [
+        "忍者",
+        "刺客"
+      ]
+    },
+    {
+      "id": "character|精灵",
+      "targets": [
+        "精灵",
+        "精灵弓箭手"
+      ]
+    },
+    {
+      "id": "character|精灵族",
+      "targets": [
+        "精灵",
+        "精灵弓箭手"
+      ]
+    },
+    {
+      "id": "character|术士",
+      "targets": [
+        "魔法师",
+        "术士"
+      ]
+    },
+    {
+      "id": "character|龙战士",
+      "targets": [
+        "龙骑士",
+        "龙人"
+      ]
+    },
+    {
+      "id": "character|龙族",
+      "targets": [
+        "龙骑士",
+        "龙人"
+      ]
+    },
+    {
+      "id": "character|战士",
+      "targets": [
+        "维京战士",
+        "未来战士"
+      ]
+    },
+    {
+      "id": "character|狂战",
+      "targets": [
+        "维京战士",
+        "兽人战士"
+      ]
+    },
+    {
+      "id": "character|猎人",
+      "targets": [
+        "猎人",
+        "赏金猎人"
+      ]
+    },
+    {
+      "id": "character|猎手",
+      "targets": [
+        "猎人",
+        "赏金猎人"
+      ]
+    },
+    {
+      "id": "character|弓",
+      "targets": [
+        "猎人",
+        "精灵弓箭手"
+      ]
+    },
+    {
+      "id": "character|弓箭手",
+      "targets": [
+        "猎人",
+        "精灵弓箭手"
+      ]
+    },
+    {
+      "id": "character|绿皮",
+      "targets": [
+        "兽人战士",
+        "哥布林"
+      ]
+    },
+    {
+      "id": "character|灵魂",
+      "targets": [
+        "幽灵鬼魂",
+        "萨满"
+      ]
+    },
+    {
+      "id": "character|圣骑士",
+      "targets": [
+        "骑士",
+        "圣骑士"
+      ]
+    },
+    {
+      "id": "character|通灵",
+      "targets": [
+        "萨满",
+        "预言家"
+      ]
+    },
+    {
+      "id": "character|巨怪",
+      "targets": [
+        "巨魔",
+        "食人魔"
+      ]
+    },
+    {
+      "id": "scene|云海",
+      "targets": [
+        "仙山云海",
+        "云端之上"
+      ]
+    },
+    {
+      "id": "scene|山巅",
+      "targets": [
+        "仙山云海",
+        "雪山之巅"
+      ]
+    },
+    {
+      "id": "scene|未来城市",
+      "targets": [
+        "赛博都市",
+        "未来都市"
+      ]
+    },
+    {
+      "id": "scene|雨夜",
+      "targets": [
+        "赛博都市",
+        "雨夜小巷"
+      ]
+    },
+    {
+      "id": "scene|樱花树",
+      "targets": [
+        "樱花庭院",
+        "樱花林"
+      ]
+    },
+    {
+      "id": "scene|竹",
+      "targets": [
+        "樱花庭院",
+        "竹林"
+      ]
+    },
+    {
+      "id": "scene|废墟",
+      "targets": [
+        "废墟末世",
+        "古代遗迹"
+      ]
+    },
+    {
+      "id": "scene|草原",
+      "targets": [
+        "自然山水",
+        "草原旷野"
+      ]
+    },
+    {
+      "id": "scene|瀑布",
+      "targets": [
+        "自然山水",
+        "瀑布峡谷"
+      ]
+    },
+    {
+      "id": "scene|森林",
+      "targets": [
+        "自然山水",
+        "森林深处"
+      ]
+    },
+    {
+      "id": "scene|峡谷",
+      "targets": [
+        "自然山水",
+        "瀑布峡谷"
+      ]
+    },
+    {
+      "id": "scene|宇宙",
+      "targets": [
+        "太空站",
+        "星空"
+      ]
+    },
+    {
+      "id": "scene|宇宙飞船",
+      "targets": [
+        "太空站",
+        "星际飞船"
+      ]
+    },
+    {
+      "id": "scene|银河",
+      "targets": [
+        "太空站",
+        "星空"
+      ]
+    },
+    {
+      "id": "scene|星云",
+      "targets": [
+        "太空站",
+        "星空"
+      ]
+    },
+    {
+      "id": "scene|皇宫",
+      "targets": [
+        "古风宫殿",
+        "皇家宫殿"
+      ]
+    },
+    {
+      "id": "scene|迷雾森林",
+      "targets": [
+        "暗黑森林",
+        "迷雾沼泽"
+      ]
+    },
+    {
+      "id": "scene|幽暗",
+      "targets": [
+        "暗黑森林",
+        "幽暗洞穴"
+      ]
+    },
+    {
+      "id": "scene|密林",
+      "targets": [
+        "暗黑森林",
+        "森林深处"
+      ]
+    },
+    {
+      "id": "scene|竹径",
+      "targets": [
+        "竹林",
+        "竹林小径"
+      ]
+    },
+    {
+      "id": "scene|竹林小径",
+      "targets": [
+        "竹林",
+        "竹林小径"
+      ]
+    },
+    {
+      "id": "scene|天空之城",
+      "targets": [
+        "天空之城",
+        "浮空岛"
+      ]
+    },
+    {
+      "id": "scene|天空",
+      "targets": [
+        "天空之城",
+        "浮空岛"
+      ]
+    },
+    {
+      "id": "scene|云中",
+      "targets": [
+        "天空之城",
+        "浮空岛"
+      ]
+    },
+    {
+      "id": "scene|空中",
+      "targets": [
+        "天空之城",
+        "浮空岛"
+      ]
+    },
+    {
+      "id": "scene|漂浮",
+      "targets": [
+        "天空之城",
+        "浮空岛"
+      ]
+    },
+    {
+      "id": "scene|飞岛",
+      "targets": [
+        "天空之城",
+        "浮空岛"
+      ]
+    },
+    {
+      "id": "scene|洞穴",
+      "targets": [
+        "地下洞穴",
+        "水晶洞穴"
+      ]
+    },
+    {
+      "id": "scene|地下城",
+      "targets": [
+        "地下洞穴",
+        "地下城"
+      ]
+    },
+    {
+      "id": "scene|火山",
+      "targets": [
+        "火山熔岩",
+        "火山口"
+      ]
+    },
+    {
+      "id": "scene|火山口",
+      "targets": [
+        "火山熔岩",
+        "火山口"
+      ]
+    },
+    {
+      "id": "scene|冰原",
+      "targets": [
+        "冰原极光",
+        "极地冰原"
+      ]
+    },
+    {
+      "id": "scene|冰封",
+      "targets": [
+        "冰原极光",
+        "冰封王座"
+      ]
+    },
+    {
+      "id": "scene|极地",
+      "targets": [
+        "冰原极光",
+        "极地冰原"
+      ]
+    },
+    {
+      "id": "scene|沼泽",
+      "targets": [
+        "沼泽湿地",
+        "迷雾沼泽"
+      ]
+    },
+    {
+      "id": "scene|湿地",
+      "targets": [
+        "沼泽湿地",
+        "迷雾沼泽"
+      ]
+    },
+    {
+      "id": "scene|泥沼",
+      "targets": [
+        "沼泽湿地",
+        "迷雾沼泽"
+      ]
+    },
+    {
+      "id": "scene|水晶矿",
+      "targets": [
+        "水晶洞穴",
+        "水晶矿脉"
+      ]
+    }
+  ],
+  "unreachable": [
+    {
+      "dim": "style",
+      "name": "概念艺术"
+    },
+    {
+      "dim": "style",
+      "name": "赛博水墨"
+    },
+    {
+      "dim": "style",
+      "name": "敦煌飞天"
+    },
+    {
+      "dim": "style",
+      "name": "洛可可宫廷"
+    },
+    {
+      "dim": "style",
+      "name": "浮世绘武士"
+    },
+    {
+      "dim": "style",
+      "name": "剪纸拼贴"
+    },
+    {
+      "dim": "style",
+      "name": "水彩晕染"
+    },
+    {
+      "dim": "style",
+      "name": "蜡笔涂鸦"
+    },
+    {
+      "dim": "style",
+      "name": "素描速写"
+    },
+    {
+      "dim": "style",
+      "name": "版画拓印"
+    },
+    {
+      "dim": "style",
+      "name": "玻璃彩绘"
+    },
+    {
+      "dim": "style",
+      "name": "马赛克镶嵌"
+    },
+    {
+      "dim": "style",
+      "name": "像素复古"
+    },
+    {
+      "dim": "style",
+      "name": "超现实梦境"
+    },
+    {
+      "dim": "style",
+      "name": "波普漫画"
+    },
+    {
+      "dim": "style",
+      "name": "国画工笔"
+    },
+    {
+      "dim": "style",
+      "name": "白描"
+    },
+    {
+      "dim": "style",
+      "name": "青花瓷"
+    },
+    {
+      "dim": "style",
+      "name": "唐三彩"
+    },
+    {
+      "dim": "style",
+      "name": "漆器"
+    },
+    {
+      "dim": "style",
+      "name": "景泰蓝"
+    },
+    {
+      "dim": "style",
+      "name": "苗族银饰"
+    },
+    {
+      "dim": "style",
+      "name": "藏族唐卡"
+    },
+    {
+      "dim": "style",
+      "name": "和服纹样"
+    },
+    {
+      "dim": "style",
+      "name": "伊斯兰几何"
+    },
+    {
+      "dim": "style",
+      "name": "非洲部落"
+    },
+    {
+      "dim": "style",
+      "name": "玛雅文明"
+    },
+    {
+      "dim": "style",
+      "name": "印加黄金"
+    },
+    {
+      "dim": "style",
+      "name": "埃及壁画"
+    },
+    {
+      "dim": "style",
+      "name": "希腊陶瓶"
+    },
+    {
+      "dim": "style",
+      "name": "罗马马赛克"
+    },
+    {
+      "dim": "style",
+      "name": "哥特彩窗"
+    },
+    {
+      "dim": "style",
+      "name": "巴洛克穹顶"
+    },
+    {
+      "dim": "style",
+      "name": "洛可可贝壳"
+    },
+    {
+      "dim": "style",
+      "name": "维多利亚蕾丝"
+    },
+    {
+      "dim": "style",
+      "name": "孟菲斯"
+    },
+    {
+      "dim": "style",
+      "name": "欧普艺术"
+    },
+    {
+      "dim": "style",
+      "name": "色域绘画"
+    },
+    {
+      "dim": "style",
+      "name": "硬边绘画"
+    },
+    {
+      "dim": "style",
+      "name": "照相写实"
+    },
+    {
+      "dim": "style",
+      "name": "古典写实"
+    },
+    {
+      "dim": "style",
+      "name": "后印象派"
+    },
+    {
+      "dim": "style",
+      "name": "构成主义"
+    },
+    {
+      "dim": "style",
+      "name": "至上主义"
+    },
+    {
+      "dim": "style",
+      "name": "风格派"
+    },
+    {
+      "dim": "style",
+      "name": "贫穷艺术"
+    },
+    {
+      "dim": "style",
+      "name": "观念艺术"
+    },
+    {
+      "dim": "style",
+      "name": "大地艺术"
+    },
+    {
+      "dim": "style",
+      "name": "装置艺术"
+    },
+    {
+      "dim": "style",
+      "name": "行为艺术"
+    },
+    {
+      "dim": "style",
+      "name": "新表现主义"
+    },
+    {
+      "dim": "style",
+      "name": "厚涂油画"
+    },
+    {
+      "dim": "style",
+      "name": "湿壁画"
+    },
+    {
+      "dim": "style",
+      "name": "蛋彩画"
+    },
+    {
+      "dim": "style",
+      "name": "蚀刻版画"
+    },
+    {
+      "dim": "style",
+      "name": "石版画"
+    },
+    {
+      "dim": "style",
+      "name": "丝网印刷"
+    },
+    {
+      "dim": "style",
+      "name": "蜡染"
+    },
+    {
+      "dim": "style",
+      "name": "扎染"
+    },
+    {
+      "dim": "style",
+      "name": "刺绣"
+    },
+    {
+      "dim": "style",
+      "name": "编织艺术"
+    },
+    {
+      "dim": "style",
+      "name": "陶艺"
+    },
+    {
+      "dim": "style",
+      "name": "珐琅"
+    },
+    {
+      "dim": "style",
+      "name": "木雕"
+    },
+    {
+      "dim": "style",
+      "name": "石雕"
+    },
+    {
+      "dim": "style",
+      "name": "金属工艺"
+    },
+    {
+      "dim": "style",
+      "name": "折纸"
+    },
+    {
+      "dim": "style",
+      "name": "纸雕"
+    },
+    {
+      "dim": "style",
+      "name": "拼布"
+    },
+    {
+      "dim": "style",
+      "name": "珠绣"
+    },
+    {
+      "dim": "style",
+      "name": "羽毛画"
+    },
+    {
+      "dim": "style",
+      "name": "沙画"
+    },
+    {
+      "dim": "style",
+      "name": "冰雕"
+    },
+    {
+      "dim": "style",
+      "name": "糖画"
+    },
+    {
+      "dim": "style",
+      "name": "泥塑"
+    },
+    {
+      "dim": "style",
+      "name": "皮影"
+    },
+    {
+      "dim": "style",
+      "name": "年画"
+    },
+    {
+      "dim": "style",
+      "name": "壁画"
+    },
+    {
+      "dim": "style",
+      "name": "岩画"
+    },
+    {
+      "dim": "style",
+      "name": "水拓画"
+    },
+    {
+      "dim": "style",
+      "name": "波斯地毯"
+    },
+    {
+      "dim": "style",
+      "name": "岭南画派"
+    },
+    {
+      "dim": "style",
+      "name": "吴门画派"
+    },
+    {
+      "dim": "style",
+      "name": "浙派山水"
+    },
+    {
+      "dim": "style",
+      "name": "金陵画派"
+    },
+    {
+      "dim": "style",
+      "name": "扬州画派"
+    },
+    {
+      "dim": "style",
+      "name": "海上画派"
+    },
+    {
+      "dim": "style",
+      "name": "长安画派"
+    },
+    {
+      "dim": "style",
+      "name": "京津画派"
+    },
+    {
+      "dim": "style",
+      "name": "娄东画派"
+    },
+    {
+      "dim": "style",
+      "name": "虞山画派"
+    },
+    {
+      "dim": "style",
+      "name": "黄山画派"
+    },
+    {
+      "dim": "style",
+      "name": "新安画派"
+    },
+    {
+      "dim": "style",
+      "name": "米家山水"
+    },
+    {
+      "dim": "style",
+      "name": "青绿山水"
+    },
+    {
+      "dim": "style",
+      "name": "金碧山水"
+    },
+    {
+      "dim": "style",
+      "name": "浅绛山水"
+    },
+    {
+      "dim": "style",
+      "name": "没骨画"
+    },
+    {
+      "dim": "style",
+      "name": "工笔重彩"
+    },
+    {
+      "dim": "style",
+      "name": "写意花鸟"
+    },
+    {
+      "dim": "style",
+      "name": "泼墨山水"
+    },
+    {
+      "dim": "style",
+      "name": "焦墨山水"
+    },
+    {
+      "dim": "style",
+      "name": "界画"
+    },
+    {
+      "dim": "style",
+      "name": "指墨画"
+    },
+    {
+      "dim": "style",
+      "name": "漆画"
+    },
+    {
+      "dim": "style",
+      "name": "烙画"
+    },
+    {
+      "dim": "style",
+      "name": "坦培拉"
+    },
+    {
+      "dim": "style",
+      "name": "粉彩画"
+    },
+    {
+      "dim": "style",
+      "name": "水粉画"
+    },
+    {
+      "dim": "style",
+      "name": "丙烯画"
+    },
+    {
+      "dim": "style",
+      "name": "蜡笔画"
+    },
+    {
+      "dim": "style",
+      "name": "色粉笔"
+    },
+    {
+      "dim": "style",
+      "name": "钢笔淡彩"
+    },
+    {
+      "dim": "style",
+      "name": "圆珠笔画"
+    },
+    {
+      "dim": "style",
+      "name": "针管笔画"
+    },
+    {
+      "dim": "style",
+      "name": "马克笔画"
+    },
+    {
+      "dim": "style",
+      "name": "彩铅画"
+    },
+    {
+      "dim": "style",
+      "name": "木炭素描"
+    },
+    {
+      "dim": "style",
+      "name": "银针笔"
+    },
+    {
+      "dim": "style",
+      "name": "蛋彩壁画"
+    },
+    {
+      "dim": "style",
+      "name": "油画棒"
+    },
+    {
+      "dim": "style",
+      "name": "水彩速写"
+    },
+    {
+      "dim": "style",
+      "name": "素描淡彩"
+    },
+    {
+      "dim": "style",
+      "name": "极简主义"
+    },
+    {
+      "dim": "style",
+      "name": "新波普"
+    },
+    {
+      "dim": "style",
+      "name": "新达达"
+    },
+    {
+      "dim": "style",
+      "name": "波普超现实"
+    },
+    {
+      "dim": "style",
+      "name": "极简抽象"
+    },
+    {
+      "dim": "style",
+      "name": "几何抽象"
+    },
+    {
+      "dim": "style",
+      "name": "抒情抽象"
+    },
+    {
+      "dim": "style",
+      "name": "行动绘画"
+    },
+    {
+      "dim": "style",
+      "name": "光效应艺术"
+    },
+    {
+      "dim": "style",
+      "name": "动态艺术"
+    },
+    {
+      "dim": "style",
+      "name": "环境艺术"
+    },
+    {
+      "dim": "style",
+      "name": "偶发艺术"
+    },
+    {
+      "dim": "style",
+      "name": "新现实主义"
+    },
+    {
+      "dim": "style",
+      "name": "超写实主义"
+    },
+    {
+      "dim": "style",
+      "name": "新具象"
+    },
+    {
+      "dim": "style",
+      "name": "具象表现"
+    },
+    {
+      "dim": "style",
+      "name": "极简构成"
+    },
+    {
+      "dim": "style",
+      "name": "抽象拼贴"
+    },
+    {
+      "dim": "style",
+      "name": "珐琅彩"
+    },
+    {
+      "dim": "style",
+      "name": "掐丝工艺"
+    },
+    {
+      "dim": "style",
+      "name": "螺钿镶嵌"
+    },
+    {
+      "dim": "style",
+      "name": "金银错"
+    },
+    {
+      "dim": "style",
+      "name": "鎏金工艺"
+    },
+    {
+      "dim": "style",
+      "name": "錾刻工艺"
+    },
+    {
+      "dim": "style",
+      "name": "花丝镶嵌"
+    },
+    {
+      "dim": "style",
+      "name": "点翠工艺"
+    },
+    {
+      "dim": "style",
+      "name": "烧蓝工艺"
+    },
+    {
+      "dim": "style",
+      "name": "漆线雕"
+    },
+    {
+      "dim": "style",
+      "name": "木纹金"
+    },
+    {
+      "dim": "style",
+      "name": "琉璃工艺"
+    },
+    {
+      "dim": "style",
+      "name": "玉雕"
+    },
+    {
+      "dim": "style",
+      "name": "竹雕"
+    },
+    {
+      "dim": "style",
+      "name": "核雕"
+    },
+    {
+      "dim": "style",
+      "name": "微雕"
+    },
+    {
+      "dim": "style",
+      "name": "根雕"
+    },
+    {
+      "dim": "style",
+      "name": "紫砂"
+    },
+    {
+      "dim": "style",
+      "name": "青瓷"
+    },
+    {
+      "dim": "style",
+      "name": "白瓷"
+    },
+    {
+      "dim": "style",
+      "name": "黑陶"
+    },
+    {
+      "dim": "style",
+      "name": "彩陶"
+    },
+    {
+      "dim": "style",
+      "name": "汝窑"
+    },
+    {
+      "dim": "style",
+      "name": "官窑"
+    },
+    {
+      "dim": "style",
+      "name": "哥窑"
+    },
+    {
+      "dim": "style",
+      "name": "钧窑"
+    },
+    {
+      "dim": "style",
+      "name": "定窑"
+    },
+    {
+      "dim": "style",
+      "name": "建盏"
+    },
+    {
+      "dim": "style",
+      "name": "越窑"
+    },
+    {
+      "dim": "style",
+      "name": "龙泉青瓷"
+    },
+    {
+      "dim": "style",
+      "name": "AI幻觉艺术"
+    },
+    {
+      "dim": "style",
+      "name": "体素艺术"
+    },
+    {
+      "dim": "style",
+      "name": "全息投影"
+    },
+    {
+      "dim": "style",
+      "name": "生成艺术"
+    },
+    {
+      "dim": "style",
+      "name": "算法艺术"
+    },
+    {
+      "dim": "style",
+      "name": "数据可视化艺术"
+    },
+    {
+      "dim": "style",
+      "name": "分形艺术"
+    },
+    {
+      "dim": "style",
+      "name": "新媒体艺术"
+    },
+    {
+      "dim": "style",
+      "name": "交互艺术"
+    },
+    {
+      "dim": "style",
+      "name": "沉浸式艺术"
+    },
+    {
+      "dim": "style",
+      "name": "数字雕塑"
+    },
+    {
+      "dim": "style",
+      "name": "程序化艺术"
+    },
+    {
+      "dim": "style",
+      "name": "神经风格迁移"
+    },
+    {
+      "dim": "style",
+      "name": "像素雕塑"
+    },
+    {
+      "dim": "style",
+      "name": "光绘艺术"
+    },
+    {
+      "dim": "style",
+      "name": "投影映射"
+    },
+    {
+      "dim": "style",
+      "name": "增强现实艺术"
+    },
+    {
+      "dim": "style",
+      "name": "虚拟现实艺术"
+    },
+    {
+      "dim": "style",
+      "name": "数字拼贴"
+    },
+    {
+      "dim": "style",
+      "name": "赛博格艺术"
+    },
+    {
+      "dim": "style",
+      "name": "赛博敦煌"
+    },
+    {
+      "dim": "style",
+      "name": "国潮插画"
+    },
+    {
+      "dim": "style",
+      "name": "新中式"
+    },
+    {
+      "dim": "style",
+      "name": "东方蒸汽朋克"
+    },
+    {
+      "dim": "style",
+      "name": "和风赛博"
+    },
+    {
+      "dim": "style",
+      "name": "非洲未来主义"
+    },
+    {
+      "dim": "style",
+      "name": "拉美魔幻"
+    },
+    {
+      "dim": "style",
+      "name": "拉贾斯坦细密画"
+    },
+    {
+      "dim": "style",
+      "name": "泰式金箔"
+    },
+    {
+      "dim": "style",
+      "name": "蒙元风格"
+    },
+    {
+      "dim": "style",
+      "name": "西域风格"
+    },
+    {
+      "dim": "style",
+      "name": "丝路风格"
+    },
+    {
+      "dim": "style",
+      "name": "赛博唐风"
+    },
+    {
+      "dim": "style",
+      "name": "蒸汽和风"
+    },
+    {
+      "dim": "style",
+      "name": "新古典国风"
+    },
+    {
+      "dim": "style",
+      "name": "俄罗斯圣像画"
+    },
+    {
+      "dim": "style",
+      "name": "墨西哥壁画"
+    },
+    {
+      "dim": "style",
+      "name": "日本水墨"
+    },
+    {
+      "dim": "style",
+      "name": "韩国青瓷"
+    },
+    {
+      "dim": "style",
+      "name": "越南漆画"
+    },
+    {
+      "dim": "style",
+      "name": "泰国壁画"
+    },
+    {
+      "dim": "style",
+      "name": "缅甸漆器"
+    },
+    {
+      "dim": "style",
+      "name": "柬埔寨吴哥"
+    },
+    {
+      "dim": "style",
+      "name": "土耳其瓷砖"
+    },
+    {
+      "dim": "style",
+      "name": "摩洛哥瓷砖"
+    },
+    {
+      "dim": "style",
+      "name": "西班牙摩尔"
+    },
+    {
+      "dim": "style",
+      "name": "葡萄牙蓝瓷"
+    },
+    {
+      "dim": "style",
+      "name": "荷兰代尔夫特"
+    },
+    {
+      "dim": "style",
+      "name": "英国水彩"
+    },
+    {
+      "dim": "style",
+      "name": "俄罗斯套娃"
+    },
+    {
+      "dim": "style",
+      "name": "印度细密画"
+    },
+    {
+      "dim": "style",
+      "name": "波斯蓝陶"
+    },
+    {
+      "dim": "style",
+      "name": "阿拉伯书法"
+    },
+    {
+      "dim": "style",
+      "name": "埃塞俄比亚圣像"
+    },
+    {
+      "dim": "style",
+      "name": "毛利纹身"
+    },
+    {
+      "dim": "style",
+      "name": "波利尼西亚纹样"
+    },
+    {
+      "dim": "style",
+      "name": "因纽特雕刻"
+    },
+    {
+      "dim": "style",
+      "name": "澳洲原住民点画"
+    },
+    {
+      "dim": "style",
+      "name": "蒸汽波霓虹"
+    },
+    {
+      "dim": "style",
+      "name": "故障波普"
+    },
+    {
+      "dim": "style",
+      "name": "复古像素"
+    },
+    {
+      "dim": "style",
+      "name": "低保真"
+    },
+    {
+      "dim": "style",
+      "name": "酸性设计"
+    },
+    {
+      "dim": "style",
+      "name": "后现代主义"
+    },
+    {
+      "dim": "style",
+      "name": "新几何主义"
+    },
+    {
+      "dim": "style",
+      "name": "极简未来"
+    },
+    {
+      "dim": "style",
+      "name": "赛博巴洛克"
+    },
+    {
+      "dim": "style",
+      "name": "蒸汽洛可可"
+    },
+    {
+      "dim": "style",
+      "name": "暗黑童话"
+    },
+    {
+      "dim": "style",
+      "name": "霓虹波普"
+    },
+    {
+      "dim": "lighting",
+      "name": "戏剧对比"
+    },
+    {
+      "dim": "lighting",
+      "name": "篝火光"
+    },
+    {
+      "dim": "lighting",
+      "name": "炉火光"
+    },
+    {
+      "dim": "lighting",
+      "name": "星光"
+    },
+    {
+      "dim": "lighting",
+      "name": "阳光"
+    },
+    {
+      "dim": "lighting",
+      "name": "黎明光"
+    },
+    {
+      "dim": "lighting",
+      "name": "破晓光"
+    },
+    {
+      "dim": "lighting",
+      "name": "午后光"
+    },
+    {
+      "dim": "lighting",
+      "name": "黄昏光"
+    },
+    {
+      "dim": "lighting",
+      "name": "夜晚光"
+    },
+    {
+      "dim": "lighting",
+      "name": "全息光"
+    },
+    {
+      "dim": "lighting",
+      "name": "激光"
+    },
+    {
+      "dim": "lighting",
+      "name": "投影光"
+    },
+    {
+      "dim": "lighting",
+      "name": "泛光"
+    },
+    {
+      "dim": "lighting",
+      "name": "侧光"
+    },
+    {
+      "dim": "lighting",
+      "name": "眼神光"
+    },
+    {
+      "dim": "lighting",
+      "name": "发丝光"
+    },
+    {
+      "dim": "lighting",
+      "name": "补光"
+    },
+    {
+      "dim": "lighting",
+      "name": "主光"
+    },
+    {
+      "dim": "lighting",
+      "name": "漫射光"
+    },
+    {
+      "dim": "lighting",
+      "name": "反射光"
+    },
+    {
+      "dim": "lighting",
+      "name": "折射光"
+    },
+    {
+      "dim": "lighting",
+      "name": "透射光"
+    },
+    {
+      "dim": "lighting",
+      "name": "散射光"
+    },
+    {
+      "dim": "lighting",
+      "name": "体积光"
+    },
+    {
+      "dim": "lighting",
+      "name": "丁达尔效应"
+    },
+    {
+      "dim": "lighting",
+      "name": "光柱"
+    },
+    {
+      "dim": "lighting",
+      "name": "光斑"
+    },
+    {
+      "dim": "lighting",
+      "name": "光晕"
+    },
+    {
+      "dim": "lighting",
+      "name": "光雾"
+    },
+    {
+      "dim": "lighting",
+      "name": "光尘"
+    },
+    {
+      "dim": "lighting",
+      "name": "光污染"
+    },
+    {
+      "dim": "lighting",
+      "name": "磷光"
+    },
+    {
+      "dim": "lighting",
+      "name": "星云光"
+    },
+    {
+      "dim": "lighting",
+      "name": "熔岩光"
+    },
+    {
+      "dim": "lighting",
+      "name": "荧光棒"
+    },
+    {
+      "dim": "lighting",
+      "name": "夜光"
+    },
+    {
+      "dim": "lighting",
+      "name": "柔光"
+    },
+    {
+      "dim": "lighting",
+      "name": "暖光"
+    },
+    {
+      "dim": "lighting",
+      "name": "冷光"
+    },
+    {
+      "dim": "lighting",
+      "name": "电光"
+    },
+    {
+      "dim": "lighting",
+      "name": "极光漫射"
+    },
+    {
+      "dim": "lighting",
+      "name": "水下光斑"
+    },
+    {
+      "dim": "lighting",
+      "name": "投影仪光"
+    },
+    {
+      "dim": "lighting",
+      "name": "闪电瞬间"
+    },
+    {
+      "dim": "lighting",
+      "name": "霓虹招牌光"
+    },
+    {
+      "dim": "lighting",
+      "name": "月光漫射"
+    },
+    {
+      "dim": "lighting",
+      "name": "烛光摇曳"
+    },
+    {
+      "dim": "lighting",
+      "name": "荧光灯管"
+    },
+    {
+      "dim": "lighting",
+      "name": "车灯光"
+    },
+    {
+      "dim": "lighting",
+      "name": "灯塔光"
+    },
+    {
+      "dim": "lighting",
+      "name": "信号弹光"
+    },
+    {
+      "dim": "lighting",
+      "name": "烟花光"
+    },
+    {
+      "dim": "lighting",
+      "name": "萤火虫光"
+    },
+    {
+      "dim": "lighting",
+      "name": "深海光"
+    },
+    {
+      "dim": "lighting",
+      "name": "熔炉光"
+    },
+    {
+      "dim": "lighting",
+      "name": "电焊光"
+    },
+    {
+      "dim": "lighting",
+      "name": "等离子光"
+    },
+    {
+      "dim": "lighting",
+      "name": "紫外线光"
+    },
+    {
+      "dim": "lighting",
+      "name": "红外夜视"
+    },
+    {
+      "dim": "lighting",
+      "name": "星光漫射"
+    },
+    {
+      "dim": "lighting",
+      "name": "晨雾光"
+    },
+    {
+      "dim": "lighting",
+      "name": "夕阳逆光"
+    },
+    {
+      "dim": "lighting",
+      "name": "月光剪影"
+    },
+    {
+      "dim": "lighting",
+      "name": "霓虹反射"
+    },
+    {
+      "dim": "lighting",
+      "name": "玻璃反射光"
+    },
+    {
+      "dim": "lighting",
+      "name": "水面波光"
+    },
+    {
+      "dim": "lighting",
+      "name": "雪地反光"
+    },
+    {
+      "dim": "lighting",
+      "name": "沙漠热浪光"
+    },
+    {
+      "dim": "lighting",
+      "name": "极昼光"
+    },
+    {
+      "dim": "lighting",
+      "name": "极夜光"
+    },
+    {
+      "dim": "lighting",
+      "name": "洞穴光"
+    },
+    {
+      "dim": "lighting",
+      "name": "地底光"
+    },
+    {
+      "dim": "lighting",
+      "name": "火山光"
+    },
+    {
+      "dim": "lighting",
+      "name": "岩浆光"
+    },
+    {
+      "dim": "lighting",
+      "name": "陨石光"
+    },
+    {
+      "dim": "lighting",
+      "name": "彗星光"
+    },
+    {
+      "dim": "lighting",
+      "name": "银河光"
+    },
+    {
+      "dim": "lighting",
+      "name": "星尘光"
+    },
+    {
+      "dim": "lighting",
+      "name": "量子光"
+    },
+    {
+      "dim": "lighting",
+      "name": "全息投影光"
+    },
+    {
+      "dim": "lighting",
+      "name": "激光束"
+    },
+    {
+      "dim": "lighting",
+      "name": "光剑光"
+    },
+    {
+      "dim": "lighting",
+      "name": "能量光"
+    },
+    {
+      "dim": "lighting",
+      "name": "魔法光"
+    },
+    {
+      "dim": "lighting",
+      "name": "圣光"
+    },
+    {
+      "dim": "lighting",
+      "name": "神迹光"
+    },
+    {
+      "dim": "lighting",
+      "name": "天使光"
+    },
+    {
+      "dim": "lighting",
+      "name": "幽灵光"
+    },
+    {
+      "dim": "lighting",
+      "name": "鬼火"
+    },
+    {
+      "dim": "lighting",
+      "name": "磷火"
+    },
+    {
+      "dim": "lighting",
+      "name": "荧光海"
+    },
+    {
+      "dim": "lighting",
+      "name": "极光带"
+    },
+    {
+      "dim": "lighting",
+      "name": "太阳耀斑"
+    },
+    {
+      "dim": "lighting",
+      "name": "日冕光"
+    },
+    {
+      "dim": "lighting",
+      "name": "日食光"
+    },
+    {
+      "dim": "lighting",
+      "name": "月食光"
+    },
+    {
+      "dim": "lighting",
+      "name": "彩虹光"
+    },
+    {
+      "dim": "lighting",
+      "name": "棱镜光"
+    },
+    {
+      "dim": "lighting",
+      "name": "水晶光"
+    },
+    {
+      "dim": "lighting",
+      "name": "宝石光"
+    },
+    {
+      "dim": "lighting",
+      "name": "珍珠光"
+    },
+    {
+      "dim": "lighting",
+      "name": "丝绸光"
+    },
+    {
+      "dim": "lighting",
+      "name": "金属光"
+    },
+    {
+      "dim": "lighting",
+      "name": "镜面光"
+    },
+    {
+      "dim": "lighting",
+      "name": "水面倒影光"
+    },
+    {
+      "dim": "lighting",
+      "name": "冰晶光"
+    },
+    {
+      "dim": "lighting",
+      "name": "霜光"
+    },
+    {
+      "dim": "lighting",
+      "name": "露珠光"
+    },
+    {
+      "dim": "lighting",
+      "name": "雨滴光"
+    },
+    {
+      "dim": "lighting",
+      "name": "雪花光"
+    },
+    {
+      "dim": "lighting",
+      "name": "闪电链光"
+    },
+    {
+      "dim": "lighting",
+      "name": "雷暴光"
+    },
+    {
+      "dim": "lighting",
+      "name": "龙卷风光"
+    },
+    {
+      "dim": "lighting",
+      "name": "沙尘暴光"
+    },
+    {
+      "dim": "lighting",
+      "name": "海市蜃楼光"
+    },
+    {
+      "dim": "lighting",
+      "name": "极光反射"
+    },
+    {
+      "dim": "lighting",
+      "name": "霓虹雨夜"
+    },
+    {
+      "dim": "lighting",
+      "name": "路灯暖光"
+    },
+    {
+      "dim": "lighting",
+      "name": "广告牌光"
+    },
+    {
+      "dim": "lighting",
+      "name": "橱窗光"
+    },
+    {
+      "dim": "composition",
+      "name": "中景"
+    },
+    {
+      "dim": "composition",
+      "name": "俯拍鸟瞰"
+    },
+    {
+      "dim": "composition",
+      "name": "三分法"
+    },
+    {
+      "dim": "composition",
+      "name": "斐波那契螺旋"
+    },
+    {
+      "dim": "composition",
+      "name": "放射线构图"
+    },
+    {
+      "dim": "composition",
+      "name": "框架式构图"
+    },
+    {
+      "dim": "composition",
+      "name": "对称式构图"
+    },
+    {
+      "dim": "composition",
+      "name": "非对称构图"
+    },
+    {
+      "dim": "composition",
+      "name": "满版构图"
+    },
+    {
+      "dim": "composition",
+      "name": "出血构图"
+    },
+    {
+      "dim": "composition",
+      "name": "边缘构图"
+    },
+    {
+      "dim": "composition",
+      "name": "角落构图"
+    },
+    {
+      "dim": "composition",
+      "name": "偏移构图"
+    },
+    {
+      "dim": "composition",
+      "name": "俯视构图"
+    },
+    {
+      "dim": "composition",
+      "name": "仰视构图"
+    },
+    {
+      "dim": "composition",
+      "name": "斜视构图"
+    },
+    {
+      "dim": "composition",
+      "name": "虫眼视角"
+    },
+    {
+      "dim": "composition",
+      "name": "广角构图"
+    },
+    {
+      "dim": "composition",
+      "name": "长焦构图"
+    },
+    {
+      "dim": "composition",
+      "name": "半身构图"
+    },
+    {
+      "dim": "composition",
+      "name": "全身构图"
+    },
+    {
+      "dim": "composition",
+      "name": "大头特写"
+    },
+    {
+      "dim": "composition",
+      "name": "侧面构图"
+    },
+    {
+      "dim": "composition",
+      "name": "背面构图"
+    },
+    {
+      "dim": "composition",
+      "name": "正面构图"
+    },
+    {
+      "dim": "composition",
+      "name": "四分之三角度"
+    },
+    {
+      "dim": "composition",
+      "name": "剪影构图"
+    },
+    {
+      "dim": "composition",
+      "name": "反射构图"
+    },
+    {
+      "dim": "composition",
+      "name": "一点透视"
+    },
+    {
+      "dim": "composition",
+      "name": "两点透视"
+    },
+    {
+      "dim": "composition",
+      "name": "三点透视"
+    },
+    {
+      "dim": "composition",
+      "name": "多点透视"
+    },
+    {
+      "dim": "composition",
+      "name": "散点透视"
+    },
+    {
+      "dim": "composition",
+      "name": "平行透视"
+    },
+    {
+      "dim": "composition",
+      "name": "等距视角"
+    },
+    {
+      "dim": "composition",
+      "name": "俯冲视角"
+    },
+    {
+      "dim": "composition",
+      "name": "仰冲视角"
+    },
+    {
+      "dim": "composition",
+      "name": "旋转构图"
+    },
+    {
+      "dim": "composition",
+      "name": "推进镜头"
+    },
+    {
+      "dim": "composition",
+      "name": "拉远镜头"
+    },
+    {
+      "dim": "composition",
+      "name": "跟拍构图"
+    },
+    {
+      "dim": "composition",
+      "name": "摇镜构图"
+    },
+    {
+      "dim": "composition",
+      "name": "升降镜头"
+    },
+    {
+      "dim": "composition",
+      "name": "平移镜头"
+    },
+    {
+      "dim": "composition",
+      "name": "变焦构图"
+    },
+    {
+      "dim": "composition",
+      "name": "对焦构图"
+    },
+    {
+      "dim": "composition",
+      "name": "虚焦构图"
+    },
+    {
+      "dim": "composition",
+      "name": "重影构图"
+    },
+    {
+      "dim": "composition",
+      "name": "多重曝光"
+    },
+    {
+      "dim": "composition",
+      "name": "长时间曝光"
+    },
+    {
+      "dim": "composition",
+      "name": "慢门构图"
+    },
+    {
+      "dim": "composition",
+      "name": "高速摄影"
+    },
+    {
+      "dim": "composition",
+      "name": "连拍构图"
+    },
+    {
+      "dim": "composition",
+      "name": "抓拍构图"
+    },
+    {
+      "dim": "composition",
+      "name": "摆拍构图"
+    },
+    {
+      "dim": "composition",
+      "name": "街拍构图"
+    },
+    {
+      "dim": "composition",
+      "name": "纪实构图"
+    },
+    {
+      "dim": "composition",
+      "name": "新闻摄影"
+    },
+    {
+      "dim": "composition",
+      "name": "风光构图"
+    },
+    {
+      "dim": "composition",
+      "name": "人像构图"
+    },
+    {
+      "dim": "composition",
+      "name": "静物构图"
+    },
+    {
+      "dim": "composition",
+      "name": "建筑构图"
+    },
+    {
+      "dim": "composition",
+      "name": "舞台构图"
+    },
+    {
+      "dim": "composition",
+      "name": "夜景构图"
+    },
+    {
+      "dim": "composition",
+      "name": "逆光剪影"
+    },
+    {
+      "dim": "composition",
+      "name": "负空间构图"
+    },
+    {
+      "dim": "composition",
+      "name": "C形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "中心对称"
+    },
+    {
+      "dim": "composition",
+      "name": "重复节奏"
+    },
+    {
+      "dim": "composition",
+      "name": "螺旋构图"
+    },
+    {
+      "dim": "composition",
+      "name": "垂直构图"
+    },
+    {
+      "dim": "composition",
+      "name": "水平构图"
+    },
+    {
+      "dim": "composition",
+      "name": "斜线构图"
+    },
+    {
+      "dim": "composition",
+      "name": "折线构图"
+    },
+    {
+      "dim": "composition",
+      "name": "波浪构图"
+    },
+    {
+      "dim": "composition",
+      "name": "环形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "心形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "十字构图"
+    },
+    {
+      "dim": "composition",
+      "name": "X形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "L形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "T形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "Z形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "V形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "Y形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "之字形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "网格构图"
+    },
+    {
+      "dim": "composition",
+      "name": "棋盘构图"
+    },
+    {
+      "dim": "composition",
+      "name": "蜂巢构图"
+    },
+    {
+      "dim": "composition",
+      "name": "拼贴构图"
+    },
+    {
+      "dim": "composition",
+      "name": "分层构图"
+    },
+    {
+      "dim": "composition",
+      "name": "堆叠构图"
+    },
+    {
+      "dim": "composition",
+      "name": "交错构图"
+    },
+    {
+      "dim": "composition",
+      "name": "穿插构图"
+    },
+    {
+      "dim": "composition",
+      "name": "并列构图"
+    },
+    {
+      "dim": "composition",
+      "name": "对比构图"
+    },
+    {
+      "dim": "composition",
+      "name": "大小对比"
+    },
+    {
+      "dim": "composition",
+      "name": "明暗对比"
+    },
+    {
+      "dim": "composition",
+      "name": "色彩对比"
+    },
+    {
+      "dim": "composition",
+      "name": "疏密对比"
+    },
+    {
+      "dim": "composition",
+      "name": "动静对比"
+    },
+    {
+      "dim": "composition",
+      "name": "虚实对比"
+    },
+    {
+      "dim": "composition",
+      "name": "主次分明"
+    },
+    {
+      "dim": "composition",
+      "name": "前景构图"
+    },
+    {
+      "dim": "composition",
+      "name": "背景构图"
+    },
+    {
+      "dim": "composition",
+      "name": "中景构图"
+    },
+    {
+      "dim": "composition",
+      "name": "远景构图"
+    },
+    {
+      "dim": "composition",
+      "name": "近景构图"
+    },
+    {
+      "dim": "composition",
+      "name": "特写构图"
+    },
+    {
+      "dim": "composition",
+      "name": "大特写"
+    },
+    {
+      "dim": "composition",
+      "name": "极远景"
+    },
+    {
+      "dim": "composition",
+      "name": "大全景"
+    },
+    {
+      "dim": "composition",
+      "name": "中近景"
+    },
+    {
+      "dim": "composition",
+      "name": "中远景"
+    },
+    {
+      "dim": "composition",
+      "name": "满框构图"
+    },
+    {
+      "dim": "composition",
+      "name": "留边构图"
+    },
+    {
+      "dim": "composition",
+      "name": "破格构图"
+    },
+    {
+      "dim": "composition",
+      "name": "出框构图"
+    },
+    {
+      "dim": "composition",
+      "name": "悬浮构图"
+    },
+    {
+      "dim": "composition",
+      "name": "漂浮构图"
+    },
+    {
+      "dim": "composition",
+      "name": "倾斜构图"
+    },
+    {
+      "dim": "composition",
+      "name": "倒置构图"
+    },
+    {
+      "dim": "composition",
+      "name": "旋转视角"
+    },
+    {
+      "dim": "composition",
+      "name": "翻转构图"
+    },
+    {
+      "dim": "composition",
+      "name": "镜像倒影"
+    },
+    {
+      "dim": "composition",
+      "name": "水中倒影"
+    },
+    {
+      "dim": "composition",
+      "name": "玻璃倒影"
+    },
+    {
+      "dim": "composition",
+      "name": "影子构图"
+    },
+    {
+      "dim": "composition",
+      "name": "轮廓构图"
+    },
+    {
+      "dim": "composition",
+      "name": "线条构图"
+    },
+    {
+      "dim": "composition",
+      "name": "曲线引导"
+    },
+    {
+      "dim": "composition",
+      "name": "直线构图"
+    },
+    {
+      "dim": "composition",
+      "name": "点状构图"
+    },
+    {
+      "dim": "composition",
+      "name": "面状构图"
+    },
+    {
+      "dim": "composition",
+      "name": "体块构图"
+    },
+    {
+      "dim": "composition",
+      "name": "几何构图"
+    },
+    {
+      "dim": "composition",
+      "name": "圆形环绕"
+    },
+    {
+      "dim": "composition",
+      "name": "方形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "矩形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "菱形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "多边形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "星形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "月牙构图"
+    },
+    {
+      "dim": "composition",
+      "name": "弧形构图"
+    },
+    {
+      "dim": "composition",
+      "name": "椭圆构图"
+    },
+    {
+      "dim": "composition",
+      "name": "同心圆构图"
+    },
+    {
+      "dim": "composition",
+      "name": "放射状构图"
+    },
+    {
+      "dim": "composition",
+      "name": "汇聚构图"
+    },
+    {
+      "dim": "composition",
+      "name": "发散构图"
+    },
+    {
+      "dim": "composition",
+      "name": "平行构图"
+    },
+    {
+      "dim": "composition",
+      "name": "交叉构图"
+    },
+    {
+      "dim": "composition",
+      "name": "重叠构图"
+    },
+    {
+      "dim": "composition",
+      "name": "透叠构图"
+    },
+    {
+      "dim": "composition",
+      "name": "渐变构图"
+    },
+    {
+      "dim": "composition",
+      "name": "节奏构图"
+    },
+    {
+      "dim": "composition",
+      "name": "韵律构图"
+    },
+    {
+      "dim": "composition",
+      "name": "均衡构图"
+    },
+    {
+      "dim": "composition",
+      "name": "对称平衡"
+    },
+    {
+      "dim": "composition",
+      "name": "不对称平衡"
+    },
+    {
+      "dim": "composition",
+      "name": "中心平衡"
+    },
+    {
+      "dim": "composition",
+      "name": "视觉重心"
+    },
+    {
+      "dim": "composition",
+      "name": "焦点构图"
+    },
+    {
+      "dim": "composition",
+      "name": "强调构图"
+    },
+    {
+      "dim": "composition",
+      "name": "简化构图"
+    },
+    {
+      "dim": "composition",
+      "name": "极简构图"
+    },
+    {
+      "dim": "composition",
+      "name": "极简留白"
+    },
+    {
+      "dim": "composition",
+      "name": "疏朗构图"
+    },
+    {
+      "dim": "composition",
+      "name": "密集构图"
+    },
+    {
+      "dim": "composition",
+      "name": "拥挤构图"
+    },
+    {
+      "dim": "composition",
+      "name": "空旷构图"
+    },
+    {
+      "dim": "composition",
+      "name": "辽阔构图"
+    },
+    {
+      "dim": "composition",
+      "name": "宏大构图"
+    },
+    {
+      "dim": "composition",
+      "name": "微小构图"
+    },
+    {
+      "dim": "composition",
+      "name": "俯冲构图"
+    },
+    {
+      "dim": "composition",
+      "name": "仰冲构图"
+    },
+    {
+      "dim": "composition",
+      "name": "环绕视角"
+    },
+    {
+      "dim": "composition",
+      "name": "追踪构图"
+    },
+    {
+      "dim": "composition",
+      "name": "摇摄构图"
+    },
+    {
+      "dim": "composition",
+      "name": "升降构图"
+    },
+    {
+      "dim": "composition",
+      "name": "推移构图"
+    },
+    {
+      "dim": "composition",
+      "name": "旋转镜头"
+    },
+    {
+      "dim": "composition",
+      "name": "环绕镜头"
+    },
+    {
+      "dim": "composition",
+      "name": "航拍构图"
+    },
+    {
+      "dim": "composition",
+      "name": "对称倒影"
+    },
+    {
+      "dim": "color",
+      "name": "奶油黄"
+    },
+    {
+      "dim": "color",
+      "name": "抹茶绿"
+    },
+    {
+      "dim": "color",
+      "name": "巧克力棕"
+    },
+    {
+      "dim": "color",
+      "name": "咖啡色"
+    },
+    {
+      "dim": "color",
+      "name": "勃艮第"
+    },
+    {
+      "dim": "color",
+      "name": "石榴红"
+    },
+    {
+      "dim": "color",
+      "name": "桃红"
+    },
+    {
+      "dim": "color",
+      "name": "粉红"
+    },
+    {
+      "dim": "color",
+      "name": "品红"
+    },
+    {
+      "dim": "color",
+      "name": "洋红"
+    },
+    {
+      "dim": "color",
+      "name": "紫红"
+    },
+    {
+      "dim": "color",
+      "name": "紫罗兰"
+    },
+    {
+      "dim": "color",
+      "name": "丁香紫"
+    },
+    {
+      "dim": "color",
+      "name": "葡萄紫"
+    },
+    {
+      "dim": "color",
+      "name": "茄子紫"
+    },
+    {
+      "dim": "color",
+      "name": "宝蓝"
+    },
+    {
+      "dim": "color",
+      "name": "天蓝"
+    },
+    {
+      "dim": "color",
+      "name": "湖蓝"
+    },
+    {
+      "dim": "color",
+      "name": "海蓝"
+    },
+    {
+      "dim": "color",
+      "name": "靛青"
+    },
+    {
+      "dim": "color",
+      "name": "青绿"
+    },
+    {
+      "dim": "color",
+      "name": "翠绿"
+    },
+    {
+      "dim": "color",
+      "name": "草绿"
+    },
+    {
+      "dim": "color",
+      "name": "军绿"
+    },
+    {
+      "dim": "color",
+      "name": "墨黑"
+    },
+    {
+      "dim": "color",
+      "name": "纯黑"
+    },
+    {
+      "dim": "color",
+      "name": "玄黑"
+    },
+    {
+      "dim": "color",
+      "name": "乌黑"
+    },
+    {
+      "dim": "color",
+      "name": "铁灰"
+    },
+    {
+      "dim": "color",
+      "name": "石墨"
+    },
+    {
+      "dim": "color",
+      "name": "炭黑"
+    },
+    {
+      "dim": "color",
+      "name": "卡其"
+    },
+    {
+      "dim": "color",
+      "name": "驼色"
+    },
+    {
+      "dim": "color",
+      "name": "米色"
+    },
+    {
+      "dim": "color",
+      "name": "燕麦色"
+    },
+    {
+      "dim": "color",
+      "name": "亚麻色"
+    },
+    {
+      "dim": "color",
+      "name": "烟灰"
+    },
+    {
+      "dim": "color",
+      "name": "雾灰"
+    },
+    {
+      "dim": "color",
+      "name": "浅灰"
+    },
+    {
+      "dim": "color",
+      "name": "深灰"
+    },
+    {
+      "dim": "color",
+      "name": "中灰"
+    },
+    {
+      "dim": "color",
+      "name": "暖灰"
+    },
+    {
+      "dim": "color",
+      "name": "冷灰"
+    },
+    {
+      "dim": "color",
+      "name": "蓝灰"
+    },
+    {
+      "dim": "color",
+      "name": "绿灰"
+    },
+    {
+      "dim": "color",
+      "name": "紫灰"
+    },
+    {
+      "dim": "color",
+      "name": "粉灰"
+    },
+    {
+      "dim": "color",
+      "name": "米灰"
+    },
+    {
+      "dim": "color",
+      "name": "豆沙"
+    },
+    {
+      "dim": "color",
+      "name": "豆绿"
+    },
+    {
+      "dim": "color",
+      "name": "藕紫"
+    },
+    {
+      "dim": "color",
+      "name": "藕青"
+    },
+    {
+      "dim": "color",
+      "name": "藕绿"
+    },
+    {
+      "dim": "color",
+      "name": "藕黄"
+    },
+    {
+      "dim": "color",
+      "name": "藕红"
+    },
+    {
+      "dim": "color",
+      "name": "藕棕"
+    },
+    {
+      "dim": "color",
+      "name": "藕蓝"
+    },
+    {
+      "dim": "color",
+      "name": "藕白"
+    },
+    {
+      "dim": "color",
+      "name": "藕灰"
+    },
+    {
+      "dim": "color",
+      "name": "藕金"
+    },
+    {
+      "dim": "color",
+      "name": "樱桃红"
+    },
+    {
+      "dim": "color",
+      "name": "玫瑰红"
+    },
+    {
+      "dim": "color",
+      "name": "绯红"
+    },
+    {
+      "dim": "color",
+      "name": "猩红"
+    },
+    {
+      "dim": "color",
+      "name": "铁锈红"
+    },
+    {
+      "dim": "color",
+      "name": "砖红"
+    },
+    {
+      "dim": "color",
+      "name": "辣椒红"
+    },
+    {
+      "dim": "color",
+      "name": "番茄红"
+    },
+    {
+      "dim": "color",
+      "name": "草莓红"
+    },
+    {
+      "dim": "color",
+      "name": "西瓜红"
+    },
+    {
+      "dim": "color",
+      "name": "枣红"
+    },
+    {
+      "dim": "color",
+      "name": "绛红"
+    },
+    {
+      "dim": "color",
+      "name": "殷红"
+    },
+    {
+      "dim": "color",
+      "name": "赤红"
+    },
+    {
+      "dim": "color",
+      "name": "珊瑚红"
+    },
+    {
+      "dim": "color",
+      "name": "玫粉"
+    },
+    {
+      "dim": "color",
+      "name": "蜜桃橙"
+    },
+    {
+      "dim": "color",
+      "name": "南瓜橙"
+    },
+    {
+      "dim": "color",
+      "name": "柿子橙"
+    },
+    {
+      "dim": "color",
+      "name": "橘红"
+    },
+    {
+      "dim": "color",
+      "name": "蜜橙"
+    },
+    {
+      "dim": "color",
+      "name": "焦橙"
+    },
+    {
+      "dim": "color",
+      "name": "金橙"
+    },
+    {
+      "dim": "color",
+      "name": "落日橙"
+    },
+    {
+      "dim": "color",
+      "name": "姜黄"
+    },
+    {
+      "dim": "color",
+      "name": "芥末黄"
+    },
+    {
+      "dim": "color",
+      "name": "鹅黄"
+    },
+    {
+      "dim": "color",
+      "name": "明黄"
+    },
+    {
+      "dim": "color",
+      "name": "金黄"
+    },
+    {
+      "dim": "color",
+      "name": "麦黄"
+    },
+    {
+      "dim": "color",
+      "name": "稻黄"
+    },
+    {
+      "dim": "color",
+      "name": "沙黄"
+    },
+    {
+      "dim": "color",
+      "name": "杏黄"
+    },
+    {
+      "dim": "color",
+      "name": "橙黄"
+    },
+    {
+      "dim": "color",
+      "name": "柠檬绿"
+    },
+    {
+      "dim": "color",
+      "name": "苹果绿"
+    },
+    {
+      "dim": "color",
+      "name": "嫩绿"
+    },
+    {
+      "dim": "color",
+      "name": "浅绿"
+    },
+    {
+      "dim": "color",
+      "name": "葱绿"
+    },
+    {
+      "dim": "color",
+      "name": "竹绿"
+    },
+    {
+      "dim": "color",
+      "name": "松绿"
+    },
+    {
+      "dim": "color",
+      "name": "杉绿"
+    },
+    {
+      "dim": "color",
+      "name": "苔绿"
+    },
+    {
+      "dim": "color",
+      "name": "茶绿"
+    },
+    {
+      "dim": "color",
+      "name": "湖水绿"
+    },
+    {
+      "dim": "color",
+      "name": "孔雀绿"
+    },
+    {
+      "dim": "color",
+      "name": "青瓷"
+    },
+    {
+      "dim": "color",
+      "name": "天青"
+    },
+    {
+      "dim": "color",
+      "name": "黛青"
+    },
+    {
+      "dim": "color",
+      "name": "橄榄青"
+    },
+    {
+      "dim": "color",
+      "name": "薄荷青"
+    },
+    {
+      "dim": "color",
+      "name": "翡翠青"
+    },
+    {
+      "dim": "color",
+      "name": "深蓝"
+    },
+    {
+      "dim": "color",
+      "name": "蔚蓝"
+    },
+    {
+      "dim": "color",
+      "name": "湛蓝"
+    },
+    {
+      "dim": "color",
+      "name": "钴蓝"
+    },
+    {
+      "dim": "color",
+      "name": "普鲁士蓝"
+    },
+    {
+      "dim": "color",
+      "name": "天青蓝"
+    },
+    {
+      "dim": "color",
+      "name": "松石蓝"
+    },
+    {
+      "dim": "color",
+      "name": "藏青蓝"
+    },
+    {
+      "dim": "color",
+      "name": "宝蓝紫"
+    },
+    {
+      "dim": "color",
+      "name": "靛蓝紫"
+    },
+    {
+      "dim": "color",
+      "name": "湖蓝绿"
+    },
+    {
+      "dim": "color",
+      "name": "孔雀蓝绿"
+    },
+    {
+      "dim": "color",
+      "name": "青碧蓝"
+    },
+    {
+      "dim": "color",
+      "name": "靛青蓝"
+    },
+    {
+      "dim": "color",
+      "name": "墨蓝"
+    },
+    {
+      "dim": "color",
+      "name": "银蓝"
+    },
+    {
+      "dim": "color",
+      "name": "深紫"
+    },
+    {
+      "dim": "color",
+      "name": "浅紫"
+    },
+    {
+      "dim": "color",
+      "name": "紫藤"
+    },
+    {
+      "dim": "color",
+      "name": "木槿紫"
+    },
+    {
+      "dim": "color",
+      "name": "兰花紫"
+    },
+    {
+      "dim": "color",
+      "name": "梅紫"
+    },
+    {
+      "dim": "color",
+      "name": "玫瑰紫"
+    },
+    {
+      "dim": "color",
+      "name": "蓝紫"
+    },
+    {
+      "dim": "color",
+      "name": "青紫"
+    },
+    {
+      "dim": "color",
+      "name": "银紫"
+    },
+    {
+      "dim": "color",
+      "name": "金紫"
+    },
+    {
+      "dim": "color",
+      "name": "铜紫"
+    },
+    {
+      "dim": "color",
+      "name": "铁紫"
+    },
+    {
+      "dim": "color",
+      "name": "石紫"
+    },
+    {
+      "dim": "color",
+      "name": "岩紫"
+    },
+    {
+      "dim": "color",
+      "name": "沙紫"
+    },
+    {
+      "dim": "color",
+      "name": "雾紫"
+    },
+    {
+      "dim": "color",
+      "name": "烟紫"
+    },
+    {
+      "dim": "color",
+      "name": "墨紫"
+    },
+    {
+      "dim": "color",
+      "name": "墨红"
+    },
+    {
+      "dim": "color",
+      "name": "墨青"
+    },
+    {
+      "dim": "color",
+      "name": "墨灰"
+    },
+    {
+      "dim": "color",
+      "name": "银绿"
+    },
+    {
+      "dim": "color",
+      "name": "银红"
+    },
+    {
+      "dim": "color",
+      "name": "金绿"
+    },
+    {
+      "dim": "color",
+      "name": "金蓝"
+    },
+    {
+      "dim": "color",
+      "name": "金红"
+    },
+    {
+      "dim": "color",
+      "name": "铜绿"
+    },
+    {
+      "dim": "color",
+      "name": "铜蓝"
+    },
+    {
+      "dim": "color",
+      "name": "铁蓝"
+    },
+    {
+      "dim": "color",
+      "name": "岩蓝"
+    },
+    {
+      "dim": "color",
+      "name": "石蓝"
+    },
+    {
+      "dim": "color",
+      "name": "沙蓝"
+    },
+    {
+      "dim": "color",
+      "name": "雾蓝"
+    },
+    {
+      "dim": "color",
+      "name": "烟蓝"
+    },
+    {
+      "dim": "color",
+      "name": "粉蓝"
+    },
+    {
+      "dim": "color",
+      "name": "粉绿"
+    },
+    {
+      "dim": "color",
+      "name": "奶油粉"
+    },
+    {
+      "dim": "color",
+      "name": "奶油绿"
+    },
+    {
+      "dim": "color",
+      "name": "奶油蓝"
+    },
+    {
+      "dim": "color",
+      "name": "奶油紫"
+    },
+    {
+      "dim": "color",
+      "name": "奶油橙"
+    },
+    {
+      "dim": "color",
+      "name": "奶油红"
+    },
+    {
+      "dim": "color",
+      "name": "焦糖红"
+    },
+    {
+      "dim": "color",
+      "name": "焦糖橙"
+    },
+    {
+      "dim": "color",
+      "name": "焦糖黄"
+    },
+    {
+      "dim": "color",
+      "name": "焦糖绿"
+    },
+    {
+      "dim": "color",
+      "name": "焦糖蓝"
+    },
+    {
+      "dim": "color",
+      "name": "焦糖紫"
+    },
+    {
+      "dim": "color",
+      "name": "抹茶黄"
+    },
+    {
+      "dim": "color",
+      "name": "抹茶蓝"
+    },
+    {
+      "dim": "color",
+      "name": "抹茶紫"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "晨曦微光"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "暮色苍茫"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "星河璀璨"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "极光幻境"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "空灵幽远"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "超然脱俗"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "甜蜜幸福"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "幸福美满"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "喜悦欢腾"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "兴奋激动"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "焦虑不安"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "恐惧战栗"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "惊悚骇人"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "阴森诡谲"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "玄奥深邃"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "童话梦幻"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "天真烂漫"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "青春朝气"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "朝气蓬勃"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "生机盎然"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "豪迈奔放"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "自由洒脱"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "叛逆不羁"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "奋斗拼搏"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "乐观积极"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "希望憧憬"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "王者霸气"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "帝王威仪"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "贵族气质"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "富丽堂皇"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "宏伟磅礴"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "浩瀚无垠"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "苍茫辽远"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "永恒不朽"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "混沌初开"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "虚无空寂"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "肃杀"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "慵懒"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "怀旧"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "惊悚"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "空灵"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "炽烈"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "静谧"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "苍凉"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "荒芜"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "萧瑟"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "凄清"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "幽静"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "清冷"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "温润"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "恬淡"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "闲适"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "安逸"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "惬意"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "悠然"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "淡泊"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "超脱"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "空寂"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "孤寂"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "落寞"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "惆怅"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "怅惘"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "迷惘"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "彷徨"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "忐忑"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "惶恐"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "惊惶"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "慌乱"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "焦灼"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "急切"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "迫切"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "激昂"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "澎湃"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "豪情"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "壮志"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "昂扬"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "振奋"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "鼓舞"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "欢腾"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "雀跃"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "欣喜"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "愉悦"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "舒畅"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "畅快"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "酣畅"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "尽兴"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "宁和"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "安详"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "祥和"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "太平"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "安然"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "淡雅"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "雅致"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "清雅"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "素雅"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "古朴"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "古拙"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "苍劲"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "遒劲"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "磅礴"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "恢弘"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "壮阔"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "雄浑"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "苍茫"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "辽阔"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "广袤"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "空阔"
+    },
+    {
+      "dim": "atmosphere",
+      "name": "幽深"
+    },
+    {
+      "dim": "character",
+      "name": "枪手"
+    },
+    {
+      "dim": "character",
+      "name": "角斗士"
+    },
+    {
+      "dim": "character",
+      "name": "将军"
+    },
+    {
+      "dim": "character",
+      "name": "皇帝"
+    },
+    {
+      "dim": "character",
+      "name": "皇后"
+    },
+    {
+      "dim": "character",
+      "name": "公主"
+    },
+    {
+      "dim": "character",
+      "name": "王子"
+    },
+    {
+      "dim": "character",
+      "name": "国王"
+    },
+    {
+      "dim": "character",
+      "name": "贵族"
+    },
+    {
+      "dim": "character",
+      "name": "商人"
+    },
+    {
+      "dim": "character",
+      "name": "农夫"
+    },
+    {
+      "dim": "character",
+      "name": "渔夫"
+    },
+    {
+      "dim": "character",
+      "name": "铁匠"
+    },
+    {
+      "dim": "character",
+      "name": "裁缝"
+    },
+    {
+      "dim": "character",
+      "name": "厨师"
+    },
+    {
+      "dim": "character",
+      "name": "医生"
+    },
+    {
+      "dim": "character",
+      "name": "学者"
+    },
+    {
+      "dim": "character",
+      "name": "教授"
+    },
+    {
+      "dim": "character",
+      "name": "科学家"
+    },
+    {
+      "dim": "character",
+      "name": "工程师"
+    },
+    {
+      "dim": "character",
+      "name": "宇航员"
+    },
+    {
+      "dim": "character",
+      "name": "飞行员"
+    },
+    {
+      "dim": "character",
+      "name": "船长"
+    },
+    {
+      "dim": "character",
+      "name": "水手"
+    },
+    {
+      "dim": "character",
+      "name": "海盗"
+    },
+    {
+      "dim": "character",
+      "name": "牛仔"
+    },
+    {
+      "dim": "character",
+      "name": "警长"
+    },
+    {
+      "dim": "character",
+      "name": "侦探"
+    },
+    {
+      "dim": "character",
+      "name": "特工"
+    },
+    {
+      "dim": "character",
+      "name": "间谍"
+    },
+    {
+      "dim": "character",
+      "name": "黑客"
+    },
+    {
+      "dim": "character",
+      "name": "程序员"
+    },
+    {
+      "dim": "character",
+      "name": "电竞选手"
+    },
+    {
+      "dim": "character",
+      "name": "主播"
+    },
+    {
+      "dim": "character",
+      "name": "模特"
+    },
+    {
+      "dim": "character",
+      "name": "明星"
+    },
+    {
+      "dim": "character",
+      "name": "舞者"
+    },
+    {
+      "dim": "character",
+      "name": "音乐家"
+    },
+    {
+      "dim": "character",
+      "name": "画家"
+    },
+    {
+      "dim": "character",
+      "name": "雕塑家"
+    },
+    {
+      "dim": "character",
+      "name": "建筑师"
+    },
+    {
+      "dim": "character",
+      "name": "设计师"
+    },
+    {
+      "dim": "character",
+      "name": "摄影师"
+    },
+    {
+      "dim": "character",
+      "name": "记者"
+    },
+    {
+      "dim": "character",
+      "name": "律师"
+    },
+    {
+      "dim": "character",
+      "name": "法官"
+    },
+    {
+      "dim": "character",
+      "name": "政治家"
+    },
+    {
+      "dim": "character",
+      "name": "士兵"
+    },
+    {
+      "dim": "character",
+      "name": "军官"
+    },
+    {
+      "dim": "character",
+      "name": "狙击手"
+    },
+    {
+      "dim": "character",
+      "name": "侦察兵"
+    },
+    {
+      "dim": "character",
+      "name": "医疗兵"
+    },
+    {
+      "dim": "character",
+      "name": "矿工"
+    },
+    {
+      "dim": "character",
+      "name": "伐木工"
+    },
+    {
+      "dim": "character",
+      "name": "小丑"
+    },
+    {
+      "dim": "character",
+      "name": "魔术师"
+    },
+    {
+      "dim": "character",
+      "name": "浪人"
+    },
+    {
+      "dim": "character",
+      "name": "相扑手"
+    },
+    {
+      "dim": "character",
+      "name": "拳击手"
+    },
+    {
+      "dim": "character",
+      "name": "考古学家"
+    },
+    {
+      "dim": "character",
+      "name": "调香师"
+    },
+    {
+      "dim": "character",
+      "name": "珠宝匠"
+    },
+    {
+      "dim": "character",
+      "name": "钟表匠"
+    },
+    {
+      "dim": "character",
+      "name": "酿酒师"
+    },
+    {
+      "dim": "character",
+      "name": "药剂师"
+    },
+    {
+      "dim": "character",
+      "name": "兽医"
+    },
+    {
+      "dim": "character",
+      "name": "消防员"
+    },
+    {
+      "dim": "character",
+      "name": "图书管理员"
+    },
+    {
+      "dim": "character",
+      "name": "天文学家"
+    },
+    {
+      "dim": "character",
+      "name": "植物学家"
+    },
+    {
+      "dim": "character",
+      "name": "化学家"
+    },
+    {
+      "dim": "character",
+      "name": "历史学家"
+    },
+    {
+      "dim": "character",
+      "name": "外交官"
+    },
+    {
+      "dim": "character",
+      "name": "会计师"
+    },
+    {
+      "dim": "character",
+      "name": "调酒师"
+    },
+    {
+      "dim": "character",
+      "name": "花艺师"
+    },
+    {
+      "dim": "character",
+      "name": "木匠"
+    },
+    {
+      "dim": "character",
+      "name": "书法家"
+    },
+    {
+      "dim": "character",
+      "name": "棋手"
+    },
+    {
+      "dim": "character",
+      "name": "流浪诗人"
+    },
+    {
+      "dim": "character",
+      "name": "贵族千金"
+    },
+    {
+      "dim": "character",
+      "name": "部落酋长"
+    },
+    {
+      "dim": "character",
+      "name": "星际海盗"
+    },
+    {
+      "dim": "character",
+      "name": "游侠"
+    },
+    {
+      "dim": "character",
+      "name": "佣兵"
+    },
+    {
+      "dim": "character",
+      "name": "女骑士"
+    },
+    {
+      "dim": "character",
+      "name": "圣女"
+    },
+    {
+      "dim": "character",
+      "name": "修女"
+    },
+    {
+      "dim": "character",
+      "name": "隐士"
+    },
+    {
+      "dim": "character",
+      "name": "贤者"
+    },
+    {
+      "dim": "character",
+      "name": "占卜师"
+    },
+    {
+      "dim": "character",
+      "name": "驱魔人"
+    },
+    {
+      "dim": "character",
+      "name": "阴阳师"
+    },
+    {
+      "dim": "character",
+      "name": "刀客"
+    },
+    {
+      "dim": "character",
+      "name": "镖师"
+    },
+    {
+      "dim": "character",
+      "name": "捕快"
+    },
+    {
+      "dim": "character",
+      "name": "军师"
+    },
+    {
+      "dim": "character",
+      "name": "说书人"
+    },
+    {
+      "dim": "character",
+      "name": "龙裔战士"
+    },
+    {
+      "dim": "character",
+      "name": "半精灵"
+    },
+    {
+      "dim": "character",
+      "name": "半兽人"
+    },
+    {
+      "dim": "character",
+      "name": "暗精灵"
+    },
+    {
+      "dim": "character",
+      "name": "树精"
+    },
+    {
+      "dim": "character",
+      "name": "石巨人"
+    },
+    {
+      "dim": "character",
+      "name": "树人"
+    },
+    {
+      "dim": "character",
+      "name": "狐妖"
+    },
+    {
+      "dim": "character",
+      "name": "猫妖"
+    },
+    {
+      "dim": "character",
+      "name": "蛇妖"
+    },
+    {
+      "dim": "character",
+      "name": "鱼人"
+    },
+    {
+      "dim": "character",
+      "name": "蜥蜴人"
+    },
+    {
+      "dim": "character",
+      "name": "牛头人"
+    },
+    {
+      "dim": "character",
+      "name": "狮鹫骑士"
+    },
+    {
+      "dim": "character",
+      "name": "独角兽骑士"
+    },
+    {
+      "dim": "character",
+      "name": "凤凰骑士"
+    },
+    {
+      "dim": "character",
+      "name": "花妖"
+    },
+    {
+      "dim": "character",
+      "name": "鸟人"
+    },
+    {
+      "dim": "character",
+      "name": "蛙人"
+    },
+    {
+      "dim": "character",
+      "name": "铁傀儡"
+    },
+    {
+      "dim": "character",
+      "name": "雷神"
+    },
+    {
+      "dim": "character",
+      "name": "月神"
+    },
+    {
+      "dim": "character",
+      "name": "海妖"
+    },
+    {
+      "dim": "character",
+      "name": "凤凰使者"
+    },
+    {
+      "dim": "character",
+      "name": "太阳神"
+    },
+    {
+      "dim": "character",
+      "name": "战神"
+    },
+    {
+      "dim": "character",
+      "name": "死神"
+    },
+    {
+      "dim": "character",
+      "name": "冥王"
+    },
+    {
+      "dim": "character",
+      "name": "爱神"
+    },
+    {
+      "dim": "character",
+      "name": "命运女神"
+    },
+    {
+      "dim": "character",
+      "name": "丰收女神"
+    },
+    {
+      "dim": "character",
+      "name": "风神"
+    },
+    {
+      "dim": "character",
+      "name": "火神"
+    },
+    {
+      "dim": "character",
+      "name": "山神"
+    },
+    {
+      "dim": "character",
+      "name": "河神"
+    },
+    {
+      "dim": "character",
+      "name": "星神"
+    },
+    {
+      "dim": "character",
+      "name": "龙神"
+    },
+    {
+      "dim": "character",
+      "name": "麒麟"
+    },
+    {
+      "dim": "character",
+      "name": "玄武"
+    },
+    {
+      "dim": "character",
+      "name": "天狗"
+    },
+    {
+      "dim": "character",
+      "name": "赛车手"
+    },
+    {
+      "dim": "character",
+      "name": "网红"
+    },
+    {
+      "dim": "character",
+      "name": "博主"
+    },
+    {
+      "dim": "character",
+      "name": "健身教练"
+    },
+    {
+      "dim": "character",
+      "name": "钢琴家"
+    },
+    {
+      "dim": "character",
+      "name": "小提琴家"
+    },
+    {
+      "dim": "character",
+      "name": "吉他手"
+    },
+    {
+      "dim": "character",
+      "name": "鼓手"
+    },
+    {
+      "dim": "character",
+      "name": "指挥家"
+    },
+    {
+      "dim": "character",
+      "name": "作曲家"
+    },
+    {
+      "dim": "character",
+      "name": "小说家"
+    },
+    {
+      "dim": "character",
+      "name": "诗人"
+    },
+    {
+      "dim": "character",
+      "name": "美食家"
+    },
+    {
+      "dim": "character",
+      "name": "品酒师"
+    },
+    {
+      "dim": "character",
+      "name": "茶艺师"
+    },
+    {
+      "dim": "character",
+      "name": "策展人"
+    },
+    {
+      "dim": "character",
+      "name": "收藏家"
+    },
+    {
+      "dim": "character",
+      "name": "法医"
+    },
+    {
+      "dim": "character",
+      "name": "心理医生"
+    },
+    {
+      "dim": "character",
+      "name": "化妆师"
+    },
+    {
+      "dim": "character",
+      "name": "漫画家"
+    },
+    {
+      "dim": "character",
+      "name": "插画师"
+    },
+    {
+      "dim": "character",
+      "name": "动画师"
+    },
+    {
+      "dim": "character",
+      "name": "创业者"
+    },
+    {
+      "dim": "character",
+      "name": "投资人"
+    },
+    {
+      "dim": "character",
+      "name": "经济学家"
+    },
+    {
+      "dim": "character",
+      "name": "数据分析师"
+    },
+    {
+      "dim": "character",
+      "name": "无人机飞行员"
+    },
+    {
+      "dim": "character",
+      "name": "摩托车手"
+    },
+    {
+      "dim": "character",
+      "name": "卡车司机"
+    },
+    {
+      "dim": "character",
+      "name": "领航员"
+    },
+    {
+      "dim": "character",
+      "name": "特警"
+    },
+    {
+      "dim": "character",
+      "name": "刑警"
+    },
+    {
+      "dim": "character",
+      "name": "保镖"
+    },
+    {
+      "dim": "character",
+      "name": "私家侦探"
+    },
+    {
+      "dim": "character",
+      "name": "摔跤手"
+    },
+    {
+      "dim": "character",
+      "name": "击剑手"
+    },
+    {
+      "dim": "character",
+      "name": "登山家"
+    },
+    {
+      "dim": "character",
+      "name": "探险家"
+    },
+    {
+      "dim": "character",
+      "name": "潜水员"
+    },
+    {
+      "dim": "scene",
+      "name": "废弃老宅"
+    },
+    {
+      "dim": "scene",
+      "name": "破旧民房"
+    },
+    {
+      "dim": "scene",
+      "name": "乡村土屋"
+    },
+    {
+      "dim": "scene",
+      "name": "荒废庭院"
+    },
+    {
+      "dim": "scene",
+      "name": "老城区巷弄"
+    },
+    {
+      "dim": "scene",
+      "name": "城中村"
+    },
+    {
+      "dim": "scene",
+      "name": "筒子楼"
+    },
+    {
+      "dim": "scene",
+      "name": "旧公寓"
+    },
+    {
+      "dim": "scene",
+      "name": "拆迁废墟"
+    },
+    {
+      "dim": "scene",
+      "name": "荒废旧校舍"
+    },
+    {
+      "dim": "scene",
+      "name": "老式卧室"
+    },
+    {
+      "dim": "scene",
+      "name": "废弃教堂"
+    },
+    {
+      "dim": "scene",
+      "name": "墓地"
+    },
+    {
+      "dim": "scene",
+      "name": "暗黑宫殿"
+    },
+    {
+      "dim": "scene",
+      "name": "霓虹街道"
+    },
+    {
+      "dim": "scene",
+      "name": "城市街道"
+    },
+    {
+      "dim": "scene",
+      "name": "室内"
+    },
+    {
+      "dim": "scene",
+      "name": "教室"
+    },
+    {
+      "dim": "scene",
+      "name": "实验室"
+    },
+    {
+      "dim": "scene",
+      "name": "超现实空间"
+    },
+    {
+      "dim": "scene",
+      "name": "极简空间"
+    },
+    {
+      "dim": "scene",
+      "name": "日式庭院"
+    },
+    {
+      "dim": "scene",
+      "name": "银河"
+    },
+    {
+      "dim": "scene",
+      "name": "黑洞"
+    },
+    {
+      "dim": "scene",
+      "name": "星云"
+    },
+    {
+      "dim": "scene",
+      "name": "陨石带"
+    },
+    {
+      "dim": "scene",
+      "name": "空间站"
+    },
+    {
+      "dim": "scene",
+      "name": "月球基地"
+    },
+    {
+      "dim": "scene",
+      "name": "火星基地"
+    },
+    {
+      "dim": "scene",
+      "name": "外星城市"
+    },
+    {
+      "dim": "scene",
+      "name": "绿洲"
+    },
+    {
+      "dim": "scene",
+      "name": "雨林"
+    },
+    {
+      "dim": "scene",
+      "name": "沼泽"
+    },
+    {
+      "dim": "scene",
+      "name": "冰原"
+    },
+    {
+      "dim": "scene",
+      "name": "雪山"
+    },
+    {
+      "dim": "scene",
+      "name": "峡谷"
+    },
+    {
+      "dim": "scene",
+      "name": "瀑布"
+    },
+    {
+      "dim": "scene",
+      "name": "湖泊"
+    },
+    {
+      "dim": "scene",
+      "name": "河流"
+    },
+    {
+      "dim": "scene",
+      "name": "海洋"
+    },
+    {
+      "dim": "scene",
+      "name": "海岛"
+    },
+    {
+      "dim": "scene",
+      "name": "沙滩"
+    },
+    {
+      "dim": "scene",
+      "name": "悬崖"
+    },
+    {
+      "dim": "scene",
+      "name": "洞穴"
+    },
+    {
+      "dim": "scene",
+      "name": "矿山"
+    },
+    {
+      "dim": "scene",
+      "name": "采石场"
+    },
+    {
+      "dim": "scene",
+      "name": "农场"
+    },
+    {
+      "dim": "scene",
+      "name": "牧场"
+    },
+    {
+      "dim": "scene",
+      "name": "葡萄园"
+    },
+    {
+      "dim": "scene",
+      "name": "果园"
+    },
+    {
+      "dim": "scene",
+      "name": "花园"
+    },
+    {
+      "dim": "scene",
+      "name": "温室"
+    },
+    {
+      "dim": "scene",
+      "name": "屋顶花园"
+    },
+    {
+      "dim": "scene",
+      "name": "天台"
+    },
+    {
+      "dim": "scene",
+      "name": "阳台"
+    },
+    {
+      "dim": "scene",
+      "name": "阁楼"
+    },
+    {
+      "dim": "scene",
+      "name": "地下室"
+    },
+    {
+      "dim": "scene",
+      "name": "地窖"
+    },
+    {
+      "dim": "scene",
+      "name": "酒窖"
+    },
+    {
+      "dim": "scene",
+      "name": "仓库"
+    },
+    {
+      "dim": "scene",
+      "name": "工厂"
+    },
+    {
+      "dim": "scene",
+      "name": "车间"
+    },
+    {
+      "dim": "scene",
+      "name": "码头"
+    },
+    {
+      "dim": "scene",
+      "name": "港口"
+    },
+    {
+      "dim": "scene",
+      "name": "火车站"
+    },
+    {
+      "dim": "scene",
+      "name": "机场"
+    },
+    {
+      "dim": "scene",
+      "name": "地铁站"
+    },
+    {
+      "dim": "scene",
+      "name": "公交站"
+    },
+    {
+      "dim": "scene",
+      "name": "停车场"
+    },
+    {
+      "dim": "scene",
+      "name": "加油站"
+    },
+    {
+      "dim": "scene",
+      "name": "便利店"
+    },
+    {
+      "dim": "scene",
+      "name": "超市"
+    },
+    {
+      "dim": "scene",
+      "name": "商场"
+    },
+    {
+      "dim": "scene",
+      "name": "市场"
+    },
+    {
+      "dim": "scene",
+      "name": "集市"
+    },
+    {
+      "dim": "scene",
+      "name": "广场"
+    },
+    {
+      "dim": "scene",
+      "name": "喷泉"
+    },
+    {
+      "dim": "scene",
+      "name": "公园"
+    },
+    {
+      "dim": "scene",
+      "name": "游乐场"
+    },
+    {
+      "dim": "scene",
+      "name": "动物园"
+    },
+    {
+      "dim": "scene",
+      "name": "水族馆"
+    },
+    {
+      "dim": "scene",
+      "name": "博物馆"
+    },
+    {
+      "dim": "scene",
+      "name": "美术馆"
+    },
+    {
+      "dim": "scene",
+      "name": "剧院"
+    },
+    {
+      "dim": "scene",
+      "name": "电影院"
+    },
+    {
+      "dim": "scene",
+      "name": "音乐厅"
+    },
+    {
+      "dim": "scene",
+      "name": "歌剧院"
+    },
+    {
+      "dim": "scene",
+      "name": "书店"
+    },
+    {
+      "dim": "scene",
+      "name": "文具店"
+    },
+    {
+      "dim": "scene",
+      "name": "花店"
+    },
+    {
+      "dim": "scene",
+      "name": "面包店"
+    },
+    {
+      "dim": "scene",
+      "name": "咖啡店"
+    },
+    {
+      "dim": "scene",
+      "name": "茶馆"
+    },
+    {
+      "dim": "scene",
+      "name": "酒吧"
+    },
+    {
+      "dim": "scene",
+      "name": "餐厅"
+    },
+    {
+      "dim": "scene",
+      "name": "极地冰洞"
+    },
+    {
+      "dim": "scene",
+      "name": "荧光海滩"
+    },
+    {
+      "dim": "scene",
+      "name": "红杉巨林"
+    },
+    {
+      "dim": "scene",
+      "name": "盐沼镜面"
+    },
+    {
+      "dim": "scene",
+      "name": "蓝洞深渊"
+    },
+    {
+      "dim": "scene",
+      "name": "彩虹瀑布"
+    },
+    {
+      "dim": "scene",
+      "name": "石林迷宫"
+    },
+    {
+      "dim": "scene",
+      "name": "火山温泉"
+    },
+    {
+      "dim": "scene",
+      "name": "珊瑚环礁"
+    },
+    {
+      "dim": "scene",
+      "name": "冰川峡谷"
+    },
+    {
+      "dim": "scene",
+      "name": "沙漠星空"
+    },
+    {
+      "dim": "scene",
+      "name": "云海日出"
+    },
+    {
+      "dim": "scene",
+      "name": "溶洞暗河"
+    },
+    {
+      "dim": "scene",
+      "name": "潮汐森林"
+    },
+    {
+      "dim": "scene",
+      "name": "陨石坑湖"
+    },
+    {
+      "dim": "scene",
+      "name": "间歇喷泉"
+    },
+    {
+      "dim": "scene",
+      "name": "萤火虫山谷"
+    },
+    {
+      "dim": "scene",
+      "name": "粉红湖泊"
+    },
+    {
+      "dim": "scene",
+      "name": "白色沙漠"
+    },
+    {
+      "dim": "scene",
+      "name": "极光雪原"
+    },
+    {
+      "dim": "scene",
+      "name": "江南水乡"
+    },
+    {
+      "dim": "scene",
+      "name": "罗马斗兽场"
+    },
+    {
+      "dim": "scene",
+      "name": "空中花园"
+    },
+    {
+      "dim": "scene",
+      "name": "地下城邦"
+    },
+    {
+      "dim": "scene",
+      "name": "长城烽火台"
+    },
+    {
+      "dim": "scene",
+      "name": "泰姬陵"
+    },
+    {
+      "dim": "scene",
+      "name": "金字塔"
+    },
+    {
+      "dim": "scene",
+      "name": "埃菲尔铁塔"
+    },
+    {
+      "dim": "scene",
+      "name": "大本钟"
+    },
+    {
+      "dim": "scene",
+      "name": "凯旋门"
+    },
+    {
+      "dim": "scene",
+      "name": "圣托里尼"
+    },
+    {
+      "dim": "scene",
+      "name": "威尼斯运河"
+    },
+    {
+      "dim": "scene",
+      "name": "京都老街"
+    },
+    {
+      "dim": "scene",
+      "name": "徽派古村"
+    },
+    {
+      "dim": "scene",
+      "name": "吊脚楼"
+    },
+    {
+      "dim": "scene",
+      "name": "窑洞民居"
+    },
+    {
+      "dim": "scene",
+      "name": "四合院"
+    },
+    {
+      "dim": "scene",
+      "name": "摩天大楼"
+    },
+    {
+      "dim": "scene",
+      "name": "悬空寺"
+    },
+    {
+      "dim": "scene",
+      "name": "佛塔"
+    },
+    {
+      "dim": "scene",
+      "name": "精灵树屋"
+    },
+    {
+      "dim": "scene",
+      "name": "机械巨城"
+    },
+    {
+      "dim": "scene",
+      "name": "时间裂缝"
+    },
+    {
+      "dim": "scene",
+      "name": "魔法学院"
+    },
+    {
+      "dim": "scene",
+      "name": "精灵王国"
+    },
+    {
+      "dim": "scene",
+      "name": "矮人矿城"
+    },
+    {
+      "dim": "scene",
+      "name": "巨人国度"
+    },
+    {
+      "dim": "scene",
+      "name": "妖精花园"
+    },
+    {
+      "dim": "scene",
+      "name": "幽灵船"
+    },
+    {
+      "dim": "scene",
+      "name": "恶魔城堡"
+    },
+    {
+      "dim": "scene",
+      "name": "天使圣域"
+    },
+    {
+      "dim": "scene",
+      "name": "神话迷宫"
+    },
+    {
+      "dim": "scene",
+      "name": "梦境世界"
+    },
+    {
+      "dim": "scene",
+      "name": "镜中世界"
+    },
+    {
+      "dim": "scene",
+      "name": "糖果王国"
+    },
+    {
+      "dim": "scene",
+      "name": "玩具世界"
+    },
+    {
+      "dim": "scene",
+      "name": "书之世界"
+    },
+    {
+      "dim": "scene",
+      "name": "时钟王国"
+    },
+    {
+      "dim": "scene",
+      "name": "蒸汽飞艇"
+    },
+    {
+      "dim": "scene",
+      "name": "天空海盗船"
+    },
+    {
+      "dim": "scene",
+      "name": "量子实验室"
+    },
+    {
+      "dim": "scene",
+      "name": "全息竞技场"
+    },
+    {
+      "dim": "scene",
+      "name": "人工智能核心"
+    },
+    {
+      "dim": "scene",
+      "name": "数据云海"
+    },
+    {
+      "dim": "scene",
+      "name": "赛博格工厂"
+    },
+    {
+      "dim": "scene",
+      "name": "纳米工厂"
+    },
+    {
+      "dim": "scene",
+      "name": "基因实验室"
+    },
+    {
+      "dim": "scene",
+      "name": "机器人城市"
+    },
+    {
+      "dim": "scene",
+      "name": "虚拟现实空间"
+    },
+    {
+      "dim": "scene",
+      "name": "无人机基地"
+    },
+    {
+      "dim": "scene",
+      "name": "太空电梯"
+    },
+    {
+      "dim": "scene",
+      "name": "深空探测器"
+    },
+    {
+      "dim": "scene",
+      "name": "火星温室"
+    },
+    {
+      "dim": "scene",
+      "name": "月球采矿基地"
+    },
+    {
+      "dim": "scene",
+      "name": "量子计算机房"
+    },
+    {
+      "dim": "scene",
+      "name": "仿生实验室"
+    },
+    {
+      "dim": "scene",
+      "name": "全息投影厅"
+    },
+    {
+      "dim": "scene",
+      "name": "智能家居"
+    },
+    {
+      "dim": "scene",
+      "name": "自动驾驶城市"
+    },
+    {
+      "dim": "scene",
+      "name": "外骨骼工厂"
+    },
+    {
+      "dim": "scene",
+      "name": "深夜便利店"
+    },
+    {
+      "dim": "scene",
+      "name": "老式理发店"
+    },
+    {
+      "dim": "scene",
+      "name": "天台花园"
+    },
+    {
+      "dim": "scene",
+      "name": "街角书店"
+    },
+    {
+      "dim": "scene",
+      "name": "深夜食堂"
+    },
+    {
+      "dim": "scene",
+      "name": "老茶馆"
+    },
+    {
+      "dim": "scene",
+      "name": "复古照相馆"
+    },
+    {
+      "dim": "scene",
+      "name": "唱片店"
+    },
+    {
+      "dim": "scene",
+      "name": "旧书店"
+    },
+    {
+      "dim": "scene",
+      "name": "花鸟市场"
+    },
+    {
+      "dim": "scene",
+      "name": "夜市"
+    },
+    {
+      "dim": "scene",
+      "name": "早市"
+    },
+    {
+      "dim": "scene",
+      "name": "菜市场"
+    },
+    {
+      "dim": "scene",
+      "name": "渔村码头"
+    },
+    {
+      "dim": "scene",
+      "name": "山间民宿"
+    },
+    {
+      "dim": "scene",
+      "name": "海边小屋"
+    },
+    {
+      "dim": "scene",
+      "name": "湖畔别墅"
+    },
+    {
+      "dim": "scene",
+      "name": "都市公寓"
+    },
+    {
+      "dim": "scene",
+      "name": "老式电影院"
+    },
+    {
+      "dim": "scene",
+      "name": "唐人街"
+    },
+    {
+      "dim": "scene",
+      "name": "中央车站"
+    },
+    {
+      "dim": "scene",
+      "name": "地下通道"
+    },
+    {
+      "dim": "scene",
+      "name": "天桥"
+    },
+    {
+      "dim": "scene",
+      "name": "高架桥"
+    },
+    {
+      "dim": "scene",
+      "name": "环岛"
+    },
+    {
+      "dim": "scene",
+      "name": "步行街"
+    },
+    {
+      "dim": "scene",
+      "name": "老街"
+    },
+    {
+      "dim": "scene",
+      "name": "胡同"
+    },
+    {
+      "dim": "scene",
+      "name": "弄堂"
+    },
+    {
+      "dim": "scene",
+      "name": "骑楼"
+    },
+    {
+      "dim": "scene",
+      "name": "玻璃幕墙大厦"
+    },
+    {
+      "dim": "scene",
+      "name": "双子塔"
+    },
+    {
+      "dim": "scene",
+      "name": "电视塔"
+    },
+    {
+      "dim": "scene",
+      "name": "摩天轮"
+    },
+    {
+      "dim": "scene",
+      "name": "过山车乐园"
+    },
+    {
+      "dim": "scene",
+      "name": "水上乐园"
+    },
+    {
+      "dim": "scene",
+      "name": "滑雪场"
+    },
+    {
+      "dim": "scene",
+      "name": "高尔夫球场"
+    },
+    {
+      "dim": "scene",
+      "name": "赛马场"
+    },
+    {
+      "dim": "scene",
+      "name": "红树林"
+    },
+    {
+      "dim": "scene",
+      "name": "湿地公园"
+    },
+    {
+      "dim": "scene",
+      "name": "芦苇荡"
+    },
+    {
+      "dim": "scene",
+      "name": "荷塘"
+    },
+    {
+      "dim": "scene",
+      "name": "稻田"
+    },
+    {
+      "dim": "scene",
+      "name": "麦田"
+    },
+    {
+      "dim": "scene",
+      "name": "向日葵田"
+    },
+    {
+      "dim": "scene",
+      "name": "薰衣草田"
+    },
+    {
+      "dim": "scene",
+      "name": "茶园"
+    },
+    {
+      "dim": "scene",
+      "name": "竹林海"
+    },
+    {
+      "dim": "scene",
+      "name": "枫叶林"
+    },
+    {
+      "dim": "scene",
+      "name": "银杏大道"
+    },
+    {
+      "dim": "scene",
+      "name": "樱花大道"
+    },
+    {
+      "dim": "scene",
+      "name": "桃花林"
+    },
+    {
+      "dim": "scene",
+      "name": "梅园"
+    },
+    {
+      "dim": "scene",
+      "name": "玫瑰园"
+    },
+    {
+      "dim": "scene",
+      "name": "郁金香田"
+    },
+    {
+      "dim": "scene",
+      "name": "仙人掌园"
+    },
+    {
+      "dim": "scene",
+      "name": "热带果园"
+    },
+    {
+      "dim": "scene",
+      "name": "高山草甸"
+    },
+    {
+      "dim": "scene",
+      "name": "地下墓穴"
+    },
+    {
+      "dim": "scene",
+      "name": "古罗马浴场"
+    },
+    {
+      "dim": "scene",
+      "name": "图书馆密室"
+    },
+    {
+      "dim": "scene",
+      "name": "天文台"
+    },
+    {
+      "dim": "scene",
+      "name": "观星台"
+    },
+    {
+      "dim": "scene",
+      "name": "气象站"
+    },
+    {
+      "dim": "scene",
+      "name": "灯塔内部"
+    },
+    {
+      "dim": "scene",
+      "name": "钟楼"
+    },
+    {
+      "dim": "scene",
+      "name": "风车田"
+    },
+    {
+      "dim": "scene",
+      "name": "水车磨坊"
+    },
+    {
+      "dim": "scene",
+      "name": "城堡地牢"
+    },
+    {
+      "dim": "scene",
+      "name": "王座大厅"
+    },
+    {
+      "dim": "scene",
+      "name": "宴会厅"
+    },
+    {
+      "dim": "scene",
+      "name": "婚礼教堂"
+    },
+    {
+      "dim": "scene",
+      "name": "医院"
+    },
+    {
+      "dim": "scene",
+      "name": "监狱"
+    },
+    {
+      "dim": "scene",
+      "name": "警察局"
+    },
+    {
+      "dim": "scene",
+      "name": "消防站"
+    },
+    {
+      "dim": "scene",
+      "name": "学校操场"
+    },
+    {
+      "dim": "scene",
+      "name": "大学校园"
+    },
+    {
+      "dim": "material",
+      "name": "骨角"
+    },
+    {
+      "dim": "material",
+      "name": "暗影水晶"
+    },
+    {
+      "dim": "material",
+      "name": "元素能量"
+    },
+    {
+      "dim": "material",
+      "name": "液态金属"
+    },
+    {
+      "dim": "material",
+      "name": "魔法符文"
+    },
+    {
+      "dim": "material",
+      "name": "骸骨"
+    },
+    {
+      "dim": "material",
+      "name": "异界材料"
+    },
+    {
+      "dim": "material",
+      "name": "藤编"
+    },
+    {
+      "dim": "material",
+      "name": "竹"
+    },
+    {
+      "dim": "material",
+      "name": "玉"
+    },
+    {
+      "dim": "material",
+      "name": "玛瑙"
+    },
+    {
+      "dim": "material",
+      "name": "琥珀"
+    },
+    {
+      "dim": "material",
+      "name": "珊瑚"
+    },
+    {
+      "dim": "material",
+      "name": "贝壳"
+    },
+    {
+      "dim": "material",
+      "name": "珍珠母"
+    },
+    {
+      "dim": "material",
+      "name": "黑曜石"
+    },
+    {
+      "dim": "material",
+      "name": "陨石"
+    },
+    {
+      "dim": "material",
+      "name": "冰晶"
+    },
+    {
+      "dim": "material",
+      "name": "火焰石"
+    },
+    {
+      "dim": "material",
+      "name": "雷击木"
+    },
+    {
+      "dim": "material",
+      "name": "圣银"
+    },
+    {
+      "dim": "material",
+      "name": "秘银"
+    },
+    {
+      "dim": "material",
+      "name": "龙鳞"
+    },
+    {
+      "dim": "material",
+      "name": "凤凰羽"
+    },
+    {
+      "dim": "material",
+      "name": "丝绸"
+    },
+    {
+      "dim": "material",
+      "name": "亚麻"
+    },
+    {
+      "dim": "material",
+      "name": "天鹅绒"
+    },
+    {
+      "dim": "material",
+      "name": "锦缎"
+    },
+    {
+      "dim": "material",
+      "name": "蕾丝"
+    },
+    {
+      "dim": "material",
+      "name": "羊毛"
+    },
+    {
+      "dim": "material",
+      "name": "羊绒"
+    },
+    {
+      "dim": "material",
+      "name": "牛仔布"
+    },
+    {
+      "dim": "material",
+      "name": "麂皮"
+    },
+    {
+      "dim": "material",
+      "name": "蛇皮"
+    },
+    {
+      "dim": "material",
+      "name": "鳄鱼皮"
+    },
+    {
+      "dim": "material",
+      "name": "珍珠"
+    },
+    {
+      "dim": "material",
+      "name": "水晶"
+    },
+    {
+      "dim": "material",
+      "name": "琉璃"
+    },
+    {
+      "dim": "material",
+      "name": "瓷器"
+    },
+    {
+      "dim": "material",
+      "name": "紫砂"
+    },
+    {
+      "dim": "material",
+      "name": "青瓷"
+    },
+    {
+      "dim": "material",
+      "name": "白瓷"
+    },
+    {
+      "dim": "material",
+      "name": "珐琅"
+    },
+    {
+      "dim": "material",
+      "name": "景泰蓝"
+    },
+    {
+      "dim": "material",
+      "name": "漆器"
+    },
+    {
+      "dim": "material",
+      "name": "木雕"
+    },
+    {
+      "dim": "material",
+      "name": "竹雕"
+    },
+    {
+      "dim": "material",
+      "name": "石雕"
+    },
+    {
+      "dim": "material",
+      "name": "玉雕"
+    },
+    {
+      "dim": "material",
+      "name": "骨雕"
+    },
+    {
+      "dim": "material",
+      "name": "黄金"
+    },
+    {
+      "dim": "material",
+      "name": "白银"
+    },
+    {
+      "dim": "material",
+      "name": "青铜"
+    },
+    {
+      "dim": "material",
+      "name": "黄铜"
+    },
+    {
+      "dim": "material",
+      "name": "不锈钢"
+    },
+    {
+      "dim": "material",
+      "name": "钛合金"
+    },
+    {
+      "dim": "material",
+      "name": "钨"
+    },
+    {
+      "dim": "material",
+      "name": "钛"
+    },
+    {
+      "dim": "material",
+      "name": "水银"
+    },
+    {
+      "dim": "material",
+      "name": "翡翠"
+    },
+    {
+      "dim": "material",
+      "name": "碳纤维"
+    },
+    {
+      "dim": "material",
+      "name": "纳米材料"
+    },
+    {
+      "dim": "material",
+      "name": "星尘"
+    },
+    {
+      "dim": "material",
+      "name": "石墨烯"
+    },
+    {
+      "dim": "material",
+      "name": "钨钢"
+    },
+    {
+      "dim": "material",
+      "name": "铂金"
+    },
+    {
+      "dim": "material",
+      "name": "铱金"
+    },
+    {
+      "dim": "material",
+      "name": "钛钢"
+    },
+    {
+      "dim": "material",
+      "name": "记忆合金"
+    },
+    {
+      "dim": "material",
+      "name": "月光石"
+    },
+    {
+      "dim": "material",
+      "name": "紫水晶"
+    },
+    {
+      "dim": "material",
+      "name": "黄玉"
+    },
+    {
+      "dim": "material",
+      "name": "绿松石"
+    },
+    {
+      "dim": "material",
+      "name": "青金石"
+    },
+    {
+      "dim": "material",
+      "name": "石榴石"
+    },
+    {
+      "dim": "material",
+      "name": "橄榄石"
+    },
+    {
+      "dim": "material",
+      "name": "碧玺"
+    },
+    {
+      "dim": "material",
+      "name": "海蓝宝石"
+    },
+    {
+      "dim": "material",
+      "name": "蛋白石"
+    },
+    {
+      "dim": "material",
+      "name": "缟玛瑙"
+    },
+    {
+      "dim": "material",
+      "name": "孔雀石"
+    },
+    {
+      "dim": "material",
+      "name": "虎眼石"
+    },
+    {
+      "dim": "material",
+      "name": "萤石"
+    },
+    {
+      "dim": "material",
+      "name": "石英"
+    },
+    {
+      "dim": "material",
+      "name": "黑玛瑙"
+    },
+    {
+      "dim": "material",
+      "name": "白水晶"
+    },
+    {
+      "dim": "material",
+      "name": "粉晶"
+    },
+    {
+      "dim": "material",
+      "name": "紫晶"
+    },
+    {
+      "dim": "material",
+      "name": "茶晶"
+    },
+    {
+      "dim": "material",
+      "name": "发晶"
+    },
+    {
+      "dim": "material",
+      "name": "幽灵水晶"
+    },
+    {
+      "dim": "material",
+      "name": "钛晶"
+    },
+    {
+      "dim": "material",
+      "name": "红宝石"
+    },
+    {
+      "dim": "material",
+      "name": "蓝宝石"
+    },
+    {
+      "dim": "material",
+      "name": "祖母绿"
+    },
+    {
+      "dim": "material",
+      "name": "猫眼石"
+    },
+    {
+      "dim": "material",
+      "name": "和田玉"
+    },
+    {
+      "dim": "material",
+      "name": "独山玉"
+    },
+    {
+      "dim": "material",
+      "name": "岫玉"
+    },
+    {
+      "dim": "material",
+      "name": "南红玛瑙"
+    },
+    {
+      "dim": "material",
+      "name": "战国红"
+    },
+    {
+      "dim": "material",
+      "name": "蜜蜡"
+    },
+    {
+      "dim": "material",
+      "name": "血珀"
+    },
+    {
+      "dim": "material",
+      "name": "金珀"
+    },
+    {
+      "dim": "material",
+      "name": "虫珀"
+    },
+    {
+      "dim": "material",
+      "name": "玳瑁"
+    },
+    {
+      "dim": "material",
+      "name": "犀角"
+    },
+    {
+      "dim": "material",
+      "name": "鹿角"
+    },
+    {
+      "dim": "material",
+      "name": "象牙"
+    },
+    {
+      "dim": "material",
+      "name": "鲸骨"
+    },
+    {
+      "dim": "material",
+      "name": "龟甲"
+    },
+    {
+      "dim": "material",
+      "name": "蛇骨"
+    },
+    {
+      "dim": "material",
+      "name": "狼牙"
+    },
+    {
+      "dim": "material",
+      "name": "虎骨"
+    },
+    {
+      "dim": "material",
+      "name": "鹰羽"
+    },
+    {
+      "dim": "material",
+      "name": "孔雀羽"
+    },
+    {
+      "dim": "material",
+      "name": "天鹅羽"
+    },
+    {
+      "dim": "material",
+      "name": "鸵鸟皮"
+    },
+    {
+      "dim": "material",
+      "name": "蜥蜴皮"
+    },
+    {
+      "dim": "material",
+      "name": "鲨鱼皮"
+    },
+    {
+      "dim": "material",
+      "name": "鱼皮"
+    },
+    {
+      "dim": "material",
+      "name": "珍珠贝"
+    },
+    {
+      "dim": "material",
+      "name": "螺钿"
+    },
+    {
+      "dim": "material",
+      "name": "云母"
+    },
+    {
+      "dim": "material",
+      "name": "金刚石"
+    },
+    {
+      "dim": "texture",
+      "name": "磨砂哑光"
+    },
+    {
+      "dim": "texture",
+      "name": "粗糙沧桑"
+    },
+    {
+      "dim": "texture",
+      "name": "湿润光泽"
+    },
+    {
+      "dim": "texture",
+      "name": "流动液态"
+    },
+    {
+      "dim": "texture",
+      "name": "发光脉动"
+    },
+    {
+      "dim": "texture",
+      "name": "虚空吞噬"
+    },
+    {
+      "dim": "texture",
+      "name": "坚硬冰冷"
+    },
+    {
+      "dim": "texture",
+      "name": "温热柔软"
+    },
+    {
+      "dim": "texture",
+      "name": "粘稠"
+    },
+    {
+      "dim": "texture",
+      "name": "干燥"
+    },
+    {
+      "dim": "texture",
+      "name": "细腻"
+    },
+    {
+      "dim": "texture",
+      "name": "弹性"
+    },
+    {
+      "dim": "texture",
+      "name": "金属冰冷"
+    },
+    {
+      "dim": "texture",
+      "name": "丝滑"
+    },
+    {
+      "dim": "texture",
+      "name": "油光"
+    },
+    {
+      "dim": "texture",
+      "name": "水润"
+    },
+    {
+      "dim": "texture",
+      "name": "坚固"
+    },
+    {
+      "dim": "texture",
+      "name": "冰凉"
+    },
+    {
+      "dim": "texture",
+      "name": "暖绒"
+    },
+    {
+      "dim": "texture",
+      "name": "朦胧"
+    },
+    {
+      "dim": "texture",
+      "name": "荧光"
+    },
+    {
+      "dim": "texture",
+      "name": "深邃"
+    },
+    {
+      "dim": "texture",
+      "name": "陶瓷"
+    },
+    {
+      "dim": "texture",
+      "name": "玻璃"
+    },
+    {
+      "dim": "texture",
+      "name": "水晶"
+    },
+    {
+      "dim": "texture",
+      "name": "玉石"
+    },
+    {
+      "dim": "texture",
+      "name": "磨砂"
+    },
+    {
+      "dim": "texture",
+      "name": "镜面"
+    },
+    {
+      "dim": "texture",
+      "name": "哑光"
+    },
+    {
+      "dim": "texture",
+      "name": "颗粒"
+    },
+    {
+      "dim": "texture",
+      "name": "金属光泽"
+    },
+    {
+      "dim": "texture",
+      "name": "珠光"
+    },
+    {
+      "dim": "texture",
+      "name": "绸缎"
+    },
+    {
+      "dim": "texture",
+      "name": "拉丝"
+    },
+    {
+      "dim": "texture",
+      "name": "磨砂玻璃"
+    },
+    {
+      "dim": "texture",
+      "name": "镜面抛光"
+    },
+    {
+      "dim": "texture",
+      "name": "磨砂质感"
+    },
+    {
+      "dim": "texture",
+      "name": "颗粒质感"
+    },
+    {
+      "dim": "texture",
+      "name": "粗糙质感"
+    },
+    {
+      "dim": "texture",
+      "name": "细腻质感"
+    },
+    {
+      "dim": "texture",
+      "name": "坚硬"
+    },
+    {
+      "dim": "texture",
+      "name": "冰冷"
+    },
+    {
+      "dim": "texture",
+      "name": "温热"
+    },
+    {
+      "dim": "texture",
+      "name": "粘腻"
+    },
+    {
+      "dim": "texture",
+      "name": "干爽"
+    },
+    {
+      "dim": "texture",
+      "name": "湿润"
+    },
+    {
+      "dim": "texture",
+      "name": "蓬松"
+    },
+    {
+      "dim": "texture",
+      "name": "顺滑"
+    },
+    {
+      "dim": "texture",
+      "name": "柔滑"
+    },
+    {
+      "dim": "texture",
+      "name": "反光"
+    },
+    {
+      "dim": "texture",
+      "name": "哑光面"
+    },
+    {
+      "dim": "texture",
+      "name": "磨砂面"
+    },
+    {
+      "dim": "texture",
+      "name": "镜面感"
+    },
+    {
+      "dim": "texture",
+      "name": "颗粒感"
+    },
+    {
+      "dim": "texture",
+      "name": "光泽感"
+    },
+    {
+      "dim": "texture",
+      "name": "哑光效果"
+    },
+    {
+      "dim": "texture",
+      "name": "磨砂效果"
+    },
+    {
+      "dim": "texture",
+      "name": "镜面效果"
+    },
+    {
+      "dim": "texture",
+      "name": "粗糙面"
+    },
+    {
+      "dim": "texture",
+      "name": "光滑面"
+    },
+    {
+      "dim": "display",
+      "name": "悬浮展示"
+    },
+    {
+      "dim": "display",
+      "name": "场景融合"
+    },
+    {
+      "dim": "display",
+      "name": "拆解展示"
+    },
+    {
+      "dim": "display",
+      "name": "360展示"
+    },
+    {
+      "dim": "display",
+      "name": "对比展示"
+    },
+    {
+      "dim": "display",
+      "name": "局部特写"
+    },
+    {
+      "dim": "display",
+      "name": "动态展示"
+    },
+    {
+      "dim": "display",
+      "name": "透视展示"
+    },
+    {
+      "dim": "display",
+      "name": "俯拍展示"
+    },
+    {
+      "dim": "display",
+      "name": "仰拍展示"
+    },
+    {
+      "dim": "display",
+      "name": "侧拍展示"
+    },
+    {
+      "dim": "display",
+      "name": "背面展示"
+    },
+    {
+      "dim": "display",
+      "name": "正面展示"
+    },
+    {
+      "dim": "display",
+      "name": "斜拍展示"
+    },
+    {
+      "dim": "display",
+      "name": "环绕展示"
+    },
+    {
+      "dim": "display",
+      "name": "静态展示"
+    },
+    {
+      "dim": "display",
+      "name": "全景展示"
+    },
+    {
+      "dim": "display",
+      "name": "微距展示"
+    },
+    {
+      "dim": "display",
+      "name": "剖面展示"
+    },
+    {
+      "dim": "display",
+      "name": "组装展示"
+    },
+    {
+      "dim": "display",
+      "name": "360旋转"
+    },
+    {
+      "dim": "display",
+      "name": "旋转展示"
+    },
+    {
+      "dim": "display",
+      "name": "漂浮展示"
+    },
+    {
+      "dim": "display",
+      "name": "空中展示"
+    },
+    {
+      "dim": "display",
+      "name": "桌面展示"
+    },
+    {
+      "dim": "display",
+      "name": "展柜展示"
+    },
+    {
+      "dim": "display",
+      "name": "展台展示"
+    },
+    {
+      "dim": "display",
+      "name": "陈列展示"
+    },
+    {
+      "dim": "display",
+      "name": "橱窗展示"
+    },
+    {
+      "dim": "display",
+      "name": "模特展示"
+    },
+    {
+      "dim": "display",
+      "name": "佩戴展示"
+    },
+    {
+      "dim": "display",
+      "name": "使用场景展示"
+    },
+    {
+      "dim": "display",
+      "name": "组合展示"
+    },
+    {
+      "dim": "display",
+      "name": "分层展示"
+    },
+    {
+      "dim": "display",
+      "name": "透视爆炸图"
+    },
+    {
+      "dim": "display",
+      "name": "细节放大"
+    },
+    {
+      "dim": "display",
+      "name": "局部放大"
+    },
+    {
+      "dim": "display",
+      "name": "特写镜头"
+    },
+    {
+      "dim": "display",
+      "name": "慢动作展示"
+    },
+    {
+      "dim": "display",
+      "name": "定格展示"
+    },
+    {
+      "dim": "display",
+      "name": "倒置展示"
+    },
+    {
+      "dim": "display",
+      "name": "倾斜展示"
+    },
+    {
+      "dim": "display",
+      "name": "错位展示"
+    },
+    {
+      "dim": "display",
+      "name": "堆叠展示"
+    },
+    {
+      "dim": "background",
+      "name": "渐变背景"
+    },
+    {
+      "dim": "background",
+      "name": "纹理背景"
+    },
+    {
+      "dim": "background",
+      "name": "虚化背景"
+    },
+    {
+      "dim": "background",
+      "name": "场景背景"
+    },
+    {
+      "dim": "background",
+      "name": "魔法能量场"
+    },
+    {
+      "dim": "background",
+      "name": "异次元空间"
+    },
+    {
+      "dim": "background",
+      "name": "元素环境"
+    },
+    {
+      "dim": "background",
+      "name": "星空背景"
+    },
+    {
+      "dim": "background",
+      "name": "城市夜景"
+    },
+    {
+      "dim": "background",
+      "name": "森林背景"
+    },
+    {
+      "dim": "background",
+      "name": "海洋背景"
+    },
+    {
+      "dim": "background",
+      "name": "沙漠背景"
+    },
+    {
+      "dim": "background",
+      "name": "雪山背景"
+    },
+    {
+      "dim": "background",
+      "name": "火焰背景"
+    },
+    {
+      "dim": "background",
+      "name": "冰霜背景"
+    },
+    {
+      "dim": "background",
+      "name": "科技背景"
+    },
+    {
+      "dim": "background",
+      "name": "银河背景"
+    },
+    {
+      "dim": "background",
+      "name": "极光背景"
+    },
+    {
+      "dim": "background",
+      "name": "云海背景"
+    },
+    {
+      "dim": "background",
+      "name": "日出背景"
+    },
+    {
+      "dim": "background",
+      "name": "日落背景"
+    },
+    {
+      "dim": "background",
+      "name": "黄昏背景"
+    },
+    {
+      "dim": "background",
+      "name": "黎明背景"
+    },
+    {
+      "dim": "background",
+      "name": "夜晚背景"
+    },
+    {
+      "dim": "background",
+      "name": "城市背景"
+    },
+    {
+      "dim": "background",
+      "name": "乡村背景"
+    },
+    {
+      "dim": "background",
+      "name": "草原背景"
+    },
+    {
+      "dim": "background",
+      "name": "花海背景"
+    },
+    {
+      "dim": "background",
+      "name": "麦田背景"
+    },
+    {
+      "dim": "background",
+      "name": "樱花背景"
+    },
+    {
+      "dim": "background",
+      "name": "枫叶背景"
+    },
+    {
+      "dim": "background",
+      "name": "火山背景"
+    },
+    {
+      "dim": "background",
+      "name": "洞穴背景"
+    },
+    {
+      "dim": "background",
+      "name": "太空背景"
+    },
+    {
+      "dim": "background",
+      "name": "星空"
+    },
+    {
+      "dim": "background",
+      "name": "银河"
+    },
+    {
+      "dim": "background",
+      "name": "极光"
+    },
+    {
+      "dim": "background",
+      "name": "云海"
+    },
+    {
+      "dim": "background",
+      "name": "日出"
+    },
+    {
+      "dim": "background",
+      "name": "日落"
+    },
+    {
+      "dim": "background",
+      "name": "黄昏"
+    },
+    {
+      "dim": "background",
+      "name": "黎明"
+    },
+    {
+      "dim": "background",
+      "name": "夜晚"
+    },
+    {
+      "dim": "background",
+      "name": "城市"
+    },
+    {
+      "dim": "background",
+      "name": "乡村"
+    },
+    {
+      "dim": "background",
+      "name": "草原"
+    },
+    {
+      "dim": "background",
+      "name": "花海"
+    },
+    {
+      "dim": "background",
+      "name": "麦田"
+    },
+    {
+      "dim": "background",
+      "name": "樱花"
+    },
+    {
+      "dim": "background",
+      "name": "枫叶"
+    },
+    {
+      "dim": "background",
+      "name": "火山"
+    },
+    {
+      "dim": "background",
+      "name": "洞穴"
+    },
+    {
+      "dim": "background",
+      "name": "太空"
+    },
+    {
+      "dim": "background",
+      "name": "海洋"
+    },
+    {
+      "dim": "background",
+      "name": "沙漠"
+    },
+    {
+      "dim": "background",
+      "name": "雪山"
+    },
+    {
+      "dim": "background",
+      "name": "森林"
+    },
+    {
+      "dim": "background",
+      "name": "火焰"
+    },
+    {
+      "dim": "background",
+      "name": "冰霜"
+    },
+    {
+      "dim": "background",
+      "name": "科技"
+    },
+    {
+      "dim": "background",
+      "name": "魔法"
+    },
+    {
+      "dim": "background",
+      "name": "山峦"
+    },
+    {
+      "dim": "background",
+      "name": "湖泊"
+    },
+    {
+      "dim": "background",
+      "name": "瀑布"
+    },
+    {
+      "dim": "background",
+      "name": "竹林"
+    },
+    {
+      "dim": "background",
+      "name": "梯田"
+    },
+    {
+      "dim": "background",
+      "name": "荷塘"
+    },
+    {
+      "dim": "background",
+      "name": "芦苇"
+    },
+    {
+      "dim": "background",
+      "name": "稻田"
+    },
+    {
+      "dim": "background",
+      "name": "茶园"
+    }
+  ]
+}

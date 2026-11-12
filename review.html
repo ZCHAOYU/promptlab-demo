@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PromptLab · 质量评估</title>
+<style>
+  :root {
+    --bg:#0a0a12; --card:#12121e; --line:#242438; --ink:#e8e8f2;
+    --dim:#8a8aa0; --cyan:#00d4ff; --good:#22c55e; --mid:#f59e0b; --bad:#ef4444;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+    padding: 24px 16px 80px;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; }
+  h1 { font-size: 20px; margin: 0 0 6px; }
+  .sub { color: var(--dim); font-size: 13px; margin-bottom: 18px; line-height:1.7; }
+  .tabs { display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap; }
+  .tab {
+    padding: 8px 16px; border-radius: 8px; border:1px solid var(--line);
+    background: #14141f; color: var(--dim); cursor: pointer; font-size: 13.5px;
+  }
+  .tab.active { background: var(--cyan); color:#04121a; border-color: var(--cyan); font-weight:700; }
+  .bar {
+    position: sticky; top:0; z-index:10; background:var(--bg);
+    padding: 10px 0; margin-bottom: 14px; border-bottom:1px solid var(--line);
+    display:flex; align-items:center; gap:14px; flex-wrap:wrap; font-size:13px;
+  }
+  .bar b { color: var(--cyan); }
+  .btn {
+    padding: 7px 14px; border-radius:7px; border:1px solid var(--line);
+    background:#14141f; color:var(--ink); cursor:pointer; font-size:13px;
+  }
+  .btn:hover { border-color: var(--cyan); }
+  .card {
+    background: var(--card); border:1px solid var(--line); border-radius: 12px;
+    padding: 16px 18px; margin-bottom: 14px;
+  }
+  .head { display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:10px; }
+  .no { color:var(--dim); font-size:12px; font-variant-numeric: tabular-nums; }
+  .q { font-size:15px; font-weight:600; }
+  .tag {
+    font-size:11.5px; padding:2px 8px; border-radius:20px;
+    background:#1b2a33; color:var(--cyan); border:1px solid #24455a;
+  }
+  .tag.kind { background:#2a2440; color:#c4a8ff; border-color:#3b3160; }
+  .label { font-size:12px; color:var(--dim); margin: 10px 0 5px; }
+  .out {
+    background:#0d1520; border:1px solid #1d3547; border-radius:8px;
+    padding: 11px 13px; font-size:13.5px; line-height:1.85; color:#cfe6f2;
+    white-space: pre-wrap; word-break: break-word;
+  }
+  .dims { font-size:11.5px; color:#6a7a88; margin-top:8px; line-height:1.7; }
+  .rate { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; align-items:center; }
+  .r {
+    padding: 7px 16px; border-radius:7px; border:1px solid var(--line);
+    background:#14141f; color:var(--dim); cursor:pointer; font-size:13px;
+  }
+  .r.good.on { background:var(--good); color:#04120a; border-color:var(--good); font-weight:700; }
+  .r.mid.on  { background:var(--mid);  color:#1a1000; border-color:var(--mid);  font-weight:700; }
+  .r.bad.on  { background:var(--bad);  color:#fff;    border-color:var(--bad);  font-weight:700; }
+  input.note {
+    flex:1; min-width:200px; padding:7px 11px; border-radius:7px;
+    border:1px solid var(--line); background:#0d0d16; color:var(--ink); font-size:13px;
+  }
+  .err { color: var(--bad); font-size:13px; }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>质量评估</h1>
+  <div class="sub">
+    给每条结果点「好 / 一般 / 差」。选择会自动保存在本机浏览器里，<br>
+    全部点完后按「导出结果」下载 JSON，把它发给我 —— 这是后续所有改动的对照基线。
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" data-panel="cases">① 输出基线（30 条）</div>
+    <div class="tab" data-panel="archives">② 档案抽检（30 条）</div>
+  </div>
+
+  <div class="bar">
+    <span>已评 <b id="doneCount">0</b> / <b id="totalCount">0</b></span>
+    <span id="scoreLine" style="color:var(--dim)"></span>
+    <span id="dataFp" style="color:#5a7a8a;font-size:12px"></span>
+    <button class="btn" id="btnExport">导出结果</button>
+    <button class="btn" id="btnReset">清空重来</button>
+  </div>
+
+  <div id="casesPanel"></div>
+  <div id="archivesPanel" class="hidden"></div>
+</div>
+
+<script>
+(function () {
+  var STORE_KEY = 'promptlab-review-v1';
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); } catch (e) { state = {}; }
+
+  function save() {
+    try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) {}
+  }
+
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function rateBtns(key) {
+    var cur = state[key] ? state[key].r : '';
+    return ['good', 'mid', 'bad'].map(function (r) {
+      var label = r === 'good' ? '好' : (r === 'mid' ? '一般' : '差');
+      return '<button class="r ' + r + (cur === r ? ' on' : '') + '" data-key="' + key +
+             '" data-r="' + r + '">' + label + '</button>';
+    }).join('');
+  }
+
+  function renderCases(data) {
+    var html = '';
+    data.forEach(function (c, i) {
+      var key = 'case-' + i;
+      var st = state[key] || {};
+      html += '<div class="card">' +
+        '<div class="head">' +
+          '<span class="no">#' + (i + 1) + '</span>' +
+          '<span class="q">' + esc(c.input || '（空）') + '</span>' +
+          '<span class="tag">自动识别：' + esc({ character: '人物', scene: '场景', prop: '道具' }[c.mode] || c.mode || '—') + '</span>' +
+        '</div>' +
+        '<div class="label">输出</div>' +
+        (c.gated
+          ? '<div class="out" style="border-color:#7a5a1d;background:#1d160a;color:#f0c66b">' +
+            '⛔ 会触发「没认出主体」弹窗，真实界面不会生成 —— 这条不用评分</div>'
+          : (c.error
+            ? '<div class="out err">生成失败：' + esc(c.error) + '</div>'
+            : '<div class="out">' + esc(c.output || '（空）') + '</div>')) +
+        '<div class="dims">' + esc((c.dims || []).join('  ')) + '</div>' +
+        '<div class="rate">' + rateBtns(key) +
+          '<input class="note" data-note="' + key + '" placeholder="备注（可选）" value="' +
+          esc(st.note || '') + '">' +
+        '</div>' +
+      '</div>';
+    });
+    document.getElementById('casesPanel').innerHTML = html;
+  }
+
+  function renderArchives(data) {
+    var KIND = {
+      role: '角色', style: '风格', scene: '场景', color: '色彩',
+      light: '光线', atmosphere: '氛围', composition: '构图'
+    };
+    var html = '';
+    data.forEach(function (a, i) {
+      var key = 'arc-' + i;
+      var st = state[key] || {};
+      var parts = [];
+      if (a.kind === 'role') {
+        if (a.core) parts.push('<b>主体</b>：' + esc(a.core));
+        if (a.face) parts.push('<b>面容</b>：' + esc(a.face));
+        if (a.pose) parts.push('<b>姿态</b>：' + esc(a.pose));
+        if (a.detail) parts.push('<b>服饰</b>：' + esc(a.detail));
+        if (a.mood) parts.push('<b>气质</b>：' + esc(a.mood));
+      } else {
+        var txt = a.detail || a.zhFull || a.core || '';
+        txt = String(txt).replace(/^[^；]*；/, '');   // 去掉开头的名字
+        parts.push(txt ? esc(txt) : '<span style="color:#a33">（这条还没有描述）</span>');
+      }
+      html += '<div class="card">' +
+        '<div class="head">' +
+          '<span class="no">#' + (i + 1) + '</span>' +
+          '<span class="q">' + esc(a.name) + '</span>' +
+          '<span class="tag kind">' + esc(KIND[a.kind] || a.kind) + '</span>' +
+        '</div>' +
+        '<div class="out">' + parts.join('<br>') + '</div>' +
+        '<div class="rate">' + rateBtns(key) +
+          '<input class="note" data-note="' + key + '" placeholder="哪一句不对？（可选）" value="' +
+          esc(st.note || '') + '">' +
+        '</div>' +
+      '</div>';
+    });
+    document.getElementById('archivesPanel').innerHTML = html;
+  }
+
+  function updateCounts() {
+    var keys = Object.keys(state).filter(function (k) { return state[k] && state[k].r; });
+    var good = keys.filter(function (k) { return state[k].r === 'good'; }).length;
+    var mid = keys.filter(function (k) { return state[k].r === 'mid'; }).length;
+    var bad = keys.filter(function (k) { return state[k].r === 'bad'; }).length;
+    document.getElementById('doneCount').textContent = keys.length;
+    document.getElementById('scoreLine').textContent =
+      keys.length ? ('好 ' + good + ' · 一般 ' + mid + ' · 差 ' + bad) : '';
+  }
+
+  function onRate(key, r) {
+    state[key] = state[key] || {};
+    state[key].r = (state[key].r === r) ? '' : r;
+    save();
+    document.querySelectorAll('button.r[data-key="' + key + '"]').forEach(function (b) {
+      b.classList.toggle('on', b.getAttribute('data-r') === state[key].r);
+    });
+    updateCounts();
+  }
+
+  function onNote(key, val) {
+    state[key] = state[key] || {};
+    state[key].note = val;
+    save();
+  }
+
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    if (t.classList && t.classList.contains('r')) {
+      onRate(t.getAttribute('data-key'), t.getAttribute('data-r'));
+    }
+    if (t.classList && t.classList.contains('tab')) {
+      document.querySelectorAll('.tab').forEach(function (x) { x.classList.remove('active'); });
+      t.classList.add('active');
+      var p = t.getAttribute('data-panel');
+      document.getElementById('casesPanel').classList.toggle('hidden', p !== 'cases');
+      document.getElementById('archivesPanel').classList.toggle('hidden', p !== 'archives');
+    }
+  });
+
+  document.addEventListener('input', function (e) {
+    var t = e.target;
+    if (t.dataset && t.dataset.note) onNote(t.dataset.note, t.value);
+  });
+
+  document.getElementById('btnExport').onclick = function () {
+    var out = { savedAt: new Date().toISOString(), ratings: state };
+    var blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'review-result.json';
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 2000);
+  };
+
+  document.getElementById('btnReset').onclick = function () {
+    if (!confirm('清空所有评分？')) return;
+    state = {};
+    save();
+    location.reload();
+  };
+
+  Promise.all([
+    fetch('_dev/baseline-cases.json?_=' + Date.now(), { cache: 'no-store' }).then(function (r) { return r.json(); }),
+    fetch('_dev/archive-review.json?_=' + Date.now(), { cache: 'no-store' }).then(function (r) { return r.json(); })
+  ]).then(function (res) {
+    renderCases(res[0]);
+    renderArchives(res[1]);
+    document.getElementById('totalCount').textContent = res[0].length + res[1].length;
+    var withDesc = res[1].filter(function (a) { return a.detail || (a.zhFull || '').indexOf('；') >= 0; }).length;
+    var fp = document.getElementById('dataFp');
+    if (fp) fp.textContent = '数据：' + res[1].length + ' 条档案，其中 ' + withDesc + ' 条有描述（加载于 ' +
+      new Date().toLocaleTimeString() + '）';
+    updateCounts();
+  }).catch(function (e) {
+    document.querySelector('.wrap').insertAdjacentHTML('beforeend',
+      '<div class="out err">数据加载失败：' + esc(e.message) +
+      '<br>请确认从 http://127.0.0.1:8777/review.html 打开，而不是双击文件。</div>');
+  });
+})();
+</script>
+</body>
+</html>

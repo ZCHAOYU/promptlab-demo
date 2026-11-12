@@ -1,0 +1,476 @@
+[
+  {
+    "name": "长剑",
+    "zh": "古旧长剑；细长直刃，剑身有磨损，金属护手，缠绳剑柄",
+    "en": "ancient longsword, slender straight blade, worn steel, metal guard, wrapped hilt",
+    "kw": "剑 宝剑 长剑 刀剑 冷兵器 佩剑 剑身"
+  },
+  {
+    "name": "长枪",
+    "zh": "长柄长枪；银亮菱形铁枪头，木杆缠麻绳，尾部系红缨",
+    "en": "long spear, diamond-shaped steel spearhead, wooden shaft with cord wrap, red tassel",
+    "kw": "枪 长枪 红缨枪 长矛 矛 枪头 冷兵器"
+  },
+  {
+    "name": "弓箭",
+    "zh": "传统长弓；弯曲木胎弓身，牛筋弓弦，斜挎皮质箭袋与羽箭",
+    "en": "traditional longbow, curved wooden limbs, sinew bowstring, leather quiver with feathered arrows",
+    "kw": "弓 弓箭 长弓 箭 箭矢 羽箭 弓弩 射箭"
+  },
+  {
+    "name": "盾牌",
+    "zh": "圆形金属盾牌；黄铜包边，中央凸起盾心，表面有划痕与铆钉",
+    "en": "round metal shield, brass rim, raised central boss, scratched surface, rivets",
+    "kw": "盾 盾牌 圆盾 护盾 铁盾 防具 挡箭牌"
+  },
+  {
+    "name": "战斧",
+    "zh": "双手战斧；厚重半月斧刃，斧面有锻打纹，木柄缠皮条，刃口微卷",
+    "en": "two-handed battle axe, heavy crescent blade, forged texture, leather-wrapped haft, chipped edge",
+    "kw": "斧 战斧 斧头 巨斧 板斧 斧子 冷兵器"
+  },
+  {
+    "name": "法杖",
+    "zh": "木质法杖；扭曲枝干杖身，顶端嵌蓝色发光晶石，缠有银丝与符文",
+    "en": "wooden magic staff, twisted branch shaft, glowing blue crystal at the tip, silver wire and runes",
+    "kw": "法杖 魔杖 权杖 木杖 魔法杖 巫师杖 杖"
+  },
+  {
+    "name": "匕首",
+    "zh": "精钢匕首；短小双刃，刀身有血槽，黑皮刀鞘，柄尾配重球",
+    "en": "steel dagger, short double-edged blade, blood groove, black leather sheath, pommel sphere",
+    "kw": "匕首 短刀 小刀 短剑 刀 利刃 随身刀"
+  },
+  {
+    "name": "镰刀",
+    "zh": "弯刃镰刀；半月形铁刃，短木柄，刃面生锈，柄上缠旧布条",
+    "en": "curved sickle, crescent iron blade, short wooden handle, rusty edge, cloth-wrapped grip",
+    "kw": "镰刀 镰 弯刀 农具 死神镰刀 割草刀 月牙镰"
+  },
+  {
+    "name": "头盔",
+    "zh": "中世纪头盔；全包式铁盔，面甲有细密观察缝，顶部铆接护颈，表面斑驳",
+    "en": "medieval helmet, full-face iron helm, narrow visor slit, riveted neck guard, mottled surface",
+    "kw": "头盔 盔 铁盔 战盔 钢盔 面甲 护头"
+  },
+  {
+    "name": "铠甲",
+    "zh": "板甲铠甲；银灰钢片层叠，胸口有纹章浮雕，肩甲圆润，皮扣束带",
+    "en": "plate armor, layered silver-grey steel, embossed crest on the chest, rounded pauldrons, leather straps",
+    "kw": "铠甲 盔甲 甲胄 战甲 板甲 护甲 防具"
+  },
+  {
+    "name": "灯笼",
+    "zh": "朱红纸灯笼；竹骨圆身，表面绘花鸟，下端垂流苏，内透暖黄烛光",
+    "en": "red paper lantern, round bamboo frame, painted flowers and birds, hanging tassel, warm candle glow",
+    "kw": "灯笼 花灯 纸灯笼 灯 提灯 红灯笼 宫灯"
+  },
+  {
+    "name": "折扇",
+    "zh": "水墨折扇；竹制扇骨，展开扇面绘山水，边缘有磨损，缀玉扇坠",
+    "en": "folding fan, bamboo ribs, ink landscape painting on the leaf, worn edges, jade pendant",
+    "kw": "折扇 扇子 纸扇 扇 团扇 文人扇 蒲扇"
+  },
+  {
+    "name": "油纸伞",
+    "zh": "油纸伞；竹骨伞架，桐油黄纸伞面绘红梅，木质伞柄，微微撑开",
+    "en": "oil-paper umbrella, bamboo frame, tung-oiled yellow paper with red plum blossoms, wooden handle, half open",
+    "kw": "油纸伞 伞 雨伞 纸伞 古伞 竹伞 花伞 撑伞"
+  },
+  {
+    "name": "面具",
+    "zh": "彩绘面具；木质薄胎，白底描红黑纹样，眼窝镂空，边缘系红绳",
+    "en": "painted mask, thin wooden shell, white base with red and black patterns, hollow eye sockets, red cord",
+    "kw": "面具 脸谱 假面 面罩 鬼面 傩面 面俱"
+  },
+  {
+    "name": "皇冠",
+    "zh": "黄金皇冠；八角尖顶，镶嵌红蓝宝石，底座浮雕花纹，内衬红绒",
+    "en": "golden crown, eight pointed peaks, ruby and sapphire inlay, embossed base, red velvet lining",
+    "kw": "皇冠 王冠 冠冕 头冠 王冕 宝冠"
+  },
+  {
+    "name": "戒指",
+    "zh": "银质戒指；素圈戒身，中央镶一枚椭圆蓝宝石，内壁刻有细小铭文",
+    "en": "silver ring, plain band, oval sapphire setting, tiny engraved inscription inside",
+    "kw": "戒指 指环 戒子 宝石戒指 婚戒 扳指 环"
+  },
+  {
+    "name": "怀表",
+    "zh": "黄铜怀表；圆形表壳有磨痕，白色表盘罗马数字，顶部表冠连细链",
+    "en": "brass pocket watch, worn round case, white dial with Roman numerals, crown and fine chain",
+    "kw": "怀表 表 老怀表 怀钟 挂表 计时表 金表"
+  },
+  {
+    "name": "罗盘",
+    "zh": "航海罗盘；黄铜外壳，玻璃罩下磁针指向，表盘刻方位刻度，带铜盖",
+    "en": "nautical compass, brass housing, magnetic needle under glass, engraved directional dial, brass lid",
+    "kw": "罗盘 指南针 指北针 航海罗盘 风水罗盘 定位仪"
+  },
+  {
+    "name": "钥匙",
+    "zh": "古铜钥匙；齿形复杂，钥匙柄为环形镂花，表面氧化发暗，配粗铁环",
+    "en": "antique bronze key, complex bit, ornate ring bow, darkened oxidized surface, iron keyring",
+    "kw": "钥匙 铜钥匙 开锁钥匙 锁匙 秘钥 门钥匙 钥匙串"
+  },
+  {
+    "name": "沙漏",
+    "zh": "木框沙漏；上下玻璃球，内装细白沙，木柱刻有花纹，沙正缓缓下落",
+    "en": "wooden hourglass, twin glass bulbs, fine white sand, carved wooden pillars, sand falling",
+    "kw": "沙漏 计时器 沙钟 时间沙漏 漏壶 滴漏"
+  },
+  {
+    "name": "古书",
+    "zh": "泛黄线装古书；纸页残破卷边，布面封皮，书脊磨损有虫蛀痕迹",
+    "en": "ancient book, yellowed thread-bound pages, worn cloth cover, frayed spine, fragile paper",
+    "kw": "古书 旧书 线装书 古籍 老书 书本 藏书 书籍"
+  },
+  {
+    "name": "卷轴",
+    "zh": "展开的古卷轴；泛黄纸面有墨迹，木轴两端镶玉，边缘微卷",
+    "en": "unfurled scroll, aged parchment, ink writing, wooden rollers with jade caps, curled edges",
+    "kw": "卷轴 画卷 手卷 书卷 羊皮卷 字画 卷子 竹简"
+  },
+  {
+    "name": "药瓶",
+    "zh": "小巧玻璃药瓶；圆锥瓶身配软木塞，内盛彩色药液，瓶身贴旧标签",
+    "en": "small glass potion bottle, cork stopper, colored liquid inside, aged paper label, rounded body",
+    "kw": "药瓶 药水 魔药 药剂 玻璃瓶 小瓶 瓶子 药水瓶"
+  },
+  {
+    "name": "水晶球",
+    "zh": "透明水晶球；内部有星云光雾浮动，底座为雕花黄铜，表面反光",
+    "en": "crystal ball, transparent sphere, glowing nebula inside, carved brass stand, glossy reflection",
+    "kw": "水晶球 玻璃球 占卜球 魔法球 预言球 水晶 圆球 球体"
+  },
+  {
+    "name": "火把",
+    "zh": "燃烧的火把；木柄缠麻布，顶端火焰跳动，火星四溅，木杆粗糙",
+    "en": "burning torch, wooden handle wrapped in cloth, leaping flame, flying sparks, rough timber",
+    "kw": "火把 火炬 火把棒 火棍 火源 照明 火 柴火"
+  },
+  {
+    "name": "蜡烛",
+    "zh": "燃着的白蜡烛；蜡身有流淌痕迹，棉芯火焰微颤，铜制烛台承接蜡泪",
+    "en": "burning candle, dripping white wax, flickering wick flame, brass candlestick, melted wax pool",
+    "kw": "蜡烛 烛 白蜡 洋蜡 烛火 火苗 蜡油 照明"
+  },
+  {
+    "name": "天平",
+    "zh": "黄铜天平；双盘对称悬挂，中央指针刻度，横梁精雕纹饰，底座沉稳",
+    "en": "brass balance scale, two suspended pans, central pointer dial, ornate beam, heavy base",
+    "kw": "天平 秤 称 天平秤 平衡秤 砝码秤 称量 天平仪"
+  },
+  {
+    "name": "长笛",
+    "zh": "银色长笛；细长管身带按键，表面抛光反光，吹口处有细微磨损",
+    "en": "silver flute, long slender tube, keyed mechanism, polished reflective surface, worn mouthpiece",
+    "kw": "长笛 笛子 横笛 银笛 笛 管乐 乐器 吹奏"
+  },
+  {
+    "name": "铃铛",
+    "zh": "黄铜小铃铛；圆球形铃身带开口，顶部有挂环，表面略有锈迹",
+    "en": "small brass bell, round body with slit, top hanging loop, slight tarnish, metal shine",
+    "kw": "铃铛 铃 铜铃 小铃 铃子 风铃 摇铃 铃销"
+  },
+  {
+    "name": "机械臂",
+    "zh": "工业机械臂；多段金属关节铰接，末端为夹爪，线缆外露，漆面磨损",
+    "en": "industrial robotic arm, segmented metal joints, gripper end effector, exposed cables, worn paint",
+    "kw": "机械臂 机械手 机器人手臂 关节臂 工业臂 铁臂 手臂 操纵臂"
+  },
+  {
+    "name": "齿轮",
+    "zh": "金属齿轮；齿牙密布边缘，中心轴孔，表面有油污与磨损痕",
+    "en": "metal gear, dense teeth along rim, central axle hole, greasy worn surface, machined steel",
+    "kw": "齿轮 齿盘 牙轮 传动轮 齿圈 机械齿轮 齿轮组 棘轮"
+  },
+  {
+    "name": "芯片",
+    "zh": "方形集成电路芯片；黑色封装，四周密布金属引脚，表面印有编号",
+    "en": "square IC chip, black package, dense metal pins, printed serial markings, silicon die",
+    "kw": "芯片 集成电路 晶片 处理器 半导体 电子元件 CPU 主板芯片"
+  },
+  {
+    "name": "全息投影",
+    "zh": "悬浮全息投影；蓝色半透明光体，边缘扫描线闪烁，投影中有旋转模型",
+    "en": "holographic projection, translucent blue light figure, flickering scan lines, floating rotating model, volumetric glow",
+    "kw": "全息投影 全息 全息图 投影 虚拟影像 立体投影 光影 幻影"
+  },
+  {
+    "name": "无人机",
+    "zh": "四轴无人机；碳纤维机身，四支旋臂带螺旋桨，下方挂载摄像头",
+    "en": "quadcopter drone, carbon fiber body, four rotor arms with propellers, underslung camera, landing skids",
+    "kw": "无人机 飞行器 四轴飞行器 航拍机 无人飞机 遥控飞机 旋翼机 小飞机"
+  },
+  {
+    "name": "飞船",
+    "zh": "深空飞船；流线金属船体，尾部喷口泛蓝光，表面布满装甲板与编号",
+    "en": "deep-space spaceship, streamlined metal hull, glowing blue thrusters, armored plating, hull markings",
+    "kw": "飞船 宇宙飞船 太空船 星舰 航天器 战舰 飞行器 舰船"
+  },
+  {
+    "name": "机甲",
+    "zh": "人形战斗机甲；厚重装甲覆盖躯干，肩部炮管，关节处液压杆外露",
+    "en": "humanoid mecha, heavy armor plating, shoulder cannons, exposed hydraulic joints, battle-worn",
+    "kw": "机甲 机器人 巨型机器人 机械战士 人形机甲 战斗机器人 铁甲 装甲"
+  },
+  {
+    "name": "能量核心",
+    "zh": "悬浮能量核心；球状晶体散发橙光，外裹金属环架，内部粒子流动",
+    "en": "floating energy core, glowing orange crystal sphere, metal ring frame, flowing particles, pulsing light",
+    "kw": "能量核心 能量球 动力核心 能源核心 反应堆 聚变核心 能量源 核心"
+  },
+  {
+    "name": "电缆",
+    "zh": "粗黑电缆；橡胶外皮包裹多股铜线，端头裸露，表面沾有灰尘",
+    "en": "thick black cable, rubber insulation, exposed copper strands at end, dusty surface, coiled wire",
+    "kw": "电缆 电线 线缆 导线 电源线 铜线 缆线 电缆线"
+  },
+  {
+    "name": "巨龙",
+    "zh": "巨大西方巨龙；鳞甲覆盖全身，双翼张开，口中含火，利爪抓地",
+    "en": "giant dragon, scaled body, spread wings, fire in jaws, sharp claws, massive silhouette",
+    "kw": "巨龙 龙 飞龙 西方龙 恶龙 龙兽 神龙 巨兽"
+  },
+  {
+    "name": "凤凰",
+    "zh": "展翅凤凰；羽翼燃着金红火焰，长尾羽飘逸，周身环绕火星与光点",
+    "en": "phoenix in flight, golden-red flaming wings, long flowing tail feathers, sparks and embers, radiant glow",
+    "kw": "凤凰 火鸟 不死鸟 神鸟 朱雀 火凤 凤 浴火重生"
+  },
+  {
+    "name": "乌鸦",
+    "zh": "通体乌黑的乌鸦；羽毛带蓝紫金属光泽，粗喙，双爪抓枝，侧身站立",
+    "en": "black crow, glossy blue-purple feathers, thick beak, perched on branch, side view",
+    "kw": "乌鸦 黑乌鸦 老鸹 渡鸦 黑鸟 鸦 鸟"
+  },
+  {
+    "name": "蝴蝶",
+    "zh": "展翅的蝴蝶；鳞粉覆盖的薄翅，翅面有橙黑斑纹，触角细长，悬停空中",
+    "en": "butterfly with spread wings, scaly thin wings, orange and black patterns, long antennae, hovering",
+    "kw": "蝴蝶 蝶 花蝴蝶 彩蝶 蝶蝶 飞蝶 蝴蝶翅膀"
+  },
+  {
+    "name": "蜘蛛",
+    "zh": "结网的蜘蛛；圆鼓腹部，八条细长带毛的腿，深褐色身体，伏在蛛网中央",
+    "en": "spider in web, round abdomen, eight long hairy legs, dark brown body, crouching at web center",
+    "kw": "蜘蛛 蛛 大蜘蛛 结网蜘蛛 蛛蛛 八脚虫 捕食蛛"
+  },
+  {
+    "name": "锦鲤",
+    "zh": "游动的锦鲤；白底红斑的鳞片，流线身体，半透明尾鳍舒展，水中侧游",
+    "en": "koi fish swimming, white body with red patches, scales, streamlined shape, translucent flowing tail fin",
+    "kw": "锦鲤 鲤鱼 花鲤 观赏鱼 红白锦鲤 池塘鱼 日式锦鲤"
+  },
+  {
+    "name": "骏马",
+    "zh": "奔跑的骏马；栗色油亮皮毛，长鬃飞扬，肌肉线条结实，四蹄腾空",
+    "en": "galloping steed, glossy chestnut coat, flowing mane, muscular build, hooves in mid-air",
+    "kw": "骏马 马 好马 奔马 马匹 战马 良驹 骑乘马"
+  },
+  {
+    "name": "狼",
+    "zh": "站立的灰狼；厚实灰白皮毛，尖耳竖立，黄眼警觉，尾巴低垂",
+    "en": "standing grey wolf, thick grey-white fur, pointed erect ears, alert yellow eyes, low tail",
+    "kw": "狼 灰狼 野狼 狼狗 大灰狼 狼群 苍狼"
+  },
+  {
+    "name": "鹿",
+    "zh": "回望的鹿；棕色短毛，分叉鹿角，白色斑点隐约，四肢纤细，立于林间",
+    "en": "deer looking back, brown short fur, branching antlers, faint white spots, slender legs, standing in forest",
+    "kw": "鹿 小鹿 梅花鹿 麋鹿 公鹿 野鹿 鹿角"
+  },
+  {
+    "name": "猫",
+    "zh": "蹲坐的家猫；蓬松短毛，竖立尖耳，长尾盘在身侧，眼睛圆亮",
+    "en": "sitting domestic cat, fluffy short fur, upright pointed ears, long tail curled beside body, round bright eyes",
+    "kw": "猫 猫咪 小猫 家猫 喵星人 猫猫 狸花猫"
+  },
+  {
+    "name": "行李箱",
+    "zh": "复古行李箱；硬质牛皮箱体，四角金属包边，双搭扣锁，提手磨旧",
+    "en": "vintage suitcase, hard leather body, metal corner protectors, twin clasp locks, worn handle",
+    "kw": "行李箱 皮箱 旅行箱 箱子 手提箱 拉杆箱 老皮箱"
+  },
+  {
+    "name": "老式电话",
+    "zh": "老式拨号电话；黑色胶木机身，圆形转盘，金属叉簧，螺旋听筒线",
+    "en": "vintage rotary telephone, black bakelite body, circular dial, metal cradle, coiled handset cord",
+    "kw": "老式电话 转盘电话 拨号电话 老电话 复古电话 座机 黑胶木电话"
+  },
+  {
+    "name": "收音机",
+    "zh": "木质收音机；方正箱体，布质扬声器网罩，金属旋钮，顶部拉杆天线",
+    "en": "wooden radio, boxy cabinet, fabric speaker grille, metal knobs, telescopic antenna on top",
+    "kw": "收音机 老收音机 半导体 广播机 复古收音机 电台机 收录机"
+  },
+  {
+    "name": "打字机",
+    "zh": "机械打字机；黑色金属机身，圆形字键排成弧形，滚筒夹纸，色带外露",
+    "en": "mechanical typewriter, black metal body, round keys in arc rows, paper roller, exposed ribbon",
+    "kw": "打字机 老式打字机 机械打字机 英文打字机 打字机键盘 复古打字机"
+  },
+  {
+    "name": "相机",
+    "zh": "复古相机；银色金属机身，黑色皮革贴面，圆形镜头，顶部取景器",
+    "en": "vintage camera, silver metal body, black leather grip, circular lens, top viewfinder",
+    "kw": "相机 照相机 老相机 胶片相机 单反 摄影机 复古相机"
+  },
+  {
+    "name": "留声机",
+    "zh": "老式留声机；木质底座，黄铜喇叭花，黑胶唱片旋转，金属唱臂",
+    "en": "gramophone, wooden base, brass horn, spinning vinyl record, metal tonearm",
+    "kw": "留声机 老式留声机 黑胶唱机 唱机 唱片机 喇叭留声机 古董留声机"
+  },
+  {
+    "name": "镜子",
+    "zh": "椭圆梳妆镜；黄铜雕花边框，镜面有细密斑驳，边缘水银剥落，斜立",
+    "en": "oval vanity mirror, carved brass frame, mottled glass surface, peeling silvering on edges, tilted",
+    "kw": "镜子 梳妆镜 铜镜 化妆镜 玻璃镜 老镜子 镜面"
+  },
+  {
+    "name": "木门",
+    "zh": "老木门；深棕色实木门板，木纹粗粝，铁质门环，漆面剥落，半掩",
+    "en": "old wooden door, dark brown solid planks, coarse grain, iron ring handle, peeling paint, ajar",
+    "kw": "木门 老木门 木板门 旧门 实木门 房门 门板"
+  },
+  {
+    "name": "楼梯",
+    "zh": "木质楼梯；深色踏板，铁艺扶手弯曲，墙面斑驳，向上延伸至暗处",
+    "en": "wooden staircase, dark treads, curved iron railing, mottled wall, ascending into shadow",
+    "kw": "楼梯 木楼梯 台阶 楼梯口 旋梯 老楼梯 阶梯"
+  },
+  {
+    "name": "吊桥",
+    "zh": "山谷吊桥；木板铺面，粗麻绳与铁链作栏，横跨深谷，微微晃动",
+    "en": "suspension bridge, wooden plank deck, rope and chain railings, spanning a ravine, swaying",
+    "kw": "吊桥 悬索桥 铁索桥 绳桥 木板吊桥 山谷吊桥 索桥"
+  },
+  {
+    "name": "路灯",
+    "zh": "街边路灯；铸铁灯柱，六角玻璃灯罩，暖黄灯光透出，灯柱斑驳锈迹",
+    "en": "street lamp, cast iron post, hexagonal glass lantern, warm yellow glow, rusted mottled pole",
+    "kw": "路灯 街灯 灯柱 老路灯 煤油路灯 照明灯 复古路灯"
+  },
+  {
+    "name": "长椅",
+    "zh": "公园长椅；木条靠背与坐板，铸铁卷曲扶手，漆面褪色，空无一人",
+    "en": "park bench, wooden slat back and seat, curled cast iron armrests, faded paint, empty",
+    "kw": "长椅 公园长椅 木椅 靠背椅 排椅 座椅 长条凳"
+  },
+  {
+    "name": "秋千",
+    "zh": "木制秋千；粗麻绳吊着旧木板；悬在树下微微摆动",
+    "en": "wooden swing, thick hemp ropes, worn plank seat, hanging under a tree, gently swaying",
+    "kw": "秋千 荡秋千 鞦韆 吊椅 木秋千 秋千架 绳秋千 摇摆"
+  },
+  {
+    "name": "钟楼",
+    "zh": "石砌钟楼；尖顶高耸，四面嵌大钟；墙面斑驳覆藤蔓",
+    "en": "stone clock tower, tall spire, large clock face on each side, weathered walls, ivy climbing",
+    "kw": "钟楼 塔楼 钟塔 时钟塔 尖塔 鼓楼 报时钟 古塔"
+  },
+  {
+    "name": "书架",
+    "zh": "木质书架；多层隔板堆满旧书；书脊参差覆薄尘",
+    "en": "wooden bookshelf, shelves packed with old books, uneven spines, thin layer of dust",
+    "kw": "书架 书柜 书架子 藏书架 木书架 置物架 典籍架 书格"
+  },
+  {
+    "name": "岩石",
+    "zh": "巨大岩石；灰褐色粗糙表面；棱角分明，覆青苔裂纹",
+    "en": "massive boulder, grey-brown rough surface, sharp angular edges, moss and cracks",
+    "kw": "岩石 石头 巨石 岩块 大石 礁石 石块 岩壁"
+  },
+  {
+    "name": "枯树",
+    "zh": "枯死老树；光秃枝干扭曲伸展；树皮剥落，枝头无叶",
+    "en": "dead tree, bare twisted branches, peeling bark, leafless limbs",
+    "kw": "枯树 枯木 死树 干枯树 老枯树 秃树 朽木 枯干"
+  },
+  {
+    "name": "藤蔓",
+    "zh": "攀援藤蔓；细长绿茎缠绕垂落；叶片密集覆满支架",
+    "en": "climbing vines, slender green stems twining and drooping, dense leaves covering a trellis",
+    "kw": "藤蔓 藤条 爬藤 藤子 绿藤 蔓藤 藤萝 攀藤"
+  },
+  {
+    "name": "蘑菇",
+    "zh": "一簇蘑菇；圆伞状菌盖带斑点；白色菌柄生于湿土",
+    "en": "cluster of mushrooms, rounded umbrella caps with spots, white stems, growing in damp soil",
+    "kw": "蘑菇 菌菇 菇 伞菌 野蘑菇 菌子 小蘑菇 真菌"
+  },
+  {
+    "name": "珊瑚",
+    "zh": "分枝珊瑚；粉橙色钙质骨骼；表面多孔，枝状伸展",
+    "en": "branching coral, pink-orange calcareous skeleton, porous surface, spreading branches",
+    "kw": "珊瑚 珊瑚礁 红珊瑚 石珊瑚 枝状珊瑚 珊瑚丛 海底珊瑚"
+  },
+  {
+    "name": "贝壳",
+    "zh": "海螺贝壳；螺旋纹路乳白泛粉；壳口光滑边缘生细齿",
+    "en": "seashell, spiral ridges, cream white with pink tint, smooth aperture, fine teeth along the lip",
+    "kw": "贝壳 海螺 螺壳 蛤壳 扇贝 海贝 螺贝 壳子"
+  },
+  {
+    "name": "陨石",
+    "zh": "陨石碎块；黑褐色熔壳覆气印；表面凹坑，边缘锐利",
+    "en": "meteorite fragment, dark brown fusion crust, thumbprint pits, sharp edges",
+    "kw": "陨石 陨星 流星石 天外石 太空石 陨铁 坠落石 星石"
+  },
+  {
+    "name": "冰晶",
+    "zh": "透明冰晶；六角对称棱柱；内部泛蓝光，表面结霜花",
+    "en": "transparent ice crystal, hexagonal symmetrical prism, blue inner glow, frost patterns on surface",
+    "kw": "冰晶 冰棱 冰晶体 霜晶 雪晶 冰花 结晶 冰块"
+  },
+  {
+    "name": "花朵",
+    "zh": "盛开的花朵；层叠花瓣柔软粉白；花心淡黄带露水",
+    "en": "blooming flower, layered soft pink-white petals, pale yellow center, dewy petals",
+    "kw": "花朵 花 鲜花 花卉 小花 花瓣 野花 开的 花"
+  },
+  {
+    "name": "落叶",
+    "zh": "飘落枯叶；叶片卷曲发黄；脉络清晰，边缘干裂",
+    "en": "fallen leaf, curled yellowed blade, visible veins, dry cracked edges",
+    "kw": "落叶 枯叶 黄叶 秋叶 叶子 树叶 飘落的叶 干叶"
+  },
+  {
+    "name": "茶杯",
+    "zh": "白瓷茶杯；圆润杯身细把手；釉面光洁，杯口描金",
+    "en": "white porcelain teacup, rounded body with slim handle, glossy glaze, gold line at the rim",
+    "kw": "茶杯 茶盏 杯子 瓷杯 茶碗 小茶杯 马克杯 茶具"
+  },
+  {
+    "name": "酒瓶",
+    "zh": "深绿玻璃酒瓶；细长瓶颈软木塞；瓶身贴旧纸标签",
+    "en": "dark green glass wine bottle, slender neck, cork stopper, old paper label on the body",
+    "kw": "酒瓶 玻璃瓶 酒壶 葡萄酒瓶 瓶子 洋酒瓶 陶酒瓶 酒坛"
+  },
+  {
+    "name": "蛋糕",
+    "zh": "奶油蛋糕；多层圆胚白奶油抹面；顶缀草莓与巧克力",
+    "en": "cream cake, layered round tiers, white buttercream frosting, strawberries and chocolate on top",
+    "kw": "蛋糕 生日蛋糕 奶油蛋糕 甜点 糕点 西点 蛋糕胚 派"
+  },
+  {
+    "name": "果盘",
+    "zh": "陶制果盘；浅圆盘盛苹果葡萄；果皮带水珠，沿描蓝纹",
+    "en": "ceramic fruit bowl, shallow round dish with apples and grapes, water droplets on the skin, blue pattern on the rim",
+    "kw": "果盘 水果盘 果盆 水果篮 托盘 盘子 水果碟 盛果器"
+  },
+  {
+    "name": "书桌",
+    "zh": "实木书桌；桌面宽厚有划痕；抽屉铜把手，散落纸笔",
+    "en": "solid wood desk, thick scratched top, drawers with brass handles, scattered papers and pens",
+    "kw": "书桌 写字台 桌子 办公桌 木桌 案桌 工作台 学习桌"
+  },
+  {
+    "name": "灯笼窗",
+    "zh": "中式灯笼窗；木格花窗透出暖光；窗棂雕花，纸面橙黄",
+    "en": "Chinese lantern window, wooden lattice glowing warm light, carved window frame, orange-yellow paper panes",
+    "kw": "灯笼窗 花窗 木格窗 灯笼 窗棂 中式窗 纸窗 宫灯窗"
+  }
+]

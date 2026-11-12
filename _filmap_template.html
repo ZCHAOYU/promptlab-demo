@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<title>智能提示词优化工具 · 文件地图 V5.32</title>
+<style>
+@page { size: A4; margin: 14mm 13mm 13mm 13mm; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Microsoft YaHei", "PingFang SC", sans-serif; font-size: 9.2pt; line-height: 1.5; color: #1b1f24; }
+h1 { font-size: 20pt; margin: 0 0 4pt; color: #12283d; }
+h2 { font-size: 12.5pt; margin: 13pt 0 5pt; padding-left: 7pt; color: #1f3b57;
+     border-left: 4pt solid #1f3b57; break-after: avoid; page-break-after: avoid; }
+h3 { font-size: 9.8pt; margin: 9pt 0 3pt; color: #16293b; break-after: avoid; }
+p { margin: 0 0 5pt; }
+ul { margin: 3pt 0 6pt; padding-left: 16pt; }
+li { margin-bottom: 2pt; }
+code { font-family: Consolas, "Cascadia Mono", monospace; font-size: 8.3pt; background: #f1f4f8;
+       padding: .3pt 2.5pt; border-radius: 2.5px; color: #1b3a52; }
+table { width: 100%; border-collapse: collapse; margin: 4pt 0 8pt; font-size: 8.2pt;
+        break-inside: avoid; page-break-inside: avoid; }
+table.split { break-inside: auto; page-break-inside: auto; }
+thead { display: table-header-group; }
+th, td { border: .5pt solid #d3dae2; padding: 2.8pt 4pt; text-align: left; vertical-align: top; }
+th { background: #eaeff5; color: #16324a; font-weight: 700; }
+tr:nth-child(even) td { background: #fafbfc; }
+td.num { text-align: right; color: #5b6672; white-space: nowrap; }
+.tag { font-size: 7pt; padding: .5pt 3pt; border-radius: 2pt; white-space: nowrap; }
+.tag.gen { background: #fdf3e3; color: #8a6a2f; }
+.tag.local { background: #fdeaea; color: #a33; }
+pre { font-family: Consolas, "Cascadia Mono", monospace; font-size: 8pt; line-height: 1.45;
+      background: #f7f8fa; border: .5pt solid #e2e6ec; border-radius: 4pt; padding: 7pt 9pt;
+      margin: 4pt 0 8pt; white-space: pre; break-inside: avoid; }
+.note { background: #fbf7ef; border-left: 3pt solid #d99a44; padding: 4pt 7pt; margin: 5pt 0 7pt;
+        font-size: 8.4pt; color: #4a3a22; break-inside: avoid; }
+.metrics { display: flex; gap: 5pt; margin: 6pt 0 10pt; }
+.metric { flex: 1; border: .6pt solid #d3dae2; border-radius: 3pt; padding: 5pt 7pt; background: #fbfcfd; }
+.metric b { display: block; font-size: 13pt; color: #1f3b57; }
+.metric span { font-size: 7.4pt; color: #5b6672; }
+.small { font-size: 7.8pt; color: #5b6672; }
+.pb { page-break-before: always; }
+</style></head><body>
+
+<h1>智能提示词优化工具 · 文件地图</h1>
+<p class="small">V5.32　·　2026-11-12　·　目录结构、各文件职责，以及与交付包的边界</p>
+
+<div class="metrics">
+  <div class="metric"><b>{{N_FILES}}</b><span>根目录文件</span></div>
+  <div class="metric"><b>21</b><span>页面依赖（含 1 个本地配置）</span></div>
+  <div class="metric"><b>{{N_DEV}}</b><span>开发脚本（不进包）</span></div>
+  <div class="metric"><b>2060</b><span>词条 / 512 维向量</span></div>
+  <div class="metric"><b>50</b><span>回归组（离线 47 + 服务端 3）</span></div>
+</div>
+
+<h2>顶层形状</h2>
+<pre>promptlab/
+├─ index.html · styles.css · logo.png          页面与样式（入口只有 index.html 一个）
+├─ app.js + app-detect/fill/assemble/ui.js     应用五层（主流程 → 检测 → 补全 → 拼装 → 界面）
+├─ data-kwdb.js · translations.js · smart-engine.js   词库与计算引擎
+├─ archive-*.js（7）· guard-data.js            数据补丁层（多数是生成物）
+├─ semantic-search.js · llm-arbiter.js · agent-panel.js   语义与决策（可选增强）
+├─ entries.json · vectors.bin/meta · models/   数据与索引
+├─ serve.py · start.bat · start-lan.bat        本机服务与启动
+├─ precompute.py · md2pdf.py · build-*-pdf.py  构建脚本
+├─ *.md（7）· *.pdf（2）                        文档与交付件
+├─ _dev/（{{N_DEV}} 个脚本）                     测试与工具 —— 不进包
+└─ _archive/                                   历史快照 —— 不进包</pre>
+
+<h2>一、入口与页面</h2>
+{{T_ENTRY}}
+
+<h2>二、页面依赖（按 index.html 实际加载顺序）</h2>
+<p class="small">顺序有意义：补丁层必须早于主流程；<code>archive-slots.js</code> 必须早于 <code>archive-fix.js</code>。
+测试不自己写清单，统一从 <code>index.html</code> 读——否则会出现「测试跑的是 A、浏览器跑的是 B」。</p>
+{{T_ORDER}}
+
+<h2>三、应用五层与词库引擎</h2>
+<h3>应用五层（依赖单向：上层调下层，下层不认识上层）</h3>
+{{T_LAYERS}}
+
+<h3>词库与引擎（纯数据 / 纯计算，不碰 DOM）</h3>
+{{T_ENGINE}}
+
+<h2>四、数据补丁层</h2>
+<p class="small">词库本体不动，补丁层往上叠：补一段描写、拆字段、修错、加变体、加合规判据。
+标「生成物」的是脚本产物，<b>手改会被下一次生成覆盖</b>。</p>
+{{T_ARCHIVE}}
+
+<h2>五、语义与决策（可选增强）</h2>
+{{T_SEM}}
+
+<h2>六、数据与索引</h2>
+{{T_DATA}}
+
+<h2>七、服务与启动</h2>
+{{T_SRV}}
+
+<h2>八、构建与文档</h2>
+{{T_BUILD}}
+
+<h2>九、开发工具（_dev，{{N_DEV}} 个，不进交付包）</h2>
+<h3>按类别</h3>
+{{T_DEVCAT}}
+<h3>最常用的几个</h3>
+{{T_DEVKEY}}
+
+<h2>十、归档与产物</h2>
+<table>
+  <tr><th style="width:30%">位置</th><th>是什么</th></tr>
+  <tr><td><code>_archive/</code></td><td>每一步改动前后的 <code>app.before-*.js</code> / <code>app.with-*.js</code> 快照，可随时删；回滚时按名字取</td></tr>
+  <tr><td><code>dist/</code></td><td>打包产物：<code>PromptLab-V5.32.zip</code>（标准版）/ <code>-portable.zip</code>（自带运行时）</td></tr>
+  <tr><td><code>_readme_external.html</code> · <code>_log_external.html</code></td><td>两份 PDF 的中间产物，可删</td></tr>
+</table>
+
+<h2>哪些进交付包，哪些不进</h2><table>
+  <tr><th style="width:46%">进包</th><th>不进包（原因）</th></tr>
+  <tr><td>index.html / styles.css / 全部页面 JS</td><td><code>config.local.js</code>（明文密钥）</td></tr>
+  <tr><td>entries.json / vectors.* / models/</td><td><code>_dev/</code>（开发脚本）</td></tr>
+  <tr><td>serve.py / start*.bat / requirements.txt</td><td><code>_archive/</code>（历史快照）</td></tr>
+  <tr><td>安装与启动.md / 体验指南.md / 配置模板</td><td>开发日志 / 版本记录 / README / 交接 / TODO / 两份 PDF</td></tr>
+  <tr><td><code>_dev/compliance-list.json</code>（服务端要读的判据数据）</td><td><code>dist/</code> 与 <code>_readme_external.html</code> 等中间产物</td></tr>
+</table>
+
+<div class="note">
+  <b>三处容易误读的地方：</b><br>
+  ① README 里旧的「文件地图」写着 13 个依赖文件、<code>test-arbiter.html</code> 的路由 ⓪、<code>logo.png</code> 被页面加载——都以本节为准（21 个依赖、路由已下线、logo 由 CSS 绘制）。<br>
+  ② 回归清单里 <code>_dev/stats.js --assert</code> 带参数，按文件名找不到 → 每次被记为「跳过（不存在）」，因此实际跑的是 50 组而不是 51 组。<br>
+  ③ <code>archive-variants.js</code> / <code>archive-faces.js</code> / <code>archive-style-defaults.js</code> / <code>archive-learned.js</code> 行数极少，是因为内容压成单行数据——不是空文件。
+</div>
+
+<h2>十一、改哪里 → 跑什么</h2>
+<table>
+  <tr><th style="width:26%">想改的东西</th><th style="width:34%">动哪个文件</th><th>跑哪个验收</th></tr>
+  <tr><td>加词条（角色/场景/风格）</td><td><code>entries.json</code>，然后 <code>precompute.py</code> 重算向量</td><td><code>audit-mappings.js</code> + <code>audit-reality-wide.js</code></td></tr>
+  <tr><td>改句式 / 连接词 / 分段</td><td><code>app-assemble.js</code></td><td><code>verify-refactor-equivalence.js</code> + <code>dump-out.js</code> 看输出</td></tr>
+  <tr><td>改场景怎么选</td><td><code>app-detect.js</code>（用户地点优先）+ <code>app-fill.js</code>（兜底）</td><td><code>verify-scene-chain.js</code> + <code>verify-user-place.js</code></td></tr>
+  <tr><td>改维度上限 / 清洗</td><td><code>app-fill.js</code> 的 <code>sanitizeFills</code></td><td><code>verify-sanitize.js</code></td></tr>
+  <tr><td>改语义检索 / 推理</td><td><code>semantic-search.js</code> / <code>llm-arbiter.js</code> / <code>serve.py</code></td><td><code>verify-semantic-layer.js</code> + <code>verify-chat-proxy.js</code></td></tr>
+  <tr><td>改合规判据</td><td><code>_dev/compliance-list.json</code>（再生成 <code>guard-data.js</code>）</td><td><code>verify-compliance.js</code> + <code>verify-guard-parity.js</code></td></tr>
+  <tr><td>改界面</td><td><code>app-ui.js</code> / <code>styles.css</code></td><td><code>verify-ui-flow.js</code> + <code>verify-ui-wiring.js</code></td></tr>
+  <tr><td>改打包清单</td><td><code>_dev/build-dist.js</code></td><td><code>verify-dist.js</code>，再从 zip 解压冒烟一次</td></tr>
+</table>
+
+<p class="small"><b>新人接手的顺序建议：</b>① 先读 <code>index.html</code> 的加载顺序，弄清 21 个文件谁先谁后；
+② 用 <code>dump-out.js "一句话"</code> 看十条真实输出的全文，比读代码快；
+③ 真要改动时，先跑一次 <code>run-all.js</code> 记住基线，改完再跑一次对比。</p>
+
+<p class="small" style="margin-top:10pt;border-top:.5pt solid #d3dae2;padding-top:5pt">
+行数为物理行数，大小取文件字节数除以 1024；数字由脚本在生成时实时读取，改代码后重跑本脚本即可同步。
+</p>
+
+</body></html>

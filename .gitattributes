@@ -1,0 +1,30 @@
+# 行尾与二进制：为什么需要这个文件
+# ------------------------------------------------------------
+# 这个项目在 Windows 上开发、由 serve.py 原样吐给浏览器，同时在 GitHub 上看。
+# 不写死的话，同一份文件在不同机器上会变成不同字节：
+#   - 文本统一在仓库里存 LF，checkout 时按平台还原；
+#   - .bat 必须是 CRLF —— cmd 对纯 LF 的批处理（尤其是 goto / 标签）会出问题；
+#   - 模型、向量、图片一律按二进制处理，绝不能做行尾转换。
+
+* text=auto
+
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+*.js   text
+*.py   text
+*.md   text
+*.html text
+*.css  text
+*.json text
+*.txt  text
+
+*.onnx binary
+*.bin  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.ico  binary
+*.wasm binary
+*.zip  binary

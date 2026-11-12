@@ -1,0 +1,70 @@
+# ============================================================
+# PromptLab 的 git 忽略规则
+# ------------------------------------------------------------
+# 最上面两条是**安全问题**，不是整理习惯：
+#   config.local.js 里是明文的 DEEPSEEK_API_KEY。
+#   一旦 `git add .` 把它提交进去，密钥就永远留在历史里，
+#   删文件也没用（要 rewrite history）。所以先挡在门口。
+# ============================================================
+
+# ---- 密钥与本地配置：绝不能提交 ----
+config.local.js
+*.local.js
+.env
+.env.*
+*secret*
+
+# ---- 生成物 / 中间产物：跑脚本就能重新生成 ----
+_readme_external.html
+_log_external.html
+*.pdf
+__pycache__/
+*.pyc
+.pdflibs/
+
+# ---- 运行期数据：属于本机状态，不是源码 ----
+_dev/infer-cache.json
+_dev/feedback.jsonl
+_dev/frames/
+_dev/_test-*.js
+
+# ---- 运行必需的两个二进制：这次进仓库（2026-11-12 改） ----
+# models/ 是 bge-small-zh-v1.5 量化 ONNX（23 MB），vectors.bin 是 entries.json 的预计算向量（4 MB）。
+# 早先的规则是「二进制不进仓库，用 precompute.py 重建」。改主意的理由：
+# GitHub 上这份要的是「clone 下来就能跑」—— 不用先跑 precompute.py、也不用另外下载模型。
+# 少一步，就少一个「跑不起来」的理由。代价是仓库约 35 MB。
+# 想退回纯源码仓库，把下面三行注释掉、并删掉已跟踪的文件即可（git rm --cached）。
+# models/
+# vectors.bin
+# vectors.meta.json
+
+# ---- 浏览器端 wasm 兜底（43 MB）：不进仓库 ----
+# vendor/transformers/ 是 semantic-search.js 的 wasm 兜底路径 —— 只有服务端不可用时才走。
+# 正常用法是 serve.py 提供 /api/embed，这条路一生都走不到；43 MB 的 wasm 不值得拖慢每次 clone。
+vendor/
+
+# ---- 备份快照：git 本身就是干这个的，_archive 退休 ----
+# 里面有 22 MB 的 app.before-*.js 手拷快照，是「没有版本控制」时期的替代品。
+_archive/
+
+# ---- 内部文档：不对外 ----
+# 这四份是**开发过程记录**（缺陷清单、未修项、key 状态、回滚点、下一步计划），
+# 写给自己和接手的人看的，不是给使用者的。2026-11-12 首次推 GitHub 时一起发出去过，
+# 当天就从历史里摘掉了（重建了提交，见开发日志第 70 节）。
+# 对外的是三份：README.md / 安装与启动.md / 体验指南.md。
+版本记录.md
+开发日志-2026-11-09.md
+TODO-2026-11-09.md
+交接.md
+技术说明.md
+_dev/*.md
+
+# ---- 临时文件 ----
+_dev/*.txt
+_dev/f_*.jpg
+*.log
+_build*.log
+_thumbs/
+
+# ---- 打包产物：build-dist.js 生成，可随时重建 ----
+dist/

@@ -1,0 +1,10 @@
+{
+  "count": 2060,
+  "dim": 512,
+  "dtype": "float32",
+  "model": "bge-small-zh-v1.5",
+  "maxLen": 128,
+  "pooling": "cls",
+  "normalized": true,
+  "builtAt": "2026-11-10 09:56:36"
+}

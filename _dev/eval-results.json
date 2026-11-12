@@ -1,0 +1,2747 @@
+{
+  "createdAt": "2026-11-08T12:30:34.379Z",
+  "model": "deepseek-flash",
+  "summary": {
+    "n": 21,
+    "covA": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "covB": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "dilA": [
+      0,
+      0.2857142857142857,
+      0.14285714285714285,
+      0.42857142857142855,
+      0.14285714285714285,
+      0.2857142857142857,
+      0.2857142857142857,
+      0,
+      0.14285714285714285,
+      0,
+      0,
+      0,
+      0.16666666666666666,
+      0.25,
+      0
+    ],
+    "dilB": [
+      0.14285714285714285,
+      0.14285714285714285,
+      0.2857142857142857,
+      0.2857142857142857,
+      0.42857142857142855,
+      0.42857142857142855,
+      0.2857142857142857,
+      0.42857142857142855,
+      0,
+      0.14285714285714285,
+      0.2857142857142857,
+      0,
+      0,
+      0.3333333333333333,
+      0,
+      0.375,
+      0.5,
+      0,
+      0,
+      0
+    ],
+    "recall": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "msA": 4491.8,
+    "msB": 2935.95,
+    "routeMs": 1784.35,
+    "tokA": 1911.8666666666666,
+    "tokB": 1956.2,
+    "dimsA": 2.533333333333333,
+    "conflictA": 0,
+    "conflictB": 0,
+    "retriesA": 0,
+    "retriesB": 0,
+    "degradedA": 0,
+    "degradedB": 0,
+    "failuresA": 2,
+    "failuresB": 1,
+    "routeFails": 2,
+    "routeFailList": [
+      "auto-2「想画一个晚上灯光昏暗」：模型返回的不是合法 JSON",
+      "hard-4「」：输入为空"
+    ],
+    "creN": 15,
+    "creDecideA": 2668.6666666666665,
+    "creDecideB": 3448.0666666666666,
+    "creRoute": 1815.8,
+    "creEndA": 4491.8,
+    "creEndB": 3455.5333333333333,
+    "creTokA": 1911.8666666666666,
+    "creTokB": 2045.6,
+    "chatN": 3,
+    "chatMsA": 1066.3333333333333,
+    "chatMsB": 1005.3333333333334,
+    "chatTokA": 438,
+    "chatTokB": 1641.3333333333333
+  },
+  "results": [
+    {
+      "id": "auto-1",
+      "type": "auto",
+      "query": "我想看看那种很久没人住、墙皮都掉了的老房子。",
+      "note": "由词条反推：场景 / 废弃老宅",
+      "expectDims": [
+        "scene"
+      ],
+      "A": {
+        "dims": [
+          "scene"
+        ],
+        "routeMs": 2067,
+        "encodeMs": 17,
+        "decideMs": 1675,
+        "totalMs": 3760,
+        "intent": "compose",
+        "needRetrieval": true,
+        "routeDims": [
+          "scene"
+        ],
+        "routeTokens": {
+          "in": 369,
+          "out": 207
+        },
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": "废弃老宅",
+          "style": null,
+          "light": null,
+          "composition": null,
+          "color": null,
+          "atmosphere": null,
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "用户要的是久无人居、墙皮脱落的老房子，最接近的候选是废弃老宅。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 803,
+          "completion_tokens": 172,
+          "total_tokens": 975,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 95
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 803
+        },
+        "tokens": {
+          "in": 1172,
+          "out": 379
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 7,
+        "decideMs": 2792,
+        "totalMs": 2799,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": "废弃老宅",
+          "style": null,
+          "light": null,
+          "composition": null,
+          "color": null,
+          "atmosphere": "荒芜",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "用户要的是久无人居的破败老房子，因此场景选废弃老宅，氛围取荒芜。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1529,
+          "completion_tokens": 357,
+          "total_tokens": 1886,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 276
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 761
+        },
+        "tokens": {
+          "in": 1529,
+          "out": 357
+        }
+      },
+      "covA": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "covB": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "dilA": {
+        "got": 0,
+        "total": 7,
+        "rate": 0
+      },
+      "dilB": {
+        "got": 1,
+        "total": 7,
+        "rate": 0.14285714285714285
+      },
+      "recalled": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      }
+    },
+    {
+      "id": "auto-2",
+      "type": "auto",
+      "query": "想画一个晚上灯光昏暗、有人喝酒聊天的地方。",
+      "note": "由词条反推：场景 / 酒吧",
+      "expectDims": [
+        "scene"
+      ],
+      "A": {
+        "dims": [],
+        "routeMs": 3447,
+        "encodeMs": null,
+        "decideMs": null,
+        "totalMs": 3447,
+        "routeError": "模型返回的不是合法 JSON",
+        "ok": false,
+        "decision": {}
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 11,
+        "decideMs": 2114,
+        "totalMs": 2125,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": "酒吧",
+          "style": null,
+          "light": "夜晚光",
+          "composition": null,
+          "color": null,
+          "atmosphere": null,
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "夜晚昏暗小酌聊天的场所，对应酒吧与夜晚光；其余维度用户未提及。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1555,
+          "completion_tokens": 281,
+          "total_tokens": 1836,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 194
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 787
+        },
+        "tokens": {
+          "in": 1555,
+          "out": 281
+        }
+      },
+      "covA": {
+        "got": 0,
+        "total": 1,
+        "rate": 0
+      },
+      "covB": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "dilA": {
+        "got": 0,
+        "total": 7,
+        "rate": 0
+      },
+      "dilB": {
+        "got": 1,
+        "total": 7,
+        "rate": 0.14285714285714285
+      },
+      "recalled": null
+    },
+    {
+      "id": "auto-3",
+      "type": "auto",
+      "query": "帮我画个白衣束银冠、挥剑时衣袂翻飞的冷峻英武男子。",
+      "note": "由词条反推：角色 / 古风侠客",
+      "expectDims": [
+        "role"
+      ],
+      "A": {
+        "dims": [
+          "role",
+          "composition",
+          "color",
+          "atmosphere"
+        ],
+        "routeMs": 2884,
+        "encodeMs": 7,
+        "decideMs": 2349,
+        "totalMs": 5240,
+        "intent": "compose",
+        "needRetrieval": true,
+        "routeDims": [
+          "role",
+          "composition",
+          "color",
+          "atmosphere"
+        ],
+        "routeTokens": {
+          "in": 377,
+          "out": 352
+        },
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": "古风侠客",
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": null,
+          "color": "银灰",
+          "atmosphere": "肃杀",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "白衣银冠挥剑的英武男子近似古风侠客，冷峻气质配银灰冷调与肃杀氛围。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1158,
+          "completion_tokens": 302,
+          "total_tokens": 1460,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 214
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 1030
+        },
+        "tokens": {
+          "in": 1535,
+          "out": 654
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 7,
+        "decideMs": 1931,
+        "totalMs": 1938,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": "古风侠客",
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": null,
+          "color": "银灰",
+          "atmosphere": "肃杀",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "白衣银冠挥剑的冷峻男子最接近古风侠客；银灰对应银白装束，肃杀对应冷峻气质（近似）。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1536,
+          "completion_tokens": 237,
+          "total_tokens": 1773,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 144
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 768
+        },
+        "tokens": {
+          "in": 1536,
+          "out": 237
+        }
+      },
+      "covA": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "covB": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "dilA": {
+        "got": 2,
+        "total": 7,
+        "rate": 0.2857142857142857
+      },
+      "dilB": {
+        "got": 2,
+        "total": 7,
+        "rate": 0.2857142857142857
+      },
+      "recalled": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      }
+    },
+    {
+      "id": "auto-4",
+      "type": "auto",
+      "query": "画一个没有主君、穿着破旧和服在雨中拔刀的落魄武士。",
+      "note": "由词条反推：角色 / 浪人",
+      "expectDims": [
+        "role"
+      ],
+      "A": {
+        "dims": [
+          "role",
+          "scene",
+          "atmosphere"
+        ],
+        "routeMs": 1417,
+        "encodeMs": 7,
+        "decideMs": 3577,
+        "totalMs": 5001,
+        "intent": "compose",
+        "needRetrieval": true,
+        "routeDims": [
+          "role",
+          "scene",
+          "atmosphere"
+        ],
+        "routeTokens": {
+          "in": 373,
+          "out": 183
+        },
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": "浪人",
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": null,
+          "color": null,
+          "atmosphere": "颓废末世",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "无主落魄武士对应浪人，雨中破旧和服的萧索感近似颓废末世；场景候选中没有雨天，所以留空。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1046,
+          "completion_tokens": 444,
+          "total_tokens": 1490,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 356
+          },
+          "prompt_cache_hit_tokens": 256,
+          "prompt_cache_miss_tokens": 790
+        },
+        "tokens": {
+          "in": 1419,
+          "out": 627
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 7,
+        "decideMs": 5545,
+        "totalMs": 5552,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": "浪人",
+          "scene": null,
+          "style": null,
+          "light": "雷暴光",
+          "composition": null,
+          "color": null,
+          "atmosphere": "肃杀",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "无主落魄武士对应浪人，雨中拔刀的冷峻紧迫感近似配雷暴光与肃杀氛围。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1491,
+          "completion_tokens": 744,
+          "total_tokens": 2235,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 660
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 723
+        },
+        "tokens": {
+          "in": 1491,
+          "out": 744
+        }
+      },
+      "covA": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "covB": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "dilA": {
+        "got": 1,
+        "total": 7,
+        "rate": 0.14285714285714285
+      },
+      "dilB": {
+        "got": 2,
+        "total": 7,
+        "rate": 0.2857142857142857
+      },
+      "recalled": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      }
+    },
+    {
+      "id": "auto-5",
+      "type": "auto",
+      "query": "想要画面墨色有浓淡、留白多、看着有诗意的那种中国画味道。",
+      "note": "由词条反推：风格 / 水墨国风",
+      "expectDims": [
+        "style"
+      ],
+      "A": {
+        "dims": [
+          "style",
+          "composition",
+          "color",
+          "atmosphere"
+        ],
+        "routeMs": 1875,
+        "encodeMs": 6,
+        "decideMs": 3349,
+        "totalMs": 5231,
+        "intent": "compose",
+        "needRetrieval": true,
+        "routeDims": [
+          "style",
+          "composition",
+          "color",
+          "atmosphere"
+        ],
+        "routeTokens": {
+          "in": 375,
+          "out": 196
+        },
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": "水墨国风",
+          "light": null,
+          "composition": "留白构图",
+          "color": "墨灰",
+          "atmosphere": "淡雅",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "水墨国风加留白构图契合诗意墨韵，色与氛围近似选取",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1210,
+          "completion_tokens": 492,
+          "total_tokens": 1702,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 426
+          },
+          "prompt_cache_hit_tokens": 384,
+          "prompt_cache_miss_tokens": 826
+        },
+        "tokens": {
+          "in": 1585,
+          "out": 688
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 7,
+        "decideMs": 3085,
+        "totalMs": 3093,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": "水墨国风",
+          "light": null,
+          "composition": "极简留白",
+          "color": "墨灰",
+          "atmosphere": "淡雅",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "用户要水墨浓淡、留白多、诗意的中国画效果；色彩未指明，因此取最接近的中性墨灰色。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1666,
+          "completion_tokens": 452,
+          "total_tokens": 2118,
+          "prompt_tokens_details": {
+            "cached_tokens": 896
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 360
+          },
+          "prompt_cache_hit_tokens": 896,
+          "prompt_cache_miss_tokens": 770
+        },
+        "tokens": {
+          "in": 1666,
+          "out": 452
+        }
+      },
+      "covA": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "covB": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "dilA": {
+        "got": 3,
+        "total": 7,
+        "rate": 0.42857142857142855
+      },
+      "dilB": {
+        "got": 3,
+        "total": 7,
+        "rate": 0.42857142857142855
+      },
+      "recalled": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      }
+    },
+    {
+      "id": "auto-6",
+      "type": "auto",
+      "query": "想要那种发光波普艺术的感觉，颜色亮一点，带点当代都市味。",
+      "note": "由词条反推：风格 / 霓虹波普",
+      "expectDims": [
+        "style"
+      ],
+      "A": {
+        "dims": [
+          "style",
+          "color",
+          "atmosphere"
+        ],
+        "routeMs": 1717,
+        "encodeMs": 7,
+        "decideMs": 3044,
+        "totalMs": 4768,
+        "intent": "compose",
+        "needRetrieval": true,
+        "routeDims": [
+          "style",
+          "color",
+          "atmosphere"
+        ],
+        "routeTokens": {
+          "in": 373,
+          "out": 196
+        },
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": "霓虹波普",
+          "light": null,
+          "composition": null,
+          "color": "明黄",
+          "atmosphere": null,
+          "quality": null
+        },
+        "modelConflicts": [
+          "氛围候选偏清雅温润，与当代都市感不符，留空"
+        ],
+        "reason": "发光波普与明亮色对应霓虹波普，亮色为近似选取，都市氛围候选不符已排除。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1072,
+          "completion_tokens": 389,
+          "total_tokens": 1461,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 289
+          },
+          "prompt_cache_hit_tokens": 256,
+          "prompt_cache_miss_tokens": 816
+        },
+        "tokens": {
+          "in": 1445,
+          "out": 585
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 7,
+        "decideMs": 7475,
+        "totalMs": 7482,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": "波普画廊",
+          "style": "霓虹波普",
+          "light": "霓虹光",
+          "composition": null,
+          "color": "明黄",
+          "atmosphere": null,
+          "quality": null
+        },
+        "modelConflicts": [
+          "氛围候选都偏清雅、温润，与都市霓虹活力感冲突"
+        ],
+        "reason": "按发光波普与都市霓虹的意向，选霓虹波普、霓虹光和明黄，场景用近似的波普画廊",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1592,
+          "completion_tokens": 1168,
+          "total_tokens": 2760,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1056
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 824
+        },
+        "tokens": {
+          "in": 1592,
+          "out": 1168
+        }
+      },
+      "covA": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "covB": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "dilA": {
+        "got": 1,
+        "total": 7,
+        "rate": 0.14285714285714285
+      },
+      "dilB": {
+        "got": 3,
+        "total": 7,
+        "rate": 0.42857142857142855
+      },
+      "recalled": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      }
+    },
+    {
+      "id": "auto-7",
+      "type": "auto",
+      "query": "光线要偏冷带点蓝，像夜里月光那种清冷感。",
+      "note": "由词条反推：光线 / 冷蓝月光",
+      "expectDims": [
+        "light"
+      ],
+      "A": {
+        "dims": [
+          "light",
+          "color",
+          "atmosphere"
+        ],
+        "routeMs": 2268,
+        "encodeMs": 6,
+        "decideMs": 2063,
+        "totalMs": 4337,
+        "intent": "compose",
+        "needRetrieval": true,
+        "routeDims": [
+          "light",
+          "color",
+          "atmosphere"
+        ],
+        "routeTokens": {
+          "in": 371,
+          "out": 283
+        },
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": "冷蓝月光",
+          "composition": null,
+          "color": "冷蓝银灰",
+          "atmosphere": "清冷",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "夜里月光般的冷蓝清冷光感，光线与色彩均取冷蓝基调",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 997,
+          "completion_tokens": 285,
+          "total_tokens": 1282,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 206
+          },
+          "prompt_cache_hit_tokens": 256,
+          "prompt_cache_miss_tokens": 741
+        },
+        "tokens": {
+          "in": 1368,
+          "out": 568
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 8,
+        "decideMs": 2223,
+        "totalMs": 2231,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": "冷蓝月光",
+          "composition": null,
+          "color": "月白",
+          "atmosphere": "清冷",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "用户只要冷蓝月光般的清冷光线色调，其余维度未提及",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1535,
+          "completion_tokens": 349,
+          "total_tokens": 1884,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 275
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 767
+        },
+        "tokens": {
+          "in": 1535,
+          "out": 349
+        }
+      },
+      "covA": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "covB": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "dilA": {
+        "got": 2,
+        "total": 7,
+        "rate": 0.2857142857142857
+      },
+      "dilB": {
+        "got": 2,
+        "total": 7,
+        "rate": 0.2857142857142857
+      },
+      "recalled": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      }
+    },
+    {
+      "id": "auto-8",
+      "type": "auto",
+      "query": "想要街边店面橱窗里透出来那种暖洋洋的光。",
+      "note": "由词条反推：光线 / 橱窗光",
+      "expectDims": [
+        "light"
+      ],
+      "A": {
+        "dims": [
+          "scene",
+          "light",
+          "atmosphere"
+        ],
+        "routeMs": 1733,
+        "encodeMs": 7,
+        "decideMs": 2362,
+        "totalMs": 4102,
+        "intent": "compose",
+        "needRetrieval": true,
+        "routeDims": [
+          "scene",
+          "light",
+          "atmosphere"
+        ],
+        "routeTokens": {
+          "in": 369,
+          "out": 157
+        },
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": "面包店",
+          "style": null,
+          "light": "橱窗光",
+          "composition": null,
+          "color": null,
+          "atmosphere": "温暖治愈",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "近似选用面包店代表街边店面，橱窗光和温暖治愈直接呼应暖洋洋的光。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1055,
+          "completion_tokens": 268,
+          "total_tokens": 1323,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 189
+          },
+          "prompt_cache_hit_tokens": 256,
+          "prompt_cache_miss_tokens": 799
+        },
+        "tokens": {
+          "in": 1424,
+          "out": 425
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 8,
+        "decideMs": 2018,
+        "totalMs": 2026,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": "面包店",
+          "style": null,
+          "light": "橱窗光",
+          "composition": null,
+          "color": "琥珀",
+          "atmosphere": "温暖治愈",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "街头店面橱窗透出暖光，近似面包店橱窗光配琥珀暖调与温暖治愈氛围",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1582,
+          "completion_tokens": 248,
+          "total_tokens": 1830,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 165
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 814
+        },
+        "tokens": {
+          "in": 1582,
+          "out": 248
+        }
+      },
+      "covA": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "covB": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "dilA": {
+        "got": 2,
+        "total": 7,
+        "rate": 0.2857142857142857
+      },
+      "dilB": {
+        "got": 3,
+        "total": 7,
+        "rate": 0.42857142857142855
+      },
+      "recalled": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      }
+    },
+    {
+      "id": "auto-9",
+      "type": "auto",
+      "query": "想要那种安安静静、让人心一下子沉下来的感觉。",
+      "note": "由词条反推：氛围 / 静谧禅意",
+      "expectDims": [
+        "atmosphere"
+      ],
+      "A": {
+        "dims": [
+          "atmosphere"
+        ],
+        "routeMs": 1525,
+        "encodeMs": 7,
+        "decideMs": 2509,
+        "totalMs": 4041,
+        "intent": "compose",
+        "needRetrieval": true,
+        "routeDims": [
+          "atmosphere"
+        ],
+        "routeTokens": {
+          "in": 368,
+          "out": 140
+        },
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": null,
+          "color": null,
+          "atmosphere": "静谧",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "用户只表达了安静沉静的心里感受，因此仅匹配静谧氛围。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 819,
+          "completion_tokens": 309,
+          "total_tokens": 1128,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 241
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 819
+        },
+        "tokens": {
+          "in": 1187,
+          "out": 449
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 7,
+        "decideMs": 1924,
+        "totalMs": 1931,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": null,
+          "color": null,
+          "atmosphere": "静谧",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "用户仅表达安静、心沉下来的氛围诉求，其余维度未提及，故只匹配静谧。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1607,
+          "completion_tokens": 232,
+          "total_tokens": 1839,
+          "prompt_tokens_details": {
+            "cached_tokens": 896
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 158
+          },
+          "prompt_cache_hit_tokens": 896,
+          "prompt_cache_miss_tokens": 711
+        },
+        "tokens": {
+          "in": 1607,
+          "out": 232
+        }
+      },
+      "covA": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "covB": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "dilA": {
+        "got": 0,
+        "total": 7,
+        "rate": 0
+      },
+      "dilB": {
+        "got": 0,
+        "total": 7,
+        "rate": 0
+      },
+      "recalled": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      }
+    },
+    {
+      "id": "auto-10",
+      "type": "auto",
+      "query": "想要那种安安静静、越往里看越看不到底的感觉。",
+      "note": "由词条反推：氛围 / 幽深",
+      "expectDims": [
+        "atmosphere"
+      ],
+      "A": {
+        "dims": [
+          "composition",
+          "atmosphere"
+        ],
+        "routeMs": 1486,
+        "encodeMs": 6,
+        "decideMs": 2015,
+        "totalMs": 3507,
+        "intent": "compose",
+        "needRetrieval": true,
+        "routeDims": [
+          "composition",
+          "atmosphere"
+        ],
+        "routeTokens": {
+          "in": 369,
+          "out": 197
+        },
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": "透视构图",
+          "color": null,
+          "atmosphere": "幽静",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "用户想要安静又深不见底的画面感，所以选择透视构图来增强纵深，选择幽静氛围来贴合安静。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 907,
+          "completion_tokens": 294,
+          "total_tokens": 1201,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 212
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 779
+        },
+        "tokens": {
+          "in": 1276,
+          "out": 491
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 7,
+        "decideMs": 3069,
+        "totalMs": 3076,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": "透视构图",
+          "color": null,
+          "atmosphere": "幽静",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "幽深安静的幽静感，搭配透视构图强化越看越深的纵深。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1609,
+          "completion_tokens": 397,
+          "total_tokens": 2006,
+          "prompt_tokens_details": {
+            "cached_tokens": 896
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 324
+          },
+          "prompt_cache_hit_tokens": 896,
+          "prompt_cache_miss_tokens": 713
+        },
+        "tokens": {
+          "in": 1609,
+          "out": 397
+        }
+      },
+      "covA": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "covB": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "dilA": {
+        "got": 1,
+        "total": 7,
+        "rate": 0.14285714285714285
+      },
+      "dilB": {
+        "got": 1,
+        "total": 7,
+        "rate": 0.14285714285714285
+      },
+      "recalled": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      }
+    },
+    {
+      "id": "auto-11",
+      "type": "auto",
+      "query": "颜色别太艳，灰调一点、柔和一点的搭配就行。",
+      "note": "由词条反推：色彩 / 莫兰迪色系",
+      "expectDims": [
+        "color"
+      ],
+      "A": {
+        "dims": [
+          "color"
+        ],
+        "routeMs": 1312,
+        "encodeMs": 6,
+        "decideMs": 1948,
+        "totalMs": 3266,
+        "intent": "confirm",
+        "needRetrieval": true,
+        "routeDims": [
+          "color"
+        ],
+        "routeTokens": {
+          "in": 369,
+          "out": 103
+        },
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": null,
+          "color": "墨灰",
+          "atmosphere": null,
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "用户只要灰调柔和配色，墨灰最贴近。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 830,
+          "completion_tokens": 242,
+          "total_tokens": 1072,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 176
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 830
+        },
+        "tokens": {
+          "in": 1199,
+          "out": 345
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 8,
+        "decideMs": 4032,
+        "totalMs": 4040,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": "柔光",
+          "composition": null,
+          "color": "墨灰",
+          "atmosphere": "素雅",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "用户只要求配色低饱和、灰调柔和，因此选用近似墨灰、柔光与素雅的搭配。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1626,
+          "completion_tokens": 569,
+          "total_tokens": 2195,
+          "prompt_tokens_details": {
+            "cached_tokens": 896
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 475
+          },
+          "prompt_cache_hit_tokens": 896,
+          "prompt_cache_miss_tokens": 730
+        },
+        "tokens": {
+          "in": 1626,
+          "out": 569
+        }
+      },
+      "covA": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "covB": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "dilA": {
+        "got": 0,
+        "total": 7,
+        "rate": 0
+      },
+      "dilB": {
+        "got": 2,
+        "total": 7,
+        "rate": 0.2857142857142857
+      },
+      "recalled": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      }
+    },
+    {
+      "id": "auto-12",
+      "type": "auto",
+      "query": "把想拍的东西放画面正中间，看着稳一点。",
+      "note": "由词条反推：构图 / 中心构图",
+      "expectDims": [
+        "composition"
+      ],
+      "A": {
+        "dims": [
+          "composition"
+        ],
+        "routeMs": 2280,
+        "encodeMs": 6,
+        "decideMs": 1211,
+        "totalMs": 3497,
+        "intent": "confirm",
+        "needRetrieval": true,
+        "routeDims": [
+          "composition"
+        ],
+        "routeTokens": {
+          "in": 368,
+          "out": 264
+        },
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": "中心构图",
+          "color": null,
+          "atmosphere": null,
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "用户要求主体居中、画面稳定，符合中心构图。",
+        "problems": [
+          "composition 由模糊匹配修正为「中心构图」"
+        ],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 814,
+          "completion_tokens": 161,
+          "total_tokens": 975,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 81
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 814
+        },
+        "tokens": {
+          "in": 1182,
+          "out": 425
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 8,
+        "decideMs": 2199,
+        "totalMs": 2207,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": "中心构图",
+          "color": null,
+          "atmosphere": null,
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "用户希望被摄主体居中、画面求稳，因此选择了中心构图，其余维度没有提到。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1605,
+          "completion_tokens": 268,
+          "total_tokens": 1873,
+          "prompt_tokens_details": {
+            "cached_tokens": 896
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 193
+          },
+          "prompt_cache_hit_tokens": 896,
+          "prompt_cache_miss_tokens": 709
+        },
+        "tokens": {
+          "in": 1605,
+          "out": 268
+        }
+      },
+      "covA": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "covB": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "dilA": {
+        "got": 0,
+        "total": 7,
+        "rate": 0
+      },
+      "dilB": {
+        "got": 0,
+        "total": 7,
+        "rate": 0
+      },
+      "recalled": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      }
+    },
+    {
+      "id": "auto-13",
+      "type": "auto",
+      "query": "画面得特别清楚，连小细节都能看得一清二楚。",
+      "note": "由词条反推：画质 / 4K高清",
+      "expectDims": [
+        "quality"
+      ],
+      "A": {
+        "dims": [
+          "quality"
+        ],
+        "routeMs": 1163,
+        "encodeMs": 5,
+        "decideMs": 1401,
+        "totalMs": 2569,
+        "intent": "compose",
+        "needRetrieval": true,
+        "routeDims": [
+          "quality"
+        ],
+        "routeTokens": {
+          "in": 370,
+          "out": 158
+        },
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": null,
+          "color": null,
+          "atmosphere": null,
+          "quality": "极致细节"
+        },
+        "modelConflicts": [],
+        "reason": "用户强调画面清晰、小细节可辨，对应极致细节。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 779,
+          "completion_tokens": 158,
+          "total_tokens": 937,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 90
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 779
+        },
+        "tokens": {
+          "in": 1149,
+          "out": 316
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 7,
+        "decideMs": 1713,
+        "totalMs": 1720,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": null,
+          "color": null,
+          "atmosphere": null,
+          "quality": "极致细节"
+        },
+        "modelConflicts": [],
+        "reason": "用户只强调画面清晰、细节可见，仅对应画质维度",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1659,
+          "completion_tokens": 196,
+          "total_tokens": 1855,
+          "prompt_tokens_details": {
+            "cached_tokens": 896
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 896,
+          "prompt_cache_miss_tokens": 763
+        },
+        "tokens": {
+          "in": 1659,
+          "out": 196
+        }
+      },
+      "covA": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "covB": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      },
+      "dilA": {
+        "got": 0,
+        "total": 7,
+        "rate": 0
+      },
+      "dilB": {
+        "got": 0,
+        "total": 7,
+        "rate": 0
+      },
+      "recalled": {
+        "got": 1,
+        "total": 1,
+        "rate": 1
+      }
+    },
+    {
+      "id": "hard-1",
+      "type": "hard",
+      "query": "深夜的老房子，要晨雾光那种清透感",
+      "note": "用户主动指定反差（深夜 + 晨雾光）→ 光线不该被清空",
+      "expectDims": [
+        "scene",
+        "light"
+      ],
+      "A": {
+        "dims": [
+          "scene",
+          "light",
+          "atmosphere"
+        ],
+        "routeMs": 2067,
+        "encodeMs": 7,
+        "decideMs": 4012,
+        "totalMs": 6086,
+        "intent": "compose",
+        "needRetrieval": true,
+        "routeDims": [
+          "scene",
+          "light",
+          "atmosphere"
+        ],
+        "routeTokens": {
+          "in": 367,
+          "out": 246
+        },
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": "老式卧室",
+          "style": null,
+          "light": "晨雾光",
+          "composition": null,
+          "color": null,
+          "atmosphere": "幽静",
+          "quality": null
+        },
+        "modelConflicts": [
+          "深夜与晨雾光在时间上相反，属于用户指定的反差效果"
+        ],
+        "reason": "场景用近似的老式卧室，晨雾光由用户点名保留，氛围取清幽的幽静。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1031,
+          "completion_tokens": 594,
+          "total_tokens": 1625,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 495
+          },
+          "prompt_cache_hit_tokens": 256,
+          "prompt_cache_miss_tokens": 775
+        },
+        "tokens": {
+          "in": 1398,
+          "out": 840
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 7,
+        "decideMs": 4630,
+        "totalMs": 4637,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": "老式卧室",
+          "style": "水彩淡彩",
+          "light": "晨雾光",
+          "composition": null,
+          "color": "天青",
+          "atmosphere": null,
+          "quality": null
+        },
+        "modelConflicts": [
+          "深夜与晨雾光是用户指定的反差，非错误，保留"
+        ],
+        "reason": "近似选用老式卧室承接老房子，水彩淡彩与天青呼应清透感，晨雾光按用户指定保留反差",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1574,
+          "completion_tokens": 585,
+          "total_tokens": 2159,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 478
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 806
+        },
+        "tokens": {
+          "in": 1574,
+          "out": 585
+        }
+      },
+      "covA": {
+        "got": 2,
+        "total": 2,
+        "rate": 1
+      },
+      "covB": {
+        "got": 2,
+        "total": 2,
+        "rate": 1
+      },
+      "dilA": {
+        "got": 1,
+        "total": 6,
+        "rate": 0.16666666666666666
+      },
+      "dilB": {
+        "got": 2,
+        "total": 6,
+        "rate": 0.3333333333333333
+      },
+      "recalled": {
+        "got": 2,
+        "total": 2,
+        "rate": 1
+      }
+    },
+    {
+      "id": "hard-2",
+      "type": "hard",
+      "query": "随便画点什么吧",
+      "note": "极模糊，无检索线索 → 应大部分留空",
+      "expectDims": [],
+      "A": {
+        "dims": [],
+        "routeMs": 1804,
+        "encodeMs": null,
+        "decideMs": null,
+        "totalMs": 1805,
+        "intent": "compose",
+        "needRetrieval": false,
+        "routeDims": [],
+        "routeTokens": {
+          "in": 359,
+          "out": 147
+        },
+        "ok": true,
+        "skippedRetrieval": true,
+        "decision": {},
+        "tokens": {
+          "in": 359,
+          "out": 147
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 6,
+        "decideMs": 1739,
+        "totalMs": 1745,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": null,
+          "color": null,
+          "atmosphere": null,
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "仅泛泛要求随便画，未描述任何画面要素，全部留空",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1490,
+          "completion_tokens": 190,
+          "total_tokens": 1680,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 110
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 722
+        },
+        "tokens": {
+          "in": 1490,
+          "out": 190
+        }
+      },
+      "covA": null,
+      "covB": null,
+      "dilA": {
+        "got": 0,
+        "total": 8,
+        "rate": 0
+      },
+      "dilB": {
+        "got": 0,
+        "total": 8,
+        "rate": 0
+      },
+      "recalled": null
+    },
+    {
+      "id": "hard-3",
+      "type": "hard",
+      "query": "把上次那个改得再冷一点",
+      "note": "指代上一轮结果，无上下文 → 应识别为 confirm 或直接留空",
+      "expectDims": [],
+      "A": {
+        "dims": [
+          "color",
+          "atmosphere"
+        ],
+        "routeMs": 1950,
+        "encodeMs": 6,
+        "decideMs": 3403,
+        "totalMs": 5359,
+        "intent": "confirm",
+        "needRetrieval": true,
+        "routeDims": [
+          "color",
+          "atmosphere"
+        ],
+        "routeTokens": {
+          "in": 363,
+          "out": 216
+        },
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": null,
+          "color": "冷灰",
+          "atmosphere": "清冷",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "「再冷一点」只表明冷色调和清冷氛围的调整方向，其余维度因原文未提及而留空。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 897,
+          "completion_tokens": 421,
+          "total_tokens": 1318,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 343
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 897
+        },
+        "tokens": {
+          "in": 1260,
+          "out": 637
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 7,
+        "decideMs": 6672,
+        "totalMs": 6679,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": "冷光",
+          "composition": null,
+          "color": "冷灰",
+          "atmosphere": "清冷",
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "延续上次画面整体调冷，选冷光、冷灰与清冷氛围。",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1442,
+          "completion_tokens": 873,
+          "total_tokens": 2315,
+          "prompt_tokens_details": {
+            "cached_tokens": 640
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 797
+          },
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 802
+        },
+        "tokens": {
+          "in": 1442,
+          "out": 873
+        }
+      },
+      "covA": null,
+      "covB": null,
+      "dilA": {
+        "got": 2,
+        "total": 8,
+        "rate": 0.25
+      },
+      "dilB": {
+        "got": 3,
+        "total": 8,
+        "rate": 0.375
+      },
+      "recalled": null
+    },
+    {
+      "id": "hard-4",
+      "type": "hard",
+      "query": "",
+      "note": "空输入 → 应报错，不得编造",
+      "expectDims": [],
+      "A": {
+        "dims": [],
+        "encodeMs": null,
+        "decideMs": null,
+        "totalMs": 0,
+        "routeError": "输入为空",
+        "ok": false,
+        "decision": {}
+      },
+      "B": {
+        "ok": false,
+        "error": "空输入（B 组不做）",
+        "decision": {},
+        "dims": []
+      },
+      "covA": null,
+      "covB": null,
+      "dilA": {
+        "got": 0,
+        "total": 8,
+        "rate": 0
+      },
+      "dilB": {
+        "got": 0,
+        "total": 8,
+        "rate": 0
+      },
+      "recalled": null
+    },
+    {
+      "id": "hard-5",
+      "type": "hard",
+      "query": "一个有质感通透干净的画面，现代极简，摄影棚打光，浅景深，高动态范围，8K 高清，留白构图，柔和的雾蓝色调，安静氛围",
+      "note": "超长多维堆砌 → 应尽量填满且不矛盾",
+      "expectDims": [
+        "style",
+        "light",
+        "composition",
+        "color",
+        "quality",
+        "atmosphere"
+      ],
+      "A": {
+        "dims": [
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": 1493,
+        "encodeMs": 8,
+        "decideMs": 5112,
+        "totalMs": 6613,
+        "intent": "compose",
+        "needRetrieval": true,
+        "routeDims": [
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeTokens": {
+          "in": 395,
+          "out": 187
+        },
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": "写实摄影",
+          "light": "环境光",
+          "composition": "留白构图",
+          "color": "天青",
+          "atmosphere": "幽静",
+          "quality": "HDR"
+        },
+        "modelConflicts": [
+          "光线候选没有摄影棚光，因此取近似的环境光",
+          "色彩候选全是绿色系，雾蓝取近似的天青"
+        ],
+        "reason": "现代极简摄影画面，留白构图与HDR直接对应，雾蓝与棚光取近似项",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1348,
+          "completion_tokens": 720,
+          "total_tokens": 2068,
+          "prompt_tokens_details": {
+            "cached_tokens": 640
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 602
+          },
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 708
+        },
+        "tokens": {
+          "in": 1743,
+          "out": 907
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 9,
+        "decideMs": 2413,
+        "totalMs": 2422,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": "极简空间",
+          "style": "写实摄影",
+          "light": "环境光",
+          "composition": "留白构图",
+          "color": "天青",
+          "atmosphere": "幽静",
+          "quality": "HDR"
+        },
+        "modelConflicts": [
+          "色库无蓝色，雾蓝近似取天青",
+          "无浅景深对应项，未选"
+        ],
+        "reason": "现代极简空间配留白构图与柔和冷调，近似取天青色与幽静氛围",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1637,
+          "completion_tokens": 319,
+          "total_tokens": 1956,
+          "prompt_tokens_details": {
+            "cached_tokens": 896
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 206
+          },
+          "prompt_cache_hit_tokens": 896,
+          "prompt_cache_miss_tokens": 741
+        },
+        "tokens": {
+          "in": 1637,
+          "out": 319
+        }
+      },
+      "covA": {
+        "got": 6,
+        "total": 6,
+        "rate": 1
+      },
+      "covB": {
+        "got": 6,
+        "total": 6,
+        "rate": 1
+      },
+      "dilA": {
+        "got": 0,
+        "total": 2,
+        "rate": 0
+      },
+      "dilB": {
+        "got": 1,
+        "total": 2,
+        "rate": 0.5
+      },
+      "recalled": {
+        "got": 6,
+        "total": 6,
+        "rate": 1
+      }
+    },
+    {
+      "id": "chat-1",
+      "type": "chat",
+      "query": "今天好累，随便聊聊",
+      "note": "闲聊 → 不该检索",
+      "expectDims": [],
+      "A": {
+        "dims": [],
+        "routeMs": 950,
+        "encodeMs": null,
+        "decideMs": null,
+        "totalMs": 950,
+        "intent": "chat",
+        "needRetrieval": false,
+        "routeDims": [],
+        "routeTokens": {
+          "in": 361,
+          "out": 71
+        },
+        "ok": true,
+        "skippedRetrieval": true,
+        "decision": {},
+        "tokens": {
+          "in": 361,
+          "out": 71
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 6,
+        "decideMs": 1234,
+        "totalMs": 1240,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": null,
+          "color": null,
+          "atmosphere": null,
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "非出图需求",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1561,
+          "completion_tokens": 87,
+          "total_tokens": 1648,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 31
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 793
+        },
+        "tokens": {
+          "in": 1561,
+          "out": 87
+        }
+      },
+      "covA": null,
+      "covB": null,
+      "dilA": {
+        "got": 0,
+        "total": 8,
+        "rate": 0
+      },
+      "dilB": {
+        "got": 0,
+        "total": 8,
+        "rate": 0
+      },
+      "recalled": null
+    },
+    {
+      "id": "chat-2",
+      "type": "chat",
+      "query": "你是谁，你能做什么",
+      "note": "问身份 → 不该检索",
+      "expectDims": [],
+      "A": {
+        "dims": [],
+        "routeMs": 956,
+        "encodeMs": null,
+        "decideMs": null,
+        "totalMs": 956,
+        "intent": "chat",
+        "needRetrieval": false,
+        "routeDims": [],
+        "routeTokens": {
+          "in": 359,
+          "out": 73
+        },
+        "ok": true,
+        "skippedRetrieval": true,
+        "decision": {},
+        "tokens": {
+          "in": 359,
+          "out": 73
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 7,
+        "decideMs": 1020,
+        "totalMs": 1027,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": null,
+          "color": null,
+          "atmosphere": null,
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "非出图需求",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1531,
+          "completion_tokens": 76,
+          "total_tokens": 1607,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 20
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 763
+        },
+        "tokens": {
+          "in": 1531,
+          "out": 76
+        }
+      },
+      "covA": null,
+      "covB": null,
+      "dilA": {
+        "got": 0,
+        "total": 8,
+        "rate": 0
+      },
+      "dilB": {
+        "got": 0,
+        "total": 8,
+        "rate": 0
+      },
+      "recalled": null
+    },
+    {
+      "id": "chat-3",
+      "type": "chat",
+      "query": "帮我写一首关于秋天的短诗",
+      "note": "无关创作请求 → 不该检索词库",
+      "expectDims": [],
+      "A": {
+        "dims": [],
+        "routeMs": 1293,
+        "encodeMs": null,
+        "decideMs": null,
+        "totalMs": 1293,
+        "intent": "chat",
+        "needRetrieval": false,
+        "routeDims": [],
+        "routeTokens": {
+          "in": 362,
+          "out": 88
+        },
+        "ok": true,
+        "skippedRetrieval": true,
+        "decision": {},
+        "tokens": {
+          "in": 362,
+          "out": 88
+        }
+      },
+      "B": {
+        "dims": [
+          "role",
+          "scene",
+          "style",
+          "light",
+          "composition",
+          "color",
+          "atmosphere",
+          "quality"
+        ],
+        "routeMs": null,
+        "encodeMs": 7,
+        "decideMs": 742,
+        "totalMs": 749,
+        "attempts": 1,
+        "retries": 0,
+        "degraded": false,
+        "ok": true,
+        "decision": {
+          "role": null,
+          "scene": null,
+          "style": null,
+          "light": null,
+          "composition": null,
+          "color": null,
+          "atmosphere": null,
+          "quality": null
+        },
+        "modelConflicts": [],
+        "reason": "非出图需求",
+        "problems": [],
+        "progConflicts": [],
+        "usage": {
+          "prompt_tokens": 1580,
+          "completion_tokens": 89,
+          "total_tokens": 1669,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 33
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 812
+        },
+        "tokens": {
+          "in": 1580,
+          "out": 89
+        }
+      },
+      "covA": null,
+      "covB": null,
+      "dilA": {
+        "got": 0,
+        "total": 8,
+        "rate": 0
+      },
+      "dilB": {
+        "got": 0,
+        "total": 8,
+        "rate": 0
+      },
+      "recalled": null
+    }
+  ]
+}

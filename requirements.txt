@@ -1,0 +1,5 @@
+# PromptLab 服务端依赖（只有这三样，都是纯本地计算，不需要联网）
+# 安装：pip install -r requirements.txt
+numpy>=1.24
+onnxruntime>=1.16
+tokenizers>=0.15

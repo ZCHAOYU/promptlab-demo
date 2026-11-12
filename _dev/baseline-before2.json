@@ -1,0 +1,499 @@
+[
+  {
+    "input": "一位剑客",
+    "mode": "character",
+    "output": "一位中性漂泊的剑客，剑术的大师，锐利专注的面容，目光如剑，神情从容，胡茬，细疤，果决，拔剑，挥剑出招，收剑入鞘，雨中伫立，与敌决斗，身着素净行装，腰间长剑，斗笠，布缠手，旧靴，行囊，身处仙山云海。东方奇幻风格，雾中光映照，东方古韵色调，神秘奇幻氛围。",
+    "dims": [
+      "style=东方奇幻",
+      "lighting=雾中光",
+      "color=东方古韵",
+      "atmosphere=神秘奇幻",
+      "platform=通用",
+      "character=剑客",
+      "gender=中性",
+      "scene=仙山云海",
+      "material=金属"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一位白衣剑客",
+    "mode": "character",
+    "output": "一位中性漂泊的剑客，剑术的大师，锐利专注的面容，目光如剑，神情从容，胡茬，细疤，果决，拔剑，挥剑出招，收剑入鞘，雨中伫立，与敌决斗，身着素净行装，腰间长剑，斗笠，布缠手，旧靴，行囊，身处仙山云海。东方奇幻风格，雾中光映照，东方古韵色调，神秘奇幻氛围。",
+    "dims": [
+      "style=东方奇幻",
+      "lighting=雾中光",
+      "color=东方古韵",
+      "atmosphere=神秘奇幻",
+      "platform=通用",
+      "character=剑客",
+      "gender=中性",
+      "scene=仙山云海",
+      "material=金属"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一位老人",
+    "mode": "character",
+    "output": "一位中性饱经风霜的老人，慈祥沉稳，皱纹深刻的面容，眼神浑浊却温和，花白胡须，皮肤松弛，拄着拐杖缓步，坐在门槛上，双手交叠，抬头远望，身着深色粗布棉袄，旧布鞋，腰系布带，一根木手杖。电影侧光映照，中景构图，莫兰迪色色调，史诗壮阔氛围，4K高清画质。",
+    "dims": [
+      "lighting=电影级侧光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=莫兰迪色系",
+      "atmosphere=史诗壮阔",
+      "platform=通用",
+      "character=老人",
+      "gender=中性"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一位少女",
+    "mode": "character",
+    "output": "一位女性十六七岁的少女，清纯安静，干净清透的少女面容，眉眼柔和，浅浅笑意，及肩长发，抱膝而坐，低头看书，侧身回望，整理发梢，身着浅色连衣裙或校服，白色帆布鞋，细带挎包，发绳。电影侧光映照，中景构图，粉彩梦幻色调，史诗壮阔氛围，4K高清画质。",
+    "dims": [
+      "lighting=电影级侧光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=粉彩梦幻",
+      "atmosphere=史诗壮阔",
+      "platform=通用",
+      "character=少女",
+      "gender=女性"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一个孩童",
+    "mode": "character",
+    "output": "一个中性四五岁的孩童，活泼稚气，圆润的小脸，大眼睛，肉嘟嘟的脸颊，短而软的头发，蹒跚学步，蹲着看东西，举着双手要抱，咧嘴大笑，身着彩色小背心，短裤，小布鞋，手里攥着玩具。电影侧光映照，中景构图，莫兰迪色色调，童趣天真氛围，4K高清画质。",
+    "dims": [
+      "lighting=电影级侧光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=莫兰迪色系",
+      "atmosphere=童趣天真",
+      "platform=通用",
+      "character=孩童",
+      "gender=中性"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一位旅人",
+    "mode": "character",
+    "output": "一位中性风尘仆仆的旅人，独自行走，被风吹日晒的面容，眼神坚定疲惫，胡茬，头发凌乱，背着行囊前行，驻足远眺，蹲在路边歇脚，摊开地图，身着灰褐色斗篷，旧皮靴，帆布行囊，水囊，绳索。电影侧光映照，中景构图，莫兰迪色色调，史诗壮阔氛围，4K高清画质。",
+    "dims": [
+      "lighting=电影级侧光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=莫兰迪色系",
+      "atmosphere=史诗壮阔",
+      "platform=通用",
+      "character=旅人",
+      "gender=中性"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一位手持法杖的魔法师",
+    "mode": "character",
+    "output": "一位中性掌握元素之力的大魔法师，奥术之主，深邃睿智的眼神饱含沧桑，面容刻满岁月，神秘符文纹面闪烁微光，高举法杖吟唱咒语，元素能量环绕周身，魔力波动震荡空间，身着华丽织金法袍，上古魔力法杖，魔法书悬浮，元素护符与魔力指环，身处魔法阵。魔法奇幻风格，电影侧光映照，神秘奇幻氛围。",
+    "dims": [
+      "style=魔法奇幻",
+      "lighting=电影级侧光",
+      "atmosphere=神秘奇幻",
+      "platform=通用",
+      "character=魔法师",
+      "gender=中性",
+      "scene=魔法阵"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一位老人坐在长椅上",
+    "mode": "character",
+    "output": "一位中性饱经风霜的老人，慈祥沉稳，皱纹深刻的面容，眼神浑浊却温和，花白胡须，皮肤松弛，坐在长椅上，身着深色粗布棉袄，旧布鞋，腰系布带，一根木手杖。电影侧光映照，中景构图，莫兰迪色色调，史诗壮阔氛围，4K高清画质。",
+    "dims": [
+      "lighting=电影级侧光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=莫兰迪色系",
+      "atmosphere=史诗壮阔",
+      "platform=通用",
+      "character=老人",
+      "gender=中性"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一位少女在东京现代街头手里拿着咖啡和一位朋友并行逛着街",
+    "mode": "character",
+    "output": "一位女性十六七岁的少女，清纯安静，干净清透的少女面容，眉眼柔和，浅浅笑意，及肩长发，手里拿着咖啡，逛着街，身着浅色连衣裙或校服，白色帆布鞋，细带挎包，发绳，身处街角咖啡馆。都市写实风格，粉彩梦幻色调，都市喧嚣氛围。",
+    "dims": [
+      "style=都市写实",
+      "color=粉彩梦幻",
+      "atmosphere=都市喧嚣",
+      "platform=通用",
+      "character=少女",
+      "gender=女性",
+      "scene=街角咖啡馆",
+      "material=陶瓷"
+    ],
+    "error": ""
+  },
+  {
+    "input": "竹林深处的剑客",
+    "mode": "character",
+    "output": "一位中性漂泊的剑客，剑术的大师，锐利专注的面容，目光如剑，神情从容，胡茬，细疤，果决，拔剑，挥剑出招，收剑入鞘，雨中伫立，与敌决斗，身着素净行装，腰间长剑，斗笠，布缠手，旧靴，行囊，身处竹林。东方奇幻风格，雾中光映照，东方古韵色调。",
+    "dims": [
+      "style=东方奇幻",
+      "lighting=雾中光",
+      "color=东方古韵",
+      "platform=通用",
+      "character=剑客",
+      "gender=中性",
+      "scene=竹林",
+      "material=竹"
+    ],
+    "error": ""
+  },
+  {
+    "input": "雨夜中撑伞的女子",
+    "mode": "prop",
+    "output": "雨夜中撑伞的女子，浮世绘风格，手持展示 — 布料材质，帆布质感，冷蓝月光照明，中景视角，东方古韵色调，纯色背景，静谧禅意氛围，4K高清",
+    "dims": [
+      "style=浮世绘",
+      "lighting=冷蓝月光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=东方古韵",
+      "atmosphere=静谧禅意",
+      "platform=通用",
+      "material=布料",
+      "texture=帆布",
+      "display=手持展示",
+      "background=纯色背景"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一位穿宇航服的骑士",
+    "mode": "character",
+    "output": "一位中性身披重甲的英勇骑士，恪守骑士精神的战士，坚毅英俊的面容，湛蓝坚定的眼眸，利落短发，刚毅的下颌，持剑跪地宣誓，骑马冲锋，高举圣剑，举盾守卫，决斗制敌，身着抛光钢制板甲配家族纹章，飘逸披风，佩剑，鸢盾，羽饰头盔，身处太空站。写实摄影风格，自然日光映照，中景构图，自然森系色调，静谧禅意氛围。",
+    "dims": [
+      "style=写实摄影",
+      "lighting=自然日光",
+      "composition=中景",
+      "color=自然森系",
+      "atmosphere=静谧禅意",
+      "platform=通用",
+      "character=骑士",
+      "gender=中性",
+      "scene=太空站"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一位量子程序员",
+    "mode": "character",
+    "output": "一位中性专注敬业的程序员，软件的建造者，专注的面容，眼镜后明亮的眼神，浅笑，衣着随意，略显疲惫却投入，敲击代码，查看屏幕，喝咖啡，调试程序，展示代码，身着休闲科技装束，笔记本电脑，多块显示器，咖啡杯，代码编辑器，机械键盘，身处赛博都市。赛博朋克风格，霓虹彩光映照，中景构图，赛博霓虹色调，颓废末世氛围。",
+    "dims": [
+      "style=赛博朋克",
+      "lighting=霓虹彩光",
+      "composition=中景",
+      "color=赛博霓虹",
+      "atmosphere=颓废末世",
+      "platform=通用",
+      "character=程序员",
+      "gender=中性",
+      "scene=赛博都市"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一只六足机械兽",
+    "mode": "prop",
+    "output": "一只六足机械兽，未来主义风格，产品特写 — 霓虹彩光照明，中景视角，赛博霓虹色调，暗调背景，活力四射氛围，4K高清",
+    "dims": [
+      "style=未来主义",
+      "lighting=霓虹彩光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=赛博霓虹",
+      "atmosphere=活力四射",
+      "platform=通用",
+      "display=产品特写",
+      "background=暗调背景"
+    ],
+    "error": ""
+  },
+  {
+    "input": "老人，一只猫",
+    "mode": "prop",
+    "output": "老人，一只猫，产品特写 — 电影侧光照明，中景视角，莫兰迪色色调，暗调背景，温暖治愈氛围，4K高清",
+    "dims": [
+      "lighting=电影级侧光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=莫兰迪色系",
+      "atmosphere=温暖治愈",
+      "platform=通用",
+      "scene=自然山水",
+      "display=产品特写",
+      "background=暗调背景"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一个从没见过的生物",
+    "mode": "character",
+    "output": "一个从没见过的生物，电影侧光映照，中景构图，莫兰迪色色调，史诗壮阔氛围，4K高清画质。",
+    "dims": [
+      "lighting=电影级侧光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=莫兰迪色系",
+      "atmosphere=史诗壮阔",
+      "platform=通用",
+      "gender=中性"
+    ],
+    "error": ""
+  },
+  {
+    "input": "您好",
+    "mode": "character",
+    "output": "您好，电影侧光映照，中景构图，莫兰迪色色调，史诗壮阔氛围，4K高清画质。",
+    "dims": [
+      "lighting=电影级侧光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=莫兰迪色系",
+      "atmosphere=史诗壮阔",
+      "platform=通用",
+      "gender=中性"
+    ],
+    "error": ""
+  },
+  {
+    "input": "。",
+    "mode": "character",
+    "output": "。, . illuminated by cinematic rim lighting, dramatic edge illumination, strong key light from 45-degree angle, subtle fill light, co, composed with medium shot, balanced waist-up framing, featuring muted desaturated palette, Morandi colors, soft earthy tones, sophisticated grey-cast tones, evoking a epic grandiose atmosphere, breathtaking scale atmosphere, rendered in 4K resolution, high definition, crisp detail, clean render, professional quality",
+    "dims": [
+      "lighting=电影级侧光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=莫兰迪色系",
+      "atmosphere=史诗壮阔",
+      "platform=通用",
+      "gender=中性"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一片竹林",
+    "mode": "scene",
+    "output": "一片竹林，水墨国风风格，雾中光映照，中景构图，黑白高对比色调，静谧禅意氛围，4K高清画质。",
+    "dims": [
+      "style=水墨国风",
+      "lighting=雾中光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=黑白高对比",
+      "atmosphere=静谧禅意",
+      "platform=通用",
+      "scene=竹林"
+    ],
+    "error": ""
+  },
+  {
+    "input": "雨夜的霓虹街道",
+    "mode": "scene",
+    "output": "雨夜的霓虹街道，霓虹夜景风格，霓虹光映照，中景构图，赛博霓虹色调，暗黑压抑氛围，4K高清画质。",
+    "dims": [
+      "style=霓虹夜景",
+      "lighting=霓虹光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=赛博霓虹",
+      "atmosphere=暗黑压抑",
+      "platform=通用",
+      "scene=霓虹街道"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一座哥特城堡",
+    "mode": "scene",
+    "output": "一座哥特城堡，哥特暗黑风格，暗调低调映照，中景构图，暗黑哥特色调，暗黑压抑氛围，4K高清画质。",
+    "dims": [
+      "style=哥特暗黑",
+      "lighting=暗调低调",
+      "composition=中景",
+      "quality=4K高清",
+      "color=暗黑哥特",
+      "atmosphere=暗黑压抑",
+      "platform=通用",
+      "scene=哥特城堡"
+    ],
+    "error": ""
+  },
+  {
+    "input": "街道尽头的旧书店",
+    "mode": "prop",
+    "output": "街道尽头的旧书店，产品特写 — 纸材质，粗糙质感，电影侧光照明，中景视角，褪色复古色调，纯色背景，史诗壮阔氛围，4K高清",
+    "dims": [
+      "lighting=电影级侧光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=褪色复古",
+      "atmosphere=史诗壮阔",
+      "platform=通用",
+      "scene=旧书店",
+      "material=纸",
+      "texture=粗糙",
+      "display=产品特写",
+      "background=纯色背景"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一间洒满阳光的咖啡馆",
+    "mode": "scene",
+    "output": "一间洒满阳光的咖啡馆，街角咖啡馆。写实摄影风格，阳光映照，中景构图，自然森系色调，静谧禅意氛围。",
+    "dims": [
+      "style=写实摄影",
+      "lighting=阳光",
+      "composition=中景",
+      "color=自然森系",
+      "atmosphere=静谧禅意",
+      "platform=通用",
+      "scene=街角咖啡馆",
+      "material=陶瓷"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一把生锈的长剑",
+    "mode": "prop",
+    "output": "一把生锈的长剑，产品特写 — 金属材质，粗糙沧桑质感，电影侧光照明，中景视角，莫兰迪色色调，暗调背景，史诗壮阔氛围，4K高清",
+    "dims": [
+      "lighting=电影级侧光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=莫兰迪色系",
+      "atmosphere=史诗壮阔",
+      "platform=通用",
+      "material=金属",
+      "texture=粗糙沧桑",
+      "display=产品特写",
+      "background=暗调背景"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一盏纸灯笼",
+    "mode": "prop",
+    "output": "一盏纸灯笼，剪纸艺术风格，产品特写 — 纸材质，半透明质感，霓虹彩光照明，中景视角，莫兰迪色色调，暗调背景，静谧禅意氛围，4K高清",
+    "dims": [
+      "style=剪纸艺术",
+      "lighting=霓虹彩光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=莫兰迪色系",
+      "atmosphere=静谧禅意",
+      "platform=通用",
+      "material=纸",
+      "texture=半透明",
+      "display=产品特写",
+      "background=暗调背景"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一杯热咖啡",
+    "mode": "prop",
+    "output": "一杯热咖啡，产品特写 — 陶瓷材质，电影侧光照明，中景视角，莫兰迪色色调，暗调背景，史诗壮阔氛围，4K高清",
+    "dims": [
+      "lighting=电影级侧光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=莫兰迪色系",
+      "atmosphere=史诗壮阔",
+      "platform=通用",
+      "material=陶瓷",
+      "display=产品特写",
+      "background=暗调背景"
+    ],
+    "error": ""
+  },
+  {
+    "input": "古旧的机械怀表",
+    "mode": "prop",
+    "output": "古旧的机械怀表，未来主义风格，产品特写 — 霓虹彩光照明，中景视角，褪色复古色调，暗调背景，活力四射氛围，4K高清",
+    "dims": [
+      "style=未来主义",
+      "lighting=霓虹彩光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=褪色复古",
+      "atmosphere=活力四射",
+      "platform=通用",
+      "display=产品特写",
+      "background=暗调背景"
+    ],
+    "error": ""
+  },
+  {
+    "input": "一把刀的刀柄特写",
+    "mode": "prop",
+    "output": "一把刀的刀柄特写，特写镜头 — 金属材质，电影侧光照明，特写视角，莫兰迪色色调，暗调背景，史诗壮阔氛围，4K高清",
+    "dims": [
+      "lighting=电影级侧光",
+      "composition=特写",
+      "quality=4K高清",
+      "color=莫兰迪色系",
+      "atmosphere=史诗壮阔",
+      "platform=通用",
+      "material=金属",
+      "display=特写镜头",
+      "background=暗调背景"
+    ],
+    "error": ""
+  },
+  {
+    "input": "a knight standing in the rain",
+    "mode": "character",
+    "output": "a androgynous, gender-neutral noble knight in shining armor, chivalrous warrior with proud bearing, slight stubble, short cropped hair, strong jawline, disarming opponent in duel, standing guard with shield raised, raising sword in , wearing spurs, gauntlets, plumed helmet, kite shield with family cre. photorealistic photography, hyper-realistic style, illuminated by soft diffused light from overcast sky, cloudy sky glow, even soft light, no harsh shadows, gentle m, composed with medium shot, balanced waist-up framing, featuring natural forest palette, botanical greens, earth tones, organic tones, evoking a fresh natural atmosphere, clean vitality atmosphere",
+    "dims": [
+      "style=写实摄影",
+      "lighting=阴天散射光",
+      "composition=中景",
+      "color=自然森系",
+      "atmosphere=清新自然",
+      "platform=通用",
+      "character=骑士",
+      "gender=中性",
+      "scene=雨天"
+    ],
+    "error": ""
+  },
+  {
+    "input": "cyberpunk city at night, neon lights",
+    "mode": "scene",
+    "output": "cyberpunk city at night, neon lights, a cyberpunk megacity, neon-lit dystopian metropolis — street vendors in narrow alleys, steaming vents and pipes, towering skyscrapers with holographic billboards, elevated hi. cyberpunk style, neon-noir aesthetic style, illuminated by neon lighting, colorful urban glow, vibrant reflections, animated signs, cyberpunk street lighting, fog diffusion, li, composed with medium shot, balanced waist-up framing, featuring neon synthwave palette, cyan and magenta dominance, electric color contrast tones, evoking a post-apocalyptic decay, beautiful ruin atmosphere, rendered in 4K resolution, high definition, crisp detail, clean render, professional quality",
+    "dims": [
+      "style=赛博朋克",
+      "lighting=霓虹彩光",
+      "composition=中景",
+      "quality=4K高清",
+      "color=赛博霓虹",
+      "atmosphere=颓废末世",
+      "platform=通用",
+      "scene=赛博都市"
+    ],
+    "error": ""
+  }
+]

@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PromptLab · 智能提示词优化</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20261111e">
+</head>
+<body>
+
+<div class="confirm-mask" id="confirmMask" onclick="if(event.target===this)confirmMaskClose()">
+  <div class="confirm-dialog" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+    <h3 id="confirmTitle">确认清空</h3>
+    <p id="confirmMsg">确定要清空所有历史记录吗？此操作不可撤销。</p>
+    <div class="confirm-actions">
+      <button type="button" class="confirm-cancel" onclick="confirmMaskClose()">取消</button>
+      <button type="button" class="confirm-ok" id="confirmOkBtn" onclick="doClearHistory()">确认清空</button>
+    </div>
+  </div>
+</div>
+
+<div class="app-container">
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-row">
+      <div class="logo-star"></div>
+      <span class="logo-text">PromptLab</span>
+      <span class="svc-badge checking" id="svcBadge" title="本地服务状态">检查中…</span>
+    </div>
+    <span class="logo-subtitle">智能提示词优化<span class="app-version" id="appVersion"></span></span>
+  </header>
+
+  <!-- Main Input Card -->
+  <div class="main-card">
+    <!-- 首次使用引导（2026-11-11）：只在没标记过「看过了」时出现 -->
+    <div class="onboard" id="onboard" hidden>
+      <div class="onboard-head">
+        <span class="onboard-title">第一次用？一句话就够</span>
+        <button class="onboard-close" id="onboardClose" type="button" aria-label="关闭引导">×</button>
+      </div>
+      <p class="onboard-desc">
+        把一句中文描述，变成可以直接粘给生图模型的结构化提示词——
+        会自动补齐光线、色彩、氛围、构图这些你自己懒得写、但对成品影响最大的维度。
+      </p>
+      <p class="onboard-tip">写清楚四件事就够了：<b>谁</b> · <b>穿什么</b> · <b>在哪</b> · <b>什么光</b></p>
+      <div class="onboard-examples">
+        <button class="onboard-eg" type="button" data-text="银发红瞳的病弱少年，穿着黑色高领长衫，站在雨夜的祠堂前">雨夜祠堂 · 病弱少年</button>
+        <button class="onboard-eg" type="button" data-text="兽耳少女，猫耳猫尾，穿着和风短打，蹲在屋檐上">屋檐之上 · 兽耳少女</button>
+        <button class="onboard-eg" type="button" data-text="废弃的教堂，藤蔓爬满石墙，午后的光从彩窗透进来">废弃教堂 · 午后彩窗</button>
+      </div>
+      <p class="onboard-foot">点上面任意一条可以直接看到效果；想看更多，下面的<b>模板库</b>还有 40 个。</p>
+    </div>
+
+    <div class="input-label">创作意图</div>
+    <div class="input-wrapper">
+      <textarea id="promptInput" class="prompt-input" placeholder="描述你想要的画面..." maxlength="500"></textarea>
+      <div class="char-count"><span id="charCount">0</span>/500</div>
+    </div>
+
+    <!-- Dimension Tags -->
+    <div class="dimensions" id="dimTags">
+      <div class="dim-tag detected" data-dim="style">
+        风格<span class="dim-value">哥特暗黑</span>
+      </div>
+      <div class="dim-tag detected" data-dim="lighting">
+        光线<span class="dim-value">暗调低调</span>
+      </div>
+      <div class="dim-tag missing" data-dim="composition">
+        构图<span class="dim-value">待补全</span>
+      </div>
+      <div class="dim-tag missing" data-dim="quality">
+        画质<span class="dim-value">待补全</span>
+      </div>
+      <div class="dim-tag detected" data-dim="color">
+        色彩<span class="dim-value">暗黑哥特</span>
+      </div>
+      <div class="dim-tag detected" data-dim="atmosphere">
+        氛围<span class="dim-value">暗黑压抑</span>
+      </div>
+      <div class="dim-tag detected" data-dim="character">
+        人物<span class="dim-value">暗黑骑士</span>
+      </div>
+      <div class="dim-tag missing" data-dim="gender">
+        性别<span class="dim-value">待补全</span>
+      </div>
+      <div class="dim-tag detected" data-dim="scene">
+        场景<span class="dim-value">哥特城堡</span>
+      </div>
+      <div class="dim-tag" data-dim="platform">
+        平台<span class="dim-value">通用</span>
+      </div>
+      <div class="dim-tag prop-only missing" data-dim="material">
+        材质<span class="dim-value">待补全</span>
+      </div>
+      <div class="dim-tag prop-only missing" data-dim="texture">
+        质感<span class="dim-value">待补全</span>
+      </div>
+      <div class="dim-tag prop-only detected" data-dim="display">
+        展示<span class="dim-value">产品特写</span>
+      </div>
+      <div class="dim-tag prop-only detected" data-dim="background">
+        背景<span class="dim-value">暗调背景</span>
+      </div>
+    </div>
+
+    <!-- Depth Selector -->
+    <div class="depth-selector" id="depthSelector">
+      <span class="depth-label">提示词深度</span>
+      <div class="depth-options">
+        <button class="depth-btn" data-depth="basic">简洁</button>
+        <button class="depth-btn" data-depth="standard">标准</button>
+        <button class="depth-btn active" data-depth="deep">深度</button>
+      </div>
+    </div>
+
+    <!-- 模式已改为自动判定：这里只显示识别结果，不再让用户选 -->
+    <div class="mode-selector" id="modeSelector">
+      <span class="mode-label">自动识别</span>
+      <div class="mode-options" style="display:none">
+        <button class="mode-btn active" data-mode="character">人物</button>
+        <button class="mode-btn" data-mode="scene">场景</button>
+        <button class="mode-btn" data-mode="prop">道具</button>
+      </div>
+      <span id="autoModeLabel" style="font-size:13px;color:#00d4ff;font-weight:600">—</span>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn-optimize" id="btnOptimize" onclick="optimize()">
+        一键优化
+      </button>
+      <button class="btn-random" id="btnRandom" onclick="randomMix()">
+        随机混搭
+      </button>
+      <button class="btn-clear-input" id="btnClearInput" onclick="clearInput()" title="清空输入与所有结果">
+        清空
+      </button>
+    </div>
+
+    <!-- Output Section -->
+    <div class="output-section visible" id="outputSection">
+      <div class="output-header">
+        <span class="output-title">优化过程</span>
+        <span style="font-size:11px;color:var(--text-muted)" id="dimSummary">检测到 8 项 · 补全 4 项 · 标准模式</span>
+      </div>
+
+      <!-- 矛盾检测警告 -->
+      <div class="contradiction-warning" id="contradictionWarning">
+        <div class="cw-title" id="contradictionTitle">检测到描述冲突</div>
+        <div id="contradictionItems"></div>
+        <div class="cw-hint" id="contradictionHint">系统已按主要意图自动协调冲突维度，可修改输入后重新优化。</div>
+      </div>
+
+      <!-- Process Analysis -->
+      <div class="process-grid" id="processGrid"><div class="process-item detected">
+                <div class="process-info">
+          <div class="process-dim">风格</div>
+          <div class="process-value">哥特暗黑</div>
+          <div class="process-source">用户输入已包含</div>
+        </div></div><div class="process-item detected">
+                <div class="process-info">
+          <div class="process-dim">人物</div>
+          <div class="process-value">暗黑骑士</div>
+          <div class="process-source">用户输入已包含</div>
+        </div></div><div class="process-item filled">
+                <div class="process-info">
+          <div class="process-dim">性别</div>
+          <div class="process-value">男性</div>
+          <div class="process-source">+ AI智能补全</div>
+        </div></div><div class="process-item detected">
+                <div class="process-info">
+          <div class="process-dim">场景</div>
+          <div class="process-value">哥特城堡</div>
+          <div class="process-source">用户输入已包含</div>
+        </div></div><div class="process-item">
+                <div class="process-info">
+          <div class="process-dim">材质</div>
+          <div class="process-value">—</div>
+          <div class="process-source">未设置</div>
+        </div></div><div class="process-item">
+                <div class="process-info">
+          <div class="process-dim">质感</div>
+          <div class="process-value">—</div>
+          <div class="process-source">未设置</div>
+        </div></div><div class="process-item detected">
+                <div class="process-info">
+          <div class="process-dim">展示</div>
+          <div class="process-value">产品特写</div>
+          <div class="process-source">用户输入已包含</div>
+        </div></div><div class="process-item detected">
+                <div class="process-info">
+          <div class="process-dim">背景</div>
+          <div class="process-value">暗调背景</div>
+          <div class="process-source">用户输入已包含</div>
+        </div></div><div class="process-item detected">
+                <div class="process-info">
+          <div class="process-dim">光线</div>
+          <div class="process-value">暗调低调</div>
+          <div class="process-source">用户输入已包含</div>
+        </div></div><div class="process-item filled">
+                <div class="process-info">
+          <div class="process-dim">构图</div>
+          <div class="process-value">中景</div>
+          <div class="process-source">+ AI智能补全</div>
+        </div></div><div class="process-item detected">
+                <div class="process-info">
+          <div class="process-dim">色彩</div>
+          <div class="process-value">暗黑哥特</div>
+          <div class="process-source">用户输入已包含</div>
+        </div></div><div class="process-item detected">
+                <div class="process-info">
+          <div class="process-dim">氛围</div>
+          <div class="process-value">暗黑压抑</div>
+          <div class="process-source">用户输入已包含</div>
+        </div></div><div class="process-item filled">
+                <div class="process-info">
+          <div class="process-dim">画质</div>
+          <div class="process-value">4K高清</div>
+          <div class="process-source">+ AI智能补全</div>
+        </div></div><div class="process-item filled">
+                <div class="process-info">
+          <div class="process-dim">平台</div>
+          <div class="process-value">通用</div>
+          <div class="process-source">+ AI智能补全</div>
+        </div></div></div>
+
+      <!-- AI 思考面板 -->
+      <div class="smart-panel visible" id="smartPanel">
+        <div class="smart-panel-header" id="smartPanelHeader">
+          <span class="smart-panel-title"> AI 思考</span>
+          <span class="smart-panel-toggle">▲</span>
+        </div>
+        <div class="smart-panel-body" id="smartPanelBody">
+          <!-- 意图扩展 -->
+          <div class="smart-expansion" id="smartExpansion">
+            <div class="smart-expansion-label">意图扩展</div>
+            <div class="smart-expansion-text" id="smartExpansionText">一个骷髅亡灵骑士，以哥特暗黑风格诠释，弥漫着暗黑压抑的气息，暗调低调的光线条件，采用产品特写的构图。</div>
+          </div>
+          <!-- 推理过程 -->
+          <div class="smart-reasoning" id="smartReasoning">
+            <div class="smart-reasoning-label">推理过程</div>
+            <div id="smartReasoningItems"><div class="smart-reasoning-item source-layer2">
+      <div class="smart-reasoning-header">
+        <span class="smart-reasoning-dim">风格 · 哥特暗黑</span>
+        <span class="smart-reasoning-confidence low">20%</span>
+      </div>
+      <div class="smart-reasoning-bar">
+        <div class="smart-reasoning-bar-fill low" style="width:20%"></div>
+      </div>
+      <div class="smart-reasoning-detail">
+        推理: 由场景模板"暗黑圣物"补全，无直接关键词命中
+      </div></div><div class="smart-reasoning-item source-layer2">
+      <div class="smart-reasoning-header">
+        <span class="smart-reasoning-dim">光线 · 暗调低调</span>
+        <span class="smart-reasoning-confidence low">20%</span>
+      </div>
+      <div class="smart-reasoning-bar">
+        <div class="smart-reasoning-bar-fill low" style="width:20%"></div>
+      </div>
+      <div class="smart-reasoning-detail">
+        推理: 由场景模板"暗黑圣物"补全，无直接关键词命中
+      </div></div><div class="smart-reasoning-item source-layer2">
+      <div class="smart-reasoning-header">
+        <span class="smart-reasoning-dim">色彩 · 暗黑哥特</span>
+        <span class="smart-reasoning-confidence low">20%</span>
+      </div>
+      <div class="smart-reasoning-bar">
+        <div class="smart-reasoning-bar-fill low" style="width:20%"></div>
+      </div>
+      <div class="smart-reasoning-detail">
+        推理: 由场景模板"暗黑圣物"补全，无直接关键词命中
+      </div></div><div class="smart-reasoning-item source-layer2">
+      <div class="smart-reasoning-header">
+        <span class="smart-reasoning-dim">氛围 · 暗黑压抑</span>
+        <span class="smart-reasoning-confidence low">20%</span>
+      </div>
+      <div class="smart-reasoning-bar">
+        <div class="smart-reasoning-bar-fill low" style="width:20%"></div>
+      </div>
+      <div class="smart-reasoning-detail">
+        推理: 由场景模板"暗黑圣物"补全，无直接关键词命中
+      </div></div><div class="smart-reasoning-item source-layer2">
+      <div class="smart-reasoning-header">
+        <span class="smart-reasoning-dim">构图 · 产品特写</span>
+        <span class="smart-reasoning-confidence low">20%</span>
+      </div>
+      <div class="smart-reasoning-bar">
+        <div class="smart-reasoning-bar-fill low" style="width:20%"></div>
+      </div>
+      <div class="smart-reasoning-detail">
+        推理: 由场景模板"暗黑圣物"补全，无直接关键词命中
+      </div></div><div class="smart-reasoning-item source-layer2">
+      <div class="smart-reasoning-header">
+        <span class="smart-reasoning-dim">画质 · 极致细节</span>
+        <span class="smart-reasoning-confidence low">20%</span>
+      </div>
+      <div class="smart-reasoning-bar">
+        <div class="smart-reasoning-bar-fill low" style="width:20%"></div>
+      </div>
+      <div class="smart-reasoning-detail">
+        推理: 由场景模板"暗黑圣物"补全，无直接关键词命中
+      </div></div></div>
+          </div>
+          <!-- 决策来源 -->
+          <div class="smart-decision" id="smartDecision">
+            <div class="smart-decision-label">决策来源</div>
+            <div class="smart-decision-row" id="smartDecisionRow"><span class="smart-decision-src l2">Layer 2 "暗黑圣物"</span> → 风格、光线、色彩、氛围、构图、画质</div>
+          </div>
+          <!-- 可选 API 配置 -->
+          <div class="api-config-section" id="apiConfigSection">
+            <span class="api-config-toggle" id="apiConfigToggle">接入自定义AI语义理解API（可选）</span>
+            <div class="api-config-fields" id="apiConfigFields">
+              <div class="api-config-row">
+                <label>API地址</label>
+                <input type="text" id="apiEndpoint" placeholder="https://api.openai.com/v1/chat/completions">
+              </div>
+              <div class="api-config-row">
+                <label>API Key</label>
+                <input type="password" id="apiKey" placeholder="sk-...">
+              </div>
+              <div class="api-config-row">
+                <label>模型</label>
+                <input type="text" id="apiModel" placeholder="gpt-4o-mini">
+              </div>
+              <div class="api-config-note">API Key 仅保存在你的浏览器本地存储中，不会上传到任何服务器。接入后工具的语义理解能力将大幅提升，但不接入也可以正常使用所有本地功能。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Optimized Result -->
+      <div class="result-panel">
+        <div class="result-label">
+          <span>优化后提示词</span>
+          <span class="result-tag" id="resultTag">标准模式 · 通用</span>
+        </div>
+        <div class="result-content" id="optimizedDisplay"><span class="ai-add">一位男性身披黑暗铠甲的堕落骑士，哥特式战神的化身，面容隐于头盔阴影之中，只露一双猩红燃烧的眼眸，嘴角挂着一丝冷峻，手持巨剑拄地而立，黑暗铠甲沉重如山，周身散发出不祥的死亡气息，身着漆黑全身板甲覆盖，尖刺护肩高耸，残破披风猎猎，骷髅纹章刻于胸甲，身处哥特城堡，</span><span class="user-text">一个骷髅亡灵骑士</span><span class="ai-add">。哥特暗黑风格，暗调低调映照，暗黑哥特色调，暗黑压抑氛围，4K高清画质。</span></div>
+      </div>
+
+      <button class="btn-copy" id="btnCopy" onclick="copyResult()">
+        <span id="copyText">一键复制优化结果</span>
+      </button>
+
+      <!-- 版本控制（2026-11-11）：每点一次就是新的一版，得让人看得见、退得回去 -->
+      <div class="version-bar" id="versionBar" hidden>
+        <span class="version-tag">第 <b id="versionNum">1</b> 版</span>
+        <button class="vb-btn primary" type="button" id="btnNextVersion" title="同样的输入再生成一版（连接词与开句会换）">换一版</button>
+        <button class="vb-btn" type="button" id="btnPrevVersion" title="回到上一版">回到上一版</button>
+        <span class="vb-hint" id="vbHint"></span>
+      </div>
+
+      <!-- 反馈（2026-11-11）：试用阶段唯一能拿到真实评价的渠道 -->
+      <div class="feedback-row" id="feedbackRow" hidden>
+        <span class="feedback-label">这一版能用吗？</span>
+        <button class="feedback-btn up" type="button" id="fbUp">👍 有用</button>
+        <button class="feedback-btn down" type="button" id="fbDown">👎 没用</button>
+        <button class="feedback-btn" type="button" id="fbReport" title="内容不当、画错、风格不对，都可以举报">举报</button>
+        <span class="feedback-msg" id="feedbackMsg"></span>
+        <div class="feedback-note" id="feedbackNote" hidden>
+          <input type="text" id="feedbackNoteInput" maxlength="120" placeholder="哪里不对？（可不填，但写了更有用）">
+          <button class="feedback-send" type="button" id="fbSend">提交</button>
+        </div>
+      </div>
+
+      <!-- Negative Prompt -->
+      <div class="negative-panel visible" id="negativePanel">
+        <div class="negative-label">⊘ 负向提示词（建议避免）</div>
+        <div class="negative-content" id="negativeContent"><span class="negative-tag">明亮</span><span class="negative-tag">鲜艳色彩</span><span class="negative-tag">卡通</span><span class="negative-tag">可爱</span><span class="negative-tag">日系清新</span><span class="negative-tag">温馨</span><span class="negative-tag">高调</span><span class="negative-tag">过曝</span><span class="negative-tag">日光</span><span class="negative-tag">闪光灯</span><span class="negative-tag">粉色</span><span class="negative-tag">彩虹</span></div>
+      </div>
+
+      <!-- Smart Suggestions -->
+      <div class="suggestions-panel visible" id="suggestionsPanel">
+        <div class="suggestions-label">换个思路试试</div>
+        <div class="suggestions-list" id="suggestionsList">
+    <div class="suggestion-item" data-suggestion-index="0" title="点击应用此模板重新生成">
+      <div class="suggestion-info">
+        <div class="suggestion-name">仪式道具</div>
+        <div class="suggestion-reason">试试写实摄影风格，试试烛火光光线</div>
+      </div>
+      <div class="suggestion-arrow">→</div>
+    </div>
+  
+    <div class="suggestion-item" data-suggestion-index="1" title="点击应用此模板重新生成">
+      <div class="suggestion-info">
+        <div class="suggestion-name">符文石</div>
+        <div class="suggestion-reason">试试概念艺术风格，试试体积光光线</div>
+      </div>
+      <div class="suggestion-arrow">→</div>
+    </div>
+  
+    <div class="suggestion-item" data-suggestion-index="2" title="点击应用此模板重新生成">
+      <div class="suggestion-info">
+        <div class="suggestion-name">灯笼灯饰</div>
+        <div class="suggestion-reason">试试东方奇幻风格，试试烛火光光线</div>
+      </div>
+      <div class="suggestion-arrow">→</div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- History Section -->
+  <div class="history-section" id="historySection">
+    <div class="history-header" id="historyHeader">
+      <div class="history-header-left">
+        <span class="history-title">历史记录</span>
+        <span class="history-count" id="historyCount">1</span>
+      </div>
+      <div class="history-actions">
+        <button class="history-btn" id="historyCompareBtn" onclick="event.stopPropagation();toggleCompareMode()" title="选择两条记录进行对比">⇆ 对比</button>
+        <button class="history-btn danger" onclick="event.stopPropagation();clearHistory()" title="清空所有历史">清空</button>
+        <span class="history-toggle">▲</span>
+      </div>
+    </div>
+    <div class="history-body" id="historyBody">
+      <div class="history-empty" id="historyEmpty" style="display: none;">
+        还没有历史记录<br>输入提示词并点击优化后，结果将自动保存到这里
+      </div>
+      <div class="history-list" id="historyList"><div class="history-item" data-id="msr1pazqho9y">
+      <div class="history-item-top">
+        <div class="history-item-select" data-action="select">选</div>
+        <div class="history-item-info">
+          <div class="history-item-time">2026-08-13 12:56:02</div>
+          <div class="history-item-input" title="一个骷髅亡灵骑士">一个骷髅亡灵骑士</div>
+          <div class="history-item-meta">
+            <span class="history-badge mode">人物模式</span>
+            <span class="history-badge depth">标准</span>
+            <span class="history-badge dims">8项维度</span>
+          </div>
+        </div>
+        <div class="history-item-actions">
+          <button class="history-item-btn" data-action="expand" title="展开详情">展</button>
+          <button class="history-item-btn" data-action="restore" title="回溯到输入框">回</button>
+          <button class="history-item-btn delete" data-action="delete" title="删除">删</button>
+        </div>
+      </div>
+      <div class="history-item-detail">
+        <div class="history-detail-section">
+          <div class="history-detail-label">优化结果</div>
+          <div class="history-detail-result">一位男性身披黑暗铠甲的堕落骑士，哥特式战神的化身，面容隐于头盔阴影之中，只露一双猩红燃烧的眼眸，嘴角挂着一丝冷峻，手持巨剑拄地而立，黑暗铠甲沉重如山，周身散发出不祥的死亡气息，身着漆黑全身板甲覆盖，尖刺护肩高耸，残破披风猎猎，骷髅纹章刻于胸甲，身处哥特城堡，一个骷髅亡灵骑士。哥特暗黑风格，暗调低调映照，暗黑哥特色调，暗黑压抑氛围，4K高清画质。</div>
+        </div>
+        <div class="history-detail-section"><div class="history-detail-label">维度详情</div><div class="history-detail-dims"><span class="history-detail-dim"><span class="dim-label">风格:</span> <span class="dim-val">哥特暗黑</span></span><span class="history-detail-dim"><span class="dim-label">光线:</span> <span class="dim-val">暗调低调</span></span><span class="history-detail-dim"><span class="dim-label">色彩:</span> <span class="dim-val">暗黑哥特</span></span><span class="history-detail-dim"><span class="dim-label">氛围:</span> <span class="dim-val">暗黑压抑</span></span><span class="history-detail-dim"><span class="dim-label">人物:</span> <span class="dim-val">暗黑骑士</span></span><span class="history-detail-dim"><span class="dim-label">场景:</span> <span class="dim-val">哥特城堡</span></span><span class="history-detail-dim"><span class="dim-label">display:</span> <span class="dim-val">产品特写</span></span><span class="history-detail-dim"><span class="dim-label">background:</span> <span class="dim-val">暗调背景</span></span></div></div>
+      </div>
+    </div></div>
+    </div>
+  </div>
+
+  <!-- Compare Panel -->
+  <div class="compare-panel" id="comparePanel">
+    <div class="compare-header">
+      <span class="compare-title">对比模式</span>
+      <button class="compare-close" onclick="closeCompare()">关闭</button>
+    </div>
+    <div class="compare-body">
+      <div class="compare-col" id="compareColLeft">
+        <div class="compare-col-header">记录 A</div>
+        <div id="compareLeftContent"></div>
+      </div>
+      <div class="compare-col" id="compareColRight">
+        <div class="compare-col-header">记录 B</div>
+        <div id="compareRightContent"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Template Library -->
+  <div class="template-section">
+    <div class="template-header">
+      <span class="template-title">模板库</span>
+      <span class="template-count" id="templateCount">共 40 个模板</span>
+    </div>
+    <div class="template-grid" id="templateGrid"><div class="template-card">
+            <div class="tpl-name">古风剑客</div>
+      <div class="tpl-desc">东方奇幻 · 冷蓝月光 · 俯拍</div>
+    </div><div class="template-card">
+            <div class="tpl-name">哥特城堡</div>
+      <div class="tpl-desc">哥特暗黑 · 冷蓝月光 · 仰拍</div>
+    </div><div class="template-card">
+            <div class="tpl-name">赛博都市</div>
+      <div class="tpl-desc">赛博朋克 · 霓虹彩光 · 超广角</div>
+    </div><div class="template-card">
+            <div class="tpl-name">蒸汽机甲</div>
+      <div class="tpl-desc">蒸汽朋克 · 暖金琥珀 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">星际穿越</div>
+      <div class="tpl-desc">3D渲染 · 电影级侧光 · 超广角</div>
+    </div><div class="template-card">
+            <div class="tpl-name">末日废土</div>
+      <div class="tpl-desc">写实摄影 · 暖金黄昏 · 超广角</div>
+    </div><div class="template-card">
+            <div class="tpl-name">精灵森林</div>
+      <div class="tpl-desc">幻想生物 · 柔光漫射 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">赛博改造人</div>
+      <div class="tpl-desc">赛博朋克 · 霓虹彩光 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">水墨山水</div>
+      <div class="tpl-desc">水墨国风 · 雾中光 · 超广角</div>
+    </div><div class="template-card">
+            <div class="tpl-name">浮世绘海浪</div>
+      <div class="tpl-desc">浮世绘 · 自然日光 · 超广角</div>
+    </div><div class="template-card">
+            <div class="tpl-name">热带雨林</div>
+      <div class="tpl-desc">写实摄影 · 雾中光 · 仰拍</div>
+    </div><div class="template-card">
+            <div class="tpl-name">沙漠古城</div>
+      <div class="tpl-desc">写实摄影 · 暖金黄昏 · 超广角</div>
+    </div><div class="template-card">
+            <div class="tpl-name">海底世界</div>
+      <div class="tpl-desc">3D渲染 · 柔光漫射 · 全景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">极光冰原</div>
+      <div class="tpl-desc">写实摄影 · 蓝调时刻 · 超广角</div>
+    </div><div class="template-card">
+            <div class="tpl-name">樱花庭院</div>
+      <div class="tpl-desc">二次元 · 自然日光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">霓虹雨夜</div>
+      <div class="tpl-desc">霓虹夜景 · 霓虹彩光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">街角咖啡馆</div>
+      <div class="tpl-desc">写实摄影 · 窗光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">复古胶片</div>
+      <div class="tpl-desc">复古胶片 · 暖金黄昏 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">油画静物</div>
+      <div class="tpl-desc">油画质感 · 自然日光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">水彩花卉</div>
+      <div class="tpl-desc">水彩淡彩 · 柔光漫射 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">像素游戏</div>
+      <div class="tpl-desc">像素艺术 · 自然日光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">波普画廊</div>
+      <div class="tpl-desc">波普艺术 · 自然日光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">低多边形</div>
+      <div class="tpl-desc">低多边形 · 自然日光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">故障艺术</div>
+      <div class="tpl-desc">故障艺术 · 霓虹彩光 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">超现实梦境</div>
+      <div class="tpl-desc">超现实主义 · 柔光漫射 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">赛博禅意</div>
+      <div class="tpl-desc">赛博禅意 · 霓虹彩光 · 居中对称</div>
+    </div><div class="template-card">
+            <div class="tpl-name">剪纸艺术</div>
+      <div class="tpl-desc">剪纸艺术 · 自然日光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">二次元少女</div>
+      <div class="tpl-desc">二次元 · 柔光漫射 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">敦煌飞天</div>
+      <div class="tpl-desc">东方奇幻 · 雾中光 · 仰拍</div>
+    </div><div class="template-card">
+            <div class="tpl-name">侦探 noir</div>
+      <div class="tpl-desc">写实摄影 · 暗调低调 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">巴洛克宫殿</div>
+      <div class="tpl-desc">巴洛克 · 电影级侧光 · 仰拍</div>
+    </div><div class="template-card">
+            <div class="tpl-name">新艺术花卉</div>
+      <div class="tpl-desc">新艺术运动 · 柔光漫射 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">装饰艺术</div>
+      <div class="tpl-desc">装饰艺术 · 暖金黄昏 · 仰拍</div>
+    </div><div class="template-card">
+            <div class="tpl-name">禅意空间</div>
+      <div class="tpl-desc">极简留白 · 柔光漫射 · 居中对称</div>
+    </div><div class="template-card">
+            <div class="tpl-name">美食摄影</div>
+      <div class="tpl-desc">写实摄影 · 暖金黄昏 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">玻璃器皿</div>
+      <div class="tpl-desc">写实摄影 · 电影级侧光 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">金属质感</div>
+      <div class="tpl-desc">金属质感 · 硬光 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">黏土动画</div>
+      <div class="tpl-desc">黏土风 · 柔光漫射 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">毛毡世界</div>
+      <div class="tpl-desc">毛毡风 · 柔光漫射 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">3D等距房间</div>
+      <div class="tpl-desc">3D渲染 · 柔光漫射 · 等距视角</div>
+    </div><div class="template-card">
+            <div class="tpl-name">古风剑客</div>
+      <div class="tpl-desc">东方奇幻 · 冷蓝月光 · 俯拍</div>
+    </div><div class="template-card">
+            <div class="tpl-name">哥特城堡</div>
+      <div class="tpl-desc">哥特暗黑 · 冷蓝月光 · 仰拍</div>
+    </div><div class="template-card">
+            <div class="tpl-name">赛博都市</div>
+      <div class="tpl-desc">赛博朋克 · 霓虹彩光 · 超广角</div>
+    </div><div class="template-card">
+            <div class="tpl-name">蒸汽机甲</div>
+      <div class="tpl-desc">蒸汽朋克 · 暖金琥珀 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">星际穿越</div>
+      <div class="tpl-desc">3D渲染 · 电影级侧光 · 超广角</div>
+    </div><div class="template-card">
+            <div class="tpl-name">末日废土</div>
+      <div class="tpl-desc">写实摄影 · 暖金黄昏 · 超广角</div>
+    </div><div class="template-card">
+            <div class="tpl-name">精灵森林</div>
+      <div class="tpl-desc">幻想生物 · 柔光漫射 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">赛博改造人</div>
+      <div class="tpl-desc">赛博朋克 · 霓虹彩光 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">水墨山水</div>
+      <div class="tpl-desc">水墨国风 · 雾中光 · 超广角</div>
+    </div><div class="template-card">
+            <div class="tpl-name">浮世绘海浪</div>
+      <div class="tpl-desc">浮世绘 · 自然日光 · 超广角</div>
+    </div><div class="template-card">
+            <div class="tpl-name">热带雨林</div>
+      <div class="tpl-desc">写实摄影 · 雾中光 · 仰拍</div>
+    </div><div class="template-card">
+            <div class="tpl-name">沙漠古城</div>
+      <div class="tpl-desc">写实摄影 · 暖金黄昏 · 超广角</div>
+    </div><div class="template-card">
+            <div class="tpl-name">海底世界</div>
+      <div class="tpl-desc">3D渲染 · 柔光漫射 · 全景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">极光冰原</div>
+      <div class="tpl-desc">写实摄影 · 蓝调时刻 · 超广角</div>
+    </div><div class="template-card">
+            <div class="tpl-name">樱花庭院</div>
+      <div class="tpl-desc">二次元 · 自然日光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">霓虹雨夜</div>
+      <div class="tpl-desc">霓虹夜景 · 霓虹彩光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">街角咖啡馆</div>
+      <div class="tpl-desc">写实摄影 · 窗光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">复古胶片</div>
+      <div class="tpl-desc">复古胶片 · 暖金黄昏 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">油画静物</div>
+      <div class="tpl-desc">油画质感 · 自然日光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">水彩花卉</div>
+      <div class="tpl-desc">水彩淡彩 · 柔光漫射 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">像素游戏</div>
+      <div class="tpl-desc">像素艺术 · 自然日光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">波普画廊</div>
+      <div class="tpl-desc">波普艺术 · 自然日光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">低多边形</div>
+      <div class="tpl-desc">低多边形 · 自然日光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">故障艺术</div>
+      <div class="tpl-desc">故障艺术 · 霓虹彩光 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">超现实梦境</div>
+      <div class="tpl-desc">超现实主义 · 柔光漫射 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">赛博禅意</div>
+      <div class="tpl-desc">赛博禅意 · 霓虹彩光 · 居中对称</div>
+    </div><div class="template-card">
+            <div class="tpl-name">剪纸艺术</div>
+      <div class="tpl-desc">剪纸艺术 · 自然日光 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">二次元少女</div>
+      <div class="tpl-desc">二次元 · 柔光漫射 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">敦煌飞天</div>
+      <div class="tpl-desc">东方奇幻 · 雾中光 · 仰拍</div>
+    </div><div class="template-card">
+            <div class="tpl-name">侦探 noir</div>
+      <div class="tpl-desc">写实摄影 · 暗调低调 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">巴洛克宫殿</div>
+      <div class="tpl-desc">巴洛克 · 电影级侧光 · 仰拍</div>
+    </div><div class="template-card">
+            <div class="tpl-name">新艺术花卉</div>
+      <div class="tpl-desc">新艺术运动 · 柔光漫射 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">装饰艺术</div>
+      <div class="tpl-desc">装饰艺术 · 暖金黄昏 · 仰拍</div>
+    </div><div class="template-card">
+            <div class="tpl-name">禅意空间</div>
+      <div class="tpl-desc">极简留白 · 柔光漫射 · 居中对称</div>
+    </div><div class="template-card">
+            <div class="tpl-name">美食摄影</div>
+      <div class="tpl-desc">写实摄影 · 暖金黄昏 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">玻璃器皿</div>
+      <div class="tpl-desc">写实摄影 · 电影级侧光 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">金属质感</div>
+      <div class="tpl-desc">金属质感 · 硬光 · 特写</div>
+    </div><div class="template-card">
+            <div class="tpl-name">黏土动画</div>
+      <div class="tpl-desc">黏土风 · 柔光漫射 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">毛毡世界</div>
+      <div class="tpl-desc">毛毡风 · 柔光漫射 · 中景</div>
+    </div><div class="template-card">
+            <div class="tpl-name">3D等距房间</div>
+      <div class="tpl-desc">3D渲染 · 柔光漫射 · 等距视角</div>
+    </div></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    PromptLab · 智能提示词优化 · 提示词为通用创作描述，不限平台使用
+  </footer>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">已复制到剪贴板</div>
+
+<script src="translations.js?v=20261110h"></script>
+<script src="smart-engine.js?v=16"></script>
+<script src="data-kwdb.js?v=20261110h"></script>
+  <script src="archive-detail.js?v=20261110h"></script>
+  <script src="archive-slots.js?v=20261110h"></script>
+  <script src="archive-fix.js?v=20261110h"></script>
+  <script src="archive-variants.js?v=20261111a"></script>
+  <script src="archive-faces.js?v=20261111a"></script>
+  <script src="archive-style-defaults.js?v=20261111e"></script>
+  <script src="archive-learned.js?v=20261111a"></script>
+  <!-- 2026-11-11 拆分：app.js 原本 6363 行，按职责分成 4 个补丁层，只搬函数声明 -->
+  <!-- 输入侧过滤的判据（由 _dev/gen-guard.js 从 compliance-list.json 生成） -->
+  <script src="guard-data.js?v=20261111a"></script>
+  <script src="app-detect.js?v=20261111a"></script>
+  <script src="app-fill.js?v=20261111b"></script>
+  <script src="app-assemble.js?v=20261111zz2"></script>
+  <script src="app-ui.js?v=20261111a"></script>
+  <script src="app.js?v=20261111y"></script>
+
+<!-- 语义 9 维面板（可选增强，不影响上面四个的原有逻辑） -->
+<!-- 2026-11-11：config.local.js 里有明文 key，已被 serve.py 的静态白名单挡掉（404）。
+     所以这里不再引用它——留一个必然 404 的 script 标签只会在控制台报错。
+     主工具的推理走服务端 /api/infer，不需要它；
+     要本地联调 llm-arbiter 面板，自己把下面这行加回来，并且临时放行该文件。 -->
+<!-- <script src="config.local.js"></script> -->
+<script src="semantic-search.js"></script>
+<script src="llm-arbiter.js?v=20261111b"></script>
+<script src="agent-panel.js?v=20261111c"></script>
+
+</body></html>

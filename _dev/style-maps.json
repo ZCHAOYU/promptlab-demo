@@ -1,0 +1,802 @@
+{
+ "岭南画派": {
+  "lighting": "自然日光",
+  "color": "青碧",
+  "atmosphere": "清新自然"
+ },
+ "吴门画派": {
+  "lighting": "柔光漫射",
+  "color": "东方古韵",
+  "atmosphere": "清雅"
+ },
+ "浙派山水": {
+  "lighting": "雾中光",
+  "color": "墨绿",
+  "atmosphere": "雄浑"
+ },
+ "金陵画派": {
+  "lighting": "自然日光",
+  "color": "黛蓝",
+  "atmosphere": "古朴"
+ },
+ "扬州画派": {
+  "lighting": "柔光漫射",
+  "color": "朱砂红",
+  "atmosphere": "自由洒脱"
+ },
+ "海上画派": {
+  "lighting": "窗光",
+  "color": "东方古韵",
+  "atmosphere": "雅致"
+ },
+ "长安画派": {
+  "lighting": "暖金黄昏",
+  "color": "赭石",
+  "atmosphere": "苍茫辽远"
+ },
+ "京津画派": {
+  "lighting": "窗光",
+  "color": "东方古韵",
+  "atmosphere": "庄重典雅"
+ },
+ "娄东画派": {
+  "lighting": "柔光漫射",
+  "color": "月白",
+  "atmosphere": "宁静致远"
+ },
+ "虞山画派": {
+  "lighting": "自然日光",
+  "color": "石青",
+  "atmosphere": "清雅"
+ },
+ "黄山画派": {
+  "lighting": "雾中光",
+  "color": "墨绿",
+  "atmosphere": "玄奥深邃"
+ },
+ "新安画派": {
+  "lighting": "冷光",
+  "color": "月白",
+  "atmosphere": "清冷"
+ },
+ "米家山水": {
+  "lighting": "雾中光",
+  "color": "烟灰",
+  "atmosphere": "空灵幽远"
+ },
+ "青绿山水": {
+  "lighting": "自然日光",
+  "color": "石青",
+  "atmosphere": "清雅"
+ },
+ "金碧山水": {
+  "lighting": "暖光",
+  "color": "暖金琥珀",
+  "atmosphere": "富丽堂皇"
+ },
+ "浅绛山水": {
+  "lighting": "柔光漫射",
+  "color": "赭石",
+  "atmosphere": "恬淡"
+ },
+ "没骨画": {
+  "lighting": "柔光漫射",
+  "color": "藕粉",
+  "atmosphere": "清新自然"
+ },
+ "工笔重彩": {
+  "lighting": "柔光漫射",
+  "color": "朱砂红",
+  "atmosphere": "庄重典雅"
+ },
+ "写意花鸟": {
+  "lighting": "自然日光",
+  "color": "藤黄",
+  "atmosphere": "雅致"
+ },
+ "泼墨山水": {
+  "lighting": "戏剧对比",
+  "color": "黑白高对比",
+  "atmosphere": "磅礴"
+ },
+ "焦墨山水": {
+  "lighting": "雾中光",
+  "color": "玄黑",
+  "atmosphere": "苍茫辽远"
+ },
+ "界画": {
+  "lighting": "自然日光",
+  "color": "东方古韵",
+  "atmosphere": "庄重典雅"
+ },
+ "指墨画": {
+  "lighting": "柔光漫射",
+  "color": "墨黑",
+  "atmosphere": "古朴"
+ },
+ "漆画": {
+  "lighting": "反射光",
+  "color": "朱砂红",
+  "atmosphere": "庄重典雅"
+ },
+ "烙画": {
+  "lighting": "暖光",
+  "color": "焦糖棕",
+  "atmosphere": "古朴"
+ },
+ "坦培拉": {
+  "lighting": "窗光",
+  "color": "暖金琥珀",
+  "atmosphere": "庄重典雅"
+ },
+ "粉彩画": {
+  "lighting": "柔光漫射",
+  "color": "粉彩梦幻",
+  "atmosphere": "温润"
+ },
+ "水粉画": {
+  "lighting": "自然日光",
+  "color": "日系清新",
+  "atmosphere": "清新自然"
+ },
+ "丙烯画": {
+  "lighting": "环境光",
+  "color": "彩虹色",
+  "atmosphere": "活力四射"
+ },
+ "蜡笔画": {
+  "lighting": "柔光",
+  "color": "粉彩梦幻",
+  "atmosphere": "童趣天真"
+ },
+ "色粉笔": {
+  "lighting": "柔光漫射",
+  "color": "粉彩梦幻",
+  "atmosphere": "梦幻飘渺"
+ },
+ "钢笔淡彩": {
+  "lighting": "窗光",
+  "color": "雾霾蓝",
+  "atmosphere": "闲适"
+ },
+ "圆珠笔画": {
+  "lighting": "自然日光",
+  "color": "冷蓝银灰",
+  "atmosphere": "清冷"
+ },
+ "针管笔画": {
+  "lighting": "硬光",
+  "color": "黑白高对比",
+  "atmosphere": "清冷"
+ },
+ "马克笔画": {
+  "lighting": "柔光箱",
+  "color": "彩虹色",
+  "atmosphere": "活力四射"
+ },
+ "彩铅画": {
+  "lighting": "柔光漫射",
+  "color": "日系清新",
+  "atmosphere": "温润"
+ },
+ "木炭素描": {
+  "lighting": "戏剧对比",
+  "color": "黑白高对比",
+  "atmosphere": "肃穆庄严"
+ },
+ "银针笔": {
+  "lighting": "柔光漫射",
+  "color": "银灰",
+  "atmosphere": "庄重典雅"
+ },
+ "蛋彩壁画": {
+  "lighting": "烛火光",
+  "color": "暖金琥珀",
+  "atmosphere": "肃穆庄严"
+ },
+ "油画棒": {
+  "lighting": "暖光",
+  "color": "奶油黄",
+  "atmosphere": "温暖治愈"
+ },
+ "水彩速写": {
+  "lighting": "柔光漫射",
+  "color": "日系清新",
+  "atmosphere": "清新自然"
+ },
+ "素描淡彩": {
+  "lighting": "柔光漫射",
+  "color": "莫兰迪色系",
+  "atmosphere": "恬淡"
+ },
+ "极简主义": {
+  "lighting": "柔光漫射",
+  "color": "冷灰",
+  "atmosphere": "清冷"
+ },
+ "新波普": {
+  "lighting": "霓虹彩光",
+  "color": "彩虹色",
+  "atmosphere": "活力四射"
+ },
+ "新达达": {
+  "lighting": "戏剧对比",
+  "color": "褪色复古",
+  "atmosphere": "荒诞离奇"
+ },
+ "波普超现实": {
+  "lighting": "柔光漫射",
+  "color": "粉彩梦幻",
+  "atmosphere": "梦幻飘渺"
+ },
+ "极简抽象": {
+  "lighting": "柔光漫射",
+  "color": "冷蓝银灰",
+  "atmosphere": "空寂"
+ },
+ "几何抽象": {
+  "lighting": "柔光漫射",
+  "color": "冷灰",
+  "atmosphere": "宁静致远"
+ },
+ "抒情抽象": {
+  "lighting": "柔光漫射",
+  "color": "粉彩梦幻",
+  "atmosphere": "空灵幽远"
+ },
+ "行动绘画": {
+  "lighting": "戏剧对比",
+  "color": "黑白高对比",
+  "atmosphere": "狂热躁动"
+ },
+ "光效应艺术": {
+  "lighting": "硬光",
+  "color": "黑白高对比",
+  "atmosphere": "兴奋激动"
+ },
+ "动态艺术": {
+  "lighting": "聚光灯",
+  "color": "金属质感",
+  "atmosphere": "未来科技"
+ },
+ "环境艺术": {
+  "lighting": "自然日光",
+  "color": "自然森系",
+  "atmosphere": "宁静致远"
+ },
+ "偶发艺术": {
+  "lighting": "环境光",
+  "color": "褪色复古",
+  "atmosphere": "自由洒脱"
+ },
+ "新现实主义": {
+  "lighting": "环境光",
+  "color": "褪色复古",
+  "atmosphere": "都市喧嚣"
+ },
+ "超写实主义": {
+  "lighting": "柔光箱",
+  "color": "冷灰",
+  "atmosphere": "清冷"
+ },
+ "新具象": {
+  "lighting": "电影级侧光",
+  "color": "复古70年代",
+  "atmosphere": "怀旧复古"
+ },
+ "具象表现": {
+  "lighting": "戏剧对比",
+  "color": "炽热红",
+  "atmosphere": "焦虑不安"
+ },
+ "极简构成": {
+  "lighting": "柔光漫射",
+  "color": "冷灰",
+  "atmosphere": "淡泊"
+ },
+ "抽象拼贴": {
+  "lighting": "柔光漫射",
+  "color": "褪色复古",
+  "atmosphere": "荒诞离奇"
+ },
+ "珐琅彩": {
+  "lighting": "柔光漫射",
+  "color": "东方古韵",
+  "atmosphere": "富丽堂皇"
+ },
+ "掐丝工艺": {
+  "lighting": "柔光漫射",
+  "color": "孔雀蓝",
+  "atmosphere": "庄重典雅"
+ },
+ "螺钿镶嵌": {
+  "lighting": "反射光",
+  "color": "珍珠白",
+  "atmosphere": "雅致"
+ },
+ "金银错": {
+  "lighting": "暖光",
+  "color": "香槟金",
+  "atmosphere": "庄重典雅"
+ },
+ "鎏金工艺": {
+  "lighting": "暖光",
+  "color": "暖金琥珀",
+  "atmosphere": "富丽堂皇"
+ },
+ "錾刻工艺": {
+  "lighting": "侧光",
+  "color": "古铜",
+  "atmosphere": "古朴"
+ },
+ "花丝镶嵌": {
+  "lighting": "柔光漫射",
+  "color": "香槟金",
+  "atmosphere": "奢华雍容"
+ },
+ "点翠工艺": {
+  "lighting": "柔光漫射",
+  "color": "孔雀蓝",
+  "atmosphere": "庄重典雅"
+ },
+ "烧蓝工艺": {
+  "lighting": "柔光漫射",
+  "color": "孔雀蓝",
+  "atmosphere": "雅致"
+ },
+ "漆线雕": {
+  "lighting": "侧光",
+  "color": "朱砂红",
+  "atmosphere": "古朴"
+ },
+ "木纹金": {
+  "lighting": "侧光",
+  "color": "金属质感",
+  "atmosphere": "古朴"
+ },
+ "琉璃工艺": {
+  "lighting": "透射光",
+  "color": "琥珀",
+  "atmosphere": "空灵"
+ },
+ "玉雕": {
+  "lighting": "柔光漫射",
+  "color": "青碧",
+  "atmosphere": "温润"
+ },
+ "竹雕": {
+  "lighting": "窗光",
+  "color": "竹绿",
+  "atmosphere": "清雅"
+ },
+ "核雕": {
+  "lighting": "侧光",
+  "color": "焦糖棕",
+  "atmosphere": "古朴"
+ },
+ "微雕": {
+  "lighting": "聚光灯",
+  "color": "米色",
+  "atmosphere": "雅致"
+ },
+ "根雕": {
+  "lighting": "自然日光",
+  "color": "焦糖棕",
+  "atmosphere": "古朴"
+ },
+ "紫砂": {
+  "lighting": "柔光漫射",
+  "color": "赭石",
+  "atmosphere": "古朴"
+ },
+ "青瓷": {
+  "lighting": "柔光漫射",
+  "color": "青瓷",
+  "atmosphere": "温润"
+ },
+ "白瓷": {
+  "lighting": "柔光漫射",
+  "color": "月白",
+  "atmosphere": "清雅"
+ },
+ "黑陶": {
+  "lighting": "柔光漫射",
+  "color": "玄黑",
+  "atmosphere": "古朴"
+ },
+ "彩陶": {
+  "lighting": "自然日光",
+  "color": "赭石",
+  "atmosphere": "古朴"
+ },
+ "汝窑": {
+  "lighting": "柔光漫射",
+  "color": "天青",
+  "atmosphere": "淡雅"
+ },
+ "官窑": {
+  "lighting": "窗光",
+  "color": "青瓷",
+  "atmosphere": "庄重典雅"
+ },
+ "哥窑": {
+  "lighting": "柔光漫射",
+  "color": "铁灰",
+  "atmosphere": "古拙"
+ },
+ "钧窑": {
+  "lighting": "自然日光",
+  "color": "玫瑰紫",
+  "atmosphere": "古朴"
+ },
+ "定窑": {
+  "lighting": "窗光",
+  "color": "象牙白",
+  "atmosphere": "素雅"
+ },
+ "建盏": {
+  "lighting": "烛光",
+  "color": "曜石黑",
+  "atmosphere": "静谧禅意"
+ },
+ "越窑": {
+  "lighting": "柔光漫射",
+  "color": "青碧",
+  "atmosphere": "温润"
+ },
+ "龙泉青瓷": {
+  "lighting": "窗光",
+  "color": "翡翠绿",
+  "atmosphere": "清雅"
+ },
+ "AI幻觉艺术": {
+  "lighting": "投影光",
+  "color": "粉彩梦幻",
+  "atmosphere": "荒诞离奇"
+ },
+ "体素艺术": {
+  "lighting": "环境光",
+  "color": "彩虹色",
+  "atmosphere": "童趣天真"
+ },
+ "全息投影": {
+  "lighting": "全息光",
+  "color": "冰蓝极光",
+  "atmosphere": "未来科技"
+ },
+ "生成艺术": {
+  "lighting": "投影光",
+  "color": "赛博霓虹",
+  "atmosphere": "未来科技"
+ },
+ "算法艺术": {
+  "lighting": "环境光",
+  "color": "冷蓝银灰",
+  "atmosphere": "玄奥深邃"
+ },
+ "数据可视化艺术": {
+  "lighting": "柔光箱",
+  "color": "冷蓝银灰",
+  "atmosphere": "未来科技"
+ },
+ "分形艺术": {
+  "lighting": "体积光",
+  "color": "彩虹色",
+  "atmosphere": "神秘奇幻"
+ },
+ "新媒体艺术": {
+  "lighting": "舞台光",
+  "color": "霓虹粉紫",
+  "atmosphere": "未来科技"
+ },
+ "交互艺术": {
+  "lighting": "投影光",
+  "color": "赛博霓虹",
+  "atmosphere": "活力四射"
+ },
+ "沉浸式艺术": {
+  "lighting": "投影光",
+  "color": "冰蓝极光",
+  "atmosphere": "梦幻飘渺"
+ },
+ "数字雕塑": {
+  "lighting": "柔光箱",
+  "color": "金属质感",
+  "atmosphere": "未来科技"
+ },
+ "程序化艺术": {
+  "lighting": "体积光",
+  "color": "冷蓝银灰",
+  "atmosphere": "玄奥深邃"
+ },
+ "神经风格迁移": {
+  "lighting": "柔光漫射",
+  "color": "电影青橙",
+  "atmosphere": "梦幻飘渺"
+ },
+ "像素雕塑": {
+  "lighting": "顶光",
+  "color": "彩虹色",
+  "atmosphere": "童趣天真"
+ },
+ "光绘艺术": {
+  "lighting": "光晕",
+  "color": "霓虹粉紫",
+  "atmosphere": "梦幻飘渺"
+ },
+ "投影映射": {
+  "lighting": "投影光",
+  "color": "霓虹粉紫",
+  "atmosphere": "未来科技"
+ },
+ "增强现实艺术": {
+  "lighting": "全息光",
+  "color": "冰蓝极光",
+  "atmosphere": "未来科技"
+ },
+ "虚拟现实艺术": {
+  "lighting": "全息投影光",
+  "color": "赛博霓虹",
+  "atmosphere": "未来科技"
+ },
+ "数字拼贴": {
+  "lighting": "柔光漫射",
+  "color": "褪色复古",
+  "atmosphere": "荒诞离奇"
+ },
+ "赛博格艺术": {
+  "lighting": "霓虹彩光",
+  "color": "赛博霓虹",
+  "atmosphere": "未来科技"
+ },
+ "赛博敦煌": {
+  "lighting": "霓虹彩光",
+  "color": "暖金琥珀",
+  "atmosphere": "神秘奇幻"
+ },
+ "国潮插画": {
+  "lighting": "柔光漫射",
+  "color": "东方古韵",
+  "atmosphere": "欢快喜庆"
+ },
+ "新中式": {
+  "lighting": "窗光",
+  "color": "月白",
+  "atmosphere": "静谧禅意"
+ },
+ "东方蒸汽朋克": {
+  "lighting": "暖金黄昏",
+  "color": "古铜",
+  "atmosphere": "神秘奇幻"
+ },
+ "和风赛博": {
+  "lighting": "霓虹招牌光",
+  "color": "霓虹粉紫",
+  "atmosphere": "都市喧嚣"
+ },
+ "非洲未来主义": {
+  "lighting": "全息光",
+  "color": "金橙",
+  "atmosphere": "未来科技"
+ },
+ "拉美魔幻": {
+  "lighting": "暖金黄昏",
+  "color": "炽热红",
+  "atmosphere": "神秘奇幻"
+ },
+ "拉贾斯坦细密画": {
+  "lighting": "烛火光",
+  "color": "暖金琥珀",
+  "atmosphere": "庄重典雅"
+ },
+ "泰式金箔": {
+  "lighting": "烛光",
+  "color": "香槟金",
+  "atmosphere": "神圣庄严"
+ },
+ "蒙元风格": {
+  "lighting": "暖金黄昏",
+  "color": "藏青",
+  "atmosphere": "帝王威仪"
+ },
+ "西域风格": {
+  "lighting": "暖金黄昏",
+  "color": "沙漠暖调",
+  "atmosphere": "苍茫辽远"
+ },
+ "丝路风格": {
+  "lighting": "黄金时刻",
+  "color": "东方古韵",
+  "atmosphere": "怀旧复古"
+ },
+ "赛博唐风": {
+  "lighting": "霓虹彩光",
+  "color": "赛博霓虹",
+  "atmosphere": "未来科技"
+ },
+ "蒸汽和风": {
+  "lighting": "炉火光",
+  "color": "金属质感",
+  "atmosphere": "怀旧复古"
+ },
+ "新古典国风": {
+  "lighting": "柔光漫射",
+  "color": "东方古韵",
+  "atmosphere": "庄重典雅"
+ },
+ "俄罗斯圣像画": {
+  "lighting": "烛火光",
+  "color": "暖金琥珀",
+  "atmosphere": "肃穆庄严"
+ },
+ "墨西哥壁画": {
+  "lighting": "自然日光",
+  "color": "炽热红",
+  "atmosphere": "史诗壮阔"
+ },
+ "日本水墨": {
+  "lighting": "柔光漫射",
+  "color": "黑白高对比",
+  "atmosphere": "静谧禅意"
+ },
+ "韩国青瓷": {
+  "lighting": "柔光漫射",
+  "color": "青瓷",
+  "atmosphere": "清雅"
+ },
+ "越南漆画": {
+  "lighting": "柔光漫射",
+  "color": "朱砂红",
+  "atmosphere": "古朴"
+ },
+ "泰国壁画": {
+  "lighting": "烛火光",
+  "color": "暖金琥珀",
+  "atmosphere": "神圣庄严"
+ },
+ "缅甸漆器": {
+  "lighting": "柔光漫射",
+  "color": "暖金琥珀",
+  "atmosphere": "古朴"
+ },
+ "柬埔寨吴哥": {
+  "lighting": "自然日光",
+  "color": "赭石",
+  "atmosphere": "神秘莫测"
+ },
+ "土耳其瓷砖": {
+  "lighting": "柔光漫射",
+  "color": "孔雀蓝",
+  "atmosphere": "庄重典雅"
+ },
+ "摩洛哥瓷砖": {
+  "lighting": "自然日光",
+  "color": "青碧",
+  "atmosphere": "神秘奇幻"
+ },
+ "西班牙摩尔": {
+  "lighting": "黄金时刻",
+  "color": "孔雀蓝",
+  "atmosphere": "富丽堂皇"
+ },
+ "葡萄牙蓝瓷": {
+  "lighting": "柔光漫射",
+  "color": "钴蓝",
+  "atmosphere": "宁静致远"
+ },
+ "荷兰代尔夫特": {
+  "lighting": "窗光",
+  "color": "靛蓝",
+  "atmosphere": "宁静致远"
+ },
+ "英国水彩": {
+  "lighting": "柔光漫射",
+  "color": "莫兰迪色系",
+  "atmosphere": "清新自然"
+ },
+ "俄罗斯套娃": {
+  "lighting": "柔光漫射",
+  "color": "朱砂红",
+  "atmosphere": "童趣天真"
+ },
+ "印度细密画": {
+  "lighting": "柔光漫射",
+  "color": "暖金琥珀",
+  "atmosphere": "奢华雍容"
+ },
+ "波斯蓝陶": {
+  "lighting": "柔光漫射",
+  "color": "孔雀蓝",
+  "atmosphere": "古朴"
+ },
+ "阿拉伯书法": {
+  "lighting": "窗光",
+  "color": "暖金琥珀",
+  "atmosphere": "庄重典雅"
+ },
+ "埃塞俄比亚圣像": {
+  "lighting": "烛火光",
+  "color": "暖金琥珀",
+  "atmosphere": "肃穆庄严"
+ },
+ "毛利纹身": {
+  "lighting": "自然日光",
+  "color": "玄黑",
+  "atmosphere": "野性原始"
+ },
+ "波利尼西亚纹样": {
+  "lighting": "硬光",
+  "color": "黑白高对比",
+  "atmosphere": "豪迈奔放"
+ },
+ "因纽特雕刻": {
+  "lighting": "冷蓝月光",
+  "color": "象牙白",
+  "atmosphere": "清冷"
+ },
+ "澳洲原住民点画": {
+  "lighting": "自然日光",
+  "color": "赭石",
+  "atmosphere": "神秘莫测"
+ },
+ "蒸汽波霓虹": {
+  "lighting": "霓虹彩光",
+  "color": "霓虹粉紫",
+  "atmosphere": "梦幻飘渺"
+ },
+ "故障波普": {
+  "lighting": "电光",
+  "color": "彩虹色",
+  "atmosphere": "荒诞离奇"
+ },
+ "复古像素": {
+  "lighting": "环境光",
+  "color": "复古70年代",
+  "atmosphere": "怀旧复古"
+ },
+ "低保真": {
+  "lighting": "柔光漫射",
+  "color": "莫兰迪色系",
+  "atmosphere": "慵懒"
+ },
+ "酸性设计": {
+  "lighting": "激光",
+  "color": "赛博霓虹",
+  "atmosphere": "狂热躁动"
+ },
+ "后现代主义": {
+  "lighting": "戏剧对比",
+  "color": "粉彩梦幻",
+  "atmosphere": "荒诞离奇"
+ },
+ "新几何主义": {
+  "lighting": "柔光漫射",
+  "color": "冷蓝银灰",
+  "atmosphere": "宁静致远"
+ },
+ "极简未来": {
+  "lighting": "冷光",
+  "color": "冷蓝银灰",
+  "atmosphere": "未来科技"
+ },
+ "赛博巴洛克": {
+  "lighting": "霓虹彩光",
+  "color": "玫瑰金",
+  "atmosphere": "奢华雍容"
+ },
+ "蒸汽洛可可": {
+  "lighting": "烛光",
+  "color": "香槟金",
+  "atmosphere": "奢华雍容"
+ },
+ "暗黑童话": {
+  "lighting": "雾中光",
+  "color": "暗黑哥特",
+  "atmosphere": "神秘奇幻"
+ },
+ "霓虹波普": {
+  "lighting": "霓虹彩光",
+  "color": "霓虹粉紫",
+  "atmosphere": "活力四射"
+ }
+}

@@ -1,0 +1,203 @@
+{
+  "createdAt": "2026-11-08T12:11:35.136Z",
+  "model": "deepseek-flash",
+  "round": 1,
+  "cases": [
+    {
+      "id": "auto-1",
+      "type": "auto",
+      "expectDims": [
+        "scene"
+      ],
+      "expectName": "废弃老宅",
+      "note": "由词条反推：场景 / 废弃老宅",
+      "query": "我想看看那种很久没人住、墙皮都掉了的老房子。"
+    },
+    {
+      "id": "auto-2",
+      "type": "auto",
+      "expectDims": [
+        "scene"
+      ],
+      "expectName": "酒吧",
+      "note": "由词条反推：场景 / 酒吧",
+      "query": "想画一个晚上灯光昏暗、有人喝酒聊天的地方。"
+    },
+    {
+      "id": "auto-3",
+      "type": "auto",
+      "expectDims": [
+        "role"
+      ],
+      "expectName": "古风侠客",
+      "note": "由词条反推：角色 / 古风侠客",
+      "query": "帮我画个白衣束银冠、挥剑时衣袂翻飞的冷峻英武男子。"
+    },
+    {
+      "id": "auto-4",
+      "type": "auto",
+      "expectDims": [
+        "role"
+      ],
+      "expectName": "浪人",
+      "note": "由词条反推：角色 / 浪人",
+      "query": "画一个没有主君、穿着破旧和服在雨中拔刀的落魄武士。"
+    },
+    {
+      "id": "auto-5",
+      "type": "auto",
+      "expectDims": [
+        "style"
+      ],
+      "expectName": "水墨国风",
+      "note": "由词条反推：风格 / 水墨国风",
+      "query": "想要画面墨色有浓淡、留白多、看着有诗意的那种中国画味道。"
+    },
+    {
+      "id": "auto-6",
+      "type": "auto",
+      "expectDims": [
+        "style"
+      ],
+      "expectName": "霓虹波普",
+      "note": "由词条反推：风格 / 霓虹波普",
+      "query": "想要那种发光波普艺术的感觉，颜色亮一点，带点当代都市味。"
+    },
+    {
+      "id": "auto-7",
+      "type": "auto",
+      "expectDims": [
+        "light"
+      ],
+      "expectName": "冷蓝月光",
+      "note": "由词条反推：光线 / 冷蓝月光",
+      "query": "光线要偏冷带点蓝，像夜里月光那种清冷感。"
+    },
+    {
+      "id": "auto-8",
+      "type": "auto",
+      "expectDims": [
+        "light"
+      ],
+      "expectName": "橱窗光",
+      "note": "由词条反推：光线 / 橱窗光",
+      "query": "想要街边店面橱窗里透出来那种暖洋洋的光。"
+    },
+    {
+      "id": "auto-9",
+      "type": "auto",
+      "expectDims": [
+        "atmosphere"
+      ],
+      "expectName": "静谧禅意",
+      "note": "由词条反推：氛围 / 静谧禅意",
+      "query": "想要那种安安静静、让人心一下子沉下来的感觉。"
+    },
+    {
+      "id": "auto-10",
+      "type": "auto",
+      "expectDims": [
+        "atmosphere"
+      ],
+      "expectName": "幽深",
+      "note": "由词条反推：氛围 / 幽深",
+      "query": "想要那种安安静静、越往里看越看不到底的感觉。"
+    },
+    {
+      "id": "auto-11",
+      "type": "auto",
+      "expectDims": [
+        "color"
+      ],
+      "expectName": "莫兰迪色系",
+      "note": "由词条反推：色彩 / 莫兰迪色系",
+      "query": "颜色别太艳，灰调一点、柔和一点的搭配就行。"
+    },
+    {
+      "id": "auto-12",
+      "type": "auto",
+      "expectDims": [
+        "composition"
+      ],
+      "expectName": "中心构图",
+      "note": "由词条反推：构图 / 中心构图",
+      "query": "把想拍的东西放画面正中间，看着稳一点。"
+    },
+    {
+      "id": "auto-13",
+      "type": "auto",
+      "expectDims": [
+        "quality"
+      ],
+      "expectName": "4K高清",
+      "note": "由词条反推：画质 / 4K高清",
+      "query": "画面得特别清楚，连小细节都能看得一清二楚。"
+    },
+    {
+      "id": "hard-1",
+      "type": "hard",
+      "expectDims": [
+        "scene",
+        "light"
+      ],
+      "note": "用户主动指定反差（深夜 + 晨雾光）→ 光线不该被清空",
+      "query": "深夜的老房子，要晨雾光那种清透感"
+    },
+    {
+      "id": "hard-2",
+      "type": "hard",
+      "expectDims": [],
+      "note": "极模糊，无检索线索 → 应大部分留空",
+      "query": "随便画点什么吧"
+    },
+    {
+      "id": "hard-3",
+      "type": "hard",
+      "expectDims": [],
+      "note": "指代上一轮结果，无上下文 → 应识别为 confirm 或直接留空",
+      "query": "把上次那个改得再冷一点"
+    },
+    {
+      "id": "hard-4",
+      "type": "hard",
+      "expectDims": [],
+      "note": "空输入 → 应报错，不得编造",
+      "query": ""
+    },
+    {
+      "id": "hard-5",
+      "type": "hard",
+      "expectDims": [
+        "style",
+        "light",
+        "composition",
+        "color",
+        "quality",
+        "atmosphere"
+      ],
+      "note": "超长多维堆砌 → 应尽量填满且不矛盾",
+      "query": "一个有质感通透干净的画面，现代极简，摄影棚打光，浅景深，高动态范围，8K 高清，留白构图，柔和的雾蓝色调，安静氛围"
+    },
+    {
+      "id": "chat-1",
+      "type": "chat",
+      "expectDims": [],
+      "note": "闲聊 → 不该检索",
+      "query": "今天好累，随便聊聊"
+    },
+    {
+      "id": "chat-2",
+      "type": "chat",
+      "expectDims": [],
+      "note": "问身份 → 不该检索",
+      "query": "你是谁，你能做什么"
+    },
+    {
+      "id": "chat-3",
+      "type": "chat",
+      "expectDims": [],
+      "note": "无关创作请求 → 不该检索词库",
+      "query": "帮我写一首关于秋天的短诗"
+    }
+  ]
+}

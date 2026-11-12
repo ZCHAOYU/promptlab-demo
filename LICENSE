@@ -1,0 +1,71 @@
+MIT License
+
+Copyright (c) 2026 ZCHAOYU
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+Commons Clause License Condition v1.0
+================================================================================
+
+The Software is provided to you by the Licensor under the License, as defined
+below, subject to the following condition.
+
+Without limiting other conditions in the License, the grant of rights under the
+License will not include, and the License does not grant to you, the right to
+Sell the Software.
+
+For purposes of the foregoing, "Sell" means practicing any or all of the rights
+granted to you under the License to provide to third parties, for a fee or other
+consideration (including without limitation fees for hosting or
+consulting/support services related to the Software), a product or service whose
+value derives, entirely or substantially, from the functionality of the Software.
+Any license notice or attribution required by the License must also include this
+Commons Clause License Condition notice.
+
+Software: PromptLab
+License: MIT (subject to the Commons Clause condition above)
+Licensor: ZCHAOYU
+
+================================================================================
+中文说明（便于理解，不构成对上述英文条款的替代；两者冲突时以上面的英文为准）
+================================================================================
+
+【可以做】
+- 自己使用、部署在自己的机器或自己的服务器上；
+- 在工作、学习、个人项目里把它当工具用；
+- Fork、修改、二次开发，自己用或内部使用；
+- 免费分享、写文章介绍、截图 / 录屏演示、放进作品集；
+- 在保留本许可与版权声明的前提下，随你自己的**非售卖**项目一起分发。
+
+【不可以做】
+- 把本项目，或只做了少量修改的衍生版本，**单独打包售卖**（含网盘付费、素材包、
+  教程搭售、课程附赠、上架应用商店等任何形式的收费分发）；
+- **二次分销收费**、代理转售、代下载收费；
+- 把本项目的功能（或其衍生功能）做成**付费产品或付费服务**对外提供；
+- 去掉或篡改本文件中的版权与许可声明。
+
+一句话：**自用、免费展示可以；拿去卖钱不行。**
+
+【商用需要书面授权】
+在企业内部用于商业流程、把本项目嵌入商业产品、或以任何形式对外商业分发，
+都需要事先取得著作权人的**书面授权**。授权申请请通过仓库 Issues 或邮件联系作者。
+
+Copyright (c) 2026 ZCHAOYU. All rights reserved except as expressly
+granted above.
