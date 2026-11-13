@@ -91,17 +91,33 @@ if "%PL_HOST%"=="" set PL_HOST=127.0.0.1
 
 set "PY="
 if exist "%~dp0runtime\python.exe" set "PY=%~dp0runtime\python.exe"
+rem 2026-11-13：以前只判断「where python 有没有结果」，被微软商店的占位符骗了 ——
+rem 那个 python.exe 能找到，但跑起来什么都不做、退出码 9009、一个字都不打印，
+rem 于是窗口里只剩 "Server stopped."，用户根本不知道发生了什么。
+rem 现在两条规矩：① 跳过 WindowsApps 下的假 python；② 找到了也要真的跑一次才算数。
 if not defined PY (
-  where python >nul 2>nul && set "PY=python"
+  for /f "delims=" %%P in ('where python 2^>nul ^| find /v /i "WindowsApps"') do if not defined PY set "PY=%%P"
 )
 if not defined PY (
-  where py >nul 2>nul && set "PY=py"
+  for /f "delims=" %%P in ('where py 2^>nul ^| find /v /i "WindowsApps"') do if not defined PY set "PY=%%P"
+)
+if defined PY (
+  "%PY%" -c "import sys;raise SystemExit(0 if sys.version_info>=(3,8) else 1)" >nul 2>nul
+  if errorlevel 1 set "PY="
 )
 if not defined PY (
   echo.
-  echo [ERROR] Python not found.
-  echo         Use the portable package, or install Python 3.10+ from python.org
-  echo         and run:  pip install -r requirements.txt
+  echo [ERROR] No usable Python found on this PC.
+  echo.
+  echo   The "python" from Microsoft Store is only a placeholder - it does nothing.
+  echo.
+  echo   Option 1 - easiest: use the portable package
+  echo             ^(the folder that has a "runtime" subfolder inside^)
+  echo             double-click start.bat there; it carries its own Python.
+  echo.
+  echo   Option 2 - install Python 3.10 or newer from python.org
+  echo             during setup TICK "Add python.exe to PATH", then run:
+  echo                 pip install -r requirements.txt
   echo.
   pause
   exit /b 1
@@ -116,9 +132,17 @@ echo.
 
 if not "%NOBROWSER%"=="1" start "" "http://127.0.0.1:%PORT%/"
 "%PY%" serve.py %PORT%
+set "RC=%ERRORLEVEL%"
 echo.
+if not "%RC%"=="0" (
+  echo [ERROR] Server exited with code %RC% - see the message above.
+  echo         "No module named ..."        -^>  pip install -r requirements.txt
+  echo         "address already in use"     -^>  set PORT=8788  then run again
+  echo.
+)
 echo Server stopped.
 pause
+exit /b %RC%
 `;
 fs.writeFileSync(path.join(OUT, 'start.bat'), START_BAT.replace(/\n/g, '\r\n'), 'utf8');
 
